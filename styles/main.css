@@ -1,3 +1,13 @@
+/*** General ***/
+body {
+  /* TODO: add fonts */
+}
+
+h2 {
+  font-size: 2em;
+}
+
+
 /*** Nav ***/
 a.navbar-brand {
   font-size: 1.6em;
@@ -5,16 +15,19 @@ a.navbar-brand {
 
 
 /*** Header ***/
+#headerRow {
+  margin-top: 20px;
+}
+
 /* TODO: broken on mobile view */
 #logo {
-  max-width: 9em;
+  max-width: 100%;
 }
 
 header {
   margin: auto;
 }
 
-/* one way of centering the title */
-/* header > h1 {
-  padding-top: 1em;
-} */
+header > h1 {
+  font-size: 2.6em;
+}
