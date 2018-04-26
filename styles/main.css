@@ -1,8 +1,20 @@
+/*** Nav ***/
+a.navbar-brand {
+  font-size: 1.6em;
+}
+
+
+/*** Header ***/
 /* TODO: broken on mobile view */
 #logo {
   max-width: 9em;
 }
 
-header > h1 {
-  padding-top: 1em;
+header {
+  margin: auto;
 }
+
+/* one way of centering the title */
+/* header > h1 {
+  padding-top: 1em;
+} */
