@@ -1,0 +1,8 @@
+/* TODO: broken on mobile view */
+#logo {
+  max-width: 9em;
+}
+
+header > h1 {
+  padding-top: 1em;
+}

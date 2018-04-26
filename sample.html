@@ -6,19 +6,30 @@
 
     <title>International Association for Cryptologic Research</title>
 
-    <!-- styles: bootstrap -->
+    <!-- styles: required/bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-0SEzCkemOL0R1IOfjiayiYyt8BkqxwlmXBmFWMUNeG0BSo/XUh4xAF5ybf+Qr/4x" crossorigin="anonymous">
-  </head>
-  <body class="container-fluid">
-    <nav>
 
+    <!-- styles: personal -->
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+
+  <body class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <!-- <a href="/" class="navbar-brand">
+      </a> -->
     </nav>
 
-    <header>
-      <h1>
-        International Association for Cryptologic Research
-      </h1>
-    </header>
+    <div class="row">
+      <!-- TODO: broken on mobile view -->
+      <figure class="col-2">
+        <img src="./img/iacr-logo.png" id="logo" alt="IACR logo, a dark blue circle cut into sections vetically and horizontally with the acronym inside and the full name circling the outside." />
+      </figure>
+      <header class="col-10">
+        <h1>
+          International Association for Cryptologic Research
+        </h1>
+      </header>
+    </div>
 
     <div class="row">
       <section class="col-12">
