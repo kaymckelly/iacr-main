@@ -44,3 +44,9 @@ a.navbar-brand {
 header {
   margin: auto;
 }
+
+
+/*** Page-specific: board of directors ***/
+div.bottomSpacing {
+  margin-bottom: 20px;
+}
