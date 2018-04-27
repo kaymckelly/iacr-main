@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
 
-  <!-- NOTE: having trouble deciding between container and container-fluid. container-fluid gives us more space for main content to sit side by side, but container looks better when text occurs in big blocks, so it doesn't flow quite so far across the screen. -->
-  <body class="container">
+  <!-- NOTE: having trouble deciding between container and container-fluid. container-fluid gives us more space for main content to sit side by side, but container looks better when text occurs in big blocks, so it doesn't flow quite so far across the screen. also note that right now container simply doesn't work with this many dropdown menus + search bar with button. -->
+  <body class="container-fluid">
     <!-- BUG: between lg collapse point and about 20px from there, the menu dropdowns collapse in a weird way due to the size of the search bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <!-- TODO: brand image? logo would be ideal, but maybe that's better off being larger below next to the h1 in header -->
@@ -95,7 +95,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">CryptoDB</a>
               <a class="dropdown-item" href="#">Calendar of Events</a>
-              <a class="dropdown-item" href="#">Books Reviews</a>
+              <a class="dropdown-item" href="#">Book Reviews</a>
               <a class="dropdown-item" href="#">PhD Database</a>
               <a class="dropdown-item" href="#">Videos</a>
             </div>
@@ -187,7 +187,11 @@
               3234 North Star Dr<br/>
               San Diego, CA 92117<br/>
               USA<br/>
+              Tel: +1 619 890 8236<br/>
             </address>
+            <a href="#">
+              <span class="icon ion-email" aria-label="email" title="Email vice president"></span>
+            </a>
           </div>
         </div>
       </section>
