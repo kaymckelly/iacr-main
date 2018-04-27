@@ -6,19 +6,604 @@
 
     <title>International Association for Cryptologic Research</title>
 
-    <!-- styles: bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-0SEzCkemOL0R1IOfjiayiYyt8BkqxwlmXBmFWMUNeG0BSo/XUh4xAF5ybf+Qr/4x" crossorigin="anonymous">
-  </head>
-  <body class="container-fluid">
-    <h1>
-      function test
-    </h1>
+    <!-- styles: required/bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-kCsv8pSAWtRge/+zcLDeqwoWhTQSUX2esQPYOsocgrg1eMj7T2wrTJP348T3mpBU" crossorigin="anonymous">
 
-    <p>she works!</p>
+    <!-- styles: fonts & icons -->
+    <link href="./styles/ionicons.css" rel="stylesheet">
+
+    <!-- styles: personal -->
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+
+  <!-- NOTE: having trouble deciding between container and container-fluid. container-fluid gives us more space for main content to sit side by side, but container looks better when text occurs in big blocks, so it doesn't flow quite so far across the screen. also note that right now container simply doesn't work with this many dropdown menus + search bar with button. -->
+  <body class="container-fluid">
+    <!-- BUG: between lg collapse point and about 20px from there, the menu dropdowns collapse in a weird way due to the size of the search bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- TODO: brand image? logo would be ideal, but maybe that's better off being larger below next to the h1 in header -->
+      <!-- <a href="./sample.html" class="navbar-brand">
+        <span class="icon ion-home" aria-label="home" title="Home"></span>
+      </a> -->
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Meetings
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Asiacrypt</a>
+              <a class="dropdown-item" href="#">Crypto</a>
+              <a class="dropdown-item" href="#">Eurocrypt</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">CHES</a>
+              <a class="dropdown-item" href="#">FSE</a>
+              <a class="dropdown-item" href="#">PKC</a>
+              <a class="dropdown-item" href="#">TCC</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Real World Crypto (RWC)</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Cryptology Schools</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">In cooperation with IACR</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Publications
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Access IACR Publications</a>
+              <a class="dropdown-item" href="#">Cryptology ePrint Archive</a>
+              <a class="dropdown-item" href="#">Journal of Cryptology</a>
+              <a class="dropdown-item" href="#">Transactions on Symmetric Cryptology</a>
+              <a class="dropdown-item" href="#">Museum of Historic Papers</a>
+              <a class="dropdown-item" href="#">Statistics</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Awards
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Fellows</a>
+              <a class="dropdown-item" href="#">Distinguished Lectures</a>
+              <a class="dropdown-item" href="#">Best Paper Awards</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              News
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">News Updates</a>
+              <a class="dropdown-item" href="#">IACR Elections</a>
+              <a class="dropdown-item" href="#">Petitions & Statements</a>
+              <a class="dropdown-item" href="#">Past Newsletters</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">CryptoDB</a>
+              <a class="dropdown-item" href="#">Calendar of Events</a>
+              <a class="dropdown-item" href="#">Book Reviews</a>
+              <a class="dropdown-item" href="#">PhD Database</a>
+              <a class="dropdown-item" href="#">Videos</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Jobs</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Members
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">How to Join</a>
+              <a class="dropdown-item" href="#">Update Info</a>
+              <a class="dropdown-item" href="#">Access IACR Publications</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Board of Directors</a>
+              <a class="dropdown-item" href="#">Committees</a>
+              <a class="dropdown-item" href="#">Documents</a>
+              <a class="dropdown-item" href="#">Privacy</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit">
+            <span class="icon ion-search" aria-label="search" title="Search"></span>
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="row" id="headerRow">
+      <!-- TODO/BUG: broken on smaller screens -->
+      <figure class="col-1 col-lg-2">
+        <img src="./img/iacr-logo.png" id="logo" alt="IACR logo, a dark blue circle cut into sections vetically and horizontally with the acronym inside and the full name circling the outside." />
+      </figure>
+      <header class="col-12 col-lg-10">
+        <h1>
+          International Association for Cryptologic Research
+        </h1>
+      </header>
+    </div>
+
+    <!-- <div class="row" id="iacr-content">
+      <main class="col-12"> -->
+        <!-- NOTE: normally this will be filled in dynamically with PHP/Python. in this case, I've styled the content by hand below, to show what mobile-friendliness for important pages such as this one can look like -->
+      <!-- </main>
+    </div> -->
+
+    <div class="row">
+      <section class="col-12">
+        <h2>
+          IACR Board of Directors 2018
+        </h2>
+        <p>
+          The <a href="/">bylaws</a> describe the composition of the board of directors. Its members are either elected by the membership or appointed by the board of directors. The numbers in parentheses give the terms of service in calendar years.
+        </p>
+        <p>
+          The steering committee representatives listed on the <a href="/">Committees and Special Roles</a> page participate as observers in the meetings of the board of directors.
+        </p>
+        <p>
+          If you are a member and wish to contact IACR regarding your membership or similar matter, you should contact the <a href="/">IACR membership services</a>.
+        </p>
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="col-12">
+        <h3>
+          Officers
+        </h3>
+        <p>
+          Officers and directors are elected for three-year terms.
+        </p>
+        <div class="row">
+          <div class="col-sm-6 bottomSpacing">
+            <a href="https://cachin.com/cc/">
+              <h4>Christian Cachin</h4>
+            </a>
+            <h5>President (2017-2019)</h5>
+            <address>
+              IBM Research - Zurich<br/>
+              Säumerstrasse 4<br/>
+              CH-8803 Rüschlikon<br/>
+              Switzerland<br/>
+              Tel: +41 44 724 8989
+            </address>
+            <a href="#">
+              email link here
+              <!-- TODO: create graphic of email address and icon below -->
+              <!-- <span class="icon ion-email" aria-label="email" title="Email whoever"></span> -->
+            </a>
+          </div>
+          <div class="col-sm-6 bottomSpacing">
+            <a href="http://seer-grog.net/">
+              <h4>Greg Rose</h4>
+            </a>
+            <h5>Vice President (2017-2019)</h5>
+            <address>
+              3234 North Star Dr<br/>
+              San Diego, CA 92117<br/>
+              USA<br/>
+              Tel: +1 619 890 8236
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 bottomSpacing">
+            <a href="http://research.microsoft.com/en-us/people/bal/">
+              <h4>Brian LaMacchia</h4>
+            </a>
+            <h5>Treasurer (2017-2019)</h5>
+            <address>
+              Microsoft Research<br/>
+              IACR-mail address:<br/>
+              IACR, 14150 NE 20th St. Ste F-1 #406<br />
+              Bellevue, WA 98007<br />
+              USA<br/>
+              Tel: +1 425 703 9906
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 bottomSpacing">
+            <a href="http://joppebos.com/">
+              <h4>Joppe Bos</h4>
+            </a>
+            <h5>Secretary (2017-2019)</h5>
+            <address>
+              NXP Semiconductors<br/>
+              Interleuvenlaan 80<br/>
+              3001, Leuven<br />
+              Belgium<br/>
+              Tel: +32 47 977 8631
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <hr />
+      </div>
+    </div>
+
+    <div class="row">
+      <section class="col-12">
+        <h3>
+          Directors
+        </h3>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://www.di.ens.fr/~mabdalla/">
+              <h4>Michel Abdalla</h4>
+            </a>
+            <h5>Director (2016-2018)</h5>
+            <address>
+              Ecole Normale Supérieure<br/>
+              Computer Science Department<br/>
+              45, rue d'Ulm<br/>
+              75230 Paris Cedex 05<br />
+              France<br/>
+              Tel: +33 1 4432 2113<br/>
+              Fax: +33 1 4432 2151
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://www005.upp.so-net.ne.jp/nanacov/index.html">
+              <h4>Masayuki Abe</h4>
+            </a>
+            <h5>Director (2018-2020)</h5>
+            <address>
+              NTT Secure Platform Laboratories<br/>
+              3-9-11 Midori-cho<br/>
+              Musashino-shi, Tokyo 180-8585<br />
+              Japan<br/>
+              Tel: +81 0422 59 3631
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://research.microsoft.com/en-us/people/bal/">
+              <h4>Brian LaMacchia</h4>
+            </a>
+            <h5>Director (2016-2018)</h5>
+            <address>
+              Microsoft Research<br/>
+              IACR-related mailing address:<br/>
+              IACR, 14150 NE 20th St. Ste F-1 #406<br />
+              Bellevue, WA 98007<br />
+              USA<br/>
+              Tel: +1 425 703 9906
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://alum.mit.edu/www/shaih">
+              <h4>Shai Halevi</h4>
+            </a>
+            <h5>Director (2017-2019)</h5>
+            <address>
+              IBM T. J. Watson Research Center<br/>
+              1101 Kitchawan Road, Route 134<br/>
+              Yorktown Heights, NY 10598<br />
+              USA<br/>
+              Tel: +1 914 945 2706
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="https://tlepoint.github.io/">
+              <h4>Tancrède Lepoint</h4>
+            </a>
+            <h5>Director (2018-2020)</h5>
+            <address>
+              SRI International<br/>
+              60 E 42nd St, Suite 1520<br/>
+              New York, NY<br />
+              USA
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://cs.brown.edu/~anna/">
+              <h4>Anna Lysyanskaya</h4>
+            </a>
+            <h5>Director (2016-2018)</h5>
+            <address>
+              Computer Science Department<br/>
+              Brown University<br/>
+              Providence, RI 02912<br />
+              USA<br/>
+              Tel: +1 401 863 7600<br />
+              Fax: +1 401 863 7657
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://www.esat.kuleuven.ac.be/%7Epreneel">
+              <h4>Bart Preneel</h4>
+            </a>
+            <h5>Director (2017-2019)</h5>
+            <address>
+              KU Leuven<br/>
+              Dept. Electrical Engineering-ESAT/COSIC<br/>
+              Kasteelpark Arenberg 10 Bus 2452, B-3001<br />
+              Leuven<br />
+              Belgium<br/>
+              Tel: +32 16 32 11 48<br />
+              Fax: +32 16 32 19 86
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://web.cs.ucdavis.edu/~rogaway/">
+              <h4>Phillip Rogaway</h4>
+            </a>
+            <h5>Director (2016-2018)</h5>
+            <address>
+              Department of Computer Science<br/>
+              Kemper Hall of Engineering, #3009<br/>
+              One Shields Avenue<br />
+              University of California<br />
+              Davis, CA 95616-8562<br />
+              USA<br />
+              Tel: +1 530 752 7583
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://perso.uclouvain.be/fstandae/">
+              <h4>Francois-Xavier Standaert</h4>
+            </a>
+            <h5>Director (2017-2019)</h5>
+            <address>
+              UCL Crypto Group<br/>
+              Place du Levant, 3<br/>
+              B-1348 Louvain-la-Neuve<br />
+              Belgium<br/>
+              Tel: +32 10 47 25 65
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://www.cs.columbia.edu/~moti/">
+              <h4>Moti Yung</h4>
+            </a>
+            <h5>Director (2018-2020)</h5>
+            <address>
+              Google Inc. and Columbia University<br/>
+              Computer Science Department<br/>
+              Columbia University<br />
+              New York, NY 10027<br />
+              USA<br/>
+              Tel: +1 212 939 7022
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="row">
+      <section class="col-12">
+        <h3>
+          Other Board Members
+        </h3>
+        <p>
+          The general chairs of the IACR general conferences (Crypto, Eurocrypt, Asiacrypt) are appointed as members of the board in the year before the conference; their terms of service expire at the end of the calendar year of the conference.
+        </p>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://www.cs.haifa.ac.il/~orrd/">
+              <h4>Orr Dunkelman</h4>
+            </a>
+            <h5>Eurocrypt 2018 General Chair (2017-2018)</h5>
+            <address>
+              Computer Science Department<br/>
+              University of Haifa<br/>
+              31905, Haifa<br/>
+              Israel<br/>
+              Tel: +972 4 828 8447<br/>
+              Fax: +972 4 824 9331
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://www.cryptoplexity.de">
+              <h4>Marc Fischlin</h4>
+            </a>
+            <h5>Eurocrypt 2019 General Chair (2018-2019)</h5>
+            <address>
+              Computer Science<br/>
+              TU Darmstadt<br/>
+              Mornewegstr. 32<br/>
+              D-64293 Darmstadt<br/>
+              Germany
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="/">
+              <h4>Mitsuru Matsui</h4>
+            </a>
+            <h5>Asiacrypt 2019 General Chair (2018-2019)</h5>
+            <address>
+              Mitsubishi Electric<br/>
+              5-1-1 Ofuna, Kamakura<br/>
+              Kanagawa 2478501<br/>
+              Japan<br/>
+              Tel: +81 467 41 2575
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://www.isg.rhul.ac.uk/~kp/">
+              <h4>Kenny Paterson</h4>
+            </a>
+            <h5>Editor-in-Chief, <a href="/">Journal of Cryptology</a> (2017-2019)</h5>
+            <address>
+              Information Security Group<br/>
+              Royal Holloway, University of London<br/>
+              Egham, Surrey TW20 0EX<br/>
+              United Kingdom<br/>
+              Tel: +44 1784 414393<br />
+              Fax: +44 1784 430766
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://staff.qut.edu.au/staff/pieprzyj/">
+              <h4>Josef Pieprzyk</h4>
+            </a>
+            <h5>Asiacrypt 2018 General Chair (2017-2018)</h5>
+            <address>
+              School of Electrical Engineering and Computer Science<br/>
+              Queensland Universilty of Technology<br/>
+              GPO Box 2434<br/>
+              Brisbane QLD 4001<br/>
+              Australia<br />
+              Tel: +61 7 3138 9549
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-talr">
+              <h4>Tal Rabin</h4>
+            </a>
+            <h5>Crypto 2018 General Chair (2017-2018)</h5>
+            <address>
+              IBM T. J. Watson Research Center<br/>
+              1101 Kitchawan Road, Route 134<br/>
+              Yorktown Heights, NY 10598<br/>
+              USA<br/>
+              Tel: +1 914 945 2999
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="http://eecs.oregonstate.edu/~rosulekm">
+              <h4>Mike Rosulek</h4>
+            </a>
+            <h5>Communications Secretary (2017--2020)</h5>
+            <address>
+              School of Electrical Engineering &amp; Computer Science<br/>
+              Oregon State University<br/>
+              Corvallis, OR<br/>
+              USA<br/>
+              Tel: +1 541 737 3617
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="https://www.douglas.stebila.ca/">
+              <h4>Douglas Stebila</h4>
+            </a>
+            <h5>Membership Secretary (2017-2020)</h5>
+            <address>
+              McMaster University<br/>
+              1280 Main Street West<br/>
+              Hamilton, Ontario, L8S 4K1<br/>
+              Canada<br />
+              Tel: +1 905-525-9140, ext. 21186
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 bottomSpacing">
+            <a href="https://www.cs.rochester.edu/u/muthuv">
+              <h4>Muthu Venkitasubramaniam</h4>
+            </a>
+            <h5>Crypto 2019 General Chair (2018-2019)</h5>
+            <address>
+              Cornell Tech, 2 W Loop Rd<br />
+              New York, NY 10044<br />
+              USA
+            </address>
+            <a href="#">
+              email link here
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="row">
+      <footer class="col-12 text-center">
+        <!-- NOTE: filled in via jQuery. see ./scripts/main.js -->
+      </footer>
+    </div>
 
     <!-- scripts: required/bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- scripts: personal -->
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
