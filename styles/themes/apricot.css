@@ -1,0 +1,47 @@
+/*** Color palette adapted from: https://coolors.co/eeb159-3a1a94-ee8959-bd4a13-f6c0a6 ***/
+
+
+/*** General ***/
+body {
+  background-color: rgba(246, 206, 162, 0.2);
+  color: #17204F;
+}
+
+a {
+  color: #BD4A13;
+}
+
+a:hover {
+  color: #273785;
+  text-decoration-color: #273785;
+}
+
+h1, h2, h3 {
+  color: #273785;
+}
+
+h4, h5, h6 {
+  color: #17204F;
+}
+
+
+/*** Nav ***/
+nav.navbar-nav {
+  background-color: rgba(246, 206, 162, 0.2);
+}
+
+a.nav-link {
+  color: #BD4A13 !important;
+}
+
+div.dropdown-menu {
+  background-color: #273785;
+}
+
+a.dropdown-item {
+  color: #F6CEA2;
+}
+
+a.dropdown-item:hover {
+  background-color: #BD4A13;
+}
