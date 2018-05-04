@@ -3,12 +3,12 @@
 
 /*** General ***/
 body {
-  background-color: rgba(246, 206, 162, 0.2);
+  background-color: rgba(253, 243, 232, 0.5);
   color: #17204F;
 }
 
 a {
-  color: #BD4A13;
+  color: #A75E11;
 }
 
 a:hover {
@@ -27,11 +27,11 @@ h4, h5, h6 {
 
 /*** Nav ***/
 nav.navbar-nav {
-  background-color: rgba(246, 206, 162, 0.2);
+  background-color: rgba(253, 243, 232, 0.5);
 }
 
 a.nav-link {
-  color: #BD4A13 !important;
+  color: #A75E11 !important;
 }
 
 div.dropdown-menu {
