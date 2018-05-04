@@ -7,6 +7,7 @@ body {
   color: #17204F;
 }
 
+/* NOTE: this should be consistent with the primary colors (which in this case are blue OR green) */
 a {
   color: #A62D5B;
 }
@@ -20,6 +21,7 @@ h1, h2, h3 {
   color: #273785;
 }
 
+/* NOTE: Kevin didn't like the different color for headings. suggests different weight as a method of differentiation */
 h4, h5, h6 {
   color: #335C0A;
 }
