@@ -19,14 +19,24 @@
 
   <!-- NOTE: having trouble deciding between container and container-fluid. container-fluid gives us more space for main content to sit side by side, but container looks better when text occurs in big blocks, so it doesn't flow quite so far across the screen. also note that right now container simply doesn't work with this many dropdown menus + search bar with button. -->
   <body class="container-fluid">
-    <!-- BUG: between lg collapse point and about 20px from there, the menu dropdowns collapse in a weird way due to the size of the search bar -->
-    <!-- NOTE: must remove class bg-light from nav in order to use color themes -->
+
+    <!-- top search bar -->
+    <div class="row">
+      <div class="col d-none d-sm-block" id="topSearch">
+        <form class="form-inline my-2 my-lg-0 float-right">
+          <input type="search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search" />
+          <button type="submit" class="btn btn-sm btn-outline-secondary my-2 my-sm-0">
+            <span class="icon ion-search" aria-label="search" title="Search"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light">
-      <!-- TODO: brand image? logo would be ideal, but maybe that's better off being larger below next to the h1 in header -->
-      <!-- <a href="./sample.html" class="navbar-brand">
-        <span class="icon ion-home" aria-label="home" title="Home"></span>
-      </a> -->
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a href="/" class="navbar-brand d-none d-sm-block">
+        <img src="./img/iacr-logo.png" id="logo" alt="IACR logo, a dark blue circle cut into sections vetically and horizontally with the acronym inside and the full name circling the outside." />
+      </a>
+      <button type="button" class="navbar-toggler float-right" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation" name="button">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -127,20 +137,14 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit">
-            <span class="icon ion-search" aria-label="search" title="Search"></span>
-          </button>
-        </form>
       </div>
     </nav>
 
     <div class="row" id="headerRow">
       <!-- TODO/BUG: broken on smaller screens -->
-      <figure class="col-1 col-lg-2">
+      <!-- <figure class="col-1 col-lg-2">
         <img src="./img/iacr-logo.png" id="logo" alt="IACR logo, a dark blue circle cut into sections vetically and horizontally with the acronym inside and the full name circling the outside." />
-      </figure>
+      </figure> -->
       <header class="col-12 col-lg-10">
         <h1>
           International Association for Cryptologic Research
