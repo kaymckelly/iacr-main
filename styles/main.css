@@ -31,31 +31,29 @@ h5 {
 }
 
 
-/*** Nav ***/
-a.navbar-brand {
-  font-size: 1.6em;
-}
 
+/*** Nav ***/
 #topSearch {
-  margin: 10px 10px 0 0;
+  margin-top: 20px;
+  margin-bottom: -20px;
 }
 
 #logo {
-  margin-top: -1em;
-  margin-right: -5em;
+  max-width: 75%;
+  height: auto;
 }
 
 .navbar-toggler {
     z-index: 1;
 }
 
-/* Making breakpoint styling without using a preprocessor like Sass, because that adds an unnecessary layer of obfuscation when long-term maintenance may be required and you never know that the next person will actually know Sass. What this does is add the margin-left to the navbar contents. but only when said content isn't collapsed to the hamburger. */
+/* Using breakpoint styling rather than a preprocessor like Sass, because that adds an unnecessary layer of obfuscation when long-term maintenance may be required and you never know that the next person will actually know Sass. What this does is add the margin-left to the navbar contents, but only when said content isn't collapsed to the hamburger. */
 @media only screen and (min-width: 992px) {
-  div#navContent {
-    margin-left: 6em;
-    /* Alternative way of doing this spacing: 100px for margin-left instead of using ems. */
+  #navContent {
+    margin-left: -30px;
   }
 }
+
 
 
 /*** Header ***/
@@ -63,14 +61,10 @@ a.navbar-brand {
   margin-top: 20px;
 }
 
-/* TODO: broken on mobile view */
-#logo {
-  max-width: 75%;
-}
-
 header {
   margin: auto;
 }
+
 
 
 /*** Page-specific: board of directors ***/
