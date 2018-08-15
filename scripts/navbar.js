@@ -1,5 +1,8 @@
 $(document).ready(function() {
-  console.log('working')
+  // hide input to begin with
+  $('#navSearch').hide();
+
+  // show input when navSearchBtn is clicked
 });
 
 // // from https://bootsnipp.com/snippets/featured/even-simpler-navbar-search
