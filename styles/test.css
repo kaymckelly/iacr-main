@@ -1,0 +1,15 @@
+div#topHeader {
+  background: linear-gradient(#cfdbff, #ffffff);
+  /* TODO: too tall in some places, too short in others */
+  height: 9em;
+}
+
+main {
+  /* TODO: off on sizing on mobile */
+  padding-top: 60px;
+}
+
+img#logo {
+  /* TODO: still needs to be perfected */
+  max-height: 120px;
+}
