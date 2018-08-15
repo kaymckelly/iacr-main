@@ -1,24 +1,26 @@
-body {
+/* body {
   padding: 60px 0px;
-}
+} */
 
 .navbar-collapse {
-  position: relative;
-  padding-top: 30px !important;
-  max-height: 270px;
+  /* position: relative; */
+  /* padding-top: 30px !important;
+  max-height: 270px; */
 }
 
 .navbar-collapse form[role="search"] {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  /* position: absolute; */
+  /* top: 0px;
+  right: 0px; */
   width: 100%;
-  padding: 0px;
-  margin: 0px;
+  /* padding: 0px;
+  margin: 0px; */
   z-index: 0;
 }
 
-.navbar-collapse form[role="search"] button, .navbar-collapse form[role="search"] input {
+/* .navbar-collapse form[role="search"] button,  */
+
+.navbar-collapse form[role="search"] input {
   padding: 8px 12px;
   border-radius: 0px;
   border-width: 0px;
