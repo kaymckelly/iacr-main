@@ -104,17 +104,18 @@
           </li>
 
           <!-- search bar -->
+          <!-- NOTE: drawing inspiration from https://bootsnipp.com/snippets/featured/even-simpler-navbar-search -->
           <!-- <li class="nav-item"> -->
             <form class="navbar-form" role="search">
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search...">
-                <span class="input-group-btn">
+                <!-- <span class="input-group-btn"> -->
                 <button type="submit" class="btn btn-outline-primary">
                   <!-- <img src="img/outline-search-24px.svg"> -->
-                  <ion-icon name="search" size="medium"></ion-icon>
+                  <ion-icon name="search"></ion-icon>
                   <span class="sr-only">Search...</span>
                 </button>
-                </span>
+                <!-- </span> -->
               </div>
             </form>
           <!-- </li> -->
@@ -343,6 +344,9 @@
   <!-- icons! -->
   <!-- NOTE: linking from exterior source for now until we can figure how to install it locally/have it work that way -->
   <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+
+  <!-- for search and other navbar-related items -->
+  <script src="./scripts/navbar.js"></script>
 
 </body>
 
