@@ -1,12 +1,5 @@
 $(document).ready(function() {
-  // hide input to begin with
-  $('#navSearch').hide();
-
-  // show input when navSearchBtn is clicked
-  // TODO: doesn't stay open once clicked
-  if ($('#navSearchBtn').click(function() {
-    $('#navSearch').show();
-  }));
+  
 });
 
 // // from https://bootsnipp.com/snippets/featured/even-simpler-navbar-search
