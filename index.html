@@ -14,13 +14,11 @@
   <link rel="stylesheet" href="./styles/iacr.css">
 </head>
 
-<!-- TODO: move all styles to stylesheet (assigned to Kay) -->
-
-<body style="background: linear-gradient(#c3d9fd 0%, #f6f9fe 25%, #f6f9fe 100%);">
+<body>
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
     <div class="container">
       <a href="https://iacr.org/" class="d-none d-lg-block">
-        <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid" style="max-height: 100px;" alt="IACR logo" />
+        <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid logo" alt="IACR logo" />
       </a>
       <h1 id="iacrbrand" class="d-lg-none font-weight-bold display-1">
         IACR
@@ -32,11 +30,12 @@
       <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse flex-column align-items-start ml-lg-2 ml-0" id="navbarCollapse">
         <div id="iacrname" class="navbar-nav d-none d-lg-block pl-2">
           <h2>International Association for Cryptologic Research</h2>
         </div>
-        <!-- NOTE: by removing classes nav-fill w-100 menu items are no longer center aligned when navbar collapsed to hamburger. also means that at expanded sizes the links are slightly closer together than they used to be. -->
+
         <ul class="navbar-nav pt-lg-2">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
@@ -449,10 +448,6 @@
   <!-- icons! -->
   <!-- NOTE: linking from exterior source for now until we can figure how to install it locally/have it work that way -->
   <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
-
-  <!-- for search and other navbar-related items -->
-  <script src="./scripts/navbar.js"></script>
-
 </body>
 
 </html>
