@@ -5,11 +5,11 @@
     <style type="text/css"><![CDATA[
     .ches {
     font: bold 30px sans-serif;
-    fill: blue;
+    fill: #102a83; /* pale teal */
     }
     ]]></style>
   </defs>
-  <rect x="0" y="0" height="100" width="100" stroke="blue" fill="white" stroke-width="2"/>
+  <rect x="0" y="0" height="100" width="100" stroke="none" fill="#b2d8d8" stroke-width="2"/>
   <text x="50" y="60" text-anchor="middle" class="ches">CHES</text>
 </svg>
 
