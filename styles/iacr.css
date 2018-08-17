@@ -6,6 +6,11 @@ img.logo {
   max-height: 100px;
 }
 
+h1#iacrbrand {
+  margin-top:10px;
+  font-size: 2rem !important;
+}
+
 .masonry .card {
   margin-bottom: 0.75rem;
 }
