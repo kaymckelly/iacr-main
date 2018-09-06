@@ -1,0 +1,52 @@
+/* Color scheme: https://coolors.co/fcf3b7-f0d40c-370d82-3d014a-1e044d */
+
+
+/*** General ***/
+@font-face {
+  font-family: 'roboto';
+  src: local('Roboto-Regular') url(./fonts/Roboto/Roboto-Regular.ttf) fomat('truetype');
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  background-color: #FEFDF8;
+  color: #1E044D;
+}
+
+main {
+  background-color: #FEFDF8;
+}
+
+
+/*** Header & Nav ***/
+img#logo {
+  max-height: 7em;
+  width: auto;
+}
+
+nav {
+  background-color: #3D014A;
+}
+
+/* NOTE: This is modifying bootstrap's classes, which is dangerous and generally frowned upon. Consider this a quickfix, not a way of life. */
+a.nav-link, a.dropdown-item {
+  color: #EDE8F4 !important;
+}
+
+ion-icon {
+  color: #EDE8F4;
+}
+
+
+/*** Home Page ***/
+/* NOTE: when uncommented, these give a bookmark effect to the date overlays on events */
+/* div.card-img-overlay {
+  width: 11em;
+}
+p.card-text {
+  width: 100%;
+} */
+
+h3.cardHeading {
+  background-color: #F0D40C;
+}
