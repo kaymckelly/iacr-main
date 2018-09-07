@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap (theme) -->
+    <!-- NOTE: other possible theme options are Slate, Pulse, Simplex, Darkly, and Cyborg -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/solar/bootstrap.min.css" rel="stylesheet" integrity="sha384-h5kYMLFNMyLXdVYK3MKZeOfXMdU6XqV1do5KyjoYZGlW1FJOj+5qr9u1d7NNCH4N" crossorigin="anonymous">
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="./styles/purple.css">
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+    <title>
+      IACR
+    </title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <a href="https://iacr.org/" class="d-none d-lg-inline">
+        <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid p-2" id="logo" alt="IACR logo" />
+      </a>
+      <h1 class="mt-4 mb-2 d-none d-lg-inline">
+        International Association for Cryptologic Research
+      </h1>
+      <h1 class="my-2 d-lg-none">
+        IACR
+      </h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4" role="navigation">
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- NOTE: invaluable for answering the justified navbar question: https://stackoverflow.com/questions/45880091/justifying-a-navbar-in-bootstrap-4 -->
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav w-100 nav-justified">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+            <div class="dropdown-menu" aria-labelledby="eventsDropdownLink">
+              <a class="dropdown-item" href="#">Asiacrypt</a>
+              <a class="dropdown-item" href="#">Crypto</a>
+              <a class="dropdown-item" href="#">Eurocrypt</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">CHES</a>
+              <a class="dropdown-item" href="#">FSE</a>
+              <a class="dropdown-item" href="#">PKC</a>
+              <a class="dropdown-item" href="#">TCC</a>
+              <a class="dropdown-item" href="#">RWC</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Cryptology Schools</a>
+              <a class="dropdown-item" href="#">in cooperation with IACR</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/publications" id="pubsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications</a>
+            <div class="dropdown-menu" aria-labelledby="pubsDropdownLink">
+              <a class="dropdown-item" href="#">Journal of Cryptology</a>
+              <a class="dropdown-item" href="#">Transactions on Symmetric Cryptology</a>
+              <a class="dropdown-item" href="#">Transactions on CHES</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://eprint.iacr.org">Cryptology ePrint Archive</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.iacr.org/museum/">Museum of Historic Papers</a>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/statistics.html">Publication Statistics</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="newsDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            News
+          </a>
+            <div class="dropdown-menu" aria-labelledby="newsDropdownLink">
+              <a class="dropdown-item" href="#">News Updates</a>
+              <a class="dropdown-item" href="#">Elections</a>
+              <a class="dropdown-item" href="#">Petitions &amp; Statements</a>
+              <a class="dropdown-item" href="#">Newsletter</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdownLink">
+              <a class="dropdown-item" href="https://iacr.org/jobs/">Jobs</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">CryptoDB</a>
+              <a class="dropdown-item" href="#">Calendar of Events</a>
+              <a class="dropdown-item" href="#">Book Reviews</a>
+              <a class="dropdown-item" href="#">PhD Database</a>
+              <a class="dropdown-item" href="#">Videos</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="membersDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Members
+            </a>
+            <div class="dropdown-menu" aria-labelledby="membersDropdownLink">
+              <a class="dropdown-item" href="#">How to Join</a>
+              <a class="dropdown-item" href="#">Update Membership Information</a>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
+              <a class="dropdown-item" href="#">Subscribe to News Updates</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+            <div class="dropdown-menu" aria-labelledby="aboutDropdownLink">
+              <a class="dropdown-item" href="#">Board of Directors</a>
+              <a class="dropdown-item" href="#">Committees</a>
+              <a class="dropdown-item" href="#">Documents</a>
+              <a class="dropdown-item" href="#">Privacy Policy</a>
+            </div>
+          </li>
+        </ul>
+        <!-- NOTE: from https://stackoverflow.com/questions/50316145/bootstrap-4-full-width-search-bar-without-navigation-break, specifically https://codepen.io/anon/pen/Vxdzaa -->
+        <form class="mx-2 my-auto d-inline flex-grow-1">
+          <div class="input-group">
+            <input type="text" class="form-control border border-right-0" placeholder="Search...">
+            <span class="input-group-append">
+              <button class="btn btn-outline-secondary border border-left-0" type="button">
+                <ion-icon name="search" class="align-middle"></ion-icon>
+              </button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section class="row">
+        <header class="col-12">
+          <p class="lead text-justify">
+            The International Association for Cryptologic Research (IACR) is a non-profit scientific organization whose purpose is to further research in cryptology and related fields. Cryptology is the science and practice of designing computation and communication systems which are secure in the presence of adversaries.
+          </p>
+        </header>
+      </section>
+
+      <section class="row">
+        <article class="col-12 col-md-7">
+          <h3 class="cardHeading rounded p-2">
+            Events
+          </h3>
+          <h4 class="mt-3">
+            Upcoming Conferences & Workshops
+          </h4>
+          <div class="card-deck">
+            <div class="card text-white">
+              <div class="card-header bg-white">
+                <h5 class="card-title text-center text-dark mb-0">
+                  CHES 2018
+                </h5>
+              </div>
+              <a href="https://ches.iacr.org/2018/">
+                <img src="../img/ches.svg" class="card-img" alt="" />
+              </a>
+              <div class="card-img-overlay d-flex align-items-end justify-content-center">
+                <p class="card-text text-center bg-dark p-1 px-3">
+                  Sept 9-12
+                </p>
+              </div>
+            </div>
+            <div class="card text-white">
+              <div class="card-header bg-white">
+                <h5 class="card-title text-center text-dark mb-0">
+                  TCC 2018
+                </h5>
+              </div>
+              <a href="https://tcc.iacr.org/2018/">
+                <img src="../img/tcc.svg" class="card-img" alt="" />
+              </a>
+              <div class="card-img-overlay d-flex align-items-end justify-content-center">
+                <p class="card-text text-center bg-dark p-1 px-3">
+                  Nov 11-14
+                </p>
+              </div>
+            </div>
+            <div class="card text-light">
+              <div class="card-header bg-white">
+                <h5 class="card-title text-center text-dark mb-0">
+                  Asiacrypt 2018
+                </h5>
+              </div>
+              <a href="https://asiacrypt.iacr.org/2018/">
+                <img src="../img/asia_pacific.png" class="card-img" alt="" />
+              </a>
+              <div class="card-img-overlay d-flex align-items-end justify-content-center">
+                <p class="card-text text-center bg-dark p-1 px-3">
+                  Dec 2-6
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="mt-4">
+            Upcoming Submission Deadlines
+          </h4>
+          <div class="card-deck">
+            <div class="card text-white">
+              <div class="card-header bg-white">
+                <h5 class="card-title text-center text-dark mb-0">
+                  RWC 2019
+                </h5>
+              </div>
+              <a href="https://rwc.iacr.org/2019/">
+                <img src="../img/rwc.png" class="card-img" alt="" />
+              </a>
+              <div class="card-img-overlay d-flex align-items-end justify-content-center">
+                <p class="card-text text-center bg-dark p-1 px-3">
+                  Oct 1 2018
+                </p>
+              </div>
+            </div>
+
+            <div class="card text-white">
+              <div class="card-header bg-white">
+                <h5 class="card-title text-center text-dark mb-0">
+                  Eurocrypt 2019
+                </h5>
+              </div>
+              <a href="https://eurocrypt.iacr.org/2019/">
+                <img src="../img/europe.png" class="card-img" alt="" />
+              </a>
+              <div class="card-img-overlay d-flex align-items-end justify-content-center">
+                <p class="card-text text-center bg-dark p-1 px-3">
+                  Oct 4 2018
+                </p>
+              </div>
+            </div>
+
+            <div class="card text-white">
+              <div class="card-header bg-white">
+                <h5 class="card-title text-center text-dark mb-0">
+                  PKC 2019
+                </h5>
+              </div>
+              <a href="https://pkc.iacr.org/2019/">
+                <img src="../img/pkc.svg" class="card-img" alt="" />
+              </a>
+              <div class="card-img-overlay d-flex align-items-end justify-content-center">
+                <p class="card-text text-center bg-dark p-1 px-2">
+                  Oct 12 2018
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- TODO: maybe center? or experiment with footer and link -->
+          <a href="https://www.iacr.org/events/list" class="btn btn-dark my-3">
+            See all events
+          </a>
+        </article>
+
+        <article class="col-12 col-md-5">
+          <h3 class="cardHeading p-2 rounded">
+            News
+          </h3>
+          <p>
+            PKC: <a href="http://pkc.iacr.org/2019">PKC 2019: Public Key Cryptography</a><br />
+            <i>Beijing, China, 14 April - 17 April 2019</i>
+          </p>
+          <p>
+            ePrint Report: <a href="https://eprint.iacr.org/2018/733">Threshold Partially-Oblivious PRFs with Applications to Key Management</a><br />
+            <i>Stanislaw Jarecki, Hugo Krawczyk, Jason Resch</i>
+          </p>
+          <p>
+            ePrint Report: <a href="https://eprint.iacr.org/2018/732">Data Oblivious Genome Variants Search on Intel SGX</a><br />
+            <i>Avradip Mandal, John C. Mitchell, Hart Montgomery, Arnab Roy</i>
+          </p>
+          <p>
+            ePrint Report: <a href="https://eprint.iacr.org/2018/731">An Optimal Distributed Discrete Log Protocol with Applications to Homomorphic Secret Sharing</a><br />
+            <i>Itai Dinur, Nathan Keller, Ohad Klein</i>
+          </p>
+          <p>
+            ePrint Report: <a href="https://eprint.iacr.org/2018/730">Supersingular Isogeny Diffie-Hellman Authenticated Key Exchange</a><br />
+            <i>Atsushi Fujioka, Katsuyuki Takashima, Shintaro Terada, Kazuki Yoneyama</i>
+          </p>
+          <a href="https://www.iacr.org/news/" class="btn btn-dark">
+            See all news
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <!-- Required for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+  </body>
+</html>
