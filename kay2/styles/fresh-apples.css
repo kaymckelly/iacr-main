@@ -10,12 +10,20 @@
 
 body {
   font-family: 'roboto', sans-serif;
-  background-color: #D8F0D8;
+  background-color: rgba(216, 240, 216, 0.5);
   color: #091748;
 }
 
 main {
-  background-color: #D8F0D8;
+  background-color: #EBF7EB;
+}
+
+a {
+  color: #307830;
+}
+
+a:hover {
+  color: #600030;
 }
 
 
@@ -31,11 +39,15 @@ nav, div.dropdown-menu {
 
 /* NOTE: This is modifying bootstrap's classes, which is dangerous and generally frowned upon. Consider this a quickfix, not a way of life. */
 a.nav-link, a.dropdown-item {
-  color: #D8F0D8 !important;
+  color: #EBF7EB !important;
 }
 
 ion-icon {
-  color: #D8F0D8;
+  color: #EBF7EB;
+}
+
+div.input-group input {
+  background-color: #EBF7EB;
 }
 
 
@@ -49,10 +61,10 @@ p.card-text {
 } */
 
 h3.cardHeading {
-  background-color: #CC9F3B;
-  color: #D8F0D8;
+  background-color: #78A860;
+  color: #EBF7EB;
 }
 
 p.card-text {
-  background-color: #046577;
+  background-color: #600030;
 }
