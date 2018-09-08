@@ -1,0 +1,10 @@
+h5.footerTitle {
+  padding-left: 15px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  /* margin-bottom: 20px; */
+}
+
+footer ul.nav {
+  padding-left: 5px;
+}
