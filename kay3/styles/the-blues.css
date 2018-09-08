@@ -1,4 +1,4 @@
-/* Color scheme: https://coolors.co/fefefe-2292a4-102a83-180060-000060, original at http://www.colourlovers.com/palette/1052745/Ophelias_Waters?sAC=1 */
+/* Color scheme: https://coolors.co/340a90-110b9a-102a83-0b519a-0a6f90 */
 
 /* Official IACR logo color is #102A83 until further notice */
 
@@ -10,9 +10,10 @@
 
 body {
   font-family: 'roboto', sans-serif;
-  background-color: #EFFEFF;
+  background-color: #FEFEFE;
   /* F2FFF0 - custom white-gray
-  F8F8FF - ghost white */
+  F8F8FF - ghost white
+  EFFEFF - pale blue (fade out/transparency to make viable) */
   color: #091748;
 }
 
