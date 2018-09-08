@@ -1,0 +1,71 @@
+/* Color scheme: https://coolors.co/d8f0d8-78a860-102a83-600030-307830, originally http://www.colourlovers.com/palette/656827/fresh_apples?sAC=1 */
+
+/* Official IACR logo color is #102A83 until further notice */
+
+/*** General ***/
+@font-face {
+  font-family: 'roboto';
+  src: local('Roboto-Regular') url(./fonts/Roboto/Roboto-Regular.ttf) fomat('truetype');
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  background-color: #fefefe;
+  /* rgba(216, 240, 216, 0.5) */
+  color: #091748;
+}
+
+main {
+  background-color: #f0f0f0;
+}
+
+a {
+  color: #307830;
+}
+
+a:hover {
+  color: #600030;
+}
+
+
+/*** Header & Nav ***/
+img#logo {
+  max-height: 7em;
+  width: auto;
+}
+
+nav, div.dropdown-menu {
+  background-color: #600030;
+}
+
+/* NOTE: This is modifying bootstrap's classes, which is dangerous and generally frowned upon. Consider this a quickfix, not a way of life. */
+a.nav-link, a.dropdown-item {
+  color: #EBF7EB !important;
+}
+
+ion-icon {
+  color: #EBF7EB;
+}
+
+div.input-group input {
+  background-color: #EBF7EB;
+}
+
+
+/*** Home Page ***/
+/* NOTE: when uncommented, these give a bookmark effect to the date overlays on events */
+/* div.card-img-overlay {
+  width: 11em;
+}
+p.card-text {
+  width: 100%;
+} */
+
+h3.cardHeading {
+  background-color: #78A860;
+  color: #EBF7EB;
+}
+
+p.card-text {
+  background-color: #600030;
+}
