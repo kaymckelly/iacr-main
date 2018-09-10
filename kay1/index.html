@@ -10,12 +10,22 @@
 
     <!-- Custom style -->
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="themes.css">
     <title>
       IACR
     </title>
   </head>
-  <body>
-    <header class="container-fluid">
+  <body class="default-body">
+  <div class="dropdown" id="theme-menu">
+    <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Choose a color scheme
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#" onclick='setTheme("default")'>Purple</a>
+      <a class="dropdown-item" href="#" onclick='setTheme("green")'>More green</a>
+    </div>
+  </div>
+  <header id="topbar" class="container-fluid default-topbar">
       <a href="https://iacr.org/" class="d-none d-lg-inline">
         <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid p-2" id="logo" alt="IACR logo" />
       </a>
@@ -27,7 +37,7 @@
       </h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4" role="navigation">
+    <nav id="menubar" class="navbar navbar-expand-lg default-menubar mb-4" role="navigation">
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -129,7 +139,7 @@
       </div>
     </nav>
 
-    <main class="container">
+    <main id="main" class="container default-main">
       <section class="row">
         <header class="col-12">
           <p class="lead text-justify">
@@ -140,7 +150,7 @@
 
       <section class="row">
         <article class="col-12 col-md-7">
-          <h3 class="cardHeading rounded p-2 bg-success">
+          <h3 class="rounded p-2 default-card-header">
             Events
           </h3>
           <h4 class="mt-3">
@@ -254,7 +264,7 @@
         </article>
 
         <article class="col-12 col-md-5">
-          <h3 class="cardHeading p-2 rounded bg-success">
+          <h3 class="default-card-header p-2 rounded">
             News
           </h3>
           <p>
@@ -291,5 +301,6 @@
 
     <!-- Icons -->
     <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+  <script src="themes.js"></script>
   </body>
 </html>
