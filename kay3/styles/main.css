@@ -1,23 +1,41 @@
-footer {
-  /* same color as navbar (#0b519a), with added transparency */
-  background-color: rgba(11, 81, 154, 0.6);
+/* Color scheme: https://coolors.co/fefefe-d3e0bf-618e15-102a83-600030, originally http://www.colourlovers.com/palette/656827/fresh_apples?sAC=1 */
+
+/* Official IACR logo color is #102A83 until further notice */
+
+
+/*** General ***/
+@font-face {
+  font-family: 'roboto';
+  src: local('Roboto-Regular') url(./fonts/Roboto/Roboto-Regular.ttf) fomat('truetype');
 }
+
+body {
+  font-family: 'roboto', sans-serif;
+}
+
+
+/*** Header & Nav ***/
+img#logo {
+  max-height: 7em;
+  width: auto;
+}
+
+/*** Home Page ***/
+/* NOTE: when uncommented, these give a bookmark effect to the date overlays on events */
+/* div.card-img-overlay {
+  width: 11em;
+}
+p.card-text {
+  width: 100%;
+} */
 
 h5.footerTitle {
   padding-left: 15px;
-  border-left: 3px solid #eeeeee;
+  border-left: 3px solid #618E15;
   padding-bottom: 6px;
   /* margin-bottom: 20px; */
 }
 
-h5.footerTitle > a {
-  color: #091748;
-}
-
 footer ul.nav {
   padding-left: 5px;
-}
-
-a.footerNavLink {
-  color: #FEFEFE;
 }
