@@ -25,7 +25,8 @@ by .green or whatever the name is.
   color: #111236;
 }
 .default-menubar {
-    background: #2787c5;
+    background: #073642;
+    color: #f0f0f0;
 }
 
 .default-card-header {
