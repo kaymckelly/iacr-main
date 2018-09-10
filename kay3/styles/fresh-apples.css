@@ -54,6 +54,7 @@ p.card-text {
 
 
 /*** Footer ***/
+/* NOTE: use ids when possible */
 footer {
   background-color: #F3F7EE;
 }
