@@ -5,6 +5,14 @@ h5.footerTitle {
   /* margin-bottom: 20px; */
 }
 
+h5.footerTitle > a {
+  color: #091748;
+}
+
 footer ul.nav {
   padding-left: 5px;
+}
+
+a.footerNavLink {
+  color: #FEFEFE;
 }
