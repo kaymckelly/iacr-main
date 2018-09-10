@@ -16,6 +16,9 @@
       <stop stop-color="#6080a0" offset="40%"/>
       <stop stop-color="#80a0c0" offset="100%"/>
     </radialGradient>
+    <linearGradient id="bg">
+      <stop stop-color="#c0e0f0"/>
+    </linearGradient>
     <style type="text/css"><![CDATA[
     .circuit {
     stroke: #4040c0;
@@ -33,7 +36,7 @@
     }
     ]]></style>
   </defs>
-  <rect x="0" y="0" height="100" width="100" stroke="#f0f0f0" fill="#e0ffff" stroke-width="2"/>
+  <rect x="0" y="0" height="100" width="100" stroke="#f0f0f0" fill="url(#bg)" stroke-width="2"/>
   <path d="M 0,80 l 30 10 l 17 0" class="circuit"/>
   <circle cx="50" cy="90" r="2.5" class="circuitpost"/>
   <path d="M 0,70 l 30 10 l 30 0 l 0 7" class="circuit"/>
