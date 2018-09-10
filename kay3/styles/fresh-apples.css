@@ -2,7 +2,7 @@
 body {
   background-color: #FEFEFE;
   /* rgba(216, 240, 216, 0.5) */
-  color: #091748;
+  color: #220012;
 }
 
 main {
@@ -15,6 +15,11 @@ a {
 
 a:hover {
   color: #600030;
+}
+
+.btn-purple {
+  background-color: #102A83;
+  color: #EBF7EB;
 }
 
 
@@ -50,7 +55,6 @@ p.card-text {
 
 /*** Footer ***/
 footer {
-  /* same color as navbar (#0b519a), with added transparency */
   background-color: #F3F7EE;
 }
 
