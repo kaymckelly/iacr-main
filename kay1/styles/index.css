@@ -9,13 +9,7 @@
 
 body {
   font-family: 'roboto', sans-serif;
-  background-color: #EDE8F4;
   /* text is a darker color from #2E3192 (sampled from /img/iacr-simple.png) */
-  color: #111236;
-}
-
-main {
-  background-color: #EDE8F4;
 }
 
 
