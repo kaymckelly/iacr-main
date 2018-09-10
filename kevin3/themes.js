@@ -30,6 +30,11 @@ function setTheme(new_theme) {
     headers[i].classList.remove(current_theme + '-card-header');
     headers[i].classList.add(new_theme + '-card-header');
   }
+  var footers = document.querySelectorAll('.' + current_theme + '-card-footer');
+  for (i = 0; i < footers.length; ++i) {
+    footers[i].classList.remove(current_theme + '-card-footer');
+    footers[i].classList.add(new_theme + '-card-footer');
+  }
   document.getElementById('topbar').classList.remove(current_theme + '-topbar');
   document.getElementById('topbar').classList.add(new_theme + '-topbar');
   current_theme = new_theme;

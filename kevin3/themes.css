@@ -42,6 +42,9 @@ by .green or whatever the name is.
 .default-topbar {
     background: url(../img/bg1.jpg);
 }
+.default-card-footer {
+    background: #e0e0f0 !important;
+}
 
 /********* Green theme **********************************/
 .green-topbar {
