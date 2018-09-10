@@ -16,6 +16,9 @@
       <stop stop-color="#6080a0" offset="40%"/>
       <stop stop-color="#80a0c0" offset="100%"/>
     </radialGradient>
+    <linearGradient id="bg">
+      <stop stop-color="#c0e0f0"/>
+    </linearGradient>
     <style type="text/css"><![CDATA[
     .circuit {
     stroke: #4040c0;
@@ -23,17 +26,17 @@
     fill:none;
     stroke-linecap: butt;
     stroke-linejoin: round;
-    opacity: 0.2;
+    opacity: 0.4;
     }
     .circuitpost {
     stroke: #4040c0;
     stroke-width:1;
     fill:none;
-    opacity: 0.2;
+    opacity: 0.4;
     }
     ]]></style>
   </defs>
-  <rect x="0" y="0" height="100" width="100" stroke="#f0f0f0" fill="#ffffff" stroke-width="2"/>
+  <rect x="0" y="0" height="100" width="100" stroke="#f0f0f0" fill="url(#bg)" stroke-width="2"/>
   <path d="M 0,80 l 30 10 l 17 0" class="circuit"/>
   <circle cx="50" cy="90" r="2.5" class="circuitpost"/>
   <path d="M 0,70 l 30 10 l 30 0 l 0 7" class="circuit"/>
@@ -44,6 +47,19 @@
   <circle cx="80" cy="90" r="2.5" class="circuitpost"/>
   <path d="M 0,40 l 30 10 l 60 0 l 0 37" class="circuit"/>
   <circle cx="90" cy="90" r="2.5" class="circuitpost"/>
+
+  <path d="M 25,0 l 0 40 l 20 0" class="circuit"/>
+  <circle cx="47.5" cy="40" r="2.5" class="circuitpost"/>
+  <path d="M 35,0 l 0 30 l 10 0" class="circuit"/>
+  <circle cx="47.5" cy="30" r="2.5" class="circuitpost"/>
+  <path d="M 80,0 l 0 40 l -20 0" class="circuit"/>
+  <circle cx="57.5" cy="40" r="2.5" class="circuitpost"/>
+  <path d="M 47.5,0 l 0 17.5" class="circuit"/>
+  <circle cx="47.5" cy="20" r="2.5" class="circuitpost"/>
+  <path d="M 57.5,0 l 0 17.5" class="circuit"/>
+  <circle cx="57.5" cy="20" r="2.5" class="circuitpost"/>
+  <path d="M 70,0 l 0 30 l -10 0" class="circuit"/>
+  <circle cx="57.5" cy="30" r="2.5" class="circuitpost"/>
   <text x="50" y="60" text-anchor="middle" class="ches">CHES</text>
 
 </svg>
