@@ -1,23 +1,9 @@
 // Keep track of which one we had previously set.
 var current_theme = 'default';
-// We assume that for blue, there are classes on
-// elements as follows:
-//   body: body-blue
-//   #toprow: toprow-blue
-//   #menu: menu-blue
-//   .card-header: cardheader-blue
-// In order to change from "blue" to "green" we first
-// remove the class "toprow-blue" and insert the class
-// toprow-green. We know which one to remove because we
-// keep track of existing_index as the selected theme.
   
-function changeBackground() {
-  document.getElementById('body').classList.remove(themes[bgindex]);
-  bgindex = (bgindex + 1) % 5;
-  document.getElementById('body').classList.add(themes[bgindex]);
-  document.getElementById('theme').textContent = "Theme: " + themes[bgindex];
-}
-
+// The page loads with body class="default-body". You change
+// the theme by removing default-body and changing to green-body
+// (for whichever themes you set up in themes.css).
 function setTheme(new_theme) {
   console.dir('set theme from ' + current_theme + ' to ' + new_theme);
   var body = document.getElementsByTagName('body')[0];
