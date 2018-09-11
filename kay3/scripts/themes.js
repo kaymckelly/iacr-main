@@ -23,6 +23,6 @@ function setTheme(new_theme) {
 
   document.getElementById('topbar').classList.remove(current_theme + '-topbar');
   document.getElementById('topbar').classList.add(new_theme + '-topbar');
-  
+
   current_theme = new_theme;
 }

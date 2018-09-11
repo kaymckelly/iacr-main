@@ -50,12 +50,12 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   color: #220012;
 }
 
-.green-topbar {
+/* .apple-topbar {
   background-color: #CDE8E4;
   color: #111236;
-}
+} */
 
-.green-body {
+/* .green-body {
   background: #CDE8E4;
   color: #111236;
 }
@@ -75,4 +75,4 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 
 .green-nav-link {
   color: #404040 !important;
-}
+} */
