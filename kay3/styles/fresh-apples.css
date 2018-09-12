@@ -40,12 +40,24 @@ div.input-group input {
 
 /*** Home Page ***/
 h3.cardHeading {
-  background-color: #618E15;
-  color: #EBF7EB;
+  border-top: 2px solid #618E15;
+  /* background-color: #618E15;
+  color: #EBF7EB; */
 }
 
-p.card-text {
+/* p.card-text {
   background-color: #600030;
+} */
+
+img.figure-img {
+  width: 80%;
+  height: auto;
+}
+
+.figure-caption {
+  background-color: #600030;
+  color: #EBF7EB;
+  font-size: 1.1em;
 }
 
 
