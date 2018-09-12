@@ -68,15 +68,17 @@ by .green or whatever the name is.
 }
 .green-card-header {
     background: #27c587;
-    color: #c0ffc0;
+    color: #204020;
 }
 .green-card-header a,h2 {
-    color: #c0ffc0;
+    color: #204020;
 }
 .green-nav-link {
     color: #404040 !important;
 }
-
+.green-footer {
+    background: #73b0a4;
+}
 /********* Ugly theme **********************************/
 
 .ugly-body {
