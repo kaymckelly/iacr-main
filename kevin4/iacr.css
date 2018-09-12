@@ -51,14 +51,6 @@ img.logo {
 .navbar-iacr-acronym {
     font-size: 2em !important;
 }
-#tcc_overlay {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    font: bold 36px sans-serif;
-    color: #102a83;
-}
 .social-buttons {
     font-size: 1.3em !important;
     color: #ffffff !important;
@@ -76,11 +68,19 @@ img.logo {
     height: 120px !important;
     width: 120px !important;
 }
+#tcc_overlay {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font: bold 36px sans-serif;
+    color: #102a83;
+}
 #asiacrypt_overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font: bold 14px sans-serif;
+    font: bold 18px sans-serif;
     color: #102a83;
 }
