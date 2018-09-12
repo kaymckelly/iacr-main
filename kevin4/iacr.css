@@ -1,0 +1,86 @@
+.iacr-name-oneline {
+    font-size: 2em !important;
+}
+
+#iacr_container {
+    padding-top: 20px !important;
+}
+/*
+img.logo {
+  max-height: 100px;
+}*/
+
+.masonry .card {
+    margin-bottom: 0.5rem;
+}
+
+.masonry .card .card-body {
+    padding:  0.5rem 0.5rem 0rem 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .masonry {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+  .masonry > .card {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+#map_canvas {
+    height: 300px;
+    background-color: #c0c0f0;
+}
+
+.masonry .card-header {
+    font-size: 2em !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1em !important;
+}
+.navbar-iacr-acronym {
+    font-size: 2em !important;
+}
+#tcc_overlay {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font: bold 36px sans-serif;
+    color: #102a83;
+}
+.social-buttons {
+    font-size: 1.3em !important;
+    color: #ffffff !important;
+}
+.iacr-logo {
+    max-height: 120px !important;
+}
+.suggestion {
+    background: #f0ffff;
+    border: 1px solid lightgray;
+    padding: 5px !important;
+    margin: 0px !important;
+}
+.conf-img {
+    height: 120px !important;
+    width: 120px !important;
+}
+#asiacrypt_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font: bold 14px sans-serif;
+    color: #102a83;
+}
