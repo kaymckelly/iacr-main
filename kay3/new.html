@@ -22,7 +22,7 @@
     </title>
   </head>
 
-  <body class="default-body">
+  <body>
     <!-- theme picker -->
     <!-- <div class="dropdown" id="theme-menu">
       <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,7 +47,7 @@
       </h1>
     </header>
 
-    <nav id="menubar" class="navbar navbar-expand-lg default-menubar mb-4" role="navigation">
+    <nav id="menubar" class="navbar navbar-expand-lg mb-4" role="navigation">
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -151,18 +151,47 @@
       </div>
     </nav>
 
-    <main id="main" class="container default-main p-3">
+    <main id="main" class="container-fluid p-3">
       <section class="row">
-        <header class="col-12">
+        <article class="col-12 col-md-5">
           <p class="lead text-justify">
             The International Association for Cryptologic Research (IACR) is a non-profit scientific organization whose purpose is to further research in cryptology and related fields. Cryptology is the science and practice of designing computation and communication systems which are secure in the presence of adversaries.
           </p>
-        </header>
+        </article>
+
+        <article class="col-12 col-md-7">
+          <h3 class="cardHeading rounded p-2">
+            News
+          </h3>
+          <p>
+            PKC: <a href="http://pkc.iacr.org/2019">PKC 2019: Public Key Cryptography</a><br />
+            <i>Beijing, China, 14 April - 17 April 2019</i>
+          </p>
+          <p>
+            ePrint Report: <a href="https://eprint.iacr.org/2018/733">Threshold Partially-Oblivious PRFs with Applications to Key Management</a><br />
+            <i>Stanislaw Jarecki, Hugo Krawczyk, Jason Resch</i>
+          </p>
+          <p>
+            ePrint Report: <a href="https://eprint.iacr.org/2018/732">Data Oblivious Genome Variants Search on Intel SGX</a><br />
+            <i>Avradip Mandal, John C. Mitchell, Hart Montgomery, Arnab Roy</i>
+          </p>
+          <p>
+            ePrint Report: <a href="https://eprint.iacr.org/2018/731">An Optimal Distributed Discrete Log Protocol with Applications to Homomorphic Secret Sharing</a><br />
+            <i>Itai Dinur, Nathan Keller, Ohad Klein</i>
+          </p>
+          <p>
+            ePrint Report: <a href="https://eprint.iacr.org/2018/730">Supersingular Isogeny Diffie-Hellman Authenticated Key Exchange</a><br />
+            <i>Atsushi Fujioka, Katsuyuki Takashima, Shintaro Terada, Kazuki Yoneyama</i>
+          </p>
+          <a href="https://www.iacr.org/news/" class="btn btn-purple">
+            See all news
+          </a>
+        </article>
       </section>
 
       <section class="row">
         <article class="col-12 col-md-7">
-          <h3 class="default-card-header rounded p-2">
+          <h3 class="cardHeading rounded p-2">
             Events
           </h3>
           <h4 class="mt-3">
@@ -274,37 +303,7 @@
             See all events
           </a>
         </article>
-
-        <article class="col-12 col-md-5">
-          <h3 class="default-card-header p-2 rounded">
-            News
-          </h3>
-          <p>
-            PKC: <a href="http://pkc.iacr.org/2019">PKC 2019: Public Key Cryptography</a><br />
-            <i>Beijing, China, 14 April - 17 April 2019</i>
-          </p>
-          <p>
-            ePrint Report: <a href="https://eprint.iacr.org/2018/733">Threshold Partially-Oblivious PRFs with Applications to Key Management</a><br />
-            <i>Stanislaw Jarecki, Hugo Krawczyk, Jason Resch</i>
-          </p>
-          <p>
-            ePrint Report: <a href="https://eprint.iacr.org/2018/732">Data Oblivious Genome Variants Search on Intel SGX</a><br />
-            <i>Avradip Mandal, John C. Mitchell, Hart Montgomery, Arnab Roy</i>
-          </p>
-          <p>
-            ePrint Report: <a href="https://eprint.iacr.org/2018/731">An Optimal Distributed Discrete Log Protocol with Applications to Homomorphic Secret Sharing</a><br />
-            <i>Itai Dinur, Nathan Keller, Ohad Klein</i>
-          </p>
-          <p>
-            ePrint Report: <a href="https://eprint.iacr.org/2018/730">Supersingular Isogeny Diffie-Hellman Authenticated Key Exchange</a><br />
-            <i>Atsushi Fujioka, Katsuyuki Takashima, Shintaro Terada, Kazuki Yoneyama</i>
-          </p>
-          <a href="https://www.iacr.org/news/" class="btn btn-purple">
-            See all news
-          </a>
-        </article>
       </section>
-
     </main>
 
     <!-- NOTE: inspiration from https://bootsnipp.com/snippets/featured/footer-using-bootstrap-4 and https://bootsnipp.com/snippets/j68dz -->
