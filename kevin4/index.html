@@ -25,7 +25,7 @@
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <a class="dropdown-item" href="#" onclick='setTheme("default")'>Blues</a>
         <a class="dropdown-item" href="#" onclick='setTheme("green")'>Greens</a>
-        <a class="dropdown-item" href="#" onclick='setTheme("ugly")'>Another</a>
+        <a class="dropdown-item" href="#" onclick='setTheme("ugly")'>Another blue</a>
       </div>
     </div>
     <div class="container-fluid default-topbar pb-2" id="topbar">
@@ -41,7 +41,7 @@
             <h1 class="d-lg-none iacr-name-acronym">IACR</h1>
           </div>
             <form class="form-inline col-sm-3">
-              <input name="q" class="form-control form-control-lg" type="search" placeholder="Search IACR">
+              <input name="q" class="form-control form-control-lg" type="search" placeholder="Search with Google">
             </form>
         </div>
       </div>
@@ -140,9 +140,10 @@
                   <a class="dropdown-item" href="#">Privacy Policy</a>
                 </div>
               </li>
-              <li class="nav-item social-buttons pt-2">
+              <li class="nav-item social-buttons pt-2 ml-4">
                 <a href="https://twitter.com/IACR_News" class="social"><ion-icon name="logo-twitter" class="ml-2 social-buttons" title="Twitter feed"></ion-icon></a>
                 <a href="https://youtube.com/TheIACR" class="social"><ion-icon name="logo-youtube" class="ml-2 social-buttons" title="YouTube channel"></ion-icon></a>
+                <a href="/login" class="social"><ion-icon name="person" class="ml-2 social-buttons" title="Login to IACR"></ion-icon></a>
               </li>
             </ul>
           <div id="social" class="col-sm-auto navbar-text ml-auto">
@@ -198,7 +199,8 @@
           <div class="card mb-2">
             <div class="row no-gutters">
               <div class="col-auto">
-                <img src="../img/asiacrypt.png" alt="Asia-Pacific Region" class="img-fluid img-thumbnail conf-img" />
+                <img src="../img/asiacrypt3.png" alt="Asia-Pacific Region" class="img-fluid img-thumbnail conf-img" />
+                <div id="asiacrypt_overlay">ASIACRYPT</div>
               </div>
               <div class="col">
                 <div class="card-block px-2">
@@ -321,12 +323,8 @@
           Featured Video
         </div>
         <div class="card-body p-0">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="424" height="238" src="https://www.youtube.com/embed/FaakN6MK6mc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+          <a href="https://youtube.com/TheIACR" title="Featured video"><img src="../img/featured_video.png" alt="Featured video screenshot" class="img-fluid border-0" /></a>
         </div>
-      </div>
-      <div class="card-footer default-card-footer text-muted text-center"><a href="https://youtube.com/TheIACR">More videos on YouTube...</a>
       </div>
       
       <!-- end div for masonry -->

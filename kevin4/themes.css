@@ -41,6 +41,7 @@ by .green or whatever the name is.
 }
 .default-topbar {
     background: url(../img/bg1.jpg);
+    background-size: cover;
 }
 .default-card-footer {
     background: #e0e0f0 !important;
