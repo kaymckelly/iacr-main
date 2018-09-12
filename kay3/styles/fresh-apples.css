@@ -50,12 +50,12 @@ h3.cardHeading {
 } */
 
 img.figure-img {
-  width: 80%;
-  height: auto;
+  width: 150px;
+  height: 150px;
 }
 
 .figure-caption {
-  background-color: #600030;
+  background-color: #618E15;
   color: #EBF7EB;
   font-size: 1.1em;
 }
