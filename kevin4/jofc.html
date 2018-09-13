@@ -28,27 +28,28 @@
         <a class="dropdown-item" href="#" onclick='setTheme("ugly")'>Shades of logo color</a>
       </div>
     </div>
-    <div class="container-fluid default-topbar pb-2" id="topbar">
+    <div class="container-fluid default-topbar" id="topbar">
       <div class="container">
-        <div class="row align-items-center pt-2 d-none d-md-flex">
-          <div class="col-sm-2">
+        <div class="row align-items-center pt-2 d-none d-md-flex justify-content-between">
+          <div class="col-sm-2 pb-2">
             <a href="https://iacr.org/"> 
               <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid iacr-logo" alt="IACR logo" />
             </a>
           </div>
-          <div class="col-sm-7">
-            <h1 class="d-none d-lg-block iacr-name-twolines">International Association<br>for Cryptologic Research</h1>
-            <h1 class="d-lg-none iacr-name-acronym">IACR</h1>
+          <div class="col-sm-auto">
+            <h1 class="d-none d-xl-block iacr-name-oneline">International Association for Cryptologic Research</h1>
+            <h1 class="d-none d-xl-none d-md-block iacr-name-twolines">International Association<br>for Cryptologic Research</h1>
+            <h1 class="d-md-none iacr-name-acronym">IACR</h1>
           </div>
-            <form class="form-inline col-sm-3">
-              <input name="q" class="form-control form-control-lg" type="search" placeholder="Search with Google">
-            </form>
+          <div class="col-sm-1 text-right">
+            <a href="/login" class="login-button text-right" title="Login to IACR"><ion-icon name="person"></ion-icon></a>
+          </div>
         </div>
       </div>
     </div>
     <div id="menubar" class="container-fluid default-menubar">
       <div class="container">
-        <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-transparent px-0">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-transparent px-0">
           <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -140,40 +141,41 @@
                   <a class="dropdown-item" href="#">Privacy Policy</a>
                 </div>
               </li>
-              <li class="nav-item social-buttons pt-2 ml-4">
-                <a href="https://twitter.com/IACR_News" class="social"><ion-icon name="logo-twitter" class="ml-2 social-buttons" title="Twitter feed"></ion-icon></a>
-                <a href="https://youtube.com/TheIACR" class="social"><ion-icon name="logo-youtube" class="ml-2 social-buttons" title="YouTube channel"></ion-icon></a>
-                <a href="/login" class="social"><ion-icon name="person" class="ml-2 social-buttons" title="Login to IACR"></ion-icon></a>
-              </li>
             </ul>
-          <div id="social" class="col-sm-auto navbar-text ml-auto">
-          </div>
+            <form class="ml-2 my-auto d-inline w-25">
+              <div class="input-group">
+                <input name="q" type="search" class="form-control border border-right-0" placeholder="Search with Google...">
+                <span class="input-group-append">
+                  <button class="btn btn-outline-secondary border border-left-0 search-button" type="button">
+                    <ion-icon name="search" class="align-middle search-button"></ion-icon>
+                  </button>
+                </span>
+              </div>
+            </form>
           </div>
         </nav>
       </div>
     </div>
     <main class="container mt-3">
       <div id="iacr_content">
-            <h1>Journal of Cryptology</h1>
+        <h1>Journal of Cryptology</h1>
+        <img src="https://iacr.org/jofc/jofc.jpg" style="float:right;margin: 0 0 15px 15px">
+        The <a href="http://www.springerlink.com/content/100359/?MUD=MP"><em>Journal of Cryptology</em></a> 
+        is the official journal of the <a href="http://www.iacr.org">International 
+          Association for Cryptologic Research</a>, and provides a forum for publication of original results in all
+        areas of modern information security.  It started with volume 1 in 1988, and
+        currently consists of four issues per year.  It is published by
+        <a href="http://www.springeronline.com/">Springer</a>.
+        IACR members receive a subscription to the <em>Journal of Cryptology</em>.
+        Subscriptions are available to non-members directly from 
+        <a href="http://www.springeronline.com/">Springer</a> (see below).
 
-<img src="https://iacr.org/jofc/jofc.jpg" style="float:right;margin: 0 0 15px 15px">
-The <a href="http://www.springerlink.com/content/100359/?MUD=MP"><em>Journal of Cryptology</em></a> 
-is the official journal of the <a href="http://www.iacr.org">International 
-Association for Cryptologic
-Research</a>, and provides a forum for publication of original results in all
-areas of modern information security.  It started with volume 1 in 1988, and
-currently consists of four issues per year.  It is published by
-<a href="http://www.springeronline.com/">Springer</a>.
-IACR members receive a subscription to the <em>Journal of Cryptology</em>.
-Subscriptions are available to non-members directly from 
-<a href="http://www.springeronline.com/">Springer</a> (see below).
-
-<p>
-</p><ul>
-<li><a href="http://www.springeronline.com/journal/00145/about">The Journal Home Page at Springer</a>
-<p>
-</p></li><li>We now only accept papers via the <a href="https://www.editorialmanager.com/jcryptology/">JoC Submission web site</a>.
-
+        <p>
+        </p><ul>
+          <li><a href="http://www.springeronline.com/journal/00145/about">The Journal Home Page at Springer</a>
+            <p>
+          </p></li><li>We now only accept papers via the <a href="https://www.editorialmanager.com/jcryptology/">JoC Submission web site</a>.
+            
 </p></li><li>IACR members can 
 <a href="https://www.iacr.org/publications/access.php#joc">access JoC articles</a> for free.  
 
@@ -202,7 +204,6 @@ For other countries, please visit
 
 
     </div>
-    
   </main>
     <footer id="footer" class="small default-footer mt-2">
     <div class="container py-4">
@@ -214,6 +215,11 @@ For other countries, please visit
           <div class="col-md-6">
             <p>The <a href="http://www.iacr.org/">International Association for Cryptologic Research (IACR)</a> is a non-profit scientific organization whose purpose is to further research in cryptology and related fields. Cryptology is the science and practice
               of designing computation and communication systems which are secure in the presence of adversaries.</p>
+            <p class="text-center">
+              <a href="https://twitter.com/IACR_News" class="social"><ion-icon name="logo-twitter" class="ml-2 social-buttons" title="Twitter feed"></ion-icon></a>
+              <a href="https://youtube.com/TheIACR" class="social"><ion-icon name="logo-youtube" class="ml-2 social-buttons" title="YouTube channel"></ion-icon></a>
+            </p>
+
           </div>
 
           <div class="col-md-3 col-sm-8 col-xs-6">
@@ -277,7 +283,7 @@ For other countries, please visit
   <script src="/libs/js/jquery/3.3.1/jquery.min.js"></script>
   <script src="themes.js"></script>
   <script src="bestpapers.js"></script>
-  <script src="autocomplete.min.js"></script>
+  <script src="auto-complete.js"></script>
   <script src="suggest.js"></script>
 </body>
 
