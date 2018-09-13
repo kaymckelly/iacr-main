@@ -164,8 +164,10 @@
 
     <section class="row">
       <article class="col-12 mb-3">
-        <h3 class="cardHeading rounded p-2">
+        <h3 class="cardHeading py-2">
+          <a href="#" title="All Events" class="h3">
             Upcoming Events
+          </a>
           </h3>
         <section class="row">
           <figure class="figure col-6 col-md-3 d-flex flex-column align-items-center">
@@ -212,16 +214,18 @@
         </section>
 
         <!-- TODO: align right, on same line as title -->
-        <!-- <a href="https://www.iacr.org/events/list" class="btn btn-purple my-3">
-            See all events
-        </a> -->
+        <a href="https://www.iacr.org/events/list">
+          More events...
+        </a>
       </article>
     </section>
 
     <section class="row">
-      <article class="col-12">
-        <h3 class="cardHeading rounded p-2">
+      <article class="col-12 col-md-6 mb-3">
+        <h3 class="cardHeading py-2">
+          <a href="#" title="News" class="h3">
             News
+          </a>
           </h3>
         <p>
           PKC: <a href="http://pkc.iacr.org/2019">PKC 2019: Public Key Cryptography</a><br />
@@ -243,8 +247,29 @@
           ePrint Report: <a href="https://eprint.iacr.org/2018/730">Supersingular Isogeny Diffie-Hellman Authenticated Key Exchange</a><br />
           <i>Atsushi Fujioka, Katsuyuki Takashima, Shintaro Terada, Kazuki Yoneyama</i>
         </p>
-        <a href="https://www.iacr.org/news/" class="btn btn-purple">
-            See all news
+        <a href="https://www.iacr.org/news/">
+            More news...
+          </a>
+      </article>
+
+      <!--
+        <div class="card-body" id="best_papers">
+          Content fetched by javascript...
+        </div>
+        <div class="card-footer default-card-footer text-muted text-center"><a href="/awards/">More awards...</a></div> -->
+
+      <article class="col-12 col-md-6 mb-3">
+        <h3 class="cardHeading py-2">
+          <a href="/cryptodp/data/bestpapers.php" title="Best paper awards" class="h3">
+            Recent Best Paper Awards
+          </a>
+        </h3>
+        <div id="best_papers">
+          <!-- Content fetched by javascript... -->
+        </div>
+
+        <a href="https://www.iacr.org/news/">
+            More awards...
           </a>
       </article>
     </section>
