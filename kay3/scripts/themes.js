@@ -26,13 +26,12 @@ function setTheme(new_theme) {
     cardHeadings[i].classList.add(new_theme + '-cardHeading');
   }
 
-  // main tag
-  // document.getElementById('main').classList.remove(current_theme + '-main');
-  // document.getElementById('main').classList.add(new_theme + '-main');
-
-  // header
-  // document.getElementById('topbar').classList.remove(current_theme + '-topbar');
-  // document.getElementById('topbar').classList.add(new_theme + '-topbar');
+  // captions for events
+  var figCaptions = document.querySelectorAll('.' + current_theme + '-figCaption');
+  for (var i = 0; i < figCaptions.length; i++) {
+    figCaptions[i].classList.remove(current_theme + '-figCaption');
+    figCaptions[i].classList.add(new_theme + '-figCaption');
+  }
 
   current_theme = new_theme;
 }
