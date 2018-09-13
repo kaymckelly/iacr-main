@@ -22,7 +22,7 @@ by .green- or whatever the name is.
 
 .ugly-body {
     background: #F3F4F8 !important;
-    color: #0c0c0c !important;
+    color: #080808 !important;
 }
 .ugly-menubar {
     background: #102a83 !important;
@@ -40,8 +40,11 @@ by .green- or whatever the name is.
     color: #ffffff !important;
 }
 .ugly-topbar {
-    background: url(../img/blues35.svg);
+    background: url(../img/logo_blue_gradient.svg);
     background-size: cover;
+}
+.default-topbar h1 {
+    color: 000000;
 }
 .ugly-card-footer {
     background: #E9EBF3 !important;
@@ -60,13 +63,17 @@ by .green- or whatever the name is.
 
 /********* Green theme **********************************/
 .green-topbar {
-    background: #73b0a4;
-    background-image: url(textures/gplay.png);
+    background-image: url(../img/green.svg);
+    background-size: cover;
+}
+
+.green-topbar h1 {
+    color:#202020;
 }
 
 .green-body {
     background: #DDEEE9;
-    color: #0c0c0c;
+    color: #080808;
 }
 .green-menubar {
     background: #035024;
@@ -88,7 +95,7 @@ by .green- or whatever the name is.
 
 .default-body {
     background: #f0f0f0;
-    color: #0c0c0c;
+    color: #080808;
 }
 .default-menubar {
     background: #2787c5;
@@ -104,6 +111,10 @@ by .green- or whatever the name is.
 
 .default-nav-link {
     color: #ffffff !important;
+    font-size: 1.2em !important;
+}
+.default-nav-link:hover {
+    color: #e0e0e0 !important;
 }
 .default-topbar {
     background: #0792f9;
