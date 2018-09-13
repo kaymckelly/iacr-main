@@ -1,4 +1,5 @@
 /*** General ***/
+
 body {
   background-color: #FEFEFE;
   /* rgba(216, 240, 216, 0.5) */
@@ -18,13 +19,14 @@ a:hover {
   color: #EBF7EB;
 }
 
-
 /*** Header & Nav ***/
+
 nav, div.dropdown-menu {
   background-color: #600030;
 }
 
 /* NOTE: This is modifying bootstrap's classes, which is dangerous and generally frowned upon. Consider this a quickfix, not a way of life. */
+
 a.nav-link, a.dropdown-item {
   color: #EBF7EB !important;
 }
@@ -37,10 +39,10 @@ div.input-group input {
   background-color: #EBF7EB;
 }
 
-
 /*** Home Page ***/
+
 h3.cardHeading {
-  border-top: 2px solid #618E15;
+  border-top: 4px solid #618E15;
   /* background-color: #618E15;
   color: #EBF7EB; */
 }
@@ -48,6 +50,10 @@ h3.cardHeading {
 /* p.card-text {
   background-color: #600030;
 } */
+
+figure {
+  /* border: 1px solid gray; */
+}
 
 img.figure-img {
   width: 150px;
@@ -60,18 +66,38 @@ img.figure-img {
   font-size: 1.1em;
 }
 
+#tcc_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: bold 36px sans-serif;
+  color: #102a83;
+}
+
+#asiacrypt_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: bold 18px sans-serif;
+  color: #102a83;
+}
 
 /*** Footer ***/
+
 /* NOTE: use ids when possible */
+
 footer {
   background-color: #F3F7EE;
 }
 
 /* NOTE: the color of the border for .footerTitle is in ./main.css */
-h5.footerTitle > a {
+
+h5.footerTitle>a {
   color: #091748;
 }
 
-a.footerNavLink, a.footerNavLink > ion-icon {
+a.footerNavLink, a.footerNavLink>ion-icon {
   color: #600030;
 }
