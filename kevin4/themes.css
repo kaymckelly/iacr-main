@@ -16,41 +16,48 @@
 }
 
 /*****************************************************************
-Default theme. Copy this to make a new one, replacing * .default
-by .green or whatever the name is.
+ugly theme. Copy this to make a new one, replacing * .ugly-
+by .green- or whatever the name is.
 **************************************************************/
 
-.default-body {
-    background: #f0f0f0;
-    color: #0c0c0c;
+.ugly-body {
+    background: #F3F4F8 !important;
+    color: #0c0c0c !important;
 }
-.default-menubar {
-    background: #2787c5;
-}
-
-.default-card-header {
-    background: #2787c5;
-    color: #f0f0f0;
-}
-.default-card-header a,h2 {
-    color: #f0f0f0;
+.ugly-menubar {
+    background: #102a83 !important;
 }
 
-.default-nav-link {
+.ugly-card-header {
+    background: #5164A4;
+    color: #f0f0f0 !important;
+}
+.ugly-card-header a,h2 {
+    color: #f0f0f0 !important;
+}
+
+.ugly-nav-link {
     color: #ffffff !important;
 }
-.default-topbar {
-    background: url(../img/bg1.jpg);
+.ugly-topbar {
+    background: url(../img/blues35.svg);
     background-size: cover;
 }
-.default-card-footer {
-    background: #e0e0f0 !important;
+.ugly-card-footer {
+    background: #E9EBF3 !important;
 }
-.default-footer {
-    background: #b8e8ff !important;
+.ugly-footer {
+    background:  #F3F4F8 !important; /* D3D8E8; */
 }
-.default-footer a {
-    color: #000000;
+
+.ugly-footer a {
+    color: #000000 !important;
+}
+.ugly-footer div.rule {
+/*    color: #102a83; */
+    background: #102a83;
+    height: 4px;
+    display:block !important;
 }
 
 
@@ -80,28 +87,28 @@ by .green or whatever the name is.
 .green-footer {
     background: #73b0a4;
 }
-/********* Ugly theme **********************************/
+/********* default theme **********************************/
 
-.ugly-body {
+.default-body {
     background: #f0f0f0;
     color: #0c0c0c;
 }
-.ugly-menubar {
+.default-menubar {
     background: #2787c5;
 }
 
-.ugly-card-header {
+.default-card-header {
     background: #2787c5;
     color: #f0f0f0;
 }
-.ugly-card-header a,h2 {
+.default-card-header a,h2 {
     color: #f0f0f0;
 }
 
-.ugly-nav-link {
+.default-nav-link {
     color: #ffffff !important;
 }
-.ugly-topbar {
+.default-topbar {
     background: #0792f9;
     background-image: url(textures/diagmonds-light.png);
 }

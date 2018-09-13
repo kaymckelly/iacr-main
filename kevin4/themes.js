@@ -36,7 +36,7 @@ function setTheme(new_theme) {
     footers[i].classList.add(new_theme + '-card-footer');
   }
   document.getElementById('footer').classList.remove(current_theme + '-footer');
-  document.getElementById('footer').classList.remove(new_theme + '-footer');
+  document.getElementById('footer').classList.add(new_theme + '-footer');
   document.getElementById('topbar').classList.remove(current_theme + '-topbar');
   document.getElementById('topbar').classList.add(new_theme + '-topbar');
   current_theme = new_theme;
