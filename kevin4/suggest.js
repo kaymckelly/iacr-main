@@ -17,8 +17,9 @@ new autoComplete({
       if (data.length > 10) {
         data = data.slice(0, 10);
       }
-      var matches = data.map(a => a.value);
-      console.dir(matches);
+      // Does not work in MSIE 11
+      //      var matches = data.map(a => a.value);
+      //      console.dir(matches);
       response(data);
     });
   }
