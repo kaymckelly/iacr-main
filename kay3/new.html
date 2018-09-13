@@ -14,8 +14,8 @@
 
   <!-- Custom style: color theme -->
   <!-- <link rel="stylesheet" href="./styles/the-blues.css"> -->
-  <link rel="stylesheet" href="./styles/fresh-apples.css">
-  <!-- <link rel="stylesheet" href="./styles/themes.css"> -->
+  <!-- <link rel="stylesheet" href="./styles/fresh-apples.css"> -->
+  <link rel="stylesheet" href="./styles/themes.css">
   <!-- <link rel="stylesheet" href="./styles/slightly-nautical.css"> -->
 
   <title>
@@ -23,17 +23,17 @@
   </title>
 </head>
 
-<body>
+<body class="default-body">
   <!-- theme picker -->
-  <!-- <div class="dropdown" id="theme-menu">
-      <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose a color scheme
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" onclick='setTheme("default")'>Purple</a>
-        <a class="dropdown-item" href="#" onclick='setTheme("apple")'>Fresh apples</a>
-      </div>
-    </div> -->
+  <div class="dropdown" id="theme-menu">
+    <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Choose a color scheme
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#" onclick='setTheme("default")'>Purple</a>
+      <a class="dropdown-item" href="#" onclick='setTheme("apple")'>Fresh apples</a>
+    </div>
+  </div>
 
   <header id="topbar" class="container d-flex align-items-center">
     <a href="https://iacr.org/" class="d-none d-lg-inline">
@@ -48,7 +48,7 @@
       </h1>
   </header>
 
-  <nav id="menubar" class="navbar navbar-expand-lg mb-4" role="navigation">
+  <nav id="menubar" class="navbar navbar-expand-lg mb-4 default-menubar" role="navigation">
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -152,7 +152,7 @@
     </div>
   </nav>
 
-  <main id="main" class="container">
+  <main id="main" class="container default-main">
     <section class="row">
       <article class="col-12">
         <p class="lead text-justify">
@@ -497,7 +497,7 @@
   <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
 
   <!-- Theme Picker -->
-  <!-- <script src="./scripts/themes.js"></script> -->
+  <script src="./scripts/themes.js"></script>
 </body>
 
 </html>
