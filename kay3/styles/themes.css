@@ -50,6 +50,10 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   color: #220012;
 }
 
+.apple-menubar, .apple-dropdown {
+  background-color: #600030;
+}
+
 /* .apple-topbar {
   background-color: #CDE8E4;
   color: #111236;

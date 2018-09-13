@@ -14,10 +14,10 @@ a:hover {
   color: #600030;
 }
 
-.btn-purple {
+/* .btn-purple {
   background-color: #102A83;
   color: #EBF7EB;
-}
+} */
 
 /*** Header & Nav ***/
 
@@ -50,10 +50,6 @@ h3.cardHeading {
 /* p.card-text {
   background-color: #600030;
 } */
-
-figure {
-  /* border: 1px solid gray; */
-}
 
 .figure-caption {
   background-color: #618E15;

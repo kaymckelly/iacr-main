@@ -3,14 +3,18 @@ var current_theme = 'default';
 
 // The page loads with body class="default-body". You change the theme by removing default-body and changing to green-body (for whichever themes you set up in themes.css).
 function setTheme(new_theme) {
-  console.dir('set theme from ' + current_theme + ' to ' + new_theme);
-
   var body = document.getElementsByTagName('body')[0];
   body.classList.remove(current_theme + '-body');
   body.classList.add(new_theme + '-body');
 
   document.getElementById('menubar').classList.remove(current_theme + '-menubar');
   document.getElementById('menubar').classList.add(new_theme + '-menubar');
+
+  var dropdowns = document.querySelectorAll('.' + current_theme + '-dropdown');
+  for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].classList.remove(current_theme + '-dropdown');
+    dropdowns[i].classList.add(new_theme + '-dropdown');
+  }
 
   document.getElementById('main').classList.remove(current_theme + '-main');
   document.getElementById('main').classList.add(new_theme + '-main');
