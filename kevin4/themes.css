@@ -1,3 +1,6 @@
+#topbar h1 {
+    text-shadow: 0 0 20px white;
+}
 #theme-menu {
     position: fixed;
     top: 0%;
@@ -54,7 +57,6 @@ by .green- or whatever the name is.
 }
 
 .ugly-footer div.rule {
-/*    color: #102a83; */
     background: #102a83;
     height: 4px;
     display:block !important;
@@ -89,8 +91,14 @@ by .green- or whatever the name is.
     color: #404040 !important;
 }
 .green-footer {
-    background: #73b0a4;
+    background: #E6F2EF;
 }
+.green-footer div.rule {
+    background: #035024;
+    height: 4px;
+    display:block !important;
+}
+
 /********* default theme **********************************/
 
 .default-body {
@@ -119,4 +127,9 @@ by .green- or whatever the name is.
 .default-topbar {
     background: #0792f9;
     background-image: url(textures/diagmonds-light.png);
+}
+.default-footer div.rule {
+    background: #2787c5;
+    height: 4px;
+    display:block !important;
 }
