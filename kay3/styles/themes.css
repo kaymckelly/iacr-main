@@ -39,10 +39,6 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   color: #ffffff !important;
 }
 
-.default-topbar {
-  background: inherit;
-}
-
 
 /*** Fresh apples theme ***/
 .apple-body {
@@ -54,29 +50,6 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   background-color: #600030;
 }
 
-/* .apple-topbar {
-  background-color: #CDE8E4;
-  color: #111236;
-} */
-
-/* .green-body {
-  background: #CDE8E4;
-  color: #111236;
+.apple-cardHeading {
+  border-top: 4px solid #618E15;
 }
-
-.green-menubar {
-  background: #035024;
-}
-
-.green-card-header {
-  background: #27c587;
-  color: #000000;
-}
-
-.green-card-header a, h2 {
-  color: #000000;
-}
-
-.green-nav-link {
-  color: #404040 !important;
-} */
