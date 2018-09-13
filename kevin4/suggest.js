@@ -2,6 +2,8 @@ var links = [''];
 var xhr;
 new autoComplete({
   selector: 'input[name="q"]',
+  minChars: 2,
+  delay: 100,
   renderItem: function(item, search) {
     var ret = '<div class="suggestion autocomplete-suggestion" data-val="' + item['value'] + '">' + item['value'];
     if (item['affiliation']) {
