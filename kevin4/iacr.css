@@ -85,7 +85,13 @@ img.logo {
 .search-button {
     color: #ffffff;
 }
+/*
 .login-button {
     color: #ffffff !important;
     font-size: 2em;
+}
+*/
+img.login_button {
+    max-height: 2em;
+    max-width: 2em;
 }
