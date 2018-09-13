@@ -52,14 +52,14 @@ img.logo {
     font-size: 2em !important;
 }
 .social-buttons {
-    font-size: 1.3em !important;
-    color: #ffffff !important;
+    font-size: 2em !important;
+    color: #102a83 !important;
 }
 .iacr-logo {
     max-height: 120px !important;
 }
 .suggestion {
-    background: #f0ffff;
+    background: #ffffff;
     border: 1px solid lightgray;
     padding: 5px !important;
     margin: 0px !important;
@@ -83,4 +83,7 @@ img.logo {
     transform: translate(-50%,-50%);
     font: bold 18px sans-serif;
     color: #102a83;
+}
+.search-button {
+    color: #ffffff;
 }
