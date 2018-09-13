@@ -26,11 +26,36 @@ function setTheme(new_theme) {
     cardHeadings[i].classList.add(new_theme + '-cardHeading');
   }
 
+  // anchors not in a nav, footer, or other structure where their color is specially defined
+   var anchors = document.querySelectorAll('.' + current_theme + '-anchor');
+   for (var i = 0; i < anchors.length; i++) {
+     anchors[i].classList.remove(current_theme + '-anchor');
+     anchors[i].classList.add(new_theme + '-anchor');
+   }
+
   // captions for events
   var figCaptions = document.querySelectorAll('.' + current_theme + '-figCaption');
   for (var i = 0; i < figCaptions.length; i++) {
     figCaptions[i].classList.remove(current_theme + '-figCaption');
     figCaptions[i].classList.add(new_theme + '-figCaption');
+  }
+
+  // footer
+  document.getElementById('footer').classList.remove(current_theme + '-footer')
+  document.getElementById('footer').classList.add(new_theme + '-footer');
+
+  // footer titles
+  var footerTitles = document.querySelectorAll('.' + current_theme + '-footerTitle');
+  for (var i = 0; i < footerTitles.length; i++) {
+    footerTitles[i].classList.remove(current_theme + '-footerTitle');
+    footerTitles[i].classList.add(new_theme + '-footerTitle');
+  }
+
+  // footer links
+  var footerLinks = document.querySelectorAll('.' + current_theme + '-footerLink');
+  for (var i = 0; i < footerLinks.length; i++) {
+    footerLinks[i].classList.remove(current_theme + '-footerLink');
+    footerLinks[i].classList.add(new_theme + '-footerLink');
   }
 
   current_theme = new_theme;

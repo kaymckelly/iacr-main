@@ -46,6 +46,10 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   color: #220012;
 }
 
+.apple-anchor {
+  color: #598113;
+}
+
 .apple-menubar, .apple-dropdown {
   background-color: #600030;
 }
@@ -57,4 +61,16 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 .apple-figCaption {
   background-color: #618E15;
   color: #EBF7EB;
+}
+
+.apple-footer {
+  background-color: #F3F7EE;
+}
+
+.apple-footerTitle, .apple-footerTitle>a {
+  color: #091748;
+}
+
+.apple-footerLink, .apple-footerLink>ion-icon {
+  color: #600030;
 }
