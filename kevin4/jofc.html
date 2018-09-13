@@ -1,155 +1,160 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  <title>International Association for Cryptologic Research</title>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-  <!-- for the map -->
-  <link rel="stylesheet" href="https://iacr.org/events/leafletjs/leaflet.css">
+    <title>International Association for Cryptologic Research</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- for the map -->
+    <link rel="stylesheet" href="https://iacr.org/events/leafletjs/leaflet.css">
 
-  <!-- custom style -->
-  <link rel="stylesheet" href="iacr.css">
-  <link rel="stylesheet" href="themes.css">
-</head>
+    <!-- custom style -->
+    <link rel="stylesheet" href="iacr.css">
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="autocomplete.min.css">
+  </head>
 
-<body class="default-body">
-  <div class="dropdown" id="theme-menu">
-    <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Choose a color scheme
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#" onclick='setTheme("default")'>Blues</a>
-      <a class="dropdown-item" href="#" onclick='setTheme("green")'>Greens</a>
-      <a class="dropdown-item" href="#" onclick='setTheme("ugly")'>Godawful&#8482;</a>
+  <body class="default-body">
+    <div class="dropdown" id="theme-menu">
+      <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Choose a color scheme
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#" onclick='setTheme("default")'>Blues</a>
+        <a class="dropdown-item" href="#" onclick='setTheme("green")'>Greens</a>
+        <a class="dropdown-item" href="#" onclick='setTheme("ugly")'>Shades of logo color</a>
+      </div>
     </div>
-  </div>
-  <div class="container-fluid default-topbar pb-2" id="topbar">
-    <div class="container">
-      <div class="row align-items-center pt-2 d-none d-md-flex">
-        <div class="col-sm-2">
-          <a href="https://iacr.org/"> 
-            <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid" alt="IACR logo" />
-          </a>
-        </div>
-        <div class="col-sm-auto">
-          <h1 class="d-none d-xl-block iacr-name-oneline">International Association for Cryptologic Research</h1>
-          <h1 class="d-none d-xl-none d-md-block iacr-name-twolines">International Association<br>for Cryptologic Research</h1>
-          <h1 class="d-md-none iacr-name-acronym">IACR</h1>
+    <div class="container-fluid default-topbar pb-2" id="topbar">
+      <div class="container">
+        <div class="row align-items-center pt-2 d-none d-md-flex">
+          <div class="col-sm-2">
+            <a href="https://iacr.org/"> 
+              <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid iacr-logo" alt="IACR logo" />
+            </a>
+          </div>
+          <div class="col-sm-7">
+            <h1 class="d-none d-lg-block iacr-name-twolines">International Association<br>for Cryptologic Research</h1>
+            <h1 class="d-lg-none iacr-name-acronym">IACR</h1>
+          </div>
+            <form class="form-inline col-sm-3">
+              <input name="q" class="form-control form-control-lg" type="search" placeholder="Search with Google">
+            </form>
         </div>
       </div>
     </div>
-  </div>
-  <div id="menubar" class="container-fluid default-menubar">
-    <div class="container">
-      <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-text d-inline-block d-md-none navbar-iacr-acronym justify-content-center">
-          IACR
-        </div>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="nav navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link default-nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
-              <div class="dropdown-menu" aria-labelledby="eventsDropdownLink">
-                <a class="dropdown-item" href="#">Asiacrypt</a>
-                <a class="dropdown-item" href="#">Crypto</a>
-                <a class="dropdown-item" href="#">Eurocrypt</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">CHES</a>
-                <a class="dropdown-item" href="#">FSE</a>
-                <a class="dropdown-item" href="#">PKC</a>
-                <a class="dropdown-item" href="#">TCC</a>
-                <a class="dropdown-item" href="#">RWC</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Cryptology Schools</a>
-                <a class="dropdown-item" href="#">in cooperation with IACR</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link default-nav-link dropdown-toggle" href="/publications" id="pubsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications</a>
-              <div class="dropdown-menu" aria-labelledby="pubsDropdownLink">
-                <a class="dropdown-item" href="#">Journal of Cryptology</a>
-                <a class="dropdown-item" href="#">Transactions on Symmetric Cryptology</a>
-                <a class="dropdown-item" href="#">Transactions on CHES</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://eprint.iacr.org">Cryptology ePrint Archive</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://www.iacr.org/museum/">Museum of Historic Papers</a>
-                <a class="dropdown-item" href="https://www.iacr.org/publications/statistics.html">Publication Statistics</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link default-nav-link dropdown-toggle" href="#" id="newsDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                News
-              </a>
-              <div class="dropdown-menu" aria-labelledby="newsDropdownLink">
-                <a class="dropdown-item" href="#">News Updates</a>
-                <a class="dropdown-item" href="#">Elections</a>
-                <a class="dropdown-item" href="#">Petitions &amp; Statements</a>
-                <a class="dropdown-item" href="#">Newsletter</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link default-nav-link dropdown-toggle" href="#" id="servicesDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Services
-              </a>
-              <div class="dropdown-menu" aria-labelledby="servicesDropdownLink">
-                <a class="dropdown-item" href="https://iacr.org/jobs/">Jobs</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">CryptoDB</a>
-                <a class="dropdown-item" href="#">Calendar of Events</a>
-                <a class="dropdown-item" href="#">Book Reviews</a>
-                <a class="dropdown-item" href="#">PhD Database</a>
-                <a class="dropdown-item" href="#">Videos</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link default-nav-link dropdown-toggle" href="#" id="membersDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Members
-              </a>
-              <div class="dropdown-menu" aria-labelledby="membersDropdownLink">
-                <a class="dropdown-item" href="#">How to Join</a>
-                <a class="dropdown-item" href="#">Update Membership Information</a>
-                <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
-                <a class="dropdown-item" href="#">Subscribe to News Updates</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link default-nav-link dropdown-toggle" href="#" id="aboutDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About
-              </a>
-              <div class="dropdown-menu" aria-labelledby="aboutDropdownLink">
-                <a class="dropdown-item" href="#">Board of Directors</a>
-                <a class="dropdown-item" href="#">Committees</a>
-                <a class="dropdown-item" href="#">Documents</a>
-                <a class="dropdown-item" href="#">Privacy Policy</a>
-              </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-md-0">
-            <input class="form-control" type="search" placeholder="Search IACR">
-          </form>
-          <div class="navbar-text ml-2">
-            <a href="https://twitter.com/IACR_News"><ion-icon name="logo-twitter" class="ml-2 social-buttons" title="Twitter feed"></ion-icon></a>
-            <a href="https://youtube.com/TheIACR"><ion-icon name="logo-youtube" class="ml-2 social-buttons" title="YouTube channel"></ion-icon></a>
-            <!-- <a href="https://www.facebook.com/theiacr/"><ion-icon name="logo-facebook" class="ml-2 social-buttons" title="Facebook page"></ion-icon></a>-->
+    <div id="menubar" class="container-fluid default-menubar">
+      <div class="container">
+        <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-transparent px-0">
+          <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-text d-inline-block d-md-none navbar-iacr-acronym justify-content-center">
+            IACR
           </div>
-        </div>
-      </nav>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav w-100 justify-content-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link default-nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+                <div class="dropdown-menu" aria-labelledby="eventsDropdownLink">
+                  <a class="dropdown-item" href="#">All IACR events</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Asiacrypt</a>
+                  <a class="dropdown-item" href="#">Crypto</a>
+                  <a class="dropdown-item" href="#">Eurocrypt</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">CHES</a>
+                  <a class="dropdown-item" href="#">FSE</a>
+                  <a class="dropdown-item" href="#">PKC</a>
+                  <a class="dropdown-item" href="#">TCC</a>
+                  <a class="dropdown-item" href="#">RWC</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Cryptology Schools</a>
+                  <a class="dropdown-item" href="#">in cooperation with IACR</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link default-nav-link dropdown-toggle" href="/publications" id="pubsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications</a>
+                <div class="dropdown-menu" aria-labelledby="pubsDropdownLink">
+                  <a class="dropdown-item" href="/publications">All IACR Publications</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Journal of Cryptology</a>
+                  <a class="dropdown-item" href="#">Transactions on Symmetric Cryptology</a>
+                  <a class="dropdown-item" href="#">Transactions on CHES</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="https://eprint.iacr.org">Cryptology ePrint Archive</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="https://www.iacr.org/museum/">Museum of Historic Papers</a>
+                  <a class="dropdown-item" href="https://www.iacr.org/publications/statistics.html">Publication Statistics</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link default-nav-link dropdown-toggle" href="#" id="newsDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  News
+                </a>
+                <div class="dropdown-menu" aria-labelledby="newsDropdownLink">
+                  <a class="dropdown-item" href="/news">News Updates</a>
+                  <a class="dropdown-item" href="/elections">Elections</a>
+                  <a class="dropdown-item" href="/petitions">Petitions &amp; Statements</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link default-nav-link dropdown-toggle" href="#" id="servicesDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdownLink">
+                  <a class="dropdown-item" href="https://iacr.org/jobs/">Jobs</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">CryptoDB</a>
+                  <a class="dropdown-item" href="#">Calendar of Events</a>
+                  <a class="dropdown-item" href="#">Book Reviews</a>
+                  <a class="dropdown-item" href="#">PhD Database</a>
+                  <a class="dropdown-item" href="#">Videos</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link default-nav-link dropdown-toggle" href="#" id="membersDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Members
+                </a>
+                <div class="dropdown-menu" aria-labelledby="membersDropdownLink">
+                  <a class="dropdown-item" href="#">How to Join</a>
+                  <a class="dropdown-item" href="#">Update Membership Information</a>
+                  <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
+                  <a class="dropdown-item" href="#">Subscribe to News Updates</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link default-nav-link dropdown-toggle" href="#" id="aboutDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="aboutDropdownLink">
+                  <a class="dropdown-item" href="/about">About IACR</a>
+                  <a class="dropdown-item" href="#">Board of Directors</a>
+                  <a class="dropdown-item" href="#">Committees</a>
+                  <a class="dropdown-item" href="#">Documents</a>
+                  <a class="dropdown-item" href="#">Privacy Policy</a>
+                </div>
+              </li>
+              <li class="nav-item social-buttons pt-2 ml-4">
+                <a href="https://twitter.com/IACR_News" class="social"><ion-icon name="logo-twitter" class="ml-2 social-buttons" title="Twitter feed"></ion-icon></a>
+                <a href="https://youtube.com/TheIACR" class="social"><ion-icon name="logo-youtube" class="ml-2 social-buttons" title="YouTube channel"></ion-icon></a>
+                <a href="/login" class="social"><ion-icon name="person" class="ml-2 social-buttons" title="Login to IACR"></ion-icon></a>
+              </li>
+            </ul>
+          <div id="social" class="col-sm-auto navbar-text ml-auto">
+          </div>
+          </div>
+        </nav>
+      </div>
     </div>
-  </div>
-  <main class="container">
-  <div class="container" id="iacr_container">
-    <div id="iacr_content">
-      <h1>Journal of Cryptology</h1>
+    <main class="container mt-3">
+      <div id="iacr_content">
+            <h1>Journal of Cryptology</h1>
 
 <img src="https://iacr.org/jofc/jofc.jpg" style="float:right;margin: 0 0 15px 15px">
 The <a href="http://www.springerlink.com/content/100359/?MUD=MP"><em>Journal of Cryptology</em></a> 
@@ -195,11 +200,13 @@ For other countries, please visit
 <a href="http://www.springeronline.com/"><tt>http://www.springeronline.com/</tt></a>.
 </li></ul>
 
-</div>
-  <footer class="text-body small bg-transparent">
 
+    </div>
+    
+  </main>
+    <footer id="footer" class="small default-footer mt-2">
     <div class="container py-4">
-
+      <div class="rule w-100 mb-4"></div>
       <div class="d-none d-lg-block d-print-none">
         <h5>International Association for Cryptologic Research</h5>
 
@@ -263,12 +270,15 @@ For other countries, please visit
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://iacr.org/events/leafletjs/leaflet.js"></script>
-  <script src="../scripts/addmap.js"></script>
 
   <!-- icons! -->
   <!-- NOTE: linking from exterior source for now until we can figure how to install it locally/have it work that way -->
   <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+  <script src="/libs/js/jquery/3.3.1/jquery.min.js"></script>
   <script src="themes.js"></script>
+  <script src="bestpapers.js"></script>
+  <script src="autocomplete.min.js"></script>
+  <script src="suggest.js"></script>
 </body>
 
 </html>
