@@ -55,32 +55,16 @@ figure {
   /* border: 1px solid gray; */
 }
 
-img.figure-img {
-  width: 150px;
-  height: 150px;
-}
-
 .figure-caption {
   background-color: #618E15;
   color: #EBF7EB;
-  font-size: 1.1em;
 }
 
 #tcc_overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font: bold 36px sans-serif;
   color: #102a83;
 }
 
 #asiacrypt_overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font: bold 18px sans-serif;
   color: #102a83;
 }
 

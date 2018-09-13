@@ -15,11 +15,11 @@ function setTheme(new_theme) {
   document.getElementById('main').classList.remove(current_theme + '-main');
   document.getElementById('main').classList.add(new_theme + '-main');
 
-  var headers = document.querySelectorAll('.' + current_theme + '-card-header');
-  for (i = 0; i < headers.length; ++i) {
-    headers[i].classList.remove(current_theme + '-card-header');
-    headers[i].classList.add(new_theme + '-card-header');
-  }
+  // var headers = document.querySelectorAll('.' + current_theme + '-card-header');
+  // for (i = 0; i < headers.length; ++i) {
+  //   headers[i].classList.remove(current_theme + '-card-header');
+  //   headers[i].classList.add(new_theme + '-card-header');
+  // }
 
   document.getElementById('topbar').classList.remove(current_theme + '-topbar');
   document.getElementById('topbar').classList.add(new_theme + '-topbar');

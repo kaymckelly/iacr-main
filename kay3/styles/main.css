@@ -36,6 +36,31 @@ h5.footerTitle {
   /* margin-bottom: 20px; */
 }
 
+#tcc_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: bold 36px sans-serif;
+}
+
+#asiacrypt_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: bold 18px sans-serif;
+}
+
+img.figure-img {
+  width: 150px;
+  height: 150px;
+}
+
+.figure-caption {
+  font-size: 1.1em;
+}
+
 footer ul.nav {
   padding-left: 5px;
 }
