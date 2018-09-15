@@ -1,0 +1,82 @@
+/* Color scheme: https://coolors.co/fefefe-d3e0bf-618e15-102a83-600030, originally http://www.colourlovers.com/palette/656827/fresh_apples?sAC=1 */
+
+/* Official IACR logo color is #102A83 until further notice */
+
+
+/*** General ***/
+@font-face {
+  font-family: 'roboto';
+  src: local('Roboto-Regular') url(./fonts/Roboto/Roboto-Regular.ttf) fomat('truetype');
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+}
+
+
+/*** Header & Nav ***/
+img#logo {
+  max-height: 7em;
+  width: auto;
+}
+
+/* NOTE: This is modifying bootstrap's classes, which is dangerous and generally frowned upon. Consider this a quickfix, not a way of life. */
+a.nav-link, a.dropdown-item {
+  color: #EBF7EB !important;
+}
+
+ion-icon {
+  color: #EBF7EB;
+}
+
+div.input-group input {
+  background-color: #EBF7EB;
+}
+
+
+/*** Home Page ***/
+/* NOTE: when uncommented, these give a bookmark effect to the date overlays on events */
+/* div.card-img-overlay {
+  width: 11em;
+}
+p.card-text {
+  width: 100%;
+} */
+
+h5.footerTitle {
+  padding-left: 15px;
+  border-left: 3px solid #618E15;
+  padding-bottom: 6px;
+  /* margin-bottom: 20px; */
+}
+
+#tcc_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: bold 36px sans-serif;
+  color: #102a83;
+}
+
+#asiacrypt_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: bold 18px sans-serif;
+  color: #102a83;
+}
+
+img.figure-img {
+  width: 150px;
+  height: 150px;
+}
+
+.figure-caption {
+  font-size: 1.1em;
+}
+
+footer ul.nav {
+  padding-left: 5px;
+}
