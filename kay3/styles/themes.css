@@ -19,39 +19,39 @@
 /****************************************************
 Default theme. Copy this to make a new one, replacing * .default with .green or whatever the name is.
 *****************************************************/
-/* default theme based on http://www.colourlovers.com/palette/656837/a_tree_grows_in_sand?sAC=1 */
+/* default theme based on https://coolors.co/fdfdfd-9ce4c7-32908f-256969-04120d */
 .default-body {
-  background-color: rgba(216, 192, 120, 0.2);
-  color: #111236;
+  background-color: #FDFDFD;
+  color: #04120D;
 }
 
 .default-anchor {
-  color: #48A8C0;
+  color: #32908F;
 }
 
 .default-menubar, .default-dropdown {
-  background: #48A8C0;
+  background: #32908F;
 }
 
 .default-cardHeading {
-  border-top: 4px solid #48A8C0;
+  border-top: 4px solid #32908F;
 }
 
 .default-figCaption {
-  background-color: #48A8C0;
-  color: #EBF7EB;
+  background-color: #32908F;
+  color: #FDFDFD;
 }
 
 .default-footer {
-  background-color: rgba(168, 216, 168, 0.3);
+  background-color: rgba(156, 228, 199, 0.2);
 }
 
 .default-footerTitle, .default-footerTitle>a {
-  color: #091748
+  color: #256969
 }
 
 .default-footerLink, .default-footerLink>ion-icon {
-  color: #48A8C0;
+  color: #32908F;
 }
 
 
@@ -93,7 +93,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 
 
 
-/*** Monochrome theme, based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 ***/
+/*** Monochrome (with accent color) theme, based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 ***/
 .monochrome-body {
   background-color: #FEFEFE;
   color: #0B1B54;
@@ -126,4 +126,41 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 
 .monochrome-footerLink, .monochrome-footerLink>ion-icon {
   color: #102A83;
+}
+
+
+
+/*** Wine theme, based on https://coolors.co/eae7eb-979873-2e0344-37001e-1e012d ***/
+.wine-body {
+  background-color: #FFFFFF;
+  color: #1A0226;
+}
+
+.wine-anchor {
+  color: #522D64;
+}
+
+.wine-menubar, .wine-dropdown {
+  background-color: #2E0344;
+}
+
+.wine-cardHeading {
+  border-top: 4px solid #52002D;
+}
+
+.wine-figCaption {
+  background-color: #2E0344;
+  color: #FEFEFE;
+}
+
+.wine-footer {
+  background-color: rgba(188, 189, 165, 0.3);
+}
+
+.wine-footerTitle, .wine-footerTitle>a {
+  color: #52002D;
+}
+
+.wine-footerLink, .wine-footerLink>ion-icon {
+  color: #411955;
 }
