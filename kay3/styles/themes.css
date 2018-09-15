@@ -1,3 +1,6 @@
+/* NOTE: IACR logo color is officially #102a83 until further notice */
+
+
 /*** Button for changing themes ***/
 #theme-menu {
   position: fixed;
@@ -9,7 +12,7 @@
 
 #theme-menu button {
   background: #f0f0f0 !important;
-  border: 2px solid red;
+  border: 2px solid blue;
 }
 
 
@@ -86,4 +89,41 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 
 .apple-footerLink, .apple-footerLink>ion-icon {
   color: #600030;
+}
+
+
+
+/*** Monochrome theme, based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 ***/
+.monochrome-body {
+  background-color: #FEFEFE;
+  color: #0B1B54;
+}
+
+.monochrome-anchor {
+  color: #3B5099;
+}
+
+.monochrome-menubar, .monochrome-dropdown {
+  background-color: #102A83;
+}
+
+.monochrome-cardHeading {
+  border-top: 4px solid #F2AC10;
+}
+
+.monochrome-figCaption {
+  background-color: #102A83;
+  color: #FEFEFE;
+}
+
+.monochrome-footer {
+  background-color: rgba(146, 158, 198, 0.2);
+}
+
+.monochrome-footerTitle, .monochrome-footerTitle>a {
+  color: #0B1B54;
+}
+
+.monochrome-footerLink, .monochrome-footerLink>ion-icon {
+  color: #102A83;
 }
