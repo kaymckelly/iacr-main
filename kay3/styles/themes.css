@@ -16,31 +16,44 @@
 /****************************************************
 Default theme. Copy this to make a new one, replacing * .default with .green or whatever the name is.
 *****************************************************/
+/* default theme based on http://www.colourlovers.com/palette/656837/a_tree_grows_in_sand?sAC=1 */
 .default-body {
-  background-color: #EDE8F4;
+  background-color: rgba(216, 192, 120, 0.2);
   color: #111236;
 }
 
-.default-menubar {
-  background: #073642;
-  color: #f0f0f0;
+.default-anchor {
+  color: #48A8C0;
 }
 
-.default-card-header {
-  background: #2AA198;
-  color: #000000;
+.default-menubar, .default-dropdown {
+  background: #48A8C0;
 }
 
-.default-card-header a, h2 {
-  color: #f0f0f0;
+.default-cardHeading {
+  border-top: 4px solid #48A8C0;
 }
 
-.default-nav-link {
-  color: #ffffff !important;
+.default-figCaption {
+  background-color: #48A8C0;
+  color: #EBF7EB;
+}
+
+.default-footer {
+  background-color: rgba(168, 216, 168, 0.3);
+}
+
+.default-footerTitle, .default-footerTitle>a {
+  color: #091748
+}
+
+.default-footerLink, .default-footerLink>ion-icon {
+  color: #48A8C0;
 }
 
 
-/*** Fresh apples theme ***/
+
+/*** Fresh apples theme, based on https://coolors.co/fefefe-d3e0bf-618e15-102a83-600030 ***/
 .apple-body {
   background-color: #FEFEFE;
   color: #220012;
