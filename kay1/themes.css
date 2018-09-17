@@ -21,7 +21,7 @@ by .green or whatever the name is.
 **************************************************************/
 
 .default-body {
-  background-color: #EDE8F4;
+  background-color: #ffffff;
   color: #111236;
 }
 .default-menubar {
@@ -67,4 +67,3 @@ by .green or whatever the name is.
 .green-nav-link {
     color: #404040 !important;
 }
-
