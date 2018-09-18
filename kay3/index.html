@@ -44,19 +44,16 @@
       </h1>
     </header>
 
-    <nav id="menubar" class="navbar navbar-expand-lg default-menubar mb-4" role="navigation">
-      <button type="button" class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <ion-icon name="menu"></ion-icon>
-
-        <!-- NOTE: below is the bootstrap way of doing the hamburger. I got frustrated and said 'screw it' and replaced it with ionicons because it wouldn't cooperate with me re: changing color easily. -->
-        <!-- <span class="navbar-toggler-icon"></span> -->
+    <nav id="menubar" class="navbar navbar-expand-lg default-menubar mb-4 navbar-dark" role="navigation">
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- NOTE: invaluable for answering the justified navbar question: https://stackoverflow.com/questions/45880091/justifying-a-navbar-in-bootstrap-4 -->
 
       <!-- TODO: megamenus?! (https://bootsnipp.com/snippets/orE6Z) -->
       <div class="collapse navbar-collapse" id="navCollapse">
-        <ul class="navbar-nav w-100 nav-justified">
+        <ul class="navbar-nav w-100 nav-justified align-items-start">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
             <div class="dropdown-menu border-0" aria-labelledby="eventsDropdownLink">
