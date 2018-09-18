@@ -51,7 +51,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 }
 
 .default-footerLink, .default-footerLink>ion-icon {
-  color: #32908F;
+  color: #2E8382;
 }
 
 

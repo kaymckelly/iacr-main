@@ -33,6 +33,10 @@ div.input-group input {
   background-color: #EBF7EB;
 }
 
+button.custom-toggler>ion-icon {
+  color: #EBF7EB;
+}
+
 
 /*** Home Page ***/
 /* NOTE: when uncommented, these give a bookmark effect to the date overlays on events */
@@ -75,6 +79,11 @@ img.figure-img {
 
 .figure-caption {
   font-size: 1.1em;
+}
+
+img#pubPhoto {
+  /* NOTE: fix for img distortion issue on mobile */
+  height: 100%;
 }
 
 footer ul.nav {
