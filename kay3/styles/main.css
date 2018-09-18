@@ -45,6 +45,11 @@ h5.cardTitleCustom {
   font-size: 1.1em;
 }
 
+img#pubPhoto {
+  /* NOTE: fix for img distortion issue on mobile */
+  height: 100%;
+}
+
 footer ul.nav {
   padding-left: 5px;
 }
