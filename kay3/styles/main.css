@@ -33,6 +33,10 @@ div.input-group input {
   background-color: #EBF7EB;
 }
 
+button.custom-toggler>ion-icon {
+  color: #EBF7EB;
+}
+
 
 /*** Home Page ***/
 /* NOTE: when uncommented, these give a bookmark effect to the date overlays on events */

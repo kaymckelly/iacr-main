@@ -45,8 +45,11 @@
     </header>
 
     <nav id="menubar" class="navbar navbar-expand-lg default-menubar mb-4" role="navigation">
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button type="button" class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <ion-icon name="menu"></ion-icon>
+        
+        <!-- NOTE: below is the bootstrap way of doing the hamburger. I got frustrated and said 'screw it' and replaced it with ionicons because it wouldn't cooperate with me re: changing color easily. -->
+        <!-- <span class="navbar-toggler-icon"></span> -->
       </button>
 
       <!-- NOTE: invaluable for answering the justified navbar question: https://stackoverflow.com/questions/45880091/justifying-a-navbar-in-bootstrap-4 -->
