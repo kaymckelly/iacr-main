@@ -14,6 +14,7 @@ body {
 }
 
 
+
 /*** Header & Nav ***/
 img#logo {
   max-height: 7em;
@@ -38,49 +39,8 @@ button.custom-toggler>ion-icon {
 }
 
 
+
 /*** Home Page ***/
-/* NOTE: when uncommented, these give a bookmark effect to the date overlays on events */
-/* div.card-img-overlay {
-  width: 11em;
-}
-p.card-text {
-  width: 100%;
-} */
-
-h5.footerTitle {
-  padding-left: 15px;
-  border-left: 3px solid #618E15;
-  padding-bottom: 6px;
-  /* margin-bottom: 20px; */
-}
-
-#tcc_overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font: bold 36px sans-serif;
-  color: #102a83;
-}
-
-#asiacrypt_overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font: bold 18px sans-serif;
-  color: #102a83;
-}
-
-img.figure-img {
-  width: 150px;
-  height: 150px;
-}
-
-.figure-caption {
-  font-size: 1.1em;
-}
-
 footer ul.nav {
   padding-left: 5px;
 }

@@ -93,6 +93,11 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   color: #091748;
 }
 
+.apple-footerTitle {
+  border-left: 3px solid #618E15;
+  padding-left: 10px;
+}
+
 .apple-footerLink, .apple-footerLink>ion-icon {
   color: #600030;
 }
