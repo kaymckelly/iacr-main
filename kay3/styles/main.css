@@ -53,6 +53,10 @@ img#pubPhoto {
   height: 100%;
 }
 
+ul#pubLinks>li {
+  margin-bottom: 10px;
+}
+
 footer ul.nav {
   padding-left: 5px;
 }
