@@ -44,8 +44,14 @@ div.input-group input {
 
 
 /*** Home Page ***/
-h5.cardTitleCustom {
-  font-size: 1.1em;
+h4.longCardTitle {
+  font-size: 1.5em;
+  margin-bottom: 9px;
+}
+
+img.tallFigImg {
+  max-height: 120px !important;
+  width: 100%;
 }
 
 img#pubPhoto {
