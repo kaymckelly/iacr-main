@@ -44,6 +44,27 @@ div.input-group input {
 
 
 /*** Home Page ***/
+h5.eventName {
+  background-color: purple;
+  color: white;
+}
+
+p.eventInfo {
+  background-color: purple;
+  color: white;
+}
+
+/* div.card, div.card-header {
+  background-color: #FDFDFD;
+}
+
+div.eventCard {
+  background-color: #FDFDFD;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-width: 1px;
+}
+
 div.card-body h6 {
   position: absolute;
   bottom: 50%;
@@ -52,7 +73,6 @@ div.card-body h6 {
   color: white;
   opacity: 1;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(0, 0, 0, 1);
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
   padding-right: 40px;
@@ -66,7 +86,7 @@ img.cardImg {
   opacity: 0.6;
   -webkit-filter: blur(0.2px);
   filter: blur(0.2px);
-}
+} */
 
 img#pubPhoto {
   /* NOTE: fix for img distortion issue on mobile */
