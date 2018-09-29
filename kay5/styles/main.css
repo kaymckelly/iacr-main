@@ -54,6 +54,26 @@ p.eventInfo {
   color: white;
 }
 
+img.trying {
+  -webkit-clip-path: polygon(10% 0%, 10% 66.66%, 50% 100%, 90% 66.66%, 90% 0%);
+  clip-path: polygon(10% 0%, 10% 66.66%, 50% 100%, 90% 66.66%, 90% 0%);
+  opacity: 0.9;
+  -webkit-filter: blur(1.7px) grayscale(60%);
+  filter: blur(1.7px) grayscale(60%);
+}
+
+h5.titleAttempt {
+  color: white;
+  font-size: 2em;
+}
+
+.textOverPic {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  -webkit-clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%);
+  clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%);
+}
+
 /* div.card, div.card-header {
   background-color: #FDFDFD;
 }
