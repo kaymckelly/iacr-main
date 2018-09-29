@@ -54,6 +54,7 @@ p.eventInfo {
   color: white;
 }
 
+/******* proposed different way of doing events cards - delete if not using *******/
 img.trying {
   -webkit-clip-path: polygon(10% 0%, 10% 66.66%, 50% 100%, 90% 66.66%, 90% 0%);
   clip-path: polygon(10% 0%, 10% 66.66%, 50% 100%, 90% 66.66%, 90% 0%);
@@ -67,12 +68,26 @@ h5.titleAttempt {
   font-size: 2em;
 }
 
+h5.titleAttemptDark {
+  color: black;
+  font-size: 2em;
+}
+
 .textOverPic {
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
   -webkit-clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%);
   clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%);
 }
+
+.tallerImg {
+  max-height: 230px !important;
+  width: auto !important;
+}
+/******* proposed events card style ends here ********/
+
+
+
 
 /* div.card, div.card-header {
   background-color: #FDFDFD;
