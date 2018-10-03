@@ -31,15 +31,33 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      z-index: 200;
+      z-index: 2;
     }
     .bluez {
-      background-color: #9CE4C7;
+    background-color: #9CE4C7;
     color: black;
 
     }
     .pudding {
       height: 1.5em;
+    }
+
+    /* my additions */
+    .svgShape {
+      width: 130%;
+    }
+
+    .background {
+      background-image: url("./img/ches.jpg");
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      -ms-filter: blur(5px);
+      filter: blur(5px);
+    }
+
+    .background h3 {
+      color: white;
     }
   </style>
 
@@ -48,16 +66,17 @@
 <body>
   <main class="container">
     <section class="row mt-3">
-
-      <article class="col-md-4 p-0">
+      <article class="col-6 col-md-4 p-0 ml-2 ml-md-0">
         <img src="./img/asiacrypt.png" class="img-fluid bgImg">
         <div class="my-overlay d-flex flex-column my-2">
-          <div class="text-center bluez mb-5 mx-auto align-self-center p-2">
-            October 55-November 77, 2018
+          <div class="text-center bluez mb-0 mb-md-5 mx-auto align-self-center p-2">
+            Oct 5 - Nov 7 2018
           </div>
-          <div class="food mt-5">
-            <div class="shape purple p-3"></div>
-            <div class="purple text-center p-2">Down here<br>in Elbonia<br>with my friends</div>
+          <div class="mt-0 mt-md-5">
+            <div class="shape purple p-4"></div>
+            <div class="purple text-center pb-1 pb-md-3">
+              Down here<br>in Elbonia<br>with my friends
+            </div>
           </div>
         </div>
       </article>
@@ -65,9 +84,9 @@
         <img src="./img/pkc.jpg" class="img-fluid bgImg">
         <div class="px-0 my-overlay d-flex flex-column my-2">
           <div class="text-center bluez my-2 mx-auto align-self-center p-2">
-            October 55-November 77, 2018
+            Oct 5 - Nov 7 2018
           </div>
-          <div class="food">
+          <div>
             <div class="shape purple pudding"></div>
             <div class="purple text-center p-2">Down here<br>in Elbonia<br>with my friends</div>
           </div>
@@ -78,13 +97,28 @@
         <img src="./img/fse.jpg" class="img-fluid bgImg">
         <div class="px-0 my-overlay d-flex flex-column my-2">
           <div class="text-center bluez mb-4 mx-auto p-2">
-            Oct 55-57, 2018
+            Oct 5 - 7 2018
           </div>
-          <div class="food">
+          <div>
             <div class="shape purple p-3"></div>
-            <div class="purple text-center p-2"><h5>ElboniaCrypt 2018</h5>
-              South Weirdton, New Elbonia</div>
+            <div class="purple text-center p-2">
+              <h5>ElboniaCrypt 2018</h5>
+              South Weirdton, New Elbonia
+            </div>
           </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="row mt-3">
+      <article class="col-4 p-0">
+        <div class="background">
+          <h3>
+            conference name
+          </h3>
+        </div>
+        <div class="shapeOverlay">
+          <img src="./img/yup.svg" class="svgShape" />
         </div>
       </article>
     </section>
