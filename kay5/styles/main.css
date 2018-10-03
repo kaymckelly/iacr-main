@@ -62,6 +62,12 @@ img#pubPhoto {
   height: 100%;
 }
 
+img.pubImg {
+  max-width: 95px;
+  max-height: 140px;
+  filter: grayscale(80%) contrast(80%);
+}
+
 ul#pubLinks>li {
   margin-bottom: 10px;
 }
