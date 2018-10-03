@@ -43,50 +43,19 @@ div.input-group input {
 }
 
 /*** Home Page ***/
-
-h5.eventName {
-  background-color: purple;
-  color: white;
-}
-
 p.eventInfo {
-  background-color: purple;
+  background-color: rgba(156, 228, 199, 0.8);
+}
+
+/* modifying bootstrap classes = much danger many ouch */
+div.card-header {
+  background-color: #256969;
   color: white;
 }
-
-/******* proposed different way of doing events cards - delete if not using *******/
-
-img.trying {
-  -webkit-clip-path: polygon(10% 0%, 10% 66.66%, 50% 100%, 90% 66.66%, 90% 0%);
-  clip-path: polygon(10% 0%, 10% 66.66%, 50% 100%, 90% 66.66%, 90% 0%);
-  opacity: 0.9;
-  -webkit-filter: blur(1.7px) grayscale(60%);
-  filter: blur(1.7px) grayscale(60%);
+div.card-footer {
+  background-color: rgba(156, 228, 199, 0.3);
 }
-
-h5.titleAttempt {
-  color: white;
-  font-size: 2em;
-}
-
-h5.titleAttemptDark {
-  color: black;
-  font-size: 2em;
-}
-
-.textOverPic {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  -webkit-clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%);
-  clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%);
-}
-
-.tallerImg {
-  max-height: 230px !important;
-  width: auto !important;
-}
-
-/******* proposed events card style ends here ********/
+/* end danger zone */
 
 img#pubPhoto {
   /* NOTE: fix for img distortion issue on mobile */
