@@ -34,8 +34,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 }
 
 .default-cardHeading {
-  background-color: rgba(156, 228, 199, 0.5);
-  color: #256969;
+  border-top: 4px solid rgba(156, 228, 199, 0.8);
 }
 
 .default-figCaption {

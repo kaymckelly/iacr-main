@@ -2,8 +2,8 @@
 
 /* Official IACR logo color is #102A83 until further notice */
 
-
 /*** General ***/
+
 @font-face {
   font-family: 'roboto';
   src: local('Roboto-Regular') url(./fonts/Roboto/Roboto-Regular.ttf) fomat('truetype');
@@ -13,15 +13,15 @@ body {
   font-family: 'roboto', sans-serif;
 }
 
-
-
 /*** Header & Nav ***/
+
 img#logo {
   max-height: 7em;
   width: auto;
 }
 
 /* NOTE: this is only to space the navbar appropriately on mobile to leave space for the dropdown theme picker. please remove this entire block once theme picker is no longer relevant */
+
 @media (max-width: 992px) {
   nav {
     margin-top: 40px;
@@ -29,6 +29,7 @@ img#logo {
 }
 
 /* NOTE: This is modifying bootstrap's classes, which is dangerous and generally frowned upon. Consider this a quickfix, not a way of life. */
+
 a.nav-link, a.dropdown-item {
   color: #EBF7EB !important;
 }
@@ -41,22 +42,30 @@ div.input-group input {
   background-color: #FDFDFD;
 }
 
-
-
 /*** Home Page ***/
-h4.longCardTitle {
-  font-size: 1.5em;
-  margin-bottom: 9px;
+p.eventInfo {
+  background-color: rgba(156, 228, 199, 0.8);
 }
 
-img.tallFigImg {
-  max-height: 120px !important;
-  width: 100%;
+/* modifying bootstrap classes = much danger many ouch */
+div.card-header {
+  background-color: #256969;
+  color: white;
 }
+div.card-footer {
+  background-color: rgba(156, 228, 199, 0.3);
+}
+/* end danger zone */
 
 img#pubPhoto {
   /* NOTE: fix for img distortion issue on mobile */
   height: 100%;
+}
+
+img.pubImg {
+  max-width: 75px;
+  max-height: 120px;
+  filter: grayscale(80%) contrast(80%);
 }
 
 ul#pubLinks>li {
