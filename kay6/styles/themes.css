@@ -21,42 +21,47 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 *****************************************************/
 /* default theme based on https://coolors.co/fdfdfd-9ce4c7-32908f-256969-04120d */
 .default-body {
-  background-color: #FDFDFD;
-  color: #04120D;
+    background: #F3F4F8 !important;
+    color: #080808 !important;
 }
 
 .default-anchor {
-  color: #32908F;
+  color: #102a83;
 }
 
 .default-menubar, .default-dropdown {
-  background: #32908F;
+    background: #253D8E;
 }
 
 .default-cardHeading {
+<<<<<<< HEAD
   border-top: 4px solid rgba(156, 228, 199, 0.8);
+=======
+    background-color: #0E236C;
+    color: #F0F0F0;
+>>>>>>> 52a63b0ec2bf96d7167bbb2fed64ac658eb34c74
 }
 
 .default-figCaption {
-  background-color: #32908F;
+    background-color: #5164A4;
   color: #FDFDFD;
 }
 
 .default-footer {
-  background-color: rgba(156, 228, 199, 0.2);
+    background-color: #BDC4DD;
 }
 
 .default-footerTitle, .default-footerTitle>a {
-  color: #256969;
+  color: #091768;
 }
 
 .default-footerTitle {
-  border-left: 3px solid #9CE4C7;
+    border-left: 3px solid #E9EBF3;
   padding-left: 10px;
 }
 
 .default-footerLink, .default-footerLink>ion-icon {
-  color: #32908F;
+    color: #091768;
 }
 
 
