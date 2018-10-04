@@ -134,3 +134,36 @@ by .green- or whatever the name is.
     height: 4px;
     display:block !important;
 }
+/************** blues2 ***************************/
+.blues2-body {
+    background: #f0f0f0;
+    color: #080808;
+}
+.blues2-menubar {
+    background: #2787c5;
+}
+
+.blues2-card-header {
+    background: #2787c5;
+    color: #f0f0f0;
+}
+.blues2-card-header a,h2 {
+    color: #f0f0f0;
+}
+
+.blues2-nav-link {
+    color: #ffffff !important;
+    font-size: 1.2em !important;
+}
+.blues2-nav-link:hover {
+    color: #e0e0e0 !important;
+}
+.blues2-topbar {
+    background: #0792f9;
+    background-image: url(../img/bg1.jpg);
+}
+.blues2-footer div.rule {
+    background: #2787c5;
+    height: 4px;
+    display:block !important;
+}
