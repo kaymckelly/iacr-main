@@ -36,7 +36,17 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 .default-cardHeading {
   border-top: 4px solid rgba(156, 228, 199, 0.8);
 }
-
+/* modifying bootstrap classes = much danger many ouch */
+.default-conferenceHeader {
+  background-color: #256969;
+  color: white;
+}
+.default-conferenceFooter {
+  background-color: rgba(156, 228, 199, 0.9);
+}
+.default-eventInfo {
+    background-color: rgba(156, 228, 199, 0.8);
+}
 .default-figCaption {
     background-color: #5164A4;
   color: #FDFDFD;
