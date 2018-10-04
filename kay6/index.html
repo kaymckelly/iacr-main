@@ -166,9 +166,9 @@
           News
         </h3>
         <!-- BUG: icons disappear in mobile wut -->
-        <div class="row newsItemRow">
-          <div class="col-1 col-lg-2 d-flex flex-column align-items-end">
-            <ion-icon name="airplane" class="h-100 w-100"></ion-icon>
+        <div class="row">
+          <div class="col-1 col-lg-2 text-center d-none d-lg-block">
+            <ion-icon name="airplane" class="newsicon"></ion-icon>
           </div>
           <div class="col-11 col-lg-10">
             <p>
@@ -177,20 +177,20 @@
             </p>
           </div>
         </div>
-        <div class="row newsItemRow">
-          <div class="col-1 col-lg-2 d-flex flex-column align-items-end">
-            <ion-icon name="document" class="h-100 w-100"></ion-icon>
+        <div class="row">
+          <div class="col-1 col-lg-2 text-center d-none d-lg-block">
+            <ion-icon name="document" class="newsicon"></ion-icon>
           </div>
-          <div class="col-11 col-lg-10">
+          <div class="col">
             <p>
               ePrint Report: <a class="default-anchor" href="https://eprint.iacr.org/2018/733">Threshold Partially-Oblivious PRFs with Applications to Key Management</a><br />
               <i>Stanislaw Jarecki, Hugo Krawczyk, Jason Resch</i>
             </p>
           </div>
         </div>
-        <div class="row newsItemRow">
-          <div class="col-1 col-lg-2 d-flex flex-column align-items-end">
-            <ion-icon name="document" class="h-100 w-100"></ion-icon>
+        <div class="row">
+          <div class="col-1 col-lg-2 text-center d-none d-lg-block">
+            <ion-icon name="document" class="newsicon"></ion-icon>
           </div>
           <div class="col-11 col-lg-10">
             <p>
@@ -199,9 +199,9 @@
             </p>
           </div>
         </div>
-        <div class="row newsItemRow">
-          <div class="col-1 col-lg-2 d-flex flex-column align-items-end">
-            <ion-icon name="document" class="h-100 w-100"></ion-icon>
+        <div class="row">
+          <div class="col-1 col-lg-2 text-center d-none d-lg-block">
+            <ion-icon name="document" class="newsicon"></ion-icon>
           </div>
           <div class="col-11 col-lg-10">
             <p>
@@ -210,9 +210,9 @@
             </p>
           </div>
         </div>
-        <div class="row newsItemRow">
-          <div class="col-1 col-lg-2 d-flex flex-column align-items-end">
-            <ion-icon name="document" class="h-100 w-100"></ion-icon>
+        <div class="row">
+          <div class="col-1 col-lg-2 text-center d-none d-lg-block">
+            <ion-icon name="document" class="newsicon"></ion-icon>
           </div>
           <div class="col-11 col-lg-10">
             <p>
@@ -227,124 +227,131 @@
       </article>
       <article class="col-12 col-md-8 mb-3">
         <h3 class="default-cardHeading rounded p-2">
-            Events
+            Events (the images need improvement)
         </h3>
 
         <div class="row">
-          <div class="col-6 col-lg-4 mb-3">
-            <div class="card-header border-0">
-              <h5 class="p-0 m-0 text-center">
-                TCC 2018
-              </h5>
+          <div class="col-6 col-lg-4 col-xl-3 mb-3">
+            <div class="default-conferenceHeader text-center p-2">
+              CHES 2018
             </div>
             <div class="card border-0">
-              <img src="./img/tcc.png" alt="" class="card-img" />
-              <div class="card-img-overlay d-flex align-content-center flex-column">
-                <p class="card-text eventInfo mt-auto text-center">
-                  Nov 11-14
+              <img src="./img/ches4.png" alt="" class="card-img h-100" />
+              <div class="card-img-overlay d-flex align-content-center flex-column p-2">
+                <p class="card-text default-eventInfo mt-auto text-center">
+                  Sept 9-12<br>
+                  Amsterdam, The Netherlands
                 </p>
               </div>
             </div>
-            <div class="card-footer p-0 text-center border-0">
-              Panaji, Goa, India
+          </div>
+
+          <div class="col-6 col-lg-4 col-xl-3 mb-3">
+            <div class="default-conferenceHeader text-center p-2">
+              TCC 2018
+            </div>
+            <div class="card border-0">
+              <img src="./img/tcc2.png" alt="" class="card-img h-100" />
+              <div class="card-img-overlay align-content-center d-flex flex-column p-2">
+                <p class="card-text default-eventInfo mt-auto text-center">
+                  Nov 11-14<br>
+                  Panaji, Goa, India
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="col-6 col-lg-4 mb-3">
-            <div class="card-header border-0">
-              <h5 class="p-0 m-0 text-center">
-                Asiacrypt 2018
-              </h5>
+          <div class="col-6 col-lg-4 col-xl-3 mb-3">
+            <div class="default-conferenceHeader text-center p-2">
+              Asiacrypt 2018
             </div>
             <div class="card border-0">
-              <img src="./img/asiacrypt.png" alt="" class="card-img" />
-              <div class="card-img-overlay d-flex align-content-center flex-column">
-                <p class="card-text eventInfo mt-auto text-center">
+              <img src="./img/asiacrypt3.png" alt="" class="card-img h-100"/>
+              <div class="card-img-overlay align-content-center d-flex flex-column p-2">
+                <p class="card-text default-eventInfo mt-auto text-center">
                   Dec 2-6
+                  <br>
+                  Brisbane, Australia
                 </p>
               </div>
-            </div>
-            <div class="card-footer p-0 text-center border-0">
-              Brisbane, Australia
             </div>
           </div>
 
-          <div class="col-6 col-lg-4 mb-3">
-            <div class="card-header border-0">
-              <h5 class="p-0 m-0 text-center">
-                RWC 2019
-              </h5>
+          <div class="col-6 col-lg-4 col-xl-3 mb-3">
+            <div class="default-conferenceHeader text-center p-2">
+              RWC 2019
             </div>
             <div class="card border-0">
-              <img src="./img/rwc.svg" alt="" class="card-img" />
-              <div class="card-img-overlay d-flex align-content-center flex-column">
-                <p class="card-text eventInfo mt-auto text-center">
-                  Jan 9-11
-                </p>
+              <img src="./img/rwc.svg.png" alt="" class="card-img h-100" />
+              <div class="card-img-overlay align-content-center d-flex flex-column p-2">
+                <p class="card-text default-eventInfo mt-auto text-center">
+                  Jan 9-11<br>
+                  San Jose, Calif, USA
+                  </p>
               </div>
-            </div>
-            <div class="card-footer p-0 text-center border-0">
-              San Jose, California, USA
             </div>
           </div>
 
-          <div class="col-6 col-lg-4 mb-3">
-            <div class="card-header border-0">
-              <h5 class="p-0 m-0 text-center">
-                FSE 2019
-              </h5>
+          <div class="col-6 col-lg-4 col-xl-3 mb-3">
+            <div class="default-conferenceHeader text-center p-2">
+              FSE 2019
             </div>
             <div class="card border-0">
-              <img src="./img/fse.jpg" alt="" class="card-img" />
-              <div class="card-img-overlay d-flex align-content-center flex-column">
-                <p class="card-text eventInfo mt-auto text-center">
-                  March 25-28
+              <img src="./img/fse.jpg" alt="" class="card-img h-100" />
+              <div class="card-img-overlay d-flex align-content-center flex-column p-2">
+                <p class="card-text default-eventInfo mt-auto text-center">
+                  March 25-28<br>
+                  Paris, France
                 </p>
               </div>
-            </div>
-            <div class="card-footer p-0 text-center border-0">
-              Paris, France
             </div>
           </div>
 
-          <div class="col-6 col-lg-4 mb-3">
-            <div class="card-header border-0">
-              <!-- NOTE: actual conference with these dates/location is PKC but we don't have a current graphic for that -->
-              <h5 class="p-0 m-0 text-center">
-                CHES 2019
-              </h5>
+          <div class="col-6 col-lg-4 col-xl-3 mb-3">
+            <div class="default-conferenceHeader text-center p-2">
+              PKC 2019
             </div>
             <div class="card border-0">
-              <img src="./img/ches.svg" alt="" class="card-img" />
-              <div class="card-img-overlay d-flex align-content-center flex-column">
-                <p class="card-text eventInfo mt-auto text-center">
-                  April 14-17
+              <img src="img/pkc4.png" alt="" class="card-img h-100" />
+              <div class="card-img-overlay d-flex align-content-center flex-column p-2">
+                <p class="card-text default-eventInfo mt-auto text-center">
+                  April 14-17<br>
+                  Beijing, China
                 </p>
               </div>
-            </div>
-            <div class="card-footer p-0 text-center border-0">
-              Beijing, China
             </div>
           </div>
 
-          <div class="col-6 col-lg-4 mb-3">
-            <div class="card-header border-0">
-              <h5 class="p-0 m-0 text-center">
-                Eurocrypt 2019
-              </h5>
+          <div class="col-6 col-lg-4 col-xl-3 mb-3">
+            <div class="default-conferenceHeader text-center p-2">
+              Eurocrypt 2019
             </div>
             <div class="card border-0">
-              <img src="./img/eurocrypt.png" alt="" class="card-img" />
-              <div class="card-img-overlay d-flex align-content-center flex-column">
-                <p class="card-text eventInfo mt-auto text-center">
-                  May 19-23
+              <img src="./img/eurocrypt.png" alt="" class="card-img h-100" />
+              <div class="card-img-overlay d-flex align-content-center flex-column p-2">
+                <p class="card-text default-eventInfo mt-auto text-center">
+                  May 19-23<br>
+                  Darmstadt, Germany
                 </p>
               </div>
             </div>
-            <div class="card-footer p-0 text-center border-0">
-              Darmstadt, Germany
+          </div>
+
+          <div class="col-6 col-lg-4 col-xl-3 mb-3">
+            <div class="default-conferenceHeader text-center p-2">
+              Crypto 2019
+            </div>
+            <div class="card border-0">
+              <img src="./img/crypto.png" alt="" class="card-img h-100" />
+              <div class="card-img-overlay d-flex align-content-center flex-column p-2">
+                <p class="card-text default-eventInfo mt-auto text-center">
+                  August 19-23<br>
+                  Santa Barbara, USA
+                </p>
+              </div>
             </div>
           </div>
+        </div>
         </div>
 
         <!-- TODO: maybe center? or experiment with footer and link -->
@@ -361,32 +368,48 @@
           Publications
         </h3>
 
-        <div class="row mb-3 align-items-center">
-          <img src="./img/jofc.jpg" alt="" class="pubImg" />
-          <a href="/jofc/" class="default-anchor ml-3">
-            Journal of Cryptology
-          </a>
-        </div>
+        <div class="row">
+          <div class="mb-3 col-xl-6 d-flex pr-1">
+            <img src="./img/jofc.jpg" alt="" class="pubImg"/>
+            <a href="/jofc/" class="default-anchor align-self-center ml-2">
+              Journal of Cryptology
+            </a>
+          </div>
 
-        <div class="row mb-3 align-items-center">
-          <img src="./img/aic.jpg" alt="" class="pubImg" />
-          <a href="/proceedings/" class="default-anchor ml-3">
-            Conference and<br />workshop proceedings
-          </a>
-        </div>
+          <div class="mb-3 col-xl-6 d-flex pr-1">
+            <img src="./img/aic.jpg" alt="" class="pubImg" />
+            <a href="/proceedings/" class="default-anchor align-self-center ml-2">
+              Conference and workshop proceedings
+            </a>
+          </div>
 
-        <div class="row mb-3 align-items-center">
-          <img src="./img/eprint.png" alt="" class="pubImg" />
-          <a href="http://eprint.iacr.org/" class="default-anchor ml-3">
-            Cryptology ePrint Archive
-          </a>
-        </div>
+          <div class="mb-3 col-xl-6 d-flex pr-1">
+            <img src="./img/oa.png" alt="" class="pubImg" />
+            <a href="/proceedings/" class="default-anchor align-self-center ml-2">
+              Transactions on Symmetric Cryptography
+            </a>
+          </div>
 
-        <div class="row mb-3 align-items-center">
-          <img src="./img/db.png" alt="" class="pubImg" />
-          <a href="/cryptodb/" class="default-anchor ml-3">
-            Bibliography of publications
-          </a>
+          <div class="mb-3 col-xl-6 d-flex pr-1">
+            <img src="./img/oa.png" alt="" class="pubImg" />
+            <a href="/proceedings/" class="default-anchor align-self-center ml-2">
+              Transactions on Cryptographic Hardware and Embedded Systems
+            </a>
+          </div>
+
+          <div class="mb-3 col-xl-6 d-flex pr-1">
+            <img src="./img/eprint.png" alt="" class="pubImg" />
+            <a href="http://eprint.iacr.org/" class="default-anchor align-self-center ml-2">
+              Cryptology ePrint Archive
+            </a>
+          </div>
+
+          <div class="mb-3 col-xl-6 d-flex pr-1">
+            <img src="./img/db.png" alt="" class="pubImb" />
+            <a href="/cryptodb/" class="default-anchor align-self-center ml-2">
+              Bibliography of publications
+            </a>
+          </div>
         </div>
 
         <!-- <div class="d-inline-flex">
