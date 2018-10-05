@@ -29,7 +29,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   color: #3B5099;
 }
 
-.default-menubar, .default-dropdown {
+.default-menubar, nav.default-menubar .dropdown-menu {
     background: #102A83;
 }
 
@@ -80,7 +80,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   color: #598113;
 }
 
-.apple-menubar, .apple-dropdown {
+.apple-menubar, nav.apple-menubar .dropdown-menu {
   background-color: #600030;
 }
 
