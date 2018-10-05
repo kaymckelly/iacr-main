@@ -13,8 +13,9 @@ body {
   font-family: 'roboto', sans-serif;
 }
 
-/*** Header & Nav ***/
 
+
+/*** Header & Nav ***/
 img#logo {
   max-height: 7em;
   width: auto;
@@ -26,6 +27,11 @@ img#logo {
   nav {
     margin-top: 40px;
   }
+}
+
+/* NOTE: hover effect for navbar */
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
 }
 
 /* NOTE: This is modifying bootstrap's classes, which is dangerous and generally frowned upon. Consider this a quickfix, not a way of life. */
