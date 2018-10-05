@@ -19,54 +19,53 @@
 /****************************************************
 Default theme. Copy this to make a new one, replacing * .default with .green or whatever the name is.
 *****************************************************/
-/* default theme based on https://coolors.co/fdfdfd-9ce4c7-32908f-256969-04120d */
+/* default theme based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 */
 .default-body {
     background: #F3F4F8 !important;
     color: #080808 !important;
 }
 
 .default-anchor {
-  color: #102a83;
+  color: #3B5099;
 }
 
 .default-menubar, .default-dropdown {
-    background: #253D8E;
+    background: #102A83;
 }
 
 .default-cardHeading {
-  border-top: 4px solid rgba(156, 228, 199, 0.8);
+  border-top: 4px solid #F2AC10;
 }
-/* modifying bootstrap classes = much danger many ouch */
+
 .default-conferenceHeader {
-  background-color: #256969;
-  color: white;
+  background-color: #102A83;
+  color: #FEFEFE;
 }
-.default-conferenceFooter {
-  background-color: rgba(156, 228, 199, 0.9);
-}
+
 .default-eventInfo {
-    background-color: rgba(156, 228, 199, 0.8);
+  background-color: rgba(59, 80, 153, 0.8);
+  color: #FEFEFE;
 }
 .default-figCaption {
-    background-color: #5164A4;
+  background-color: #5164A4;
   color: #FDFDFD;
 }
 
 .default-footer {
-    background-color: #BDC4DD;
+  background-color: rgba(146, 158, 198, 0.2);
 }
 
 .default-footerTitle, .default-footerTitle>a {
-  color: #091768;
+  color: #0B1B54;
 }
 
 .default-footerTitle {
-    border-left: 3px solid #E9EBF3;
+  border-left: 3px solid #F2AC10;
   padding-left: 10px;
 }
 
 .default-footerLink, .default-footerLink>ion-icon {
-    color: #091768;
+  color: #102A83;
 }
 
 
