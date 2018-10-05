@@ -114,7 +114,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   color: #3B5099;
 }
 
-.monochrome-menubar, , nav.monochrome-menubar .dropdown-menu {
+.monochrome-menubar, nav.monochrome-menubar .dropdown-menu {
   background-color: #102A83;
 }
 
@@ -151,7 +151,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   color: #522D64;
 }
 
-.wine-menubar, , nav.wine-menubar .dropdown-menu {
+.wine-menubar, nav.wine-menubar .dropdown-menu {
   background-color: #2E0344;
 }
 

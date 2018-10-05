@@ -49,6 +49,10 @@ div.input-group input {
 
 
 /*** Home Page ***/
+h4.figTitle {
+  color: black;
+}
+
 h4.longCardTitle {
   font-size: 1.5em;
   margin-bottom: 9px;
