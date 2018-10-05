@@ -20,12 +20,21 @@ img#logo {
   width: auto;
 }
 
-/* NOTE: this is only to space the navbar appropriately on mobile to leave space for the dropdown theme picker. please remove this entire block once theme picker is no longer relevant */
+/* NOTE: these are both to leave enough space for the dropdown theme picker. please remove this entire block once theme picker is no longer relevant */
+header {
+  margin-top: 40px;
+}
+
+header h1 {
+  font-size: 2.2em;
+}
+
 @media (max-width: 992px) {
   nav {
     margin-top: 40px;
   }
 }
+/* end styles exclusive to theme picker */
 
 /* NOTE: This is modifying bootstrap's classes, which is dangerous and generally frowned upon. Consider this a quickfix, not a way of life. */
 a.nav-link, a.dropdown-item {
@@ -46,19 +55,10 @@ button.custom-toggler>ion-icon {
 
 
 /*** Home Page ***/
-/* NOTE: when uncommented, these give a bookmark effect to the date overlays on events */
-/* div.card-img-overlay {
-  width: 11em;
-}
-p.card-text {
-  width: 100%;
-} */
-
 h5.footerTitle {
   padding-left: 15px;
   border-left: 3px solid #618E15;
   padding-bottom: 6px;
-  /* margin-bottom: 20px; */
 }
 
 #tcc_overlay {
