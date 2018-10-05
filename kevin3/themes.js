@@ -23,13 +23,15 @@ function setTheme(new_theme) {
   var body = document.getElementsByTagName('body')[0];
   body.classList.remove(current_theme + '-body');
   body.classList.add(new_theme + '-body');
-  document.getElementById('menubar').classList.remove(current_theme + '-menubar');
-  document.getElementById('menubar').classList.add(new_theme + '-menubar');
   var headers = document.querySelectorAll('.' + current_theme + '-card-header');
   for (i = 0; i < headers.length; ++i) {
     headers[i].classList.remove(current_theme + '-card-header');
     headers[i].classList.add(new_theme + '-card-header');
   }
+  document.getElementById('acronym').classList.remove(current_theme + '-name');
+  document.getElementById('acronym').classList.add(new_theme + '-name');
+  document.getElementById('iacrname').classList.remove(current_theme + '-name');
+  document.getElementById('iacrname').classList.add(new_theme + '-name');
   var footers = document.querySelectorAll('.' + current_theme + '-card-footer');
   for (i = 0; i < footers.length; ++i) {
     footers[i].classList.remove(current_theme + '-card-footer');
