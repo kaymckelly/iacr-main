@@ -1,18 +1,15 @@
+
 .conf-img {
     height: 120px !important;
     width: 120px !important;
-}
-.iacr-name-oneline {
-    font-size: 2em !important;
 }
 
 #iacr_container {
     padding-top: 20px !important;
 }
-/*
-img.logo {
-  max-height: 100px;
-}*/
+img#iacrlogo {
+    max-height: 100px;
+}
 
 .masonry .card {
     margin-bottom: 0.5rem;
@@ -22,7 +19,7 @@ img.logo {
     padding:  0.5rem 0.5rem 0rem 0.5rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .masonry {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -40,20 +37,12 @@ img.logo {
   }
 }
 
-#map_canvas {
-    height: 300px;
-    background-color: #c0c0f0;
-}
-
 .masonry .card-header {
     font-size: 2em !important;
 }
 
 .navbar-nav .nav-link {
     font-size: 1em !important;
-}
-.navbar-iacr-acronym {
-    font-size: 2em !important;
 }
 .social-buttons {
     font-size: 2em !important;
@@ -74,4 +63,7 @@ img.logo {
     transform: translate(-50%,-50%);
     font: bold 14px sans-serif;
     color: #102a83;
+}
+#topbar {
+    background-size: cover;
 }

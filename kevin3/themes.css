@@ -1,9 +1,8 @@
 #theme-menu {
     position: fixed;
-    top: 0%;
-    right: 0%;
+    top: 5%;
+    left: 45%;
     z-index: 1000;
-/*    width: 0;*/
     height: 0;
 }
 #theme-menu button {
@@ -24,20 +23,16 @@ by .green or whatever the name is.
     background: #f0f0f0;
     color: #0c0c0c;
 }
-.default-menubar {
-    background: #2787c5;
-}
-
 .default-card-header {
     background: #2787c5;
     color: #f0f0f0;
 }
-.default-card-header a,h2 {
+.default-card-header a, .default-card-header h2 {
     color: #f0f0f0;
 }
 
-.default-nav-link {
-    color: #ffffff !important;
+.default-name {
+    color: #202020;
 }
 .default-topbar {
     background: url(../img/bg1.jpg);
@@ -47,28 +42,30 @@ by .green or whatever the name is.
 }
 
 /********* Green theme **********************************/
-.green-topbar {
-    background: #73b0a4;
-    background-image: none;
-}
-}
-
 .green-body {
     background: #DDEEE9;
     color: #0c0c0c;
 }
-.green-menubar {
-    background: #035024;
-}
 .green-card-header {
     background: #27c587;
-    color: #c0ffc0;
-}
-.green-card-header a,h2 {
-    color: #c0ffc0;
-}
-.green-nav-link {
     color: #404040 !important;
+}
+.green-card-header a, .green-card-header h2 {
+    color: #404040 !important;
+}
+.green-name {
+    #000000;
+}
+.green-topbar {
+    background: #73b0a4;
+    background: url(../img/green.svg);
+}
+.green-card-footer {
+    background: #50d0a0 !important;
+}
+.green-card-footer a {
+    color: #204020 !important;
+    text-decoration: underline !important;
 }
 
 /********* Ugly theme **********************************/
@@ -77,21 +74,22 @@ by .green or whatever the name is.
     background: #f0f0f0;
     color: #0c0c0c;
 }
-.ugly-menubar {
-    background: #2787c5;
-}
-
 .ugly-card-header {
-    background: #2787c5;
-    color: #f0f0f0;
+    background: #0D6875 !important;
+    color: #f0f0f0 !important;
 }
-.ugly-card-header a,h2 {
-    color: #f0f0f0;
+.ugly-card-header a, .ugly-card-header h2 {
+    color: #f0f0f0 !important;
 }
-
-.ugly-nav-link {
-    color: #ffffff !important;
+.ugly-name {
+    color: #E0FFFF !important;
 }
 .ugly-topbar {
-    background: url(./tri.svg);
+    background: url(headers/teal.svg);
+}
+.ugly-card-footer {
+    background: #5DAAB5 !important;
+}
+.ugly-card-footer a {
+    color: #ffffff !important;
 }
