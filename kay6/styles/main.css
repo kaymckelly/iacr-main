@@ -29,7 +29,7 @@ img#logo {
   }
 }
 
-/* NOTE: hover effect for navbar */
+/* NOTE: hover effect for navbar. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
 .navbar-nav li:hover>.dropdown-menu {
   display: block;
 }
