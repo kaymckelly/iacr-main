@@ -19,3 +19,6 @@ uses
 There are other parameters to control the number of triangles (--num)
 and the minimum distance from the border (--min). The option --blur applies
 a filter to blur the edges (this isn't very satisfying).
+
+## Some examples
+![examples/banner.svg](examples/banner.svg)
