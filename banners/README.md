@@ -22,8 +22,10 @@ a filter to blur the edges (this isn't very satisfying).
 
 ## Some examples
 ![examples/banner.svg](examples/banner.svg)
-![examples/banner11.svg](examples/banner.svg)
+![examples/banner11.svg](examples/banner11.svg)
 ![examples/banner4.svg](examples/banner4.svg)
 ![examples/banner7.svg](examples/banner7.svg)
 ![examples/banner8.svg](examples/banner8.svg)
-![examples/banner9.svg](examples/banner9.svg)
+![examples/mixed.svg](examples/mixed.svg)
+![examples/arcs.svg](examples/arcs.svg)
+![examples/splines.svg](examples/splines.svg)

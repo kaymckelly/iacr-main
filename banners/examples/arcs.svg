@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="300"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- created with "arcs.py -min 10" -->
+   
+<g>
+  <rect x="0" y="0" width="1920" height="300" stroke="none" fill="#a5afd0"/>
+  <ellipse cx="0" cy="142" rx="1920.0" ry="142" stroke="none" fill="#384e98"/>
+  <ellipse cx="0" cy="184" rx="1728.0" ry="184" stroke="none" fill="#4c60a2"/>
+  <ellipse cx="0" cy="102" rx="1536.0" ry="102" stroke="none" fill="#3b5199"/>
+  <ellipse cx="0" cy="174" rx="1344.0" ry="174" stroke="none" fill="#596ba9"/>
+  <ellipse cx="0" cy="57" rx="1152.0" ry="57" stroke="none" fill="#3c5199"/>
+  <ellipse cx="0" cy="201" rx="960.0" ry="201" stroke="none" fill="#7180b5"/>
+  <ellipse cx="0" cy="138" rx="768.0" ry="138" stroke="none" fill="#6475ae"/>
+  <ellipse cx="0" cy="54" rx="576.0" ry="54" stroke="none" fill="#4f62a3"/>
+  <ellipse cx="0" cy="283" rx="384.0" ry="283" stroke="none" fill="#a5afd0"/>
+  <ellipse cx="0" cy="133" rx="192.0" ry="133" stroke="none" fill="#7987b9"/>
+</g></svg>
