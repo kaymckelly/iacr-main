@@ -19,6 +19,11 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.substr(1);
 }
 
+var fellows = ['2018 IACR Fellow: <a href="https://iacr.org/fellows/2018/garay.html">Juan Garay</a>',
+               '2018 IACR Fellow: <a href="https://iacr.org/fellows/2018/ishai.html">Yuval Ishai</a>',
+               '2018 IACR Fellow: <a href="https://iacr.org/fellows/2018/kocher.html">Paul Kocher</a>',
+               '2018 IACR Fellow: <a href="https://iacr.org/fellows/2018/tavares.html">Stafford Tavares</a>'];
+
 get_data('/cryptodb/data/bestpaper.php?a=1', function(data) {
   var html = '';
   for (i = 0; i < Math.min(4, data.length); i++) {
@@ -26,6 +31,9 @@ get_data('/cryptodb/data/bestpaper.php?a=1', function(data) {
     html += '<p>' + row['award'] + ', ' + capitalize(row['venue']) + ' ' + row['year'];
     html += ', <a href="/cryptodb/data/paper.php?pubkey=' + row['pubkey'] + '">';
     html += row['title'] + '</a></p>';
+  }
+  for (i = 0; i < fellows.length; i++) {
+    html += '<p>' + fellows[i] + '</p>';
   }
   document.getElementById("best_papers").innerHTML = html;
 });
