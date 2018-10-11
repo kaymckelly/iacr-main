@@ -60,6 +60,6 @@
   <circle cx="57.5" cy="20" r="2.5" class="circuitpost"/>
   <path d="M 70,0 l 0 30 l -10 0" class="circuit"/>
   <circle cx="57.5" cy="30" r="2.5" class="circuitpost"/>
-  <text x="50" y="60" text-anchor="middle" class="ches">CHES</text>
+<!--  <text x="50" y="60" text-anchor="middle" class="ches">CHES</text> -->
 
 </svg>

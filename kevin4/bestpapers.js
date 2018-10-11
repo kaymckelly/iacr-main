@@ -26,14 +26,14 @@ var fellows = ['2018 IACR Fellow: <a href="https://iacr.org/fellows/2018/garay.h
 
 get_data('/cryptodb/data/bestpaper.php?a=1', function(data) {
   var html = '';
+  for (i = 0; i < fellows.length; i++) {
+    html += '<p>' + fellows[i] + '</p>';
+  }
   for (i = 0; i < Math.min(4, data.length); i++) {
     var row = data[i];
     html += '<p>' + row['award'] + ', ' + capitalize(row['venue']) + ' ' + row['year'];
     html += ', <a href="/cryptodb/data/paper.php?pubkey=' + row['pubkey'] + '">';
     html += row['title'] + '</a></p>';
-  }
-  for (i = 0; i < fellows.length; i++) {
-    html += '<p>' + fellows[i] + '</p>';
   }
   document.getElementById("best_papers").innerHTML = html;
 });
