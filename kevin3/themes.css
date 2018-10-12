@@ -1,13 +1,14 @@
 #theme-menu {
     position: fixed;
-    top: 5%;
+    top: 8%;
     left: 45%;
     z-index: 1000;
     height: 0;
 }
-#theme-menu button {
-    background: #f0f0f0 !important;
-    border: 2px solid red;
+#dropdownMenuButton {
+    background: #404040 !important;
+    color: #f0f0f0;
+    border: 2px solid #d04040;
 }
 
 .navbar-iacr-acronym {
@@ -38,6 +39,29 @@ by .green or whatever the name is.
     background: url(../img/bg1.jpg);
 }
 .default-card-footer {
+    background: #e0e0f0 !important;
+}
+
+/* waves theme */
+.waves-body {
+    background: #f0f0f0;
+    color: #0c0c0c;
+}
+.waves-card-header {
+    background: #3B5099;
+    color: #f0f0f0;
+}
+.waves-card-header a, .waves-card-header h2 {
+    color: #f0f0f0;
+}
+
+.waves-name {
+    color: #e0e0e0;
+}
+.waves-topbar {
+    background: url(../banners/examples/waves.svg);
+}
+.waves-card-footer {
     background: #e0e0f0 !important;
 }
 

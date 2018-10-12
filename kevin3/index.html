@@ -18,11 +18,12 @@
 
 <body class="default-body">
   <div class="dropdown" id="theme-menu">
-    <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="badge badge-dark dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       (Choose a color scheme)
-    </button>
+    </a>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <a class="dropdown-item" href="#" onclick='setTheme("default")'>Blues</a>
+      <a class="dropdown-item" href="#" onclick='setTheme("waves")'>Waves</a>
       <a class="dropdown-item" href="#" onclick='setTheme("green")'>Greens</a>
       <a class="dropdown-item" href="#" onclick='setTheme("ugly")'>Dark Teal</a>
     </div>
@@ -135,7 +136,7 @@
       </ul>
       <form class="form-inline ml-auto mt-3">
         <div class="input-group">
-          <input class="form-control border-dark" placeholder="Search IACR" type="search" aria-label="Search">
+          <input class="form-control border-dark" placeholder="Search IACR" type="search" aria-label="Search" size="30">
           <div class="input-group-append">
             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
               <ion-icon name="search"></ion-icon>
@@ -165,7 +166,7 @@
           <div class="card mb-2">
             <div class="row no-gutters">
               <div class="col-auto">
-                <img src="ches.svg" alt="Cryptographic Hardware and Embedded Systems Conference" class="img-fluid img-thumbnail conf-img" />
+                <img src="../img/ches.svg" alt="Cryptographic Hardware and Embedded Systems Conference" class="img-fluid img-thumbnail conf-img" />
               </div>
               <div class="col">
                 <div class="card-block px-2">
@@ -178,8 +179,8 @@
           <div class="card mb-2">
             <div class="row no-gutters">
               <div class="col-auto">
-                <img src="../img/tcc2.png" alt="Theory of Cryptography Conference" class="img-fluid img-thumbnail conf-img" />
-                <div id="tcc_overlay">TCC</div>
+                <img src="../img/tcc_math.svg" alt="Theory of Cryptography Conference" class="img-fluid img-thumbnail conf-img" />
+<!--                <div id="tcc_overlay">TCC</div> -->
               </div>
               <div class="col">
                 <div class="card-block px-2">
@@ -192,8 +193,8 @@
           <div class="card mb-2">
             <div class="row no-gutters">
               <div class="col-auto">
-                <img src="../img/asiacrypt2.png" alt="Asia-Pacific Region" class="img-fluid img-thumbnail conf-img" />
-                <div id="asiacrypt_overlay">ASIACRYPT</div>
+                <img src="../img/asia_300.png" alt="Asia-Pacific Region" class="img-fluid img-thumbnail conf-img" />
+<!--                <div id="asiacrypt_overlay">ASIACRYPT</div> -->
               </div>
               <div class="col">
                 <div class="card-block px-2">
@@ -206,7 +207,7 @@
           <div class="card mb-2">
             <div class="row no-gutters">
               <div class="col-auto">
-                <img src="../img/rwc.png" alt="Real World Crypto" class="img-fluid img-thumbnail conf-img" />
+                <img src="../img/rwc.svg" alt="Real World Crypto" class="img-fluid img-thumbnail conf-img" />
               </div>
               <div class="col">
                 <div class="card-block px-2">
@@ -361,7 +362,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://iacr.org/events/leafletjs/leaflet.js"></script>
-  <script src="../scripts/addmap.js"></script>
 
   <!-- icons! -->
   <!-- NOTE: linking from exterior source for now until we can figure how to install it locally/have it work that way -->

@@ -67,3 +67,7 @@ img.logo {
     color: #ffffff !important;
     font-size: 2em !important;
 }
+.confImg {
+    height: 120px !important;
+    width: 120px !important;
+}
