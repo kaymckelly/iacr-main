@@ -67,3 +67,7 @@ img#iacrlogo {
 #topbar {
     background-size: cover;
 }
+.subtitle {
+    margin-left: 20px;
+    color: #40a040;
+}

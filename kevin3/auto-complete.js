@@ -66,7 +66,7 @@ var autoComplete = (function(){
                 that.sc.style.left = Math.round(rect.left + (window.pageXOffset || document.documentElement.scrollLeft) + o.offsetLeft) + 'px';
                 that.sc.style.top = Math.round(rect.bottom + (window.pageYOffset || document.documentElement.scrollTop) + o.offsetTop) + 'px';
               var dropdownWidth = Math.round(rect.right - rect.left); // Width of input.
-              dropdownWidth *= 1.3;
+//              dropdownWidth *= 1.3;
               that.sc.style.width = dropdownWidth + 'px';
 
                 if (!resize) {
