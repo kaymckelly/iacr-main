@@ -10,8 +10,8 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- custom style -->
-    <link rel="stylesheet" href="autocomplete.min.css">
-    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="easy-autocomplete.css">
+    <link rel="stylesheet" href="search2.css">
   </head>
 
   <body class="default-body">
@@ -29,7 +29,7 @@
         HTML).
       </p>
       <p>
-        The way it works is:
+        The way it currently works is:
       </p>
       <ul>
         <li>
@@ -37,8 +37,8 @@
           directly to the URL.
           </li>
         <li>
-          If they hit enter for a query, then it goes to the Google
-          search results.
+          If they hit enter or click the button for a query, then it goes
+          to the Google search results.
         </li>
       </ul>
       <p>
@@ -150,9 +150,9 @@
                 <a class="nav-link" href="#">About</a>
             </li>
           </ul>
-          <form autocomplete="off" action="/search/" class="mx-2 my-auto d-inline w-100">
+          <form autocomplete="off" action="/search/" class="mx-2 my-auto d-inline flex-grow-1">
             <div class="input-group">
-              <input name="q" type="text" class="form-control" placeholder="Search IACR">
+              <input name="q" id="searchbox" type="text" class="form-control" placeholder="Search IACR">
               <span class="input-group-btn">
                 <button class="btn btn-outline-secondary" type="submit"><ion-icon name="search" class="align-middle search-button"></ion-icon></button>
               </span>
@@ -160,10 +160,6 @@
           </form>
         </div>
       </nav>
-      <p>
-        <em>There is currently a bug in the javascript that may require a different
-        autocomplete library (e.g., jquery-ui autocomplete).</em>
-      </p>
       <h2>The code</h2>
       <p>
         The suggestions are more complex than a simple "autocomplete",
@@ -191,10 +187,17 @@
           apache.
         </dd>
         <dt>Client-side search</dt>
-        <dd>The javascript in the client uses
-          the <a href="https://github.com/Pixabay/jQuery-autoComplete">pixabay
-          autocomplete library</a> (with very slight
-          modifications). This may be replaced.
+        <dd>The javascript in the client uses the
+          <a href="http://easyautocomplete.com/guide">easyautocomplete</a> library, which
+          depends on jquery (which is required by bootstrap anyway). I also tried the
+          <a href="https://github.com/Pixabay/jQuery-autoComplete">pixabay
+            autocomplete library</a>. They are both pretty complicated, and I found
+          bugs in both:
+          <ul>
+            <li>the bootstrap css conflicts with the css of easyautocomplete (now fixed)</li>
+            <li>the pixabay autocomplete would sometimes not show up.</li>
+          </ul>
+          We might also use the jquery UI autocomplete.
         </dd>
       </dl>
     </div>
@@ -202,12 +205,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
-  <script src="auto-complete.js"></script>
-  <script src="suggest1.js"></script>
-<!--  <script src="suggest2.js"></script>
-  <script src="suggest3.js"></script>
-  <script src="suggest4.js"></script>-->
-  <script src="suggest5.js"></script>
+  <script src="jquery.easy-autocomplete.js"></script>
+  <script src="easyversion.js"></script>
 </body>
 
 </html>

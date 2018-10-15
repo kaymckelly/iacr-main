@@ -1,0 +1,27 @@
+.suggestion-title {
+    font-weight: 700;
+}
+.subtitle {
+    margin-left: 1em;
+    color: #40a040;
+}
+.easy-autocomplete-container ul li {
+    border-top: 1px solid lightgray !important;
+}
+.eac-item {
+    margin: 0px !important;
+}
+.easy-autocomplete-container {
+    /* If the dropdown is too far left, use this
+   left: 1em; */
+    width: 400px !important;
+    /* These are for vertical scrolling. */
+    max-height: 500px;
+    overflow-y: scroll;
+}
+/* This makes sure that autocompletions fit on mobile. */
+@media (max-width: 500px) {
+    .easy-autocomplete-container {
+        max-width: 325px !important;
+    }
+}
