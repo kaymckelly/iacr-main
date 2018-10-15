@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>IACR Search demo</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="autocomplete.min.css">
+    <link rel="stylesheet" href="search.css">
+  </head>
+
+  <body class="default-body">
+    <div class="container">
+      <h1>IACR Search demo</h1>
+      <p>
+        Rather than putting search into each of the demos, I've built
+        this page to demonstrate how I think search should work. As
+        the user types they are given suggested results in a dropdown
+        using a local index on iacr.org.  The index currently contains
+        data for conferences, news, papers (including cryptodb and
+        eprint), and authors. We should also add any page that is linked from
+        the menus. The index takes about three minutes to
+        build and can easily be extended to other documents (e.g.,
+        HTML).
+      </p>
+      <p>
+        The way it works is:
+      </p>
+      <ul>
+        <li>
+          If the user selects from the dropdown, then they go
+          directly to the URL.
+          </li>
+        <li>
+          If they hit enter for a query, then it goes to the Google
+          search results.
+        </li>
+      </ul>
+      <p>
+        Note that it's possible to restrict search to eprint or news
+        or cryptodb alone, so we can modify the search to be local
+        to each product. If the user is on eprint.iacr.org, then it
+        would suggest only from eprint.
+      </p>
+      <!-- <nav class="mt-3 navbar navbar-expand-lg navbar-light
+      bg-info">
+        <a class="navbar-brand" href="#">International Association for Cryptologic Research</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Dummy menu</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input id="q1" class="form-control mr-sm-2" type="search" placeholder="Search IACR" aria-label="Search">
+            <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <nav class="mt-3 navbar navbar-expand-lg navbar-light bg-info primary">
+        <a class="navbar-brand" href="#">International Association for Cryptologic Research</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dummy menu</a>
+            </li>
+          </ul>
+          <form class="ml-2 my-auto d-inline w-25">
+              <div class="input-group">
+                <input name="q" type="search" class="form-control border border-right-0" placeholder="Search IACR">
+                <span class="input-group-append">
+                  <button class="btn btn-outline-secondary border border-left-0 search-button" type="button">
+                    <ion-icon name="search" class="text-white align-middle search-button"></ion-icon>
+                  </button>
+                </span>
+              </div>
+            </form>
+        </div>
+      </nav>
+      <nav class="mt-3 navbar navbar-dark bg-info navbar-expand-lg">
+        <a class="navbar-brand" href="#">International Association for Cryptologic Research</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar3">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Dummy menu</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search IACR" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+
+      <nav class="mt-3 navbar navbar-light navbar-expand-lg" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">International Association for Cryptologic Research</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar4">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Dummy menu</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search IACR" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+-->
+      <nav class="my-3 navbar navbar-expand-lg navbar-light bg-faded" style="background-color: #20B2AA;">
+        <a href="/" class="navbar-brand">IACR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar5">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-stretch" id="navbar5">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <form autocomplete="off" action="/search/" class="mx-2 my-auto d-inline w-100">
+            <div class="input-group">
+              <input name="q" type="text" class="form-control" placeholder="Search IACR">
+              <span class="input-group-btn">
+                <button class="btn btn-outline-secondary" type="submit"><ion-icon name="search" class="align-middle search-button"></ion-icon></button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <p>
+        <em>There is currently a bug in the javascript that may require a different
+        autocomplete library (e.g., jquery-ui autocomplete).</em>
+      </p>
+      <h2>The code</h2>
+      <p>
+        The suggestions are more complex than a simple "autocomplete",
+        since they execute a full search rather than a prefix
+        match. This gives us the advantage that it can use stemming,
+        synonyms, and more complex scoring.  There is an ajax API that
+        produces json from the server, and is now live. Some results
+        for the query [ches] can be seen
+        at <a href="/ac?q=ches"><code>/ac?q=ches</code></a>.
+      </p>
+      <p>
+        Most of the complication resides within
+        the <a href="https://xapian.org/">xapian</a> library, but the
+        code that I wrote is fairly simple. This code will live in a
+        private "search" repository in github.com/IACR. It uses the
+        following components:
+      </p>
+      <dl>
+        <dt>Index preparation</dt>
+        <dd>This is about 700 lines of python. It reads documents from
+          the .info files of eprint, the news database, and cryptodb.
+        </dd>
+        <dt>Server-side search</dt>
+        <dd>This is about 80 lines of python in a wsgi file executed by
+          apache.
+        </dd>
+        <dt>Client-side search</dt>
+        <dd>The javascript in the client uses
+          the <a href="https://github.com/Pixabay/jQuery-autoComplete">pixabay
+          autocomplete library</a> (with very slight
+          modifications). This may be replaced.
+        </dd>
+      </dl>
+    </div>
+  <script src="/libs/js/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+  <script src="auto-complete.js"></script>
+  <script src="suggest1.js"></script>
+<!--  <script src="suggest2.js"></script>
+  <script src="suggest3.js"></script>
+  <script src="suggest4.js"></script>-->
+  <script src="suggest5.js"></script>
+</body>
+
+</html>

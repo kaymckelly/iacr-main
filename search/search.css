@@ -1,0 +1,15 @@
+.subtitle5 {
+    margin-left: 30px;
+    color: #40a040;
+}
+.suggestion5 {
+    background: #ffffff;
+    border-top: 1px solid lightgray;
+    padding: 5px !important;
+    margin: 0px !important;
+    max-width:80%;
+}
+.suggestion-title5 {
+    font-weight: 700;
+}
+
