@@ -26,6 +26,18 @@ function setTheme(new_theme) {
     cardHeadings[i].classList.add(new_theme + '-cardHeading');
   }
 
+  // individual conference cards
+  var confHeadings = document.querySelectorAll('.' + current_theme + '-conferenceHeader');
+  var eventInfos = document.querySelectorAll('.' + current_theme + '-eventInfo');
+  for (var i = 0; i < confHeadings.length; i++) {
+    confHeadings[i].classList.remove(current_theme + '-conferenceHeader');
+    confHeadings[i].classList.add(new_theme + '-conferenceHeader');
+  }
+  for (var i = 0; i < eventInfos.length; i++) {
+    eventInfos[i].classList.remove(current_theme + '-eventInfo');
+    eventInfos[i].classList.add(new_theme + '-eventInfo');
+  }
+
   // anchors not in a nav, footer, or other structure where their color is specially defined
    var anchors = document.querySelectorAll('.' + current_theme + '-anchor');
    for (var i = 0; i < anchors.length; i++) {

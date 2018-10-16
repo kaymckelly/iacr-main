@@ -29,7 +29,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   color: #3B5099;
 }
 
-.default-menubar, nav.default-menubar .dropdown-menu {
+nav.default-menubar .dropdown-menu {
     background: #102A83;
 }
 
@@ -45,10 +45,6 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 .default-eventInfo {
   background-color: rgba(59, 80, 153, 0.8);
   color: #FEFEFE;
-}
-.default-figCaption {
-  background-color: #5164A4;
-  color: #FDFDFD;
 }
 
 .default-footer {
@@ -88,9 +84,15 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   border-top: 4px solid #618E15;
 }
 
-.apple-figCaption {
-  background-color: #618E15;
-  color: #EBF7EB;
+.apple-conferenceHeader {
+  background-color: #600030;
+  color: #FEFEFE;
+}
+
+.apple-eventInfo {
+  background-color: rgba(97, 142, 21, 0.8);
+  /* alternative: rgba(96, 0, 48, 0.8); */
+  color: #FEFEFE;
 }
 
 .apple-footer {
@@ -112,74 +114,47 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 
 
 
-/*** Monochrome (with accent color) theme, based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 ***/
-.monochrome-body {
-  background-color: #FEFEFE;
-  color: #0B1B54;
+/*** whatever theme, based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 ***/
+/* .default-body {
+    background: #F3F4F8 !important;
+    color: #080808 !important;
 }
 
-.monochrome-anchor {
+.default-anchor {
   color: #3B5099;
 }
 
-.monochrome-menubar, .monochrome-dropdown {
-  background-color: #102A83;
+nav.default-menubar .dropdown-menu {
+    background: #102A83;
 }
 
-.monochrome-cardHeading {
+.default-cardHeading {
   border-top: 4px solid #F2AC10;
 }
 
-.monochrome-figCaption {
+.default-conferenceHeader {
   background-color: #102A83;
   color: #FEFEFE;
 }
 
-.monochrome-footer {
-  background-color: rgba(146, 158, 198, 0.2);
-}
-
-.monochrome-footerTitle, .monochrome-footerTitle>a {
-  color: #0B1B54;
-}
-
-.monochrome-footerLink, .monochrome-footerLink>ion-icon {
-  color: #102A83;
-}
-
-
-
-/*** Wine theme, based on https://coolors.co/eae7eb-979873-2e0344-37001e-1e012d ***/
-.wine-body {
-  background-color: #FFFFFF;
-  color: #1A0226;
-}
-
-.wine-anchor {
-  color: #522D64;
-}
-
-.wine-menubar, .wine-dropdown {
-  background-color: #2E0344;
-}
-
-.wine-cardHeading {
-  border-top: 4px solid #52002D;
-}
-
-.wine-figCaption {
-  background-color: #2E0344;
+.default-eventInfo {
+  background-color: rgba(59, 80, 153, 0.8);
   color: #FEFEFE;
 }
 
-.wine-footer {
-  background-color: rgba(188, 189, 165, 0.3);
+.default-footer {
+  background-color: rgba(146, 158, 198, 0.2);
 }
 
-.wine-footerTitle, .wine-footerTitle>a {
-  color: #52002D;
+.default-footerTitle, .default-footerTitle>a {
+  color: #0B1B54;
 }
 
-.wine-footerLink, .wine-footerLink>ion-icon {
-  color: #411955;
+.default-footerTitle {
+  border-left: 3px solid #F2AC10;
+  padding-left: 10px;
 }
+
+.default-footerLink, .default-footerLink>ion-icon {
+  color: #102A83;
+} */
