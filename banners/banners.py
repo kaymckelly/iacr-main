@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
 import argparse
 from colors import get_color
@@ -7,7 +7,7 @@ import random
 import sys
 from scipy.spatial import Delaunay
 
-assert sys.version_info >= (3, 0)
+#assert sys.version_info >= (3, 0)
 
 height = 300
 width = 1920
@@ -75,8 +75,8 @@ arguments.add_argument('--blur',
 
 args = arguments.parse_args()
 
-min_width = 10
-min_height = 10
+min_width = args.min
+min_height = args.min
 
 colors = args.colors.split(',')
 if len(colors) != 4:
@@ -126,6 +126,7 @@ d = Delaunay(points)
 
 print_header(args.blur)
 
+print colors
 for tr in d.simplices:
     p1 = points[tr[0]]
     p2 = points[tr[1]]

@@ -1,6 +1,6 @@
 #theme-menu {
     position: fixed;
-    top: 8%;
+    top: 15%;
     left: 45%;
     z-index: 1000;
     height: 0;
@@ -41,8 +41,38 @@ by .green or whatever the name is.
 .default-card-footer {
     background: #e0e0f0 !important;
 }
+.default-topbar .badge-light {
+    background: rgba(244,244,244, .6) !important;
+    color: #404040 !important;
+}
+/************ triangles theme ***************/
+.tri-body {
+    background: #f0f0f0;
+    color: #0c0c0c;
+}
+.tri-card-header {
+    background: #3B5099;
+    color: #f0f0f0;
+}
+.tri-card-header a, .tri-card-header h2 {
+    color: #f0f0f0;
+}
 
-/* waves theme */
+.tri-name {
+    color: #020202;
+}
+.tri-topbar {
+    background: url(headers/tri.svg);
+}
+.tri-topbar .badge-light {
+    background: rgba(244,244,244, .6) !important;
+    color: #404040 !important;
+}
+.tri-card-footer {
+    background: #e0e0f0 !important;
+}
+
+/******** waves theme ******************/
 .waves-body {
     background: #f0f0f0;
     color: #0c0c0c;
@@ -60,6 +90,10 @@ by .green or whatever the name is.
 }
 .waves-topbar {
     background: url(../banners/examples/waves.svg);
+}
+.waves-topbar .badge-light {
+    background: rgba(244,244,244, .6) !important;
+    color: #404040 !important;
 }
 .waves-card-footer {
     background: #e0e0f0 !important;
@@ -110,6 +144,10 @@ by .green or whatever the name is.
 }
 .ugly-topbar {
     background: url(headers/teal.svg);
+}
+.ugly-topbar .badge-light {
+    background: rgba(244,244,244, .6) !important;
+    color: #404040 !important;
 }
 .ugly-card-footer {
     background: #5DAAB5 !important;

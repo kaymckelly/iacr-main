@@ -24,6 +24,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <a class="dropdown-item" href="#" onclick='setTheme("default")'>Blues</a>
+      <a class="dropdown-item" href="#" onclick='setTheme("tri")'>Triangles</a>
       <a class="dropdown-item" href="#" onclick='setTheme("waves")'>Waves</a>
       <a class="dropdown-item" href="#" onclick='setTheme("green")'>Greens</a>
       <a class="dropdown-item" href="#" onclick='setTheme("ugly")'>Dark Teal</a>
@@ -47,7 +48,7 @@
     <div class="collapse navbar-collapse w-100 flex-md-column" id="topNav">
       <!-- TODO: these links could use justified spacing on larger screens, also better text contrast -->
       <!-- NOTE: former classes on ul are navbar-nav mr-auto mt-2 mt-lg-0 -->
-      <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+      <ul class="navbar-nav ml-auto mb-2 mb-md-0 mt-2">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle mr-1 badge badge-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Events
@@ -135,8 +136,8 @@
           </div>
         </li>
       </ul>
-      <form class="form-inline ml-auto mt-3">
-        <div class="input-group">
+      <form class="form-inline ml-auto mt-2">
+        <div class="input-group" id="search-form">
           <input name="q" class="form-control border-dark" placeholder="Search IACR" type="search" aria-label="Search" size="30">
           <div class="input-group-append">
             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
@@ -180,7 +181,8 @@
           <div class="card mb-2">
             <div class="row no-gutters">
               <div class="col-auto">
-                <img src="../img/tcc_math.svg" alt="Theory of Cryptography Conference" class="img-fluid img-thumbnail conf-img" />
+<!--                <img src="../img/tcc_math.svg" alt="Theory of Cryptography Conference" class="img-fluid img-thumbnail conf-img" />-->
+                <img src="../img/tcc5.png" alt="Theory of Cryptography Conference" class="img-fluid img-thumbnail conf-img" />
 <!--                <div id="tcc_overlay">TCC</div> -->
               </div>
               <div class="col">

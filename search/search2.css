@@ -3,7 +3,7 @@
 }
 .subtitle {
     margin-left: 1em;
-    color: #40a040;
+    color: #338033;
 }
 .easy-autocomplete-container ul li {
     border-top: 1px solid lightgray !important;
@@ -14,7 +14,8 @@
 .easy-autocomplete-container {
     /* If the dropdown is too far left, use this
    left: 1em; */
-    width: 400px !important;
+    /* width: 500px !important; */
+    width: 100% !important;
     /* These are for vertical scrolling. */
     max-height: 500px;
     overflow-y: scroll;

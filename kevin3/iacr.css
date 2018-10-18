@@ -71,3 +71,7 @@ img#iacrlogo {
     margin-left: 20px;
     color: #40a040;
 }
+
+.badge {
+    padding: 10px !important;
+}
