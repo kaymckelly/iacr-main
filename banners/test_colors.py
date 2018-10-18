@@ -25,6 +25,11 @@ class TestColors(unittest.TestCase):
         p3 = [100,0]
         c = get_centroid(p1, p2, p3)
         self.assertEqual(c,[50, 0])
+        q1 = [25,20]
+        q2 = [50, 99]
+        q3 = [15, 10]
+        c = get_centroid(q1, q2, q3)
+        self.assertEqual(c,[30, 43])
         
     def test_get_colors(self):
         colors = [[255,0,0],[0,255,0],[0,0,255],[0,0,0]]
@@ -40,7 +45,13 @@ class TestColors(unittest.TestCase):
         p3 = [100,0]
         centroid = get_centroid(p1, p2, p3)
         color = get_color(100, 100, colors, centroid)
-        self.assertEqual(color, [192,192,0])
+        self.assertEqual(color, [127.5,0,127.5])
+        p1 = [0,50]
+        p2 = [50,0]
+        p3 = [100,100]
+        centroid = get_centroid(p1, p2, p3)
+        color = get_color(100, 100, colors, centroid)
+        self.assertEqual(color, [63.75,63.75,63.75])
                          
 if __name__ == '__main__':
     unittest.main()
