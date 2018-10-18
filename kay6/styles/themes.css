@@ -116,24 +116,24 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 
 /*** whatever theme, based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 ***/
 .test-body {
-  background: #F6FEDB;
+  background: #FEFEFE;
   color: #080808;
 }
 
 .test-anchor {
-  color: #95A145;
+  /* color: #95A145; */
 }
 
 .test-menubar, nav.test-menubar .dropdown-menu {
-  background: #D8D174;
+  background: #686F87;
 }
 
 .test-cardHeading {
-  border-top: 4px solid #B6C454;
+  border-top: 4px solid #E8871E;
 }
 
 .test-conferenceHeader {
-  background-color: #535A27;
+  background-color: rgba(76, 40, 15, 0.8);
   color: #FEFEFE;
 }
 
