@@ -1,0 +1,164 @@
+/* NOTE: IACR logo color is officially #102a83 until further notice */
+
+
+/*** Button for changing themes ***/
+#theme-menu {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  z-index: 1000;
+  height: 0;
+}
+
+#theme-menu button {
+  background: #f0f0f0 !important;
+  border: 2px solid blue;
+}
+
+
+/****************************************************
+Default theme. Copy this to make a new one, replacing * .default with .green or whatever the name is.
+*****************************************************/
+/* default theme based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 */
+.default-body {
+    background: #F3F4F8;
+    color: #080808;
+}
+
+.default-anchor {
+  color: #3B5099;
+}
+
+.default-menubar, nav.default-menubar .dropdown-menu {
+  background: #102A83;
+}
+
+.default-cardHeading {
+  border-top: 4px solid #F2AC10;
+}
+
+.default-conferenceHeader {
+  background-color: #102A83;
+  color: #FEFEFE;
+}
+
+.default-eventInfo {
+  background-color: rgba(59, 80, 153, 0.8);
+  color: #FEFEFE;
+}
+
+.default-footer {
+  background-color: rgba(146, 158, 198, 0.2);
+}
+
+.default-footerTitle, .default-footerTitle>a {
+  color: #0B1B54;
+}
+
+.default-footerTitle {
+  border-left: 3px solid #F2AC10;
+  padding-left: 10px;
+}
+
+.default-footerLink, .default-footerLink>ion-icon {
+  color: #102A83;
+}
+.default-pubcard .card {
+    /* a variant of 102a83 from coolors.co */
+    border: 1px solid #A8B1D1;
+}
+
+
+
+/*** Fresh apples theme, based on https://coolors.co/fefefe-d3e0bf-618e15-102a83-600030 ***/
+.apple-body {
+  background-color: #FEFEFE;
+  color: #220012;
+}
+
+.apple-anchor {
+  color: #598113;
+}
+
+.apple-menubar, nav.apple-menubar .dropdown-menu {
+  background-color: #600030;
+}
+
+.apple-cardHeading {
+  border-top: 4px solid #618E15;
+}
+
+.apple-conferenceHeader {
+  background-color: #600030;
+  color: #FEFEFE;
+}
+
+.apple-eventInfo {
+  background-color: rgba(97, 142, 21, 0.8);
+  /* alternative: rgba(96, 0, 48, 0.8); */
+  color: #FEFEFE;
+}
+
+.apple-footer {
+  background-color: #F3F7EE;
+}
+
+.apple-footerTitle, .apple-footerTitle>a {
+  color: #091748;
+}
+
+.apple-footerTitle {
+  border-left: 3px solid #618E15;
+  padding-left: 10px;
+}
+
+.apple-footerLink, .apple-footerLink>ion-icon {
+  color: #600030;
+}
+
+
+
+/*** whatever theme, based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 ***/
+.test-body {
+  background: #F6FEDB;
+  color: #080808;
+}
+
+.test-anchor {
+  color: #95A145;
+}
+
+.test-menubar, nav.test-menubar .dropdown-menu {
+  background: #D8D174;
+}
+
+.test-cardHeading {
+  border-top: 4px solid #B6C454;
+}
+
+.test-conferenceHeader {
+  background-color: #535A27;
+  color: #FEFEFE;
+}
+
+.test-eventInfo {
+  /* background-color: rgba(212, 224, 155, 0.8);
+  color: #080808; */
+}
+
+.test-footer {
+  /* background-color: rgba(146, 158, 198, 0.2); */
+}
+
+.test-footerTitle, .test-footerTitle>a {
+  /* color: #0B1B54; */
+}
+
+.test-footerTitle {
+  /* border-left: 3px solid #F2AC10;
+  padding-left: 10px; */
+}
+
+.test-footerLink, .test-footerLink>ion-icon {
+  /* color: #102A83; */
+}
