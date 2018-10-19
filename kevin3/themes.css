@@ -45,6 +45,38 @@ by .green or whatever the name is.
     background: rgba(244,244,244, .6) !important;
     color: #404040 !important;
 }
+/*****************************************************************
+Cube theme.
+**************************************************************/
+
+.cube-body {
+    background: #f0f0f0;
+    color: #0c0c0c;
+}
+.cube-card-header {
+    background: #2787c5;
+    color: #f0f0f0;
+}
+.cube-card-header a, .cube-card-header h2 {
+    color: #f0f0f0;
+}
+
+.cube-name {
+    color: #202020;
+}
+.cube-topbar {
+    background: url(../img/blue_cubed.png);
+    background-size: contain;
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+.cube-card-footer {
+    background: #e0e0f0 !important;
+}
+.cube-topbar .badge-light {
+    background: rgba(244,244,244, .6) !important;
+    color: #404040 !important;
+}
 /************ triangles theme ***************/
 .tri-body {
     background: #f0f0f0;

@@ -9,18 +9,15 @@ from scipy.spatial import Delaunay
 
 #assert sys.version_info >= (3, 0)
 
-height = 300
-width = 1920
-
-def print_header(blur):
+def print_header(args):
     mystr = """<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"{}\" height=\"{}\"
      xmlns:xlink="http://www.w3.org/1999/xlink\">
   <!-- created with "{}" -->
    """
 
-    print(mystr.format(width, height, ' '.join(sys.argv).replace("--", "-")))
-    if blur:
+    print(mystr.format(args.width, args.height, ' '.join(sys.argv).replace("--", "-")))
+    if args.blur:
         print(('<defs><filter id=\"blur\" x=\"0\" y=\"0\">"'
                '"<feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"2\" />'
                '</filter></defs><g filter="url(#blur)">'))
@@ -72,6 +69,13 @@ arguments.add_argument('--test',
 arguments.add_argument('--blur',
                        type=bool,
                        help='Whether to blur the lines.')
+arguments.add_argument('--width',
+                       type=int,
+                       default =1920)
+arguments.add_argument('--height',
+                       type=int,
+                       default=300)
+
 
 args = arguments.parse_args()
 
@@ -97,42 +101,41 @@ if args.test:
     if len(xy) != 2:
         print('--test xfrac,yfrac')
         sys.exit(1)
-    point = [int(width * float(xy[0])), int(height * float(xy[1]))]
-    color = get_color(width, height, colors, point, point, point)
+    point = [int(args.width * float(xy[0])), int(args.height * float(xy[1]))]
+    color = get_color(args.width, args.height, colors, point, point, point)
     assert color[0] < 256
     assert color[1] < 256
     assert color[2] < 256
 
-    print('point:{}/{} {}/{}'.format(point[0], width, point[1], height))
+    print('point:{}/{} {}/{}'.format(point[0], args.width, point[1], args.height))
     print('color:', color)
     sys.exit(0)
 
 if args.regular:
     # interpret args.num as the number of rows.
     points = []
-    hy = int(height/args.num)
-    hx = int(width/args.num)
-    for x in range(0, width, hx):
-        for y in range(0, height, hy):
+    hy = int(args.height/args.num)
+    hx = int(args.width/args.num)
+    for x in range(0, args.width, hx):
+        for y in range(0, args.height, hy):
             points.append([x, y])
 else:
     # Add the corner points.
-    points = [[0,0],[0,height],[width,height],[width,0]]
+    points = [[0,0],[0,args.height],[args.width,args.height],[args.width,0]]
     for i in range(args.num):
-        x = random.randint(min_width, width - min_width)
-        y = random.randint(min_height, height - min_height)
+        x = random.randint(min_width, args.width - min_width)
+        y = random.randint(min_height, args.height - min_height)
         points.append([x, y])
 d = Delaunay(points)
 
-print_header(args.blur)
+print_header(args)
 
-print colors
 for tr in d.simplices:
     p1 = points[tr[0]]
     p2 = points[tr[1]]
     p3 = points[tr[2]]
     centroid = get_centroid(p1, p2, p3)
-    color = get_color(width, height, colors, centroid)
+    color = get_color(args.width, args.height, colors, centroid)
     stroke = color
     opacity = 1.0
     rgbval = rgb(color)

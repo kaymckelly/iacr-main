@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- created with "banners.py -colors 102a83,BDC4DD,5164A4,6677B0 -num 20 -width 300 -height 300" -->
+   
+<g>
+<path d="M 0 300 L 138 275 L 300 300 z" fill="#8f9bc5" opacity="1.000"/>
+<path d="M 17 199 L 0 300 L 0 0 z" fill="#6f7eb4" opacity="1.000"/>
+<path d="M 100 76 L 17 199 L 0 0 z" fill="#465a9f" opacity="1.000"/>
+<path d="M 50 199 L 100 76 L 126 168 z" fill="#6172ad" opacity="1.000"/>
+<path d="M 100 76 L 50 199 L 17 199 z" fill="#6878b0" opacity="1.000"/>
+<path d="M 50 199 L 138 275 L 0 300 z" fill="#97a2c9" opacity="1.000"/>
+<path d="M 17 199 L 50 199 L 0 300 z" fill="#919dc6" opacity="1.000"/>
+<path d="M 281 104 L 300 0 L 300 300 z" fill="#5a6ca9" opacity="1.000"/>
+<path d="M 275 130 L 281 104 L 300 300 z" fill="#5e70ab" opacity="1.000"/>
+<path d="M 253 191 L 275 130 L 300 300 z" fill="#6273ad" opacity="1.000"/>
+<path d="M 241 277 L 253 191 L 300 300 z" fill="#6a7bb2" opacity="1.000"/>
+<path d="M 245 47 L 239 71 L 100 76 z" fill="#495da0" opacity="1.000"/>
+<path d="M 300 0 L 245 47 L 0 0 z" fill="#3b5099" opacity="1.000"/>
+<path d="M 245 47 L 100 76 L 0 0 z" fill="#384e97" opacity="1.000"/>
+<path d="M 281 104 L 245 47 L 300 0 z" fill="#5164a4" opacity="1.000"/>
+<path d="M 180 184 L 136 201 L 126 168 z" fill="#6c7cb2" opacity="1.000"/>
+<path d="M 136 201 L 50 199 L 126 168 z" fill="#7281b6" opacity="1.000"/>
+<path d="M 50 199 L 136 201 L 138 275 z" fill="#808dbd" opacity="1.000"/>
+<path d="M 184 176 L 180 184 L 126 168 z" fill="#6878b0" opacity="1.000"/>
+<path d="M 100 76 L 184 176 L 126 168 z" fill="#5e6fab" opacity="1.000"/>
+<path d="M 239 71 L 184 176 L 100 76 z" fill="#5366a6" opacity="1.000"/>
+<path d="M 138 275 L 168 275 L 300 300 z" fill="#7e8cbc" opacity="1.000"/>
+<path d="M 168 275 L 241 277 L 300 300 z" fill="#7584b8" opacity="1.000"/>
+<path d="M 136 201 L 168 275 L 138 275 z" fill="#818fbe" opacity="1.000"/>
+<path d="M 168 275 L 136 201 L 180 184 z" fill="#7584b8" opacity="1.000"/>
+<path d="M 217 166 L 184 176 L 239 71 z" fill="#5b6daa" opacity="1.000"/>
+<path d="M 217 166 L 253 87 L 275 130 z" fill="#596ba9" opacity="1.000"/>
+<path d="M 253 87 L 217 166 L 239 71 z" fill="#5668a7" opacity="1.000"/>
+<path d="M 253 87 L 281 104 L 275 130 z" fill="#5769a7" opacity="1.000"/>
+<path d="M 253 87 L 245 47 L 281 104 z" fill="#5365a5" opacity="1.000"/>
+<path d="M 245 47 L 253 87 L 239 71 z" fill="#5063a3" opacity="1.000"/>
+<path d="M 255 163 L 217 166 L 275 130 z" fill="#5d6fab" opacity="1.000"/>
+<path d="M 192 182 L 217 166 L 253 191 z" fill="#6475ae" opacity="1.000"/>
+<path d="M 241 277 L 192 182 L 253 191 z" fill="#6a7bb2" opacity="1.000"/>
+<path d="M 184 176 L 192 182 L 180 184 z" fill="#6778b0" opacity="1.000"/>
+<path d="M 217 166 L 192 182 L 184 176 z" fill="#6575af" opacity="1.000"/>
+<path d="M 168 275 L 192 182 L 241 277 z" fill="#7584b7" opacity="1.000"/>
+<path d="M 192 182 L 168 275 L 180 184 z" fill="#7180b5" opacity="1.000"/>
+<path d="M 217 166 L 253 182 L 253 191 z" fill="#6273ad" opacity="1.000"/>
+<path d="M 255 163 L 253 182 L 217 166 z" fill="#6172ad" opacity="1.000"/>
+<path d="M 253 191 L 253 182 L 275 130 z" fill="#5f70ac" opacity="1.000"/>
+<path d="M 253 182 L 255 163 L 275 130 z" fill="#5e6fab" opacity="1.000"/>
+</g></svg>

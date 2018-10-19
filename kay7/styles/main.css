@@ -76,8 +76,8 @@ footer ul.nav {
 }
 .pub-img {
     /*    height: 225px; */
-    max-width: 150px;
+    max-width: 125px;
 }
-#pub-card h5,#pub-card p {
+#pub-card h4,#pub-card p {
     text-align: center;
 }
