@@ -48,7 +48,7 @@ function getSnippet(value, item) {
 
 $('#searchbox').easyAutocomplete({
   url: function(query) {
-    return '/ac?q=' + encodeURI(query);
+    return '/ac?ac=1&q=' + encodeURI(query);
   },
   // Without this, bootstrap css doesn't work with easyautocomplete. The col part was found on
   // https://stackoverflow.com/questions/48079613/width-override-of-easyautocomplete-plugin-inside-input-group-addon
