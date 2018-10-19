@@ -28,8 +28,8 @@
       </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <a class="dropdown-item" href="#" onclick='setTheme("default")'>Monochrome</a>
+      <a class="dropdown-item" href="#" onclick='setTheme("mono2")'>Monochrome 2</a>
       <a class="dropdown-item" href="#" onclick='setTheme("apple")'>Alternate apples</a>
-      <a class="dropdown-item" href="#" onclick='setTheme("test")'>test</a>
     </div>
   </div>
 
@@ -166,7 +166,7 @@
         <h3 class="default-cardHeading p-2 rounded">
           News
         </h3>
-        <!-- BUG: icons disappear in mobile wut -->
+        <!-- NOTE: currently icons are set to disappear on mobile. if desired, remove .d-none from div containing icon, change col-1 to col-2, then change col-11 to col-10 on the div containing the related news item -->
         <div class="row">
           <div class="col-1 col-lg-2 text-center d-none d-lg-block">
             <ion-icon name="airplane" class="newsicon"></ion-icon>
@@ -228,7 +228,7 @@
       </article>
       <article class="col-12 col-md-8 mb-3">
         <h3 class="default-cardHeading rounded p-2">
-            Events (the images need improvement)
+            Events
         </h3>
 
         <div class="row">
