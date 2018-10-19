@@ -21,7 +21,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 *****************************************************/
 /* default theme based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 */
 .default-body {
-    background: #F3F4F8;
+    background: #FEFEFE;
     color: #080808;
 }
 
@@ -114,7 +114,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 
 
 
-/*** whatever theme, based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 ***/
+/*** monochrome2 theme, based on https://coolors.co/972045-e0e0ef-3b5099-102a83-0b1b54 ***/
 .mono2-body {
   background: #FEFEFE;
   color: #080808;
@@ -139,7 +139,6 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 
 .mono2-eventInfo {
   background-color: rgba(224, 224, 239, 0.7);
-  /* rgba(59, 80, 153, 0.8); */
   color: #080808;
 }
 
