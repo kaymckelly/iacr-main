@@ -95,6 +95,8 @@ Cube theme.
 }
 .tri-topbar {
     background: url(headers/tri.svg);
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
 }
 .tri-topbar .badge-light {
     background: rgba(244,244,244, .6) !important;

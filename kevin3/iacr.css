@@ -35,6 +35,9 @@ img#iacrlogo {
     width: 100%;
     margin-top: 20px;
   }
+  .searchbox {
+      min-width: 400px !important;
+  }
 }
 
 .masonry .card-header {
