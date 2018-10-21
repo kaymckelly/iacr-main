@@ -75,3 +75,20 @@ $('#searchbox').easyAutocomplete({
   },
 });
 
+// Added to prepend instructions above search results, and only show
+// them on a focus event in the input.
+$(document).ready(function() {
+  var searchChoice = document.createElement('div');
+  searchChoice.setAttribute('id', 'searchChoice');
+  searchChoice.innerHTML = 'Results from <a href="/facets">faceted search</a> as you type, or use enter for Google search';
+  var searchDropdown = document.getElementById('eac-container-searchbox');
+  $(searchDropdown).hide();
+  searchDropdown.insertBefore(searchChoice, searchDropdown.childNodes[0]);
+  $('#searchbox').focus(function(e) {
+    $(searchDropdown).show();
+  });
+  $('#searchbox').blur(function(e) {
+    $(searchDropdown).hide();
+  });
+});
+
