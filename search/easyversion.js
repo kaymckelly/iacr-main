@@ -46,6 +46,7 @@ function getSnippet(value, item) {
 }
 
 
+$(document).ready(function() {
 $('#searchbox').easyAutocomplete({
   url: function(query) {
     return '/ac?ac=1&q=' + encodeURI(query);
@@ -57,6 +58,7 @@ $('#searchbox').easyAutocomplete({
   list: {
     maxNumberOfElements: 20,
     onClickEvent: function() {
+      console.log('click registered');
       window.location = $('#searchbox').getSelectedItemData().url;
     }
   },
@@ -77,8 +79,8 @@ $('#searchbox').easyAutocomplete({
 
 // Added to prepend instructions above search results, and only show
 // them on a focus event in the input.
-$(document).ready(function() {
-  var searchChoice = document.createElement('div');
+
+  /*  var searchChoice = document.createElement('div');
   searchChoice.setAttribute('id', 'searchChoice');
   searchChoice.innerHTML = 'Results from <a href="/facets">faceted search</a> as you type, or use enter for Google search';
   var searchDropdown = document.getElementById('eac-container-searchbox');
@@ -90,5 +92,6 @@ $(document).ready(function() {
   $('#searchbox').blur(function(e) {
     $(searchDropdown).hide();
   });
+*/
 });
 
