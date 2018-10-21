@@ -81,3 +81,12 @@ footer ul.nav {
 #pub-card h4,#pub-card p {
     text-align: center;
 }
+.conf_overlay {
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    font-weight: bold;
+    color: #102a83;
+}

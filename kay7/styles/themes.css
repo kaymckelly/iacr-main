@@ -38,8 +38,9 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 }
 
 .default-conferenceHeader {
-  background-color: #102A83;
-  color: #FEFEFE;
+    font-size: 1.5vw;
+    background-color: #102A83;
+    color: #FEFEFE;
 }
 
 .default-eventInfo {
