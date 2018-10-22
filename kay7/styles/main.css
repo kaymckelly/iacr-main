@@ -72,7 +72,8 @@ footer ul.nav {
 }
 
 .newsicon {
-  font-size: 2em;
+    font-size: 2em;
+    color: #102a83 !important;
 }
 .pub-img {
     /*    height: 225px; */
