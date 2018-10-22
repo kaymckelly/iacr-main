@@ -89,3 +89,8 @@ footer ul.nav {
     color: #102a83;
     text-shadow: 2px 2px 3px rgba(0,0,0,.3);
 }
+
+img#jofcImg {
+  max-height: 250px;
+  width: auto;
+}
