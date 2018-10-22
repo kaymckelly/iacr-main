@@ -68,6 +68,8 @@ img#iacrlogo {
     color: #102a83;
 }
 #topbar {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
     background-size: cover;
 }
 .subtitle {

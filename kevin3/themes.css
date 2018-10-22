@@ -67,8 +67,6 @@ Cube theme.
 .cube-topbar {
     background: url(../img/blue_cubed.png);
     background-size: contain;
-    padding-top: 25px !important;
-    padding-bottom: 25px !important;
 }
 .cube-card-footer {
     background: #e0e0f0 !important;
