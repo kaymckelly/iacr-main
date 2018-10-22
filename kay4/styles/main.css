@@ -61,22 +61,15 @@ h5.footerTitle {
   padding-bottom: 6px;
 }
 
-#tcc_overlay {
+.conf_overlay {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font: bold 36px sans-serif;
+  font-size: 36px;
+  font-weight: bold;
   color: #102a83;
-}
-
-#asiacrypt_overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font: bold 18px sans-serif;
-  color: #102a83;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.3);
 }
 
 img.figure-img {
