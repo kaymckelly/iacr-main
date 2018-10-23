@@ -60,7 +60,7 @@
             IACR
           </div>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav w-100 justify-content-center">
+            <ul id="menucontainer" class="nav navbar-nav w-100 justify-content-center">
               <li class="nav-item dropdown">
                 <a class="nav-link default-nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
                 <div class="dropdown-menu" aria-labelledby="eventsDropdownLink">
@@ -145,9 +145,9 @@
                 </div>
               </li>
             </ul>
-            <form class="ml-2 my-auto d-inline w-25">
+            <form id="searchboxcontainer" class="ml-2 my-auto d-inline w-25">
               <div class="input-group">
-                <input name="q" type="search" class="form-control border border-right-0" placeholder="Search with Google...">
+                <input name="q" type="search" class="form-control border border-right-0" placeholder="Search with Google..." onfocus="$('#menucontainer').addClass('d-none'); $('#searchboxcontainer').removeClass('w-25').addClass('w-100');"  onblur=" $('#searchboxcontainer').removeClass('w-100').addClass('w-25'); $('#menucontainer').removeClass('d-none');">
                 <span class="input-group-append">
                   <button class="btn btn-outline-secondary border border-left-0 search-button" type="button">
                     <ion-icon name="search" class="align-middle search-button"></ion-icon>
