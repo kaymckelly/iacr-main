@@ -34,14 +34,16 @@
     </div>
   </div>
 
-  <header id="topbar" class="container-fluid d-flex align-items-center">
-    <a href="https://iacr.org/" class="d-none d-lg-inline">
-      <a href="../"><img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid p-2" id="logo" alt="IACR logo" /></a>
+  <div class="container d-flex align-items-center justify-content-between my-3 d-none d-lg-flex">
+    <a href="../"> 
+      <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="iacr-logo" alt="IACR logo" />
     </a>
-    <h1 class="d-none d-lg-inline mt-2">
-      International Association for Cryptologic Research
-    </h1>
-  </header>
+    <div class="flex-fill text-center">
+      <h1 class="d-none d-xl-block iacr-name-oneline">International Association for Cryptologic Research</h1>
+      <h1 class="d-none d-xl-none d-md-block iacr-name-twolines">International Association<br>for Cryptologic Research</h1>
+      <h1 class="d-md-none iacr-name-acronym">IACR</h1>
+    </div>
+  </div>
 
   <nav id="menubar" class="navbar navbar-expand-lg default-menubar mb-4 navbar-dark" role="navigation">
 
@@ -56,8 +58,8 @@
     <!-- NOTE: invaluable for answering the justified navbar question: https://stackoverflow.com/questions/45880091/justifying-a-navbar-in-bootstrap-4 -->
 
     <!-- TODO: megamenus?! (https://bootsnipp.com/snippets/orE6Z) -->
-    <div class="collapse navbar-collapse" id="navCollapse">
-      <ul class="navbar-nav w-100 nav-justified align-items-start">
+    <div class="collapse navbar-collapse justify-content-between" id="navCollapse">
+      <ul class="navbar-nav nav-justified flex-grow-1">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
           <div class="dropdown-menu border-0" aria-labelledby="eventsDropdownLink">
@@ -139,9 +141,9 @@
         </li>
       </ul>
       <!-- NOTE: from https://stackoverflow.com/questions/50316145/bootstrap-4-full-width-search-bar-without-navigation-break, specifically https://codepen.io/anon/pen/Vxdzaa -->
-      <form class="mx-2 my-auto d-inline flex-grow-1">
+      <form class="mx-2 my-auto d-inline">
         <div class="input-group">
-          <input type="text" class="form-control border border-right-0" placeholder="Search...">
+          <input id="searchbox" type="text" class="form-control border border-right-0" placeholder="Search...">
           <span class="input-group-append">
               <button id="searchBtn" class="btn btn-outline-secondary border border-left-0" type="button">
                 <ion-icon name="search" class="align-middle"></ion-icon>
@@ -153,13 +155,11 @@
   </nav>
 
   <main id="main" class="container-fluid px-4 px-md-5">
-    <section class="row justify-content-center">
-      <header class="col-12 col-md-10 mb-2">
-        <p class="lead text-justify">
-          The International Association for Cryptologic Research (IACR) is a non-profit scientific organization whose purpose is to further research in cryptology and related fields. Cryptology is the science and practice of designing computation and communication
-          systems which are secure in the presence of adversaries.
-        </p>
-      </header>
+    <section class="container justify-content-center">
+      <p class="lead text-justify">
+        The International Association for Cryptologic Research (IACR) is a non-profit scientific organization whose purpose is to further research in cryptology and related fields. Cryptology is the science and practice of designing computation and communication
+        systems which are secure in the presence of adversaries.
+      </p>
     </section>
 
     <section class="row">

@@ -26,11 +26,6 @@ header {
   margin-top: 20px;
 }
 
-@media (max-width: 992px) {
-  nav {
-    margin-top: 40px;
-  }
-}
 /* end styles for theme picker */
 
 /* NOTE: hover effect for navbar. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
@@ -90,4 +85,13 @@ footer ul.nav {
     font-size: 2vw;
     font-weight: bold;
     color: #102a83;
+}
+
+@media (min-width: 992px) {
+    #searchbox:focus {
+        min-width: 400px;
+    }
+}
+.iacr-logo {
+    max-width: 100px;
 }
