@@ -30,13 +30,13 @@
       <div class="row align-items-center pt-2 d-none d-md-flex justify-content-between">
         <div class="col-sm-2 pb-2">
           <a href="../">
-              <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid iacr-logo" alt="IACR logo" />
+              <img id="iacrLogo" src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid" alt="IACR logo" />
             </a>
         </div>
         <div class="col-sm-auto">
-          <h1 class="d-none d-xl-block iacr-name-oneline">International Association for Cryptologic Research</h1>
-          <h1 class="d-none d-xl-none d-md-block iacr-name-twolines">International Association<br>for Cryptologic Research</h1>
-          <h1 class="d-md-none iacr-name-acronym">IACR</h1>
+          <h1 id="iacrNameOneline" class="d-none d-xl-block">International Association for Cryptologic Research</h1>
+          <h1 class="d-none d-xl-none d-md-block">International Association<br>for Cryptologic Research</h1>
+          <h1 class="d-md-none">IACR</h1>
         </div>
         <!-- TODO remove this. It used to have login button. -->
         <div class="col-sm-1 text-right">
@@ -50,7 +50,7 @@
         <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
           </button>
-        <div class="navbar-text d-inline-block d-md-none navbar-iacr-acronym justify-content-center">
+        <div id="navbarIacrAcronym" class="navbar-text d-inline-block d-md-none justify-content-center">
           IACR
         </div>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -143,8 +143,8 @@
             <div class="input-group">
               <input name="q" type="search" class="form-control border border-right-0" placeholder="Search with Google..." onfocus="$('#menucontainer').addClass('d-none'); $('#searchboxcontainer').removeClass('w-25').addClass('w-100');" onblur=" $('#searchboxcontainer').removeClass('w-100').addClass('w-25'); $('#menucontainer').removeClass('d-none');">
               <span class="input-group-append">
-                  <button class="btn btn-outline-secondary border border-left-0 search-button" type="button">
-                    <img src="../img/search.svg" class="searchBtn">
+                  <button class="btn btn-outline-secondary border border-left-0" type="button">
+                    <img id="searchBtn" src="../img/search.svg">
                   </button>
                 </span>
             </div>
