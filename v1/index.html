@@ -32,7 +32,7 @@
 
   <header id="topbar" class="container-fluid d-flex align-items-center">
     <a href="../" class="d-none d-lg-inline">
-      <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid p-2" id="logo" alt="IACR logo" />
+      <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid p-2" id="iacrLogo" alt="IACR logo" />
     </a>
     <h1 class="d-none d-lg-inline mt-2">
       International Association for Cryptologic Research
@@ -137,7 +137,7 @@
       <!-- NOTE: from https://stackoverflow.com/questions/50316145/bootstrap-4-full-width-search-bar-without-navigation-break, specifically https://codepen.io/anon/pen/Vxdzaa -->
       <form class="mx-2 my-auto d-inline flex-grow-1">
         <div class="input-group">
-          <input type="text" class="form-control border border-right-0" placeholder="Search...">
+          <input type="text" class="form-control border border-right-0" id="searchBox" placeholder="Search...">
           <span class="input-group-append">
               <button id="searchBtn" class="btn btn-outline-secondary border border-left-0" type="button">
                 <img src="../img/search.svg" class="searchBtn">
@@ -219,7 +219,7 @@
   </main>
 
   <!-- NOTE: inspiration from https://bootsnipp.com/snippets/featured/footer-using-bootstrap-4 and https://bootsnipp.com/snippets/j68dz -->
-  <footer id="footer" class="container-fluid p-3 default-footer">
+  <footer id="pageFooter" class="container-fluid p-3 default-footer">
     <div class="row mb-2">
       <section class="col-12 col-md-3 mb-2">
         <h5 class="default-footerTitle">
