@@ -94,3 +94,9 @@ img#jofcImg {
   max-height: 250px;
   width: auto;
 }
+img.searchBtn {
+    height: 20px;
+}
+img.socialBtn {
+    height: 2.5em;
+}

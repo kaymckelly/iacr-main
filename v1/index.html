@@ -5,11 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap (theme) -->
-  <!-- NOTE: other possible theme options are Slate, Pulse, Simplex, Darkly, and Cyborg -->
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/solar/bootstrap.min.css" rel="stylesheet" integrity="sha384-h5kYMLFNMyLXdVYK3MKZeOfXMdU6XqV1do5KyjoYZGlW1FJOj+5qr9u1d7NNCH4N" crossorigin="anonymous">
-
-  <!-- Custom style -->
+  <link href="https://iacr.org/libs/css/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
 
   <!-- Custom style: color theme -->
@@ -144,7 +140,7 @@
           <input type="text" class="form-control border border-right-0" placeholder="Search...">
           <span class="input-group-append">
               <button id="searchBtn" class="btn btn-outline-secondary border border-left-0" type="button">
-                <ion-icon name="search" class="align-middle"></ion-icon>
+                <img src="../img/search.svg" class="searchBtn">
               </button>
             </span>
         </div>
@@ -339,34 +335,30 @@
     </div>
     <div class="row justify-content-center">
       <section class="col-12 col-md-8 text-center">
-        <a class="default-footerLink h2" href="https://twitter.com/IACR_News">
-          <ion-icon name="logo-twitter"></ion-icon>
+        <a href="https://twitter.com/IACR_News">
+          <img src="../img/logo-twitter.svg" class="socialBtn">
         </a>
-        <a class="default-footerLink h2" href="https://www.youtube.com/user/TheIACR">
-          <ion-icon name="logo-youtube"></ion-icon>
+        <a href="https://www.youtube.com/user/TheIACR">
+          <img src="../img/logo-youtube.svg" class="socialBtn">
         </a>
-        <a class="default-footerLink h2" href="https://www.facebook.com/theiacr/">
-          <ion-icon name="logo-facebook"></ion-icon>
+        <a href="https://www.facebook.com/theiacr/">
+          <img src="../img/logo-facebook.svg" class="socialBtn">
         </a>
       </section>
     </div>
     <div class="row justify-content-center">
       <section class="col-12 col-md-8 text-center">
         <h6>
-            Copyright &copy; The International Association for Cryptologic Research (IACR) 2018
+            Copyright &copy; The International Association for Cryptologic Research (IACR) <script type="text/javascript">document.write(new Date().getFullYear());</script>
           </h6>
       </section>
     </div>
   </footer>
 
   <!-- Required for Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-  <!-- Icons -->
-  <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
-
+  <script src="https://iacr.org/libs/js/jquery/3.3.1/jquery.min.js"></script>
+  <!-- this includes popper -->
+  <script src="https://iacr.org/libs/css/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Theme Picker -->
   <script src="./scripts/themes.js"></script>
 </body>
