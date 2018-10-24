@@ -95,3 +95,9 @@ img.login_button {
     max-height: 2em;
     max-width: 2em;
 }
+img.searchBtn {
+    height: 20px;
+}
+img.socialBtn {
+    height: 2.5em;
+}
