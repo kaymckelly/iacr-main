@@ -1,0 +1,202 @@
+#topbar h1 {
+    text-shadow: 0 0 20px white;
+}
+#theme-menu {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: 1000;
+/*    width: 0;*/
+    height: 0;
+}
+#theme-menu button {
+    background: #f0f0f0 !important;
+    border: 2px solid red;
+}
+
+.navbar-iacr-acronym {
+    color: #ffffff !important;
+}
+
+/*****************************************************************
+ugly theme. Copy this to make a new one, replacing * .ugly-
+by .green- or whatever the name is.
+**************************************************************/
+
+.ugly-body {
+    background: #F3F4F8 !important;
+    color: #080808 !important;
+}
+.ugly-menubar {
+    background: #102a83 !important;
+}
+
+.ugly-card-header {
+    background: #5164A4;
+    color: #f0f0f0 !important;
+}
+.ugly-card-header a,h2 {
+    color: #f0f0f0 !important;
+}
+
+.ugly-nav-link {
+    color: #ffffff !important;
+}
+.ugly-topbar {
+    background: url(../img/logo_blue_gradient.svg);
+    background-size: cover;
+}
+.default-topbar h1 {
+    color: 000000;
+}
+.ugly-card-footer {
+    background: #E9EBF3 !important;
+}
+.ugly-footer {
+    background:  #F3F4F8 !important; /* D3D8E8; */
+}
+
+.ugly-footer div.rule {
+    background: #102a83;
+    height: 4px;
+    display:block !important;
+}
+
+
+/********* Green theme **********************************/
+.green-topbar {
+    background-image: url(../img/green.svg);
+    background-size: cover;
+}
+
+.green-topbar h1 {
+    color:#202020;
+}
+
+.green-body {
+    background: #f0f0ff;
+    color: #040404;
+}
+.green-menubar {
+    background: #035024;
+}
+.green-card-header {
+    /*    background: #27c587;*/
+    background: rgba(0, 128, 0, .5);
+    color: #202020;
+}
+.green-card-header a,h2 {
+    color: #202020;
+}
+.green-nav-link {
+    color: #404040 !important;
+}
+.green-footer {
+    background: #E6F2EF;
+}
+.green-footer div.rule {
+    background: #035024;
+    height: 4px;
+    display:block !important;
+}
+
+/********* default theme **********************************/
+
+.default-body {
+    background: #f0f0f0;
+    color: #080808;
+}
+.default-menubar {
+    background: #2787c5;
+}
+
+.default-card-header {
+    background: #2787c5;
+    color: #f0f0f0;
+}
+.default-card-header a,h2 {
+    color: #f0f0f0;
+}
+
+.default-nav-link {
+    color: #ffffff !important;
+    font-size: 1.2em !important;
+}
+.default-nav-link:hover {
+    color: #e0e0e0 !important;
+}
+.default-topbar {
+    background: #0792f9;
+    background-image: url(textures/diagmonds-light.png);
+}
+.default-footer div.rule {
+    background: #2787c5;
+    height: 4px;
+    display:block !important;
+}
+/************** blues2 ***************************/
+.blues2-body {
+    background: #f0f0f0;
+    color: #080808;
+}
+.blues2-menubar {
+    background: #2787c5;
+}
+
+.blues2-card-header {
+    background: #2787c5;
+    color: #f0f0f0;
+}
+.blues2-card-header a,h2 {
+    color: #f0f0f0;
+}
+
+.blues2-nav-link {
+    color: #ffffff !important;
+    font-size: 1.2em !important;
+}
+.blues2-nav-link:hover {
+    color: #e0e0e0 !important;
+}
+.blues2-topbar {
+    background: #0792f9;
+    background-image: url(../img/bg1.jpg);
+}
+.blues2-footer div.rule {
+    background: #2787c5;
+    height: 4px;
+    display:block !important;
+}
+/****************** cubed header ******************/
+.cube-body {
+    background: #f0f0f0;
+    color: #080808;
+}
+.cube-menubar {
+    background: #2787c5;
+}
+
+.cube-card-header {
+    background: #2787c5;
+    color: #f0f0f0;
+}
+.cube-card-header a,h2 {
+    color: #f0f0f0;
+}
+
+.cube-nav-link {
+    color: #ffffff !important;
+    font-size: 1.2em !important;
+}
+.cube-nav-link:hover {
+    color: #e0e0e0 !important;
+}
+.cube-topbar {
+    background-image: url(../img/blue_cubed.png);
+    background-size: contain;
+}
+.cube-footer div.rule {
+    background: #2787c5;
+    height: 4px;
+    display:block !important;
+}
