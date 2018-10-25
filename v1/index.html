@@ -31,17 +31,30 @@
   </div>
 
   <div id="iacr_header">
-    <header id="topbar" class="container d-flex align-items-center p-2">
-      <a href="../" class="d-none d-lg-inline">
-        <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid" id="iacrLogo" alt="IACR logo" />
+    <header id="topbar" class="container align-items-center p-2 d-none d-lg-flex">
+      <a href="../">
+        <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid p-2" id="iacrLogo" alt="IACR logo" />
       </a>
-      <h5 class="d-none d-lg-inline mt-2">
+
+      <!-- title for large screens and up -->
+      <h1 class="d-none d-xl-inline mt-2 ml-3">
         International Association for Cryptologic Research
-      </h5>
+      </h1>
+
+      <!-- title for large screens -->
+      <h1 class="d-none d-lg-inline d-xl-none mt-2 ml-3">
+        International Association<br />for Cryptologic Research
+      </h1>
     </header>
 
     <nav id="menubar" class="navbar navbar-expand-lg default-menubar mb-4 navbar-dark" role="navigation">
-      <a class="navbar-brand d-lg-none text-center" href="#">
+      <!-- title for medium screens -->
+      <a class="navbar-brand d-none d-md-inline d-lg-none" href="#">
+        International Association for Cryptologic Research
+      </a>
+
+      <!-- title for extra-small & small screens -->
+      <a class="navbar-brand d-xs-inline d-md-none" href="#">
         IACR
       </a>
 
