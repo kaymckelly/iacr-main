@@ -48,17 +48,19 @@
     </header>
 
     <nav id="menubar" class="navbar navbar-expand-lg default-menubar mb-4 navbar-dark" role="navigation">
+      <img id="navbarLogo" src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" alt="IACR logo" class="navbar-brand d-xs-inline d-lg-none my-2 py-0" />
+
       <!-- title for medium screens -->
-      <a class="navbar-brand d-none d-md-inline d-lg-none" href="#">
+      <a class="d-none d-md-inline d-lg-none h4 navbarTitle mb-0" href="#">
         International Association for Cryptologic Research
       </a>
 
       <!-- title for extra-small & small screens -->
-      <a class="navbar-brand d-xs-inline d-md-none" href="#">
+      <a class="navbar-text d-xs-inline d-md-none" href="#">
         IACR
       </a>
 
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <button id="customToggler" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
