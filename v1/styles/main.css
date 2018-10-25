@@ -41,9 +41,11 @@ a.navbarTitle {
   color: rgba(254, 254, 254, 0.9);
 }
 
-/* NOTE: hover effect for navbar. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
-.navbar-nav li:hover>.dropdown-menu {
-  display: block;
+/* NOTE: hover effect for navbar only on larger screens. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
+@media only screen and (min-width: 992px) {
+  .navbar-nav li:hover>.dropdown-menu {
+    display: block;
+  }
 }
 
 /* TODO: Build custom bootstrap for this. */
