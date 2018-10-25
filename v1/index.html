@@ -30,196 +30,160 @@
     </div>
   </div>
 
-  <header id="topbar" class="container-fluid d-flex align-items-center">
-    <a href="../" class="d-none d-lg-inline">
-      <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid p-2" id="iacrLogo" alt="IACR logo" />
-    </a>
-    <h1 class="d-none d-lg-inline mt-2">
-      International Association for Cryptologic Research
-    </h1>
-  </header>
+  <div id="iacr_header">
+    <header id="topbar" class="container d-flex align-items-center p-2">
+      <a href="../" class="d-none d-lg-inline">
+        <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid" id="iacrLogo" alt="IACR logo" />
+      </a>
+      <h5 class="d-none d-lg-inline mt-2">
+        International Association for Cryptologic Research
+      </h5>
+    </header>
 
-  <nav id="menubar" class="navbar navbar-expand-lg default-menubar mb-4 navbar-dark" role="navigation">
+    <nav id="menubar" class="navbar navbar-expand-lg default-menubar mb-4 navbar-dark" role="navigation">
+      <a class="navbar-brand d-lg-none text-center" href="#">
+        IACR
+      </a>
 
-    <a class="navbar-brand d-lg-none text-center" href="#">
-      IACR
-    </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- NOTE: invaluable for answering the justified navbar question: https://stackoverflow.com/questions/45880091/justifying-a-navbar-in-bootstrap-4 -->
 
-    <!-- NOTE: invaluable for answering the justified navbar question: https://stackoverflow.com/questions/45880091/justifying-a-navbar-in-bootstrap-4 -->
-
-    <!-- TODO: megamenus?! (https://bootsnipp.com/snippets/orE6Z) -->
-    <div class="collapse navbar-collapse" id="navCollapse">
-      <ul class="navbar-nav w-100 nav-justified align-items-start">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
-          <div class="dropdown-menu border-0" aria-labelledby="eventsDropdownLink">
-            <a class="dropdown-item" href="#">Asiacrypt</a>
-            <a class="dropdown-item" href="#">Crypto</a>
-            <a class="dropdown-item" href="#">Eurocrypt</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">CHES</a>
-            <a class="dropdown-item" href="#">FSE</a>
-            <a class="dropdown-item" href="#">PKC</a>
-            <a class="dropdown-item" href="#">TCC</a>
-            <a class="dropdown-item" href="#">RWC</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Cryptology Schools</a>
-            <a class="dropdown-item" href="#">in cooperation with IACR</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/publications" id="pubsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications</a>
-          <div class="dropdown-menu border-0" aria-labelledby="pubsDropdownLink">
-            <a class="dropdown-item" href="#">Journal of Cryptology</a>
-            <a class="dropdown-item" href="#">Transactions on Symmetric Cryptology</a>
-            <a class="dropdown-item" href="#">Transactions on CHES</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="https://eprint.iacr.org">Cryptology ePrint Archive</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="https://www.iacr.org/museum/">Museum of Historic Papers</a>
-            <a class="dropdown-item" href="https://www.iacr.org/publications/statistics.html">Publication Statistics</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="newsDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            News
-          </a>
-          <div class="dropdown-menu border-0" aria-labelledby="newsDropdownLink">
-            <a class="dropdown-item" href="#">News Updates</a>
-            <a class="dropdown-item" href="#">Elections</a>
-            <a class="dropdown-item" href="#">Petitions &amp; Statements</a>
-            <a class="dropdown-item" href="#">Newsletter</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Services
-          </a>
-          <div class="dropdown-menu border-0" aria-labelledby="servicesDropdownLink">
-            <a class="dropdown-item" href="https://iacr.org/jobs/">Jobs</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">CryptoDB</a>
-            <a class="dropdown-item" href="#">Calendar of Events</a>
-            <a class="dropdown-item" href="#">Book Reviews</a>
-            <a class="dropdown-item" href="#">PhD Database</a>
-            <a class="dropdown-item" href="#">Videos</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="membersDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Members
+      <!-- TODO: megamenus?! (https://bootsnipp.com/snippets/orE6Z) -->
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav w-100 nav-justified align-items-start">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+            <div class="dropdown-menu border-0" aria-labelledby="eventsDropdownLink">
+              <a class="dropdown-item" href="#">Asiacrypt</a>
+              <a class="dropdown-item" href="#">Crypto</a>
+              <a class="dropdown-item" href="#">Eurocrypt</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">CHES</a>
+              <a class="dropdown-item" href="#">FSE</a>
+              <a class="dropdown-item" href="#">PKC</a>
+              <a class="dropdown-item" href="#">TCC</a>
+              <a class="dropdown-item" href="#">RWC</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Cryptology Schools</a>
+              <a class="dropdown-item" href="#">in cooperation with IACR</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/publications" id="pubsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications</a>
+            <div class="dropdown-menu border-0" aria-labelledby="pubsDropdownLink">
+              <a class="dropdown-item" href="#">Journal of Cryptology</a>
+              <a class="dropdown-item" href="#">Transactions on Symmetric Cryptology</a>
+              <a class="dropdown-item" href="#">Transactions on CHES</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://eprint.iacr.org">Cryptology ePrint Archive</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.iacr.org/museum/">Museum of Historic Papers</a>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/statistics.html">Publication Statistics</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="newsDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              News
             </a>
-          <div class="dropdown-menu border-0" aria-labelledby="membersDropdownLink">
-            <a class="dropdown-item" href="#">How to Join</a>
-            <a class="dropdown-item" href="#">Update Membership Information</a>
-            <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
-            <a class="dropdown-item" href="#">Subscribe to News Updates</a>
+            <div class="dropdown-menu border-0" aria-labelledby="newsDropdownLink">
+              <a class="dropdown-item" href="#">News Updates</a>
+              <a class="dropdown-item" href="#">Elections</a>
+              <a class="dropdown-item" href="#">Petitions &amp; Statements</a>
+              <a class="dropdown-item" href="#">Newsletter</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="servicesDropdownLink">
+              <a class="dropdown-item" href="https://iacr.org/jobs/">Jobs</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">CryptoDB</a>
+              <a class="dropdown-item" href="#">Calendar of Events</a>
+              <a class="dropdown-item" href="#">Book Reviews</a>
+              <a class="dropdown-item" href="#">PhD Database</a>
+              <a class="dropdown-item" href="#">Videos</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="membersDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Members
+              </a>
+            <div class="dropdown-menu border-0" aria-labelledby="membersDropdownLink">
+              <a class="dropdown-item" href="#">How to Join</a>
+              <a class="dropdown-item" href="#">Update Membership Information</a>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
+              <a class="dropdown-item" href="#">Subscribe to News Updates</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="aboutDropdownLink">
+              <a class="dropdown-item" href="#">Board of Directors</a>
+              <a class="dropdown-item" href="#">Committees</a>
+              <a class="dropdown-item" href="#">Documents</a>
+              <a class="dropdown-item" href="#">Privacy Policy</a>
+            </div>
+          </li>
+        </ul>
+        <!-- NOTE: from https://stackoverflow.com/questions/50316145/bootstrap-4-full-width-search-bar-without-navigation-break, specifically https://codepen.io/anon/pen/Vxdzaa -->
+        <form class="mx-2 my-auto d-inline flex-grow-1">
+          <div class="input-group">
+            <input type="text" class="form-control border border-right-0" id="searchBox" placeholder="Search...">
+            <span class="input-group-append">
+                <button id="searchBtn" class="btn btn-outline-secondary border border-left-0" type="button">
+                  <img src="../img/search.svg" class="searchBtn">
+                </button>
+              </span>
           </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About
-          </a>
-          <div class="dropdown-menu border-0" aria-labelledby="aboutDropdownLink">
-            <a class="dropdown-item" href="#">Board of Directors</a>
-            <a class="dropdown-item" href="#">Committees</a>
-            <a class="dropdown-item" href="#">Documents</a>
-            <a class="dropdown-item" href="#">Privacy Policy</a>
-          </div>
-        </li>
-      </ul>
-      <!-- NOTE: from https://stackoverflow.com/questions/50316145/bootstrap-4-full-width-search-bar-without-navigation-break, specifically https://codepen.io/anon/pen/Vxdzaa -->
-      <form class="mx-2 my-auto d-inline flex-grow-1">
-        <div class="input-group">
-          <input type="text" class="form-control border border-right-0" id="searchBox" placeholder="Search...">
-          <span class="input-group-append">
-              <button id="searchBtn" class="btn btn-outline-secondary border border-left-0" type="button">
-                <img src="../img/search.svg" class="searchBtn">
-              </button>
-            </span>
-        </div>
-      </form>
-    </div>
-  </nav>
+        </form>
+      </div>
+    </nav>
+  </div>
 
-  <main id="main" class="container-fluid px-4 px-md-5">
-    <section class="row justify-content-center">
-      <header class="col-12 col-md-10 mb-2">
-        <p class="lead text-justify">
-          The International Association for Cryptologic Research (IACR) is a non-profit scientific organization whose purpose is to further research in cryptology and related fields. Cryptology is the science and practice of designing computation and communication
-          systems which are secure in the presence of adversaries.
-        </p>
-      </header>
-    </section>
-
-    <section class="row">
-      <article class="col-12 col-md-4 mb-3">
-        <h3 class="default-cardHeading p-2 rounded">
-          News
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </article>
-      <article class="col-12 col-md-8 mb-3">
-        <h3 class="default-cardHeading rounded p-2">
-            Events
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </article>
-
-    </section>
-
-    <section class="row">
-      <article class="col-12 col-md-4 mb-3">
-        <h3 class="default-cardHeading rounded p-2">
-          Publications
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </article>
-
-      <article class="col-12 col-md-4 mb-3">
-        <h3 class="default-cardHeading rounded py-2 ml-0">
-          Recent Paper Awards
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </article>
-
-      <article class="col-12 col-md-4 mb-3">
-        <h3 class="default-cardHeading rounded p-2">
-            Featured Video
-          </h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </article>
-    </section>
-
+  <main id="main" class="container">
+    <h1>
+      a test heading
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <table>
+      <tr>
+        <th>
+          first column
+        </th>
+        <th>
+          second column
+        </th>
+        <th>
+          third column
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        </td>
+        <td>
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </td>
+        <td>
+           foobar lulz
+        </td>
+      </tr>
+    </table>
   </main>
 
   <!-- NOTE: inspiration from https://bootsnipp.com/snippets/featured/footer-using-bootstrap-4 and https://bootsnipp.com/snippets/j68dz -->
-  <footer id="pageFooter" class="container-fluid p-3 default-footer">
+  <footer id="pageFooter" class="container-fluid p-3 default-footer mt-4">
     <div class="row mb-2">
       <section class="col-12 col-md-3 mb-2">
         <h5 class="default-footerTitle">
