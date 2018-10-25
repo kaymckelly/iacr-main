@@ -31,9 +31,9 @@ img#iacrLogo {
 img#navbarLogo {
   height: 75px;
   width: 75px;
-  -webkit-box-shadow: 0 0 20px 2px rgba(254,254,254,1);
-  -moz-box-shadow: 0 0 20px 2px rgba(254,254,254,1);
-  box-shadow: 0 0 20px 2px rgba(254,254,254,1);
+  -webkit-box-shadow: 0 0 20px 2px rgba(254, 254, 254, 1);
+  -moz-box-shadow: 0 0 20px 2px rgba(254, 254, 254, 1);
+  box-shadow: 0 0 20px 2px rgba(254, 254, 254, 1);
   border-radius: 50%;
 }
 
@@ -51,6 +51,12 @@ a.navbarTitle {
 /* TODO: Build custom bootstrap for this. */
 a.nav-link, a.dropdown-item {
   color: #EBF7EB !important;
+}
+
+/* TODO: Build custom bootstrap for this. */
+a.dropdown-item:hover {
+  background-color: #3B5099;
+  /* rgba(146, 158, 198, 0.4); */
 }
 
 input#searchBox {
