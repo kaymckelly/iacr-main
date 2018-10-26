@@ -1,0 +1,131 @@
+    <header id="topbar" class="container align-items-center p-2 d-none d-lg-flex">
+      <a href="../">
+        <img src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid p-2" id="iacrLogo" alt="IACR logo" />
+      </a>
+
+      <!-- title for large screens and up -->
+      <h1 class="d-none d-xl-inline mt-2 ml-3">
+        International Association for Cryptologic Research
+      </h1>
+
+      <!-- title for large screens -->
+      <h1 class="d-none d-lg-inline d-xl-none mt-2 ml-3">
+        International Association<br />for Cryptologic Research
+      </h1>
+    </header>
+
+    <nav id="menubar" class="navbar navbar-expand-lg default-menubar mb-4 navbar-dark" role="navigation">
+      <img id="navbarLogo" src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" alt="IACR logo" class="navbar-brand d-xs-inline d-lg-none my-2 py-0" />
+
+      <!-- title for medium screens -->
+      <a class="d-none d-md-inline d-lg-none h4 navbarTitle mb-0" href="#">
+        International Association for Cryptologic Research
+      </a>
+
+      <!-- title for extra-small & small screens -->
+      <a class="d-xs-inline d-md-none h4 navbarTitle mb-0" href="#">
+        IACR
+      </a>
+
+      <button id="customToggler" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- NOTE: invaluable for answering the justified navbar question: https://stackoverflow.com/questions/45880091/justifying-a-navbar-in-bootstrap-4 -->
+
+      <!-- TODO: megamenus?! (https://bootsnipp.com/snippets/orE6Z) -->
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav w-100 justify-content-around align-items-start">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+            <div class="dropdown-menu border-0" aria-labelledby="eventsDropdownLink">
+              <a class="dropdown-item" href="#">Asiacrypt</a>
+              <a class="dropdown-item" href="#">Crypto</a>
+              <a class="dropdown-item" href="#">Eurocrypt</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">CHES</a>
+              <a class="dropdown-item" href="#">FSE</a>
+              <a class="dropdown-item" href="#">PKC</a>
+              <a class="dropdown-item" href="#">TCC</a>
+              <a class="dropdown-item" href="#">RWC</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Cryptology Schools</a>
+              <a class="dropdown-item" href="#">in cooperation with IACR</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/publications" id="pubsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications</a>
+            <div class="dropdown-menu border-0" aria-labelledby="pubsDropdownLink">
+              <a class="dropdown-item" href="#">Journal of Cryptology</a>
+              <a class="dropdown-item" href="#">Transactions on Symmetric Cryptology</a>
+              <a class="dropdown-item" href="#">Transactions on CHES</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://eprint.iacr.org">Cryptology ePrint Archive</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.iacr.org/museum/">Museum of Historic Papers</a>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/statistics.html">Publication Statistics</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="newsDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              News
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="newsDropdownLink">
+              <a class="dropdown-item" href="#">News Updates</a>
+              <a class="dropdown-item" href="#">Elections</a>
+              <a class="dropdown-item" href="#">Petitions &amp; Statements</a>
+              <a class="dropdown-item" href="#">Newsletter</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="servicesDropdownLink">
+              <a class="dropdown-item" href="https://iacr.org/jobs/">Jobs</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">CryptoDB</a>
+              <a class="dropdown-item" href="#">Calendar of Events</a>
+              <a class="dropdown-item" href="#">Book Reviews</a>
+              <a class="dropdown-item" href="#">PhD Database</a>
+              <a class="dropdown-item" href="#">Videos</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="membersDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Members
+              </a>
+            <div class="dropdown-menu border-0" aria-labelledby="membersDropdownLink">
+              <a class="dropdown-item" href="#">How to Join</a>
+              <a class="dropdown-item" href="#">Update Membership Information</a>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
+              <a class="dropdown-item" href="#">Subscribe to News Updates</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="aboutDropdownLink">
+              <a class="dropdown-item" href="#">Board of Directors</a>
+              <a class="dropdown-item" href="#">Committees</a>
+              <a class="dropdown-item" href="#">Documents</a>
+              <a class="dropdown-item" href="#">Privacy Policy</a>
+            </div>
+          </li>
+        </ul>
+        <!-- NOTE: from https://stackoverflow.com/questions/50316145/bootstrap-4-full-width-search-bar-without-navigation-break, specifically https://codepen.io/anon/pen/Vxdzaa -->
+        <form class="mx-2 my-auto d-inline flex-grow-1">
+          <div class="input-group">
+            <input type="text" class="form-control border border-right-0" id="searchBox" placeholder="Search...">
+            <span class="input-group-append">
+                <button id="searchBtn" class="btn btn-outline-secondary border border-left-0" type="button">
+                  <img src="../img/search.svg" class="searchBtn">
+                </button>
+              </span>
+          </div>
+        </form>
+      </div>
+    </nav>
