@@ -70,6 +70,10 @@ img.searchBtn {
 
 
 /*** Footer ***/
+#pageFooterAbout {
+  hyphens: auto;
+}
+
 footer#pageFooter ul.nav {
   padding-left: 5px;
 }
