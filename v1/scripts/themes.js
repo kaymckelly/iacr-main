@@ -53,8 +53,8 @@ function setTheme(new_theme) {
   }
 
   // footer
-  document.getElementById('footer').classList.remove(current_theme + '-footer')
-  document.getElementById('footer').classList.add(new_theme + '-footer');
+  document.getElementById('pageFooter').classList.remove(current_theme + '-footer')
+  document.getElementById('pageFooter').classList.add(new_theme + '-footer');
 
   // footer titles
   var footerTitles = document.querySelectorAll('.' + current_theme + '-footerTitle');
