@@ -63,6 +63,12 @@ input#searchBox {
   background-color: #FDFDFD;
 }
 
+@media (min-width: 992px) {
+  #searchBox:focus {
+    min-width: 350px !important;
+  }
+}
+
 img.searchBtn {
   height: 20px;
 }
