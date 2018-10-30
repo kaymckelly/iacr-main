@@ -42,9 +42,20 @@
   max-width: 120px !important;
 }
 
+#searchBtn2 {
+  height: 20px;
+}
+img.searchBtn {
+    height: 20px;
+}
 #searchBtn {
   height: 20px;
 }
-img.socialBtn {
-  height: 2.5em;
+@media (min-width: 992px) {
+  #searchBox:focus {
+    min-width: 350px !important;
+  }
+  #searchInput {
+      min-width: 900px !important;
+  }
 }
