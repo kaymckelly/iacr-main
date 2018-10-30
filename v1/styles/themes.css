@@ -64,6 +64,16 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   color: #102A83;
 }
 
+/* TODO: Build custom bootstrap for this. */
+.default-menubar a.nav-link, .default-menubar a.dropdown-item {
+  color: #EBF7EB !important;
+}
+
+/* TODO: Build custom bootstrap for this. */
+.default-menubar a.dropdown-item:hover {
+  background-color: #3B5099;
+  /* rgba(146, 158, 198, 0.4); */
+}
 
 
 /*** Fresh apples theme, based on https://coolors.co/fefefe-d3e0bf-618e15-102a83-600030 ***/
@@ -111,7 +121,16 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 .apple-footerLink, .apple-footerLink>ion-icon {
   color: #600030;
 }
+/* TODO: Build custom bootstrap for this. */
+.apple-menubar a.nav-link, .apple-menubar a.dropdown-item {
+  color: #EBF7EB !important;
+}
 
+/* TODO: Build custom bootstrap for this. */
+.apple-menubar a.dropdown-item:hover {
+  background-color: #3B5099;
+  /* rgba(146, 158, 198, 0.4); */
+}
 
 
 /*** monochrome2 theme, based on https://coolors.co/972045-e0e0ef-3b5099-102a83-0b1b54 ***/
@@ -157,4 +176,73 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 
 .mono2-footerLink, .mono2-footerLink>ion-icon {
   color: #102A83;
+}
+/* TODO: Build custom bootstrap for this. */
+.mono2-menubar a.nav-link, .apple-menubar a.dropdown-item {
+  color: #EBF7EB !important;
+}
+
+/* TODO: Build custom bootstrap for this. */
+.mono2-menubar a.dropdown-item:hover {
+  background-color: #3B5099;
+  /* rgba(146, 158, 198, 0.4); */
+}
+/* ********************** complementary colors ***********/
+/*** from https://coolors.co/972045-e0e0ef-3b5099-102a83-0b1b54 ***/
+.mono3-body {
+    background: #F0F0F0;
+  color: #080808;
+}
+
+.mono3-anchor {
+    color: #0E236C;
+}
+
+.mono3-menubar, nav.mono3-menubar .dropdown-menu {
+    background: #0E236C;
+}
+
+.mono3-cardHeading {
+  border-top: 4px solid #5f3b99;
+}
+
+.mono3-conferenceHeader {
+    background-color: #3B5099;
+    color: #FEFEFE;
+}
+
+.mono3-eventInfo {
+  background-color: rgba(224, 224, 239, 0.7);
+  color: #080808;
+}
+
+.mono3-footer {
+    background-color: #DBDFEC;
+}
+
+.mono3-menubar a.dropdown-item:hover {
+    background-color: #5164A4 !important;
+  /* rgba(146, 158, 198, 0.4); */
+}
+.mono3-footerTitle, .mono3-footerTitle>a {
+  color: #0B1B54;
+}
+
+.mono3-footerTitle {
+    border-left: 3px solid #3b9985;
+  padding-left: 10px;
+}
+
+.mono3-footerLink, .mono3-footerLink>ion-icon {
+  color: #102A83;
+}
+/* TODO: Build custom bootstrap for this. */
+.mono3-menubar a.nav-link, .mono3-menubar a.dropdown-item {
+  color: #F0F0F0 !important;
+}
+
+/* TODO: Build custom bootstrap for this. */
+.mono3-menubar a.dropdown-item:hover {
+  background-color: #102a83;
+  /* rgba(146, 158, 198, 0.4); */
 }
