@@ -59,3 +59,8 @@ img.searchBtn {
       min-width: 900px !important;
   }
 }
+
+img.socialBtn {
+    height: 2.5em;
+}
+    
