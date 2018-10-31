@@ -252,10 +252,10 @@
 
 
 
-/*** a theme needs no name ***/
+/*** a theme needs no name, based on https://coolors.co/eef5f6-e9ab1c-2f8899-046577-102a83 ***/
 .nameless-body {
-  background-color: #FEFEFE;
-  color: #220012;
+  background-color: #FFF;
+  color: #02040C;
 }
 
 /* not used on the shell of a page, important for later */
@@ -264,7 +264,7 @@
 } */
 
 .nameless-menubar, nav.nameless-menubar .dropdown-menu {
-  background-color: #600030;
+  background-color: #2F8899;
 }
 
 /* not used on the shell of a page, important for later */
@@ -283,20 +283,22 @@
 } */
 
 .nameless-footer {
-  background-color: #F3F7EE;
+  background-color: rgba(236, 244, 245, 0.5);
 }
 
 .nameless-footerTitle, .nameless-footerTitle>a {
-  color: #091748;
+  color: #08143C;
 }
 
 .nameless-footerTitle {
-  border-left: 3px solid #618E15;
-  padding-left: 10px;
+  border-right: 3px solid #E9AB1C;
+  border-top: 1px solid #E9AB1C;
+  padding-top: 10px;
+  border-radius: 25%;
 }
 
-.nameless-footerLink, .nameless-footerLink>ion-icon {
-  color: #600030;
+.nameless-footerLink {
+  color: #046577;
 }
 
 /* TODO: Build custom bootstrap for this. */
