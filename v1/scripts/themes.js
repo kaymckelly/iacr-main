@@ -8,6 +8,10 @@ function setTheme(new_theme) {
   body.classList.remove(current_theme + '-body');
   body.classList.add(new_theme + '-body');
 
+  // top header (above nav)
+  document.getElementById('topEnclosure').classList.remove(current_theme + '-header');
+  document.getElementById('topEnclosure').classList.add(new_theme + '-header');
+
   // nav
   document.getElementById('menubar').classList.remove(current_theme + '-menubar');
   document.getElementById('menubar').classList.add(new_theme + '-menubar');
