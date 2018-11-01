@@ -122,6 +122,112 @@
     </div>
 </nav>
 -->
+  <nav id="nav" class="container navbar navbar-expand-lg navbar-dark bg-transparent px-0">
+      <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <a id="navbarIacrAcronym" class="d-xs-inline d-md-none h4 mb-0" href="#">
+        IACR
+      </a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul id="menuContainer" class="pl-0 navbar-nav justify-content-between flex-grow-1 mr-2">
+          <li class="nav-item dropdown">
+            <a class="pl-0 nav-link default-nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+            <div class="dropdown-menu" aria-labelledby="eventsDropdownLink">
+              <a class="dropdown-item" href="#">All IACR events</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Asiacrypt</a>
+              <a class="dropdown-item" href="#">Crypto</a>
+              <a class="dropdown-item" href="#">Eurocrypt</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">CHES</a>
+              <a class="dropdown-item" href="#">FSE</a>
+              <a class="dropdown-item" href="#">PKC</a>
+              <a class="dropdown-item" href="#">TCC</a>
+              <a class="dropdown-item" href="#">RWC</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Cryptology Schools</a>
+              <a class="dropdown-item" href="#">in cooperation with IACR</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link default-nav-link dropdown-toggle" href="/publications" id="pubsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications</a>
+            <div class="dropdown-menu" aria-labelledby="pubsDropdownLink">
+              <a class="dropdown-item" href="/publications">All IACR Publications</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Journal of Cryptology</a>
+              <a class="dropdown-item" href="#">Transactions on Symmetric Cryptology</a>
+              <a class="dropdown-item" href="#">Transactions on CHES</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://eprint.iacr.org">Cryptology ePrint Archive</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.iacr.org/museum/">Museum of Historic Papers</a>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/statistics.html">Publication Statistics</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link default-nav-link dropdown-toggle" href="#" id="newsDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                News
+              </a>
+            <div class="dropdown-menu" aria-labelledby="newsDropdownLink">
+              <a class="dropdown-item" href="/news">News Updates</a>
+              <a class="dropdown-item" href="/elections">Elections</a>
+              <a class="dropdown-item" href="/petitions">Petitions &amp; Statements</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link default-nav-link dropdown-toggle" href="#" id="servicesDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdownLink">
+              <a class="dropdown-item" href="https://iacr.org/jobs/">Jobs</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">CryptoDB</a>
+              <a class="dropdown-item" href="#">Calendar of Events</a>
+              <a class="dropdown-item" href="#">Book Reviews</a>
+              <a class="dropdown-item" href="#">PhD Database</a>
+              <a class="dropdown-item" href="#">Videos</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link default-nav-link dropdown-toggle" href="#" id="membersDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Members
+              </a>
+            <div class="dropdown-menu" aria-labelledby="membersDropdownLink">
+              <a class="dropdown-item" href="#">How to Join</a>
+              <a class="dropdown-item" href="#">Update Membership Information</a>
+              <a class="dropdown-item" href="https://www.iacr.org/publications/access.php">Access IACR Publications</a>
+              <a class="dropdown-item" href="#">Subscribe to News Updates</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link default-nav-link dropdown-toggle" href="#" id="aboutDropdownLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+            <div class="dropdown-menu" aria-labelledby="aboutDropdownLink">
+              <a class="dropdown-item" href="/about">About IACR</a>
+              <a class="dropdown-item" href="#">Board of Directors</a>
+              <a class="dropdown-item" href="#">Committees</a>
+              <a class="dropdown-item" href="#">Documents</a>
+              <a class="dropdown-item" href="#">Privacy Policy</a>
+            </div>
+          </li>
+        </ul>
+        <form id="searchboxContainer" class="ml-4 my-1 d-inline w-25">
+          <div class="input-group">
+            <input id="searchInput2" name="q" type="search" class="form-control border border-right-0" placeholder="Search IACR...">
+            <span class="input-group-append">
+                <button class="btn btn-outline-secondary border border-left-0" type="button">
+                  <img id="searchBtn" src="../img/search.svg">
+                </button>
+              </span>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <script src="nav.js"></script>
   <nav class="container navbar navbar-expand-lg navbar-light bg-transparent px-0">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
