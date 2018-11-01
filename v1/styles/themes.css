@@ -16,9 +16,7 @@
 }
 
 
-/****************************************************
-Default theme. Copy this to make a new one, replacing * .default with .green or whatever the name is.
-*****************************************************/
+/*** Default theme. Copy this to make a new one, replacing * .default with .green or whatever the name is. ***/
 /* default theme based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 */
 .default-body {
     background: #FEFEFE;
@@ -74,6 +72,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   background-color: #3B5099;
   /* rgba(146, 158, 198, 0.4); */
 }
+
 
 
 /*** Fresh apples theme, based on https://coolors.co/fefefe-d3e0bf-618e15-102a83-600030 ***/
@@ -133,6 +132,7 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 }
 
 
+
 /*** monochrome2 theme, based on https://coolors.co/972045-e0e0ef-3b5099-102a83-0b1b54 ***/
 .mono2-body {
   background: #FEFEFE;
@@ -187,7 +187,10 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
   background-color: #3B5099;
   /* rgba(146, 158, 198, 0.4); */
 }
-/* ********************** complementary colors ***********/
+
+
+
+/*** complementary colors ***/
 /*** from https://coolors.co/972045-e0e0ef-3b5099-102a83-0b1b54 ***/
 .mono3-body {
     background: #F0F0F0;
@@ -245,4 +248,72 @@ Default theme. Copy this to make a new one, replacing * .default with .green or 
 .mono3-menubar a.dropdown-item:hover {
   background-color: #102a83;
   /* rgba(146, 158, 198, 0.4); */
+}
+
+
+
+/*** a theme needs no name, based on https://coolors.co/eef5f6-e9ab1c-2f8899-046577-102a83 ***/
+.nameless-body {
+  background-color: #FFF;
+  color: #02040C;
+}
+
+/* thanks https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image for brilliant idea of how to do a color layer over a background sans extraneous divs. pattern from https://www.toptal.com/designers/subtlepatterns/?s=ocean */
+.nameless-header {
+  background-image: url('../img/subtle_white_mini_waves.png');
+  box-shadow: inset 0 0 0 1000px rgba(233, 171, 28, 0.1);
+}
+
+/* not used on the shell of a page, important for later */
+/* .nameless-anchor {
+  color: #598113;
+} */
+
+.nameless-menubar, nav.nameless-menubar .dropdown-menu {
+  background-color: #2F8899;
+}
+
+/* not used on the shell of a page, important for later */
+/* .nameless-cardHeading {
+  border-top: 4px solid #618E15;
+}
+
+.nameless-conferenceHeader {
+  background-color: #600030;
+  color: #FEFEFE;
+}
+
+.nameless-eventInfo {
+  background-color: rgba(97, 142, 21, 0.8);
+  color: #FEFEFE;
+} */
+
+.nameless-footer {
+  background-color: rgba(236, 244, 245, 0.5);
+}
+
+.nameless-footerTitle, .nameless-footerTitle>a {
+  color: #08143C;
+}
+
+.nameless-footerTitle {
+  border-right: 3px solid #E9AB1C;
+  border-top: 1px solid #E9AB1C;
+  padding-top: 10px;
+  border-radius: 25%;
+}
+
+.nameless-footerLink {
+  color: #3B5099;
+  /* alt: #046577; */
+}
+
+/* TODO: Build custom bootstrap for this. */
+.nameless-menubar a.nav-link, .nameless-menubar a.dropdown-item {
+  color: #EBF7EB !important;
+}
+
+/* TODO: Build custom bootstrap for this. */
+.nameless-menubar a.dropdown-item:hover {
+  background-color: #3B5099;
 }
