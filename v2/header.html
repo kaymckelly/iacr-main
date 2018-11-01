@@ -1,4 +1,4 @@
-<div class="container-fluid default-topbar" id="topbar">
+    <div class="container-fluid default-topbar" id="topbar">
   <div class="container">
     <div class="row align-items-center pt-2 d-none d-md-flex justify-content-between">
       <div class="col-sm-2 pb-2">
@@ -19,7 +19,7 @@
 </div>
 
 <div id="menubar" class="container-fluid default-menubar">
-  <nav class="container navbar navbar-expand-lg navbar-light bg-transparent px-0">
+<!--  <nav class="container navbar navbar-expand-lg navbar-light bg-transparent px-0">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -120,24 +120,20 @@
           <input id="searchInput" type="search" class="form-control border" placeholder="Search IACR" width="100">
         </div>
       </div>
-<!--      <form class="form-inline my-2 my-lg-0">
-        <input id="searchBox" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>-->
     </div>
-    </nav>
-<!--  <div class="container"> -->
-    <nav id="nav" class="container navbar navbar-expand-lg navbar-dark bg-transparent px-0">
-      <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      <div id="navbarIacrAcronym" class="navbar-text d-inline-block d-md-none justify-content-center">
-        IACR
-      </div>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul id="menucontainer" class="nav navbar-nav w-100 justify-content-center">
+</nav>
+-->
+  <nav class="container navbar navbar-expand-lg navbar-light bg-transparent px-0">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarIacrAcronym" class="navbar-text d-inline-block d-md-none mx-auto">
+      IACR
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-between flex-grow-1">
           <li class="nav-item dropdown">
-            <a class="nav-link default-nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+            <a class="pl-0 nav-link default-nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
             <div class="dropdown-menu" aria-labelledby="eventsDropdownLink">
               <a class="dropdown-item" href="#">All IACR events</a>
               <div class="dropdown-divider"></div>
@@ -219,18 +215,18 @@
               <a class="dropdown-item" href="#">Privacy Policy</a>
             </div>
           </li>
-        </ul>
-        <form id="searchboxcontainer" class="ml-2 my-auto d-inline w-25">
-          <div class="input-group">
-            <input name="q" type="search" class="form-control border border-right-0" placeholder="Search with Google..." onfocus="$('#menucontainer').addClass('d-none'); $('#searchboxcontainer').removeClass('w-25').addClass('w-100');" onblur=" $('#searchboxcontainer').removeClass('w-100').addClass('w-25'); $('#menucontainer').removeClass('d-none');">
-            <span class="input-group-append">
-                <button class="btn btn-outline-secondary border border-left-0" type="button">
-                  <img id="searchBtn" src="../img/search.svg">
-                </button>
-              </span>
-          </div>
-        </form>
-      </div>
+          <li class="nav-item dropdown position-static">
+            <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchLink">
+              <button class="btn btn-outline-secondary border" aria-haspopup="true" aria-expanded="false" type="button">
+                <img src="../img/search.svg" class="searchBtn">
+              </button>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right bg-success px-2 w-100" aria-labelledby="searchLink">
+              <p class="small text-white mb-1">Faceted search as you type. Hit enter to search with Google.</p>
+              <input id="searchInput3" type="search" class="form-control border" placeholder="Search IACR" width="100">
+            </div>
+          </li>
+      </ul>
+    </div>
     </nav>
-<!--  </div> -->
 </div>
