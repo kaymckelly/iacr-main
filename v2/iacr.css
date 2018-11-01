@@ -63,4 +63,9 @@ img.searchBtn {
 img.socialBtn {
     height: 2.5em;
 }
-    
+
+@media (min-width: 992px) {
+  #searchInput2 {
+      min-width: 992px !important;
+  }
+}
