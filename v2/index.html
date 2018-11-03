@@ -78,28 +78,7 @@
   <script src="https://iacr.org/libs/css/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom JS (load header & footer) -->
-  <script type="text/javascript">
-    $.ajax({
-      url: 'header.html',
-      dataType: 'html',
-      cache: false,
-      success: function(data) {
-        $('#pageHeader').html(data);
-      }
-    });
-
-    $.ajax({
-      url: 'footer.html',
-      dataType: 'html',
-      cache: false,
-      success: function(data) {
-        $('#pageFooter').html(data);
-        $('#currentYear').text(new Date().getFullYear());
-      }
-    });
-  </script>
-
-  <script src="themes.js"></script>
+  <script src="headerFooter.js"></script>
 </body>
 
 </html>
