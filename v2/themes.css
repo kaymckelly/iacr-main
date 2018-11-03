@@ -200,3 +200,6 @@ by .green- or whatever the name is.
     height: 4px;
     display:block !important;
 }
+.cube-footer.cube-footer #footerBody {
+    background-color: #FFFFFF;
+}
