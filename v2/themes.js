@@ -33,5 +33,8 @@ function setTheme(new_theme) {
   document.getElementById('topbar').classList.remove(current_theme + '-topbar');
   document.getElementById('topbar').classList.add(new_theme + '-topbar');
 
+  document.getElementById('searchDropdown').classList.remove(current_theme + '-search');
+  document.getElementById('searchDropdown').classList.add(new_theme + '-search');
+
   current_theme = new_theme;
 }

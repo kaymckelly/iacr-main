@@ -30,6 +30,10 @@ by .green- or whatever the name is.
 .ugly-menubar {
     background: #102a83 !important;
 }
+.ugly-search {
+    background: #102a83;
+    color: #f0f0f0;
+}
 
 .ugly-card-header {
     background: #5164A4;
@@ -80,6 +84,10 @@ by .green- or whatever the name is.
 .green-menubar {
     background: #035024;
 }
+.green-search {
+    background: #035024;
+    color: #040404;
+}
 .green-card-header {
     /*    background: #27c587;*/
     background: rgba(0, 128, 0, .5);
@@ -109,6 +117,10 @@ by .green- or whatever the name is.
 .default-menubar {
     background: #2787c5;
 }
+.default-search {
+    background: #2787c5;
+    color: #f0f0f0;
+}
 
 .default-card-header {
     background: #2787c5;
@@ -134,10 +146,6 @@ by .green- or whatever the name is.
     height: 4px;
     display:block !important;
 }
-.default-search {
-    background: #2787c5;
-    color: #f0f0f0;
-}
 a#searchLink {
     color: #c0f0c0;
 }
@@ -148,6 +156,10 @@ a#searchLink {
 }
 .blues2-menubar {
     background: #2787c5;
+}
+.blues2-search {
+    background: #2787c5;
+    color: #f0f0f0;
 }
 
 .blues2-card-header {
@@ -181,6 +193,10 @@ a#searchLink {
 }
 .cube-menubar {
     background: #2787c5;
+}
+.cube-search {
+    background: #2787c5;
+    color: #f0f0f0;
 }
 
 .cube-card-header {
