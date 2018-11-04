@@ -36,6 +36,9 @@ function getSnippet(value, item) {
         subtitle = item['affiliation'];
       }
       break;
+    case 'static':
+      subtitle = item['url']
+      break;
     default:
   }
   var snippet = TITLE_TEMPLATE.replace(/_TITLE_/g, item['title']);
