@@ -35,3 +35,7 @@ $('#searchbox').focus(function() {
     $('#searchDropdown').scrollView();
   }
 });
+
+$('#searchbox3').focus(function() {
+  $('#searchInstructions3').scrollView();
+});
