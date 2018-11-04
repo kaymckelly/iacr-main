@@ -64,3 +64,9 @@ img.socialBtn {
     height: 2.5em;
 }
 
+/* border-bottom doesn't work on this element because it conflicts with
+   dropdown-menu */
+#searchDropdown {
+    border-radius: 0 0 5px 5px !important;
+}
+

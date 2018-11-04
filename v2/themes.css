@@ -46,7 +46,7 @@ by .green- or whatever the name is.
     background: url(../img/logo_blue_gradient.svg);
     background-size: cover;
 }
-.default-topbar h1 {
+.ugly-topbar h1 {
     color: 000000;
 }
 .ugly-card-footer {
@@ -133,6 +133,13 @@ by .green- or whatever the name is.
     background: #2787c5;
     height: 4px;
     display:block !important;
+}
+.default-search {
+    background: #2787c5;
+    color: #f0f0f0;
+}
+a#searchLink {
+    color: #c0f0c0;
 }
 /************** blues2 ***************************/
 .blues2-body {

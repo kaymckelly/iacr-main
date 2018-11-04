@@ -217,7 +217,7 @@
           </li>
         </ul>
         <form id="searchboxContainer" method="GET" action="/search" class="my-1 d-inline w-25">
-          <input id="searchbox" name="q" type="search" class="form-control border border-right-0" placeholder="Search IACR...">
+          <input id="searchbox2" name="q" type="search" class="form-control border border-right-0" placeholder="Search IACR...">
         </form>
       </div>
     </nav>
@@ -320,14 +320,16 @@
                 <img src="../img/search.svg" class="searchBtn">
               </button>
             </a>
-            <div class="dropdown-menu dropdown-menu-right bg-success px-2 w-100" aria-labelledby="searchLink">
-              <p class="small text-white mb-1">Faceted search as you type. Hit enter to search with Google.</p>
+            <div id="searchDropdown" class="dropdown-menu dropdown-menu-right default-search px-2 w-100 mt-0" aria-labelledby="searchLink">
+              <p class="small text-white mb-1">Suggestions from <a id="searchLink" href="/csearch">local search</a> as you type. Hit enter to search with Google.</p>
               <form action="/search" method="GET">
-                <input id="searchInput3" name="q" type="search" class="form-control border" placeholder="Search IACR" width="100">
+                <input id="searchbox" name="q" type="search" class="form-control border" placeholder="Search IACR" width="100">
               </form>
             </div>
           </li>
       </ul>
     </div>
-    </nav>
+  </nav>
+  <script src="../search/jquery.easy-autocomplete.js"></script>
+  <script src="../search/easyversion.js"></script>
 </div>
