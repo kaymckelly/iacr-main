@@ -1,6 +1,9 @@
 #topbar h1 {
     text-shadow: 0 0 20px white;
 }
+#footer-menu {
+    height:0;
+}
 #theme-menu {
     position: fixed;
     top: 0%;
@@ -60,10 +63,8 @@ by .green- or whatever the name is.
     background:  #F3F4F8 !important; /* D3D8E8; */
 }
 
-.ugly-footer div.rule {
-    background: #102a83;
-    height: 4px;
-    display:block !important;
+.ugly-footer {
+    border-top: 4px solid #102a83;
 }
 
 
@@ -101,17 +102,13 @@ by .green- or whatever the name is.
 }
 .green-footer {
     background: #E6F2EF;
-}
-.green-footer div.rule {
-    background: #035024;
-    height: 4px;
-    display:block !important;
+    border-top: 4px solid #035024;
 }
 
 /********* default theme **********************************/
 
 .default-body {
-    background: #f0f0f0;
+    background: #f8f9fa;
     color: #080808;
 }
 .default-menubar {
@@ -141,10 +138,8 @@ by .green- or whatever the name is.
     background: #0792f9;
     background-image: url(textures/diagmonds-light.png);
 }
-.default-footer div.rule {
-    background: #2787c5;
-    height: 4px;
-    display:block !important;
+.default-footer {
+    border-top: 4px solid #2787c5;
 }
 .default-footer a {
 /*    color: #3E7307; */
@@ -156,7 +151,7 @@ a#searchLink {
 }
 /************** blues2 ***************************/
 .blues2-body {
-    background: #f0f0f0;
+    background: #f8f9fa;
     color: #080808;
 }
 .blues2-menubar {
@@ -186,14 +181,12 @@ a#searchLink {
     background: #0792f9;
     background-image: url(../img/bg1.jpg);
 }
-.blues2-footer div.rule {
-    background: #2787c5;
-    height: 4px;
-    display:block !important;
+.blues2-footer {
+    border-top: 4px solid #2787c5;
 }
 /****************** cubed header ******************/
 .cube-body {
-    background: #f0f0f0;
+    background: #f8f9fa;
     color: #080808;
 }
 .cube-menubar {
@@ -223,13 +216,11 @@ a#searchLink {
     background-image: url(../img/blue_cubed.png);
     background-size: contain;
 }
-.cube-footer div.rule {
-    background: #2787c5;
-    height: 4px;
-    display:block !important;
-}
-.cube-footer.cube-footer .footerBody {
+.cube-footer {
+    border-top: 4px solid #2787c5;
     background-color: #FFFFFF;
+}
+
 }
 #footer-menu {
     position:absolute;
