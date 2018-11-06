@@ -27,8 +27,13 @@ function setTheme(new_theme) {
     footers[i].classList.add(new_theme + '-card-footer');
   }
 
-  document.getElementById('footer').classList.remove(current_theme + '-footer');
-  document.getElementById('footer').classList.add(new_theme + '-footer');
+  var pageFooters = document.querySelectorAll('footer');
+  for (i = 0; i < pageFooters.length; i++) {
+    pageFooters[i].classList.remove(current_theme + '-footer');
+    pageFooters[i].classList.add(new_theme + '-footer');
+  }
+//  document.getElementById('footer').classList.remove(current_theme + '-footer');
+//  document.getElementById('footer').classList.add(new_theme + '-footer');
 
   document.getElementById('topbar').classList.remove(current_theme + '-topbar');
   document.getElementById('topbar').classList.add(new_theme + '-topbar');
@@ -37,4 +42,11 @@ function setTheme(new_theme) {
   document.getElementById('searchDropdown').classList.add(new_theme + '-search');
 
   current_theme = new_theme;
+}
+var footer = 'v1';
+function setFooter(val) {
+  $('#' + footer).hide();
+  $('#' + val).show();
+  footer = val;
+  return false;
 }

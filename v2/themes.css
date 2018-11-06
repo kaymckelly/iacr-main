@@ -223,6 +223,9 @@ a#searchLink {
     height: 4px;
     display:block !important;
 }
-.cube-footer.cube-footer #footerBody {
+.cube-footer.cube-footer .footerBody {
     background-color: #FFFFFF;
+}
+#footer-menu {
+    position:absolute;
 }
