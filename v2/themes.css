@@ -146,6 +146,11 @@ by .green- or whatever the name is.
     height: 4px;
     display:block !important;
 }
+.default-footer a {
+/*    color: #3E7307; */
+    /*  color: #046577; */
+    color: #102a83;
+}
 a#searchLink {
     color: #c0f0c0;
 }
