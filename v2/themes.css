@@ -22,48 +22,48 @@
 }
 
 /*****************************************************************
-ugly theme. Copy this to make a new one, replacing * .ugly-
+logo theme. Copy this to make a new one, replacing * .ugly-
 by .green- or whatever the name is.
 **************************************************************/
 
-.ugly-body {
+.logo-body {
     background: #F3F4F8 !important;
     color: #080808 !important;
 }
-.ugly-menubar {
+.logo-menubar {
     background: #102a83 !important;
 }
-.ugly-search {
+.logo-search {
     background: #102a83;
     color: #f0f0f0;
 }
 
-.ugly-card-header {
+.logo-card-header {
     background: #5164A4;
     color: #f0f0f0 !important;
 }
-.ugly-card-header a,h2 {
+.logo-card-header a,h2 {
     color: #f0f0f0 !important;
 }
 
-.ugly-nav-link {
+.logo-nav-link {
     color: #ffffff !important;
 }
-.ugly-topbar {
-    background: url(../img/logo_blue_gradient.svg);
+.logo-topbar {
+    background: url(../img/triangles.svg);
     background-size: cover;
 }
-.ugly-topbar h1 {
+.logo-topbar h1 {
     color: 000000;
 }
-.ugly-card-footer {
+.logo-card-footer {
     background: #E9EBF3 !important;
 }
-.ugly-footer {
+.logo-footer {
     background:  #F3F4F8 !important; /* D3D8E8; */
 }
 
-.ugly-footer {
+.logo-footer {
     border-top: 4px solid #102a83;
 }
 
@@ -155,15 +155,15 @@ a#searchLink {
     color: #080808;
 }
 .blues2-menubar {
-    background: #2787c5;
+    background: #1b70a8;
 }
 .blues2-search {
-    background: #2787c5;
+    background: #1b70a8;
     color: #f0f0f0;
 }
 
 .blues2-card-header {
-    background: #2787c5;
+    background: #1b70a8;
     color: #f0f0f0;
 }
 .blues2-card-header a,h2 {
@@ -178,11 +178,12 @@ a#searchLink {
     color: #e0e0e0 !important;
 }
 .blues2-topbar {
-    background: #0792f9;
-    background-image: url(../img/bg1.jpg);
+/*    background-image: url(../img/inverted_cubes.png); */
+    background-image: url(../img/flipped_gradient.png);
+    background-size: cover;
 }
 .blues2-footer {
-    border-top: 4px solid #2787c5;
+    border-top: 4px solid #1b70a8;
 }
 /****************** cubed header ******************/
 .cube-body {
