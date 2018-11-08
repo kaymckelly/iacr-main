@@ -3,6 +3,7 @@
 import argparse
 from colors import get_color
 from colors import get_centroid
+import math
 import random
 import sys
 from scipy.spatial import Delaunay
@@ -61,9 +62,9 @@ arguments.add_argument('--num',
 arguments.add_argument('--min',
                        type=int,
                        default=10)
-arguments.add_argument('--regular',
-                       type=bool,
-                       default=False)
+arguments.add_argument('--distribution',
+                       choices=['regular', 'uniform', 'cosine'],
+                       default='cosine')
 arguments.add_argument('--test',
                        help='A pair alpha,beta of numbers between 0 and 1')
 arguments.add_argument('--blur',
@@ -75,6 +76,8 @@ arguments.add_argument('--width',
 arguments.add_argument('--height',
                        type=int,
                        default=300)
+arguments.add_argument('--stroke',
+                       default='#BDC4DD')
 
 
 args = arguments.parse_args()
@@ -111,7 +114,7 @@ if args.test:
     print('color:', color)
     sys.exit(0)
 
-if args.regular:
+if args.distribution == 'regular':
     # interpret args.num as the number of rows.
     points = []
     hy = int(args.height/args.num)
@@ -119,7 +122,13 @@ if args.regular:
     for x in range(0, args.width, hx):
         for y in range(0, args.height, hy):
             points.append([x, y])
-else:
+elif args.distribution == 'cosine':
+    points = [[0,0],[0,args.height],[args.width,args.height],[args.width,0]]
+    for i in range(args.num):
+        x = args.width * (1.0 + math.cos(math.pi*random.random())) / 2
+        y = args.height * (1.0 + math.cos(math.pi*random.random())) / 2
+        points.append([x,y])
+else: # uniform
     # Add the corner points.
     points = [[0,0],[0,args.height],[args.width,args.height],[args.width,0]]
     for i in range(args.num):
@@ -139,12 +148,15 @@ for tr in d.simplices:
     stroke = color
     opacity = 1.0
     rgbval = rgb(color)
-    print ('<path d="M {} {} L {} {} L {} {} z" fill="{}" opacity="{:.3f}"/>'.format(p1[0],
-                                                                                     p1[1],
-                                                                                     p2[0],
-                                                                                     p2[1],
-                                                                                     p3[0],
-                                                                                     p3[1],
-                                                                                     rgbval,
-                                                                                     opacity))
+    stroke = [(3*color[i]+255)/4 for i in range(3)]
+    strokergb = rgb(stroke)
+    print ('<path d="M {} {} L {} {} L {} {} z" fill="{}" stroke="{}" opacity="{:.3f}"/>'.format(p1[0],
+                                                                                                 p1[1],
+                                                                                                 p2[0],
+                                                                                                 p2[1],
+                                                                                                 p3[0],
+                                                                                                 p3[1],
+                                                                                                 rgbval,
+                                                                                                 strokergb,
+                                                                                                 opacity))
 print_footer()
