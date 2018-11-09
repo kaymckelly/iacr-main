@@ -222,7 +222,43 @@ a#searchLink {
     background-color: #FFFFFF;
 }
 
+
+/****** new theme ******/
+.new-body {
+  /* background-color: rgba(255, 245, 230, 0.05); */
+  /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
+  color: #080808;
 }
+
+.new-topbar {
+  /* background-image: url(../img/blue_cubed.png);
+  background-size: contain; */
+}
+
+.new-menubar {
+  background-color: #046577;
+}
+
+.new-card-header {
+  /* border-top: 5px solid #046577; */
+  background-color: #065DAB;
+}
+
+.new-card-header a {
+  color: #f0f0f0;
+}
+
+.new-footer {
+  border-top: 4px solid #046577;
+  background-color: #FFFFFF;
+}
+
+/* TODO: a not terrible color */
+.new-footer .footerBody div.row:last-child {
+  background-color: purple !important;
+}
+
+
 #footer-menu {
     position:absolute;
 }
