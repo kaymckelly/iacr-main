@@ -39,7 +39,8 @@ by .green- or whatever the name is.
 }
 
 .logo-card-header {
-    background: #5164A4;
+    /*    background: #5164A4; */
+    background: #04269E;
     color: #f0f0f0 !important;
 }
 .logo-card-header a,h2 {
@@ -63,6 +64,10 @@ by .green- or whatever the name is.
     background:  #F3F4F8 !important; /* D3D8E8; */
 }
 
+.logo-footer a {
+    /*    color: #0B1B54; */
+    color: #0F2778;
+}
 .logo-footer {
     border-top: 4px solid #102a83;
 }

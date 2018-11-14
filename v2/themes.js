@@ -32,6 +32,11 @@ function setTheme(new_theme) {
     pageFooters[i].classList.remove(current_theme + '-footer');
     pageFooters[i].classList.add(new_theme + '-footer');
   }
+  var navLinks = document.querySelectorAll('.nav-link');
+  for (i = 0; i < navLinks.length; i++) {
+    navLinks[i].classList.remove(current_theme + '-nav-link');
+    navLinks[i].classList.add(new_theme + '-nav-link');
+  }
 //  document.getElementById('footer').classList.remove(current_theme + '-footer');
 //  document.getElementById('footer').classList.add(new_theme + '-footer');
 

@@ -80,3 +80,14 @@ img.socialBtn {
 #iacrDescription {
     font-size: 1.25rem;
 }
+
+/* **************** this should be removed ********************/
+span.remover {
+    opacity: 0;
+    font-size: 1em;
+    cursor:cell;
+}
+span.remover:hover {
+    opacity: 1;
+    color: red;
+}

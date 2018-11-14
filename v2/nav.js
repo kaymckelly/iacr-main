@@ -47,3 +47,6 @@ $('#searchbox').focus(function() {
 $('#searchbox3').focus(function() {
   $('#searchInstructions3').scrollView();
 });
+$('span.remover').click(function() {
+  $(this).parent().parent().parent().parent().remove();
+});
