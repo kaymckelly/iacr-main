@@ -17,22 +17,33 @@
 
 
 /*** Default theme. Copy this to make a new one, replacing * .default with .green or whatever the name is. ***/
-/* default theme based on https://coolors.co/f2ac10-929ec6-3b5099-102a83-0b1b54 */
+/* default theme based on https://coolors.co/cd8f23-110b9a-102a83-0d2269-010d36 */
 .default-body {
-    background: #FEFEFE;
-    color: #080808;
+  background: #FEFFFE;
+  color: #010514;
 }
 
 .default-anchor {
   color: #3B5099;
 }
 
-.default-menubar, nav.default-menubar .dropdown-menu {
-  background: #102A83;
+.default-header {
+  /* thanks to moshehar of pixabay for the image: https://pixabay.com/en/users/moshehar-7046690/ */
+  background-image: url('../../img/blocks.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.4);
+
 }
 
-.default-cardHeading {
-  border-top: 4px solid #F2AC10;
+.default-menubar, nav.default-menubar .dropdown-menu {
+  background: #686985;
+}
+
+/* currently do not apply */
+/* .default-cardHeading {
+  border-top: 4px solid #CD8F23;
 }
 
 .default-conferenceHeader {
@@ -43,10 +54,10 @@
 .default-eventInfo {
   background-color: rgba(59, 80, 153, 0.8);
   color: #FEFEFE;
-}
+} */
 
 .default-footer {
-  background-color: rgba(146, 158, 198, 0.2);
+  background-color: rgba(183, 174, 182, 0.2);
 }
 
 .default-footerTitle, .default-footerTitle>a {
@@ -54,7 +65,7 @@
 }
 
 .default-footerTitle {
-  border-left: 3px solid #F2AC10;
+  border-left: 3px solid #E4C0AF;
   padding-left: 10px;
 }
 
@@ -252,7 +263,7 @@
 
 
 
-/*** a theme needs no name, based on https://coolors.co/700039-880a00-004b0d-d3c457-054c56 ***/
+/*** alternative apples: redux, based on https://coolors.co/700039-880a00-004b0d-d3c457-054c56 ***/
 .nameless-body {
   /* image credit to Manuchi on pixabay: https://pixabay.com/en/users/Manuchi-1728328/ */
   background-image: url('../../img/tb.jpg');
