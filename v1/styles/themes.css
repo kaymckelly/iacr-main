@@ -254,6 +254,7 @@
 
 /*** a theme needs no name, based on https://coolors.co/700039-880a00-004b0d-d3c457-054c56 ***/
 .nameless-body {
+  /* image credit to Manuchi on pixabay: https://pixabay.com/en/users/Manuchi-1728328/ */
   background-image: url('../../img/tb.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -262,7 +263,7 @@
   color: #02040C;
 }
 
-/* thanks https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image for brilliant idea of how to do a color layer over a background sans extraneous divs. pattern from https://www.toptal.com/designers/subtlepatterns/?s=ocean */
+/* thanks https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image for brilliant idea of how to do a color layer over a background sans extraneous divs */
 /* alternative to bg on whole body */
 /* .nameless-header {
   background-image: url('../../img/frac.png');
@@ -295,7 +296,7 @@
 } */
 
 .nameless-footer {
-  background-color: rgba(234, 235, 240, 0.4);
+  background-color: #EAEBF0;
 }
 
 .nameless-footerTitle, .nameless-footerTitle>a {
@@ -303,12 +304,12 @@
 }
 
 .nameless-footerTitle {
-  border-left: 3px solid #004B0D;
+  border-left: 3px solid #D3C457;
   padding-left: 10px;
 }
 
 .nameless-footerLink {
-  color: #880A00;
+  color: #004B0D;
 }
 
 /* TODO: Build custom bootstrap for this. */
