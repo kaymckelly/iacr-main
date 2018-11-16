@@ -135,28 +135,33 @@
 
 /*** monochrome2 theme, based on https://coolors.co/972045-e0e0ef-3b5099-102a83-0b1b54 ***/
 .mono2-body {
-  background: #FEFEFE;
+  background-image: url('../../img/diags2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(256, 256, 256, 0.3);
   color: #080808;
 }
 
 .mono2-anchor {
-  color: #3B5099;
+  color: #68D8C3;
 }
 
 .mono2-header {
   /* thanks to moshehar of pixabay for the image: https://pixabay.com/en/users/moshehar-7046690/ */
   /* background-image: url('../../img/triangles.png');
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(242, 172, 16, 0.4); */
 }
 
 .mono2-menubar, nav.mono2-menubar .dropdown-menu {
-  background: #102A83;
+  background: #64C8F3;
 }
 
-.mono2-cardHeading {
+/* currently do not apply */
+/* .mono2-cardHeading {
   border-top: 4px solid #972045;
 }
 
@@ -168,10 +173,10 @@
 .mono2-eventInfo {
   background-color: rgba(224, 224, 239, 0.7);
   color: #080808;
-}
+} */
 
 .mono2-footer {
-  background-color: rgba(224, 224, 239, 0.2);
+  background-color: #CBF1ED;
 }
 
 .mono2-footerTitle, .mono2-footerTitle>a {
@@ -179,13 +184,14 @@
 }
 
 .mono2-footerTitle {
-  border-left: 3px solid #972045;
+  border-left: 3px solid #64C8F3;
   padding-left: 10px;
 }
 
 .mono2-footerLink, .mono2-footerLink>ion-icon {
   color: #102A83;
 }
+
 /* TODO: Build custom bootstrap for this. */
 .mono2-menubar a.nav-link, .apple-menubar a.dropdown-item {
   color: #EBF7EB !important;
