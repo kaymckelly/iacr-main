@@ -236,8 +236,7 @@ a#searchLink {
 }
 
 .new-topbar {
-  /* background-image: url(../img/blue_cubed.png);
-  background-size: contain; */
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.0) 100%), url('../img/nums.jpg');
 }
 
 .new-menubar {
@@ -245,22 +244,31 @@ a#searchLink {
 }
 
 .new-card-header {
-  /* border-top: 5px solid #046577; */
-  background-color: #065DAB;
+    background-color: #046577 !important;
 }
 
 .new-card-header a {
-  color: #f0f0f0;
+    color: #f0f0f0 !important;
 }
 
+.new-nav-link, .new-nav-link a {
+    color: #f0f0f0 !important;
+}
 .new-footer {
   border-top: 4px solid #046577;
   background-color: #FFFFFF;
 }
 
+.new-footer  a {
+    color: #102a83 !important;
+}
+
 /* TODO: a not terrible color */
 .new-footer .footerBody div.row:last-child {
   background-color: purple !important;
+}
+.new-menubar {
+    background: #054C56 !important;
 }
 
 
