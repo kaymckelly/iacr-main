@@ -52,6 +52,13 @@ class TestColors(unittest.TestCase):
         centroid = get_centroid(p1, p2, p3)
         color = get_color(100, 100, colors, centroid)
         self.assertEqual(color, [63.75,63.75,63.75])
+
+    def test_mix_colors(self):
+        points = [(0, 0), (50, 50), (100, 0)]
+        colors = {}
+        for p in points:
+            colors[p] = (255 * p[0] / 100, 255 * p[0] / 100, 255 * p[1] / 100)
+        point = [0,0]
                          
 if __name__ == '__main__':
     unittest.main()
