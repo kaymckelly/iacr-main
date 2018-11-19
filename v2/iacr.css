@@ -33,7 +33,7 @@
   font-size: 2em !important;
 }
 
-#navbarIacrAcronym {
+.navbarIacrAcronym {
   font-size: 2em !important;
 }
 
@@ -75,6 +75,7 @@ img.socialBtn {
 /* border-bottom doesn't work on this element because it conflicts with
    dropdown-menu */
 #searchDropdown {
+    .border-top 0px !important;
     border-radius: 0 0 5px 5px !important;
 }
 #iacrDescription {

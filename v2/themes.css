@@ -2,6 +2,7 @@
     text-shadow: 0 0 20px white;
 }
 #footer-menu {
+    position:absolute;
     height:0;
 }
 #theme-menu {
@@ -103,7 +104,8 @@ by .green- or whatever the name is.
     color: #202020;
 }
 .green-nav-link {
-    color: #404040 !important;
+    color: #f0f0f0 !important;
+/*    color: #404040 !important; */
 }
 .green-footer {
     background: #E6F2EF;
@@ -111,6 +113,15 @@ by .green- or whatever the name is.
 }
 
 /********* default theme **********************************/
+
+.default-menubar .navbar-toggler {
+  color: rgba(255, 255, 128, 1.0);
+  border-color: rgba(255, 255, 255, 1.0);
+}
+
+.default-menubar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 
 .default-body {
     background: #f8f9fa;
@@ -140,8 +151,10 @@ by .green- or whatever the name is.
     color: #e0e0e0 !important;
 }
 .default-topbar {
-    background: #0792f9;
-    background-image: url(textures/diagmonds-light.png);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(39,135,197,0.6) 100%), url('../img/binary_swirl_trans.png');
+    /*    background-image: url(textures/diagmonds-light.png); */
+/*    background: #E9EBF3;
+    background-image: url('../img/binary_swirl_trans.png');*/
 }
 .default-footer {
     border-top: 4px solid #2787c5;
@@ -188,6 +201,40 @@ a#searchLink {
     background-size: cover;
 }
 .blues2-footer {
+    border-top: 4px solid #1b70a8;
+}
+/************** swirl header on blues2 ***************************/
+.blues3-body {
+    background: #f8f9fa;
+    color: #080808;
+}
+.blues3-menubar {
+    background: #1b70a8;
+}
+.blues3-search {
+    background: #1b70a8;
+    color: #f0f0f0;
+}
+
+.blues3-card-header {
+    background: #1b70a8;
+    color: #f0f0f0;
+}
+.blues3-card-header a,h2 {
+    color: #f0f0f0;
+}
+
+.blues3-nav-link {
+    color: #ffffff !important;
+    font-size: 1.2em !important;
+}
+.blues3-nav-link:hover {
+    color: #e0e0e0 !important;
+}
+.blues3-topbar {
+    background: linear-gradient(to right, rgba(255,255,255,.95) 0%, rgba(255,255,255,.7) 60%, rgba(255,255,255,0.4) 100%), url('../img/background-2462431_1920.jpg');
+}
+.blues3-footer {
     border-top: 4px solid #1b70a8;
 }
 /****************** cubed header ******************/
@@ -271,7 +318,43 @@ a#searchLink {
     background: #054C56 !important;
 }
 
-
-#footer-menu {
-    position:absolute;
+/****** new theme ******/
+.nums-body {
+  /* background-color: rgba(255, 245, 230, 0.05); */
+  /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
+  color: #080808;
 }
+
+.nums-topbar {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 100%), url('../img/binary_swirl_bw.jpg');
+}
+
+.nums-search {
+    background-color: #054c56;
+}
+
+.nums-card-header {
+    background-color: #046577 !important;
+}
+
+.nums-card-header a {
+    color: #f0f0f0 !important;
+}
+
+.nums-nav-link, .nums-nav-link a {
+    color: #f0f0f0 !important;
+    font-size: 1.2em !important;
+}
+.nums-footer {
+  border-top: 4px solid #046577;
+  background-color: #FFFFFF;
+}
+
+.nums-footer  a {
+    color: #102a83 !important;
+}
+
+.nums-menubar {
+    background: #054C56 !important;
+}
+

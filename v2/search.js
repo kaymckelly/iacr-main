@@ -37,7 +37,7 @@ function getSnippet(value, item) {
       }
       break;
     case 'static':
-      subtitle = item['url']
+      subtitle = item['url'];
       break;
     default:
   }
@@ -63,10 +63,21 @@ $(document).ready(function() {
       cssClasses: 'col px-0',
       adjustWidth: false,
       list: {
-        maxNumberOfElements: 20,
+        // One extra for the one we add in ajaxCallback
+        maxNumberOfElements: 21,
         onClickEvent: function() {
           window.location = $(self).getSelectedItemData().url;
+        },
+        showAnimation: {
+          type: "slide", //normal|slide|fade
+          time: 200,
+          callback: function() {}
         }
+      },
+      ajaxCallback: function(data) {
+        data.results.push({doctype: 'static',
+                           title: "More results from local search on iacr.org",
+                           url: 'https://iacr.org/foo'});
       },
       // This says where to find the list of results.
       listLocation: 'results',

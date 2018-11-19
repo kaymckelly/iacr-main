@@ -1367,7 +1367,8 @@ var EasyAutocomplete = (function(scope) {
 							$.ajax(settings) 
 								.done(function(data) {
 
-									var listBuilders = listBuilderService.init(data);
+                                                                        config.get("ajaxCallback")(data);
+                                                                        var listBuilders = listBuilderService.init(data);
 
 									listBuilders = listBuilderService.updateCategories(listBuilders, data);
 									
@@ -1386,7 +1387,6 @@ var EasyAutocomplete = (function(scope) {
 										hideContainer();
 									}
 
-									config.get("ajaxCallback")();
 
 								})
 								.fail(function() {

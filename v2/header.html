@@ -1,4 +1,4 @@
-    <div class="container-fluid default-topbar" id="topbar">
+<div class="container-fluid default-topbar d-none d-lg-block" id="topbar">
   <div class="container">
     <div class="row align-items-center pt-2 d-none d-md-flex justify-content-between">
       <div class="col-sm-2 pb-2">
@@ -127,7 +127,7 @@
       <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
-      <a id="navbarIacrAcronym" class="d-xs-inline d-md-none h4 mb-0" href="#">
+      <a class="navbarIacrAcronym h4 d-inline-block d-md-none mx-auto" href="#">
         IACR
       </a>
       <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -239,7 +239,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div id="navbarIacrAcronym" class="navbar-text d-inline-block d-md-none mx-auto">
+    <div class="navbarIacrAcronym navbar-text d-inline-block d-md-none mx-auto">
       IACR
     </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -338,12 +338,12 @@
           </li>
           <li class="nav-item dropdown position-static d-none d-sm-inline">
             <span class="remover">&times;</span>
-            <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchLink">
+            <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchLink" data-offset="10,20">
               <button class="btn btn-outline-secondary border" aria-haspopup="true" aria-expanded="false" type="button">
                 <img src="../img/search.svg" class="searchBtn">
               </button>
             </a>
-            <div id="searchDropdown" class="dropdown-menu dropdown-menu-right default-search px-2 w-100 mt-0" aria-labelledby="searchLink">
+            <div id="searchDropdown" class="border-0 dropdown-menu dropdown-menu-right default-search px-2 w-100 mt-0" aria-labelledby="searchLink">
               <p class="small text-white mb-1">Suggestions from <a id="searchLink" href="/csearch">local search</a> as you type. Hit enter to search with Google.</p>
               <form action="/search" method="GET">
                 <input id="searchbox" name="q" type="search" class="form-control border searchBoxes" placeholder="Search IACR" width="100">
