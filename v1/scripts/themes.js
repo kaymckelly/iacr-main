@@ -4,7 +4,7 @@ var current_theme = 'default';
 // The page loads with body class="default-body". You change the theme by removing default-body and changing to green-body (for whichever themes you set up in themes.css).
 function setTheme(new_theme) {
   // body (whole page things)
-  var body = document.getElementsByTagName('body')[0];
+  var body = document.getElementById('fullpage');
   body.classList.remove(current_theme + '-body');
   body.classList.add(new_theme + '-body');
 
