@@ -127,9 +127,11 @@ by .green- or whatever the name is.
     background: #f8f9fa;
     color: #080808;
 }
-.default-menubar {
-    background: #2787c5;
+
+.default-menubar, nav.navbar .dropdown-menu {
+  background: #2787c5;
 }
+
 .default-search {
     background: #2787c5;
     color: #f0f0f0;
@@ -357,4 +359,3 @@ a#searchLink {
 .nums-menubar {
     background: #054C56 !important;
 }
-

@@ -95,11 +95,6 @@ img.socialBtn {
   border-radius: 0 0 .25rem .25rem;
 }
 
-/* TODO: realistically this should be tied to theme. done this way for now. when doing so, do like this under themes.css for each theme: .NAME-menubar, nav.NAME-menubar .dropdown-menu {...} */
-nav.navbar .dropdown-menu {
-  background: #102A83;
-}
-
 /* TODO: Build custom bootstrap for these. */
 a.nav-link, a.dropdown-item {
   color: #EBF7EB !important;
@@ -121,7 +116,7 @@ div#footer-menu div.dropdown-menu a {
   hyphens: auto;
 }
 
-footer#p3 ul.nav {
+footer#v3 ul.nav {
   padding-left: 5px;
 }
 
