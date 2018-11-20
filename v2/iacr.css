@@ -95,6 +95,21 @@ img.socialBtn {
     border-radius: 0 0 .25rem .25rem;
 }
 
+nav.navbar .dropdown-menu {
+  background: #102A83;
+}
+
+/* TODO: Build custom bootstrap for these. */
+a.nav-link, a.dropdown-item {
+  color: #EBF7EB !important;
+}
+
+a.dropdown-item:hover {
+  background-color: #3B5099;
+  /* rgba(146, 158, 198, 0.4); */
+}
+/* END todo */
+
 /* **************** this should be removed ********************/
 span.remover {
     opacity: 0;
