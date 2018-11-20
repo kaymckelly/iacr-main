@@ -95,22 +95,6 @@ img.socialBtn {
   border-radius: 0 0 .25rem .25rem;
 }
 
-/* TODO: Build custom bootstrap for these. */
-a.nav-link, a.dropdown-item {
-  color: #EBF7EB !important;
-}
-
-a.dropdown-item:hover {
-  background-color: #3B5099;
-  /* rgba(146, 158, 198, 0.4); */
-}
-/* END todo */
-
-/* ensures footer menu dropdown is still readable */
-div#footer-menu div.dropdown-menu a {
-  color: black !important;
-}
-
 /*** Footer 3 only ***/
 #pageFooterAbout {
   hyphens: auto;
