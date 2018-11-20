@@ -116,6 +116,19 @@ div#footer-menu div.dropdown-menu a {
   color: black !important;
 }
 
+/*** Footer 3 only ***/
+#pageFooterAbout {
+  hyphens: auto;
+}
+
+footer#p3 ul.nav {
+  padding-left: 5px;
+}
+
+img.socialBtn {
+  height: 2.5em;
+}
+
 /* **************** this should be removed ********************/
 span.remover {
     opacity: 0;
