@@ -78,6 +78,36 @@ img.socialBtn {
     font-size: 1.25rem;
 }
 
+/* NOTE: hover effect for navbar only on larger screens. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
+@media only screen and (min-width: 992px) {
+  .navbar-nav li:hover>.dropdown-menu {
+    display: block;
+  }
+}
+
+.navbar-nav li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.navbar-nav .dropdown-menu {
+  margin-top: 0px;
+  border-radius: 0 0 .25rem .25rem;
+}
+
+/*** Footer 3 only ***/
+#pageFooterAbout {
+  hyphens: auto;
+}
+
+footer#v3 ul.nav {
+  padding-left: 5px;
+}
+
+img.socialBtn {
+  height: 2.5em;
+}
+
 /* **************** this should be removed ********************/
 span.remover {
     opacity: 0;

@@ -6,6 +6,7 @@
     <a class="dropdown-item badge badge-warning disabled">Select a footer</a>
     <a class="dropdown-item" onclick='setFooter("v1")'>Version 1</a>
     <a class="dropdown-item" onclick='setFooter("v2")'>Version 2</a>
+    <a class="dropdown-item" onclick='setFooter("v3")'>Version 3</a>
   </div>
 </div>
 
@@ -151,6 +152,8 @@
       </div>
     </div>
 </footer>
+
+
 <footer id="v2" class="container-fluid small default-footer pb-2 mt-4" style="display:none;">
 
     <!-- why hide on mobile? -->
@@ -295,4 +298,142 @@
         </div>
       </div>
     </div>
+</footer>
+
+
+<footer id="v3" class="container-fluid default-footer p-3 mt-4" style="display:none;">
+  <div class="row mb-1">
+    <section class="col-12 d-none d-lg-block col-lg-3">
+      <h5 class="default-footerTitle">
+          About Us
+        </h5>
+      <p id="pageFooterAbout" class="ml-2 p-2">
+        The International Association for Cryptologic Research (IACR) is a non-profit scientific organization whose purpose is to further research in cryptology and related fields. <br /><a class="default-footerLink" href="http://www.iacr.org/about">Read more...</a>
+      </p>
+    </section>
+    <section class="col-12 col-sm-4 col-lg-3 mb-3 mb-0-md">
+      <h5 class="default-footerTitle">
+          <a href="https://www.iacr.org/meetings/">
+            Events
+          </a>
+        </h5>
+      <ul class="nav flex-column">
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://www.iacr.org/meetings/asiacrypt">Asiacrypt</a> &nbsp; <a class="default-footerLink" href="#">Crypto</a> &nbsp; <a class="default-footerLink" href="#">Eurocrypt</a>
+        </li>
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://www.iacr.org/meetings/ches">CHES</a> &nbsp; <a class="default-footerLink" href="http://www.iacr.org/meetings/fse">FSE</a> &nbsp; <a class="default-footerLink" href="http://www.iacr.org/meetings/pkc">PKC</a>            &nbsp; <a class="default-footerLink" href="http://www.iacr.org/meetings/tcc">TCC</a>
+        </li>
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://rwc.iacr.org/">
+              Real World Crypto
+            </a>
+        </li>
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://www.iacr.org/schools">
+              Schools
+            </a>
+        </li>
+        <li class="nav-item mt-2">
+          <a class="default-footerLink" href="http://www.iacr.org/calendar">
+              Calendar of Events
+            </a>
+        </li>
+      </ul>
+    </section>
+    <section class="col-12 col-sm-4 col-lg-3 mb-3 mb-0-md">
+      <h5 class="default-footerTitle">
+          <a href="http://www.iacr.org/publications">
+            Publications
+          </a>
+        </h5>
+      <ul class="nav flex-column">
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://www.iacr.org/jofc">
+              Journal of Cryptology
+            </a>
+        </li>
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://www.iacr.org/tosc">
+              Trans. on Symmetric Cryptology
+            </a>
+        </li>
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://www.iacr.org/tosc">
+              Trans. on CHES
+            </a>
+        </li>
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://eprint.iacr.org/">
+              Cryptology ePrint Archive
+            </a>
+        </li>
+        <li class="nav-item mt-2">
+          <a class="default-footerLink" href="http://www.iacr.org/publications/access.php">
+              Access IACR Publications
+            </a>
+        </li>
+      </ul>
+    </section>
+    <section class="col-12 col-sm-4 col-lg-3 mb-3 mb-0-md">
+      <h5 class="default-footerTitle">
+          <a href="http://www.iacr.org/">
+            IACR Homepage
+          </a>
+        </h5>
+      <ul class="nav flex-column">
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://www.iacr.org/iacrmem">
+              Membership
+            </a>
+        </li>
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://www.iacr.org/news">
+              News
+            </a>
+        </li>
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://www.iacr.org/awards">
+              Awards
+            </a>
+        </li>
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://www.iacr.org/services">
+              Services
+            </a>
+        </li>
+        <li class="nav-item my-2">
+          <a class="default-footerLink" href="http://www.iacr.org/jobs">
+              Jobs
+            </a>
+        </li>
+        <li class="nav-item d-lg-none mt-2">
+          <a class="default-footerLink" href="http://www.iacr.org/about">
+              About the IACR
+            </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="row justify-content-center">
+    <section class="col-12 col-md-8 text-center">
+      <a href="https://twitter.com/IACR_News">
+        <img src="../img/logo-twitter.svg" class="socialBtn">
+      </a>
+      <a href="https://www.youtube.com/user/TheIACR">
+        <img src="../img/logo-youtube.svg" class="socialBtn">
+      </a>
+      <a href="https://www.facebook.com/theiacr/">
+        <img src="../img/logo-facebook.svg" class="socialBtn">
+      </a>
+    </section>
+  </div>
+  <div class="row justify-content-center">
+    <section class="col-12 col-md-8 text-center mt-2">
+      <small>
+          Copyright &copy; The International Association for Cryptologic Research (IACR)
+          <span id="currentYear"></span>
+        </small>
+    </section>
+  </div>
 </footer>
