@@ -80,8 +80,9 @@ img.socialBtn {
 
 /* NOTE: hover effect for navbar only on larger screens. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
 @media only screen and (min-width: 992px) {
-  .navbar-nav li:hover>.dropdown-menu {
-    display: block;
+ #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
+      display: block;
+      border-left: 3px solid #F2AC10 !important;
   }
 }
 

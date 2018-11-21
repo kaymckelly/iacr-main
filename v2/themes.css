@@ -34,7 +34,7 @@ a.dropdown-item:hover {
 /* END todo */
 
 /* ensures footer menu dropdown is still readable */
-div#footer-menu div.dropdown-menu a {
+#theme-menu div.dropdown-menu a, div#footer-menu div.dropdown-menu a {
   color: black !important;
 }
 
