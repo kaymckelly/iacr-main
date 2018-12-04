@@ -1,0 +1,375 @@
+#topbar h1 {
+    text-shadow: 0 0 20px white;
+}
+#footer-menu {
+    position:absolute;
+    height:0;
+}
+#theme-menu {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: 1;
+/*    width: 0;*/
+    height: 0;
+}
+#theme-menu button {
+    background: #f0f0f0 !important;
+    border: 2px solid red;
+}
+
+.navbar-iacr-acronym {
+    color: #ffffff !important;
+}
+
+/* TODO: Build custom bootstrap for these. */
+a.nav-link, a.dropdown-item {
+  color: #EBF7EB !important;
+}
+
+a.dropdown-item:hover {
+  background-color: #3B5099;
+  /* rgba(146, 158, 198, 0.4); */
+}
+/* END todo */
+
+/* ensures footer menu dropdown is still readable */
+#theme-menu div.dropdown-menu a, div#footer-menu div.dropdown-menu a {
+  color: black !important;
+}
+
+
+/*****************************************************************
+logo theme. Copy this to make a new one, replacing * .ugly-
+by .green- or whatever the name is.
+**************************************************************/
+
+.logo-body {
+    background: #F3F4F8 !important;
+    color: #080808 !important;
+}
+.logo-menubar, .logo-menubar .dropdown-menu {
+    background: #102a83 !important;
+}
+.logo-search {
+    background: #102a83;
+    color: #f0f0f0;
+}
+
+.logo-card-header {
+    /*    background: #5164A4; */
+    background: #04269E;
+    color: #f0f0f0 !important;
+}
+.logo-card-header a,h2 {
+    color: #f0f0f0 !important;
+}
+
+.logo-nav-link {
+    color: #ffffff !important;
+}
+.logo-topbar {
+    background: url(../img/triangles.svg);
+    background-size: cover;
+}
+.logo-topbar h1 {
+    color: 000000;
+}
+.logo-card-footer {
+    background: #E9EBF3 !important;
+}
+.logo-footer {
+    background:  #F3F4F8 !important; /* D3D8E8; */
+}
+
+.logo-footer a {
+    /*    color: #0B1B54; */
+    color: #0F2778;
+}
+.logo-footer {
+    border-top: 4px solid #102a83;
+}
+
+
+/********* Green theme **********************************/
+.green-topbar {
+    background-image: url(../img/green.svg);
+    background-size: cover;
+}
+
+.green-topbar h1 {
+    color:#202020;
+}
+
+.green-body {
+    background: #f0f0ff;
+    color: #040404;
+}
+.green-menubar, .green-menubar .dropdown-menu {
+    background: #035024;
+}
+.green-search {
+    background: #035024;
+    color: #040404;
+}
+.green-card-header {
+    /*    background: #27c587;*/
+    background: rgba(0, 128, 0, .5);
+    color: #202020;
+}
+.green-card-header a,h2 {
+    color: #202020;
+}
+.green-nav-link {
+    color: #f0f0f0 !important;
+/*    color: #404040 !important; */
+}
+.green-footer {
+    background: #E6F2EF;
+    border-top: 4px solid #035024;
+}
+
+/********* default theme **********************************/
+
+.default-menubar .navbar-toggler {
+  color: rgba(255, 255, 128, 1.0);
+  border-color: rgba(255, 255, 255, 1.0);
+}
+
+.default-menubar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.default-body {
+    background: #f8f9fa;
+    color: #080808;
+}
+
+.default-menubar, .default-menubar .dropdown-menu {
+  background: #2787c5;
+}
+
+.default-search {
+    background: #2787c5;
+    color: #f0f0f0;
+}
+
+.default-card-header {
+    background: #2787c5;
+    color: #f0f0f0;
+}
+.default-card-header a,h2 {
+    color: #f0f0f0;
+}
+
+.default-nav-link {
+    color: #ffffff !important;
+    font-size: 1.2em !important;
+}
+.default-nav-link:hover {
+    color: #e0e0e0 !important;
+}
+.default-topbar {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(39,135,197,0.6) 100%), url('../img/binary_swirl_trans.png');
+    /*    background-image: url(textures/diagmonds-light.png); */
+/*    background: #E9EBF3;
+    background-image: url('../img/binary_swirl_trans.png');*/
+}
+.default-footer {
+    border-top: 4px solid #2787c5;
+}
+.default-footer a {
+/*    color: #3E7307; */
+    /*  color: #046577; */
+    color: #102a83;
+}
+a#searchLink {
+    color: #c0f0c0;
+}
+/************** blues2 ***************************/
+.blues2-body {
+    background: #f8f9fa;
+    color: #080808;
+}
+.blues2-menubar, .blues2-menubar .dropdown-menu {
+    background: #1b70a8;
+}
+.blues2-search {
+    background: #1b70a8;
+    color: #f0f0f0;
+}
+
+.blues2-card-header {
+    background: #1b70a8;
+    color: #f0f0f0;
+}
+.blues2-card-header a,h2 {
+    color: #f0f0f0;
+}
+
+.blues2-nav-link {
+    color: #ffffff !important;
+    font-size: 1.2em !important;
+}
+.blues2-nav-link:hover {
+    color: #e0e0e0 !important;
+}
+.blues2-topbar {
+/*    background-image: url(../img/inverted_cubes.png); */
+    background-image: url(../img/flipped_gradient.png);
+    background-size: cover;
+}
+.blues2-footer {
+    border-top: 4px solid #1b70a8;
+}
+/************** swirl header on blues2 ***************************/
+.blues3-body {
+    background: #f8f9fa;
+    color: #080808;
+}
+.blues3-menubar, .blues3-menubar .dropdown-menu {
+    background: #1b70a8;
+}
+.blues3-search {
+    background: #1b70a8;
+    color: #f0f0f0;
+}
+
+.blues3-card-header {
+    background: #1b70a8;
+    color: #f0f0f0;
+}
+.blues3-card-header a,h2 {
+    color: #f0f0f0;
+}
+
+.blues3-nav-link {
+    color: #ffffff !important;
+    font-size: 1.2em !important;
+}
+.blues3-nav-link:hover {
+    color: #e0e0e0 !important;
+}
+.blues3-topbar {
+    background: linear-gradient(to right, rgba(255,255,255,.95) 0%, rgba(255,255,255,.7) 60%, rgba(255,255,255,0.4) 100%), url('../img/background-2462431_1920.jpg');
+}
+.blues3-footer {
+    border-top: 4px solid #1b70a8;
+}
+/****************** cubed header ******************/
+.cube-body {
+    background: #f8f9fa;
+    color: #080808;
+}
+.cube-menubar, .cube-menubar .dropdown-menu {
+    background: #2787c5;
+}
+.cube-search {
+    background: #2787c5;
+    color: #f0f0f0;
+}
+
+.cube-card-header {
+    background: #2787c5;
+    color: #f0f0f0;
+}
+.cube-card-header a,h2 {
+    color: #f0f0f0;
+}
+
+.cube-nav-link {
+    color: #ffffff !important;
+    font-size: 1.2em !important;
+}
+.cube-nav-link:hover {
+    color: #e0e0e0 !important;
+}
+.cube-topbar {
+    background-image: url(../img/blue_cubed.png);
+    background-size: contain;
+}
+.cube-footer {
+    border-top: 4px solid #2787c5;
+    background-color: #FFFFFF;
+}
+
+
+/****** new theme ******/
+.new-body {
+  /* background-color: rgba(255, 245, 230, 0.05); */
+  /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
+  color: #080808;
+}
+
+.new-topbar {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.0) 100%), url('../img/nums.jpg');
+}
+
+.new-menubar, .new-menubar .dropdown-menu {
+    background: #054C56;
+}
+
+.new-card-header {
+    background-color: #046577 !important;
+}
+
+.new-card-header a {
+    color: #f0f0f0 !important;
+}
+
+.new-nav-link, .new-nav-link a {
+    color: #f0f0f0 !important;
+}
+.new-footer {
+  border-top: 4px solid #046577;
+  background-color: #FFFFFF;
+}
+
+.new-footer  a {
+    color: #102a83 !important;
+}
+
+/* TODO: a not terrible color */
+.new-footer .footerBody div.row:last-child {
+  background-color: purple !important;
+}
+
+/****** new theme ******/
+.nums-body {
+  /* background-color: rgba(255, 245, 230, 0.05); */
+  /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
+  color: #080808;
+}
+
+.nums-topbar {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 100%), url('../img/binary_swirl_bw.jpg');
+}
+
+.nums-search {
+    background-color: #054c56;
+}
+
+.nums-card-header {
+    background-color: #046577 !important;
+}
+
+.nums-card-header a {
+    color: #f0f0f0 !important;
+}
+
+.nums-nav-link, .nums-nav-link a {
+    color: #f0f0f0 !important;
+    font-size: 1.2em !important;
+}
+.nums-footer {
+  border-top: 4px solid #046577;
+  background-color: #FFFFFF;
+}
+
+.nums-footer  a {
+    color: #102a83 !important;
+}
+
+.nums-menubar, .nums-menubar .dropdown-menu {
+    background: #054C56 !important;
+}
