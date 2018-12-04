@@ -48,7 +48,7 @@ by .green- or whatever the name is.
     background: #F3F4F8 !important;
     color: #080808 !important;
 }
-.logo-menubar {
+.logo-menubar, .logo-menubar .dropdown-menu {
     background: #102a83 !important;
 }
 .logo-search {
@@ -105,7 +105,7 @@ by .green- or whatever the name is.
     background: #f0f0ff;
     color: #040404;
 }
-.green-menubar {
+.green-menubar, .green-menubar .dropdown-menu {
     background: #035024;
 }
 .green-search {
@@ -145,7 +145,7 @@ by .green- or whatever the name is.
     color: #080808;
 }
 
-.default-menubar, nav.navbar .dropdown-menu {
+.default-menubar, .default-menubar .dropdown-menu {
   background: #2787c5;
 }
 
@@ -191,7 +191,7 @@ a#searchLink {
     background: #f8f9fa;
     color: #080808;
 }
-.blues2-menubar {
+.blues2-menubar, .blues2-menubar .dropdown-menu {
     background: #1b70a8;
 }
 .blues2-search {
@@ -227,7 +227,7 @@ a#searchLink {
     background: #f8f9fa;
     color: #080808;
 }
-.blues3-menubar {
+.blues3-menubar, .blues3-menubar .dropdown-menu {
     background: #1b70a8;
 }
 .blues3-search {
@@ -261,7 +261,7 @@ a#searchLink {
     background: #f8f9fa;
     color: #080808;
 }
-.cube-menubar {
+.cube-menubar, .cube-menubar .dropdown-menu {
     background: #2787c5;
 }
 .cube-search {
@@ -305,8 +305,8 @@ a#searchLink {
     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.0) 100%), url('../img/nums.jpg');
 }
 
-.new-menubar {
-  background-color: #046577;
+.new-menubar, .new-menubar .dropdown-menu {
+    background: #054C56;
 }
 
 .new-card-header {
@@ -332,9 +332,6 @@ a#searchLink {
 /* TODO: a not terrible color */
 .new-footer .footerBody div.row:last-child {
   background-color: purple !important;
-}
-.new-menubar {
-    background: #054C56 !important;
 }
 
 /****** new theme ******/
@@ -373,6 +370,6 @@ a#searchLink {
     color: #102a83 !important;
 }
 
-.nums-menubar {
+.nums-menubar, .nums-menubar .dropdown-menu {
     background: #054C56 !important;
 }

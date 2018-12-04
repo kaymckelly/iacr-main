@@ -119,3 +119,6 @@ span.remover:hover {
     opacity: 1;
     color: red;
 }
+#searchDropdown {
+    z-index: 800 !important;
+}
