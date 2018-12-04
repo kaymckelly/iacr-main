@@ -77,7 +77,7 @@ arguments.add_argument('--height',
                        type=int,
                        default=300)
 arguments.add_argument('--stroke',
-                       default='#BDC4DD')
+                       default=None)
 
 
 args = arguments.parse_args()
@@ -125,8 +125,8 @@ if args.distribution == 'regular':
 elif args.distribution == 'cosine':
     points = [[0,0],[0,args.height],[args.width,args.height],[args.width,0]]
     for i in range(args.num):
-        x = args.width * (1.0 + math.cos(math.pi*random.random())) / 2
-        y = args.height * (1.0 + math.cos(math.pi*random.random())) / 2
+        x = round(args.width * (1.0 + math.cos(math.pi*random.random())) / 2, 1)
+        y = round(args.height * (1.0 + math.cos(math.pi*random.random())) / 2, 1)
         points.append([x,y])
 else: # uniform
     # Add the corner points.
@@ -145,18 +145,20 @@ for tr in d.simplices:
     p3 = points[tr[2]]
     centroid = get_centroid(p1, p2, p3)
     color = get_color(args.width, args.height, colors, centroid)
-    stroke = color
     opacity = 1.0
     rgbval = rgb(color)
-    stroke = [(3*color[i]+255)/4 for i in range(3)]
-    strokergb = rgb(stroke)
-    print ('<path d="M {} {} L {} {} L {} {} z" fill="{}" stroke="{}" opacity="{:.3f}"/>'.format(p1[0],
+    if args.stroke:
+        strokergb = args.stroke
+    else:
+        stroke = [(3*color[i]+255)/4 for i in range(3)]
+        strokergb = rgb(stroke)
+#    print ('<path d="M {} {} L {} {} L {} {} z" fill="{}" stroke="{}" opacity="{:.3f}"/>'.format(p1[0],
+    print ('<path d="M {} {} L {} {} L {} {} z" fill="{}" stroke="{}"/>'.format(p1[0],
                                                                                                  p1[1],
                                                                                                  p2[0],
                                                                                                  p2[1],
                                                                                                  p3[0],
                                                                                                  p3[1],
                                                                                                  rgbval,
-                                                                                                 strokergb,
-                                                                                                 opacity))
+                                                                                                 strokergb))
 print_footer()
