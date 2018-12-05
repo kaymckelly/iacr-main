@@ -33,9 +33,10 @@
   font-size: 2em !important;
 }
 
+/* TODO: this gradient actually changes depending on the theme, as the start and stop colors must match the background of the page. note also does not currently work with monochrome or more numbers schemes (unsure why) */
 @media only screen and (min-width: 992px) {
   #menubar {
-    background-image: linear-gradient(white 20%, rgba(255,255,255,0.0) 20%, rgba(255,255,255,0.0) 80%, #f8f9fa 80%);
+    background-image: linear-gradient(#f8f9fa 20%, rgba(255,255,255,0.0) 20%, rgba(255,255,255,0.0) 80%, #f8f9fa 80%);
   }
 }
 
