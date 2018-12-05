@@ -33,6 +33,12 @@
   font-size: 2em !important;
 }
 
+@media only screen and (min-width: 992px) {
+  #menubar {
+    background-image: linear-gradient(white 20%, rgba(255,255,255,0.0) 20%, rgba(255,255,255,0.0) 80%, #f8f9fa 80%);
+  }
+}
+
 #iacrLogo {
   max-height: 120px !important;
   max-width: 120px !important;
