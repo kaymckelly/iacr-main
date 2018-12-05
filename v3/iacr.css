@@ -36,12 +36,12 @@
 /* TODO: this gradient actually changes depending on the theme, as the start and stop colors must match the background of the page. note also does not currently work with monochrome or more numbers schemes (unsure why) */
 @media only screen and (min-width: 992px) {
   #menubar {
-    background-image: linear-gradient(#f8f9fa 20%, rgba(255,255,255,0.0) 20%, rgba(255,255,255,0.0) 80%, #f8f9fa 80%);
-    margin-top: 10px;
+    background-image: linear-gradient(rgba(255,255,255,0.0) 0%, rgba(255,255,255,0.0) 57%, #f8f9fa 57%);
+    /* margin-top: 10px; */
   }
 
   ul#navLinks a.nav-link {
-    padding-top: 10px;
+    margin-top: -10px;
   }
 }
 
@@ -136,6 +136,8 @@ span.remover:hover {
 }
 
 #logo {
-  max-height: 90px;
-  max-width: 90px;
+  max-height: 108px;
+  max-width: 108px;
+  padding-top: 10px;
+  margin-left: 0 !important;
 }
