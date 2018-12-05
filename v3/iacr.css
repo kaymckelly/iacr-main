@@ -39,6 +39,10 @@
     background-image: linear-gradient(#f8f9fa 20%, rgba(255,255,255,0.0) 20%, rgba(255,255,255,0.0) 80%, #f8f9fa 80%);
     margin-top: 10px;
   }
+
+  ul#navLinks a.nav-link {
+    padding-top: 10px;
+  }
 }
 
 #iacrLogo {
@@ -86,7 +90,7 @@ img.socialBtn {
     font-size: 1.25rem;
 }
 
-/* NOTE: hover effect for navbar only on larger screens. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
+/* NOTE: hover effect for navbar only on larger screens (excludes search). massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
 @media only screen and (min-width: 992px) {
  #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
       display: block;
