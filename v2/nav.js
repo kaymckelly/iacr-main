@@ -50,3 +50,7 @@ $('#searchbox3').focus(function() {
 $('span.remover').click(function() {
   $(this).parent().parent().parent().parent().remove();
 });
+/* toggler */
+$(document).on('click', '.cta', function () {
+  $(this).toggleClass('active')
+})
