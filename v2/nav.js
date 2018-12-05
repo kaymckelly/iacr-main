@@ -50,7 +50,8 @@ $('#searchbox3').focus(function() {
 $('span.remover').click(function() {
   $(this).parent().parent().parent().parent().remove();
 });
-/* toggler */
-$(document).on('click', '.cta', function () {
-  $(this).toggleClass('active')
+/* toggler animation adapted from
+ * https://bootsnipp.com/snippets/featured/hamburger-icon-animations */
+$(document).on('click', '.navbar-toggler', function () {
+  $(this.lastElementChild).toggleClass('active')
 })

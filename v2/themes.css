@@ -176,7 +176,9 @@ by .green- or whatever the name is.
     background-image: url('../img/binary_swirl_trans.png');*/
 }
 .default-footer {
-    border-top: 4px solid #2787c5;
+    /* border-top: 4px solid #2787c5; */
+    background-image: url(../img/footer.svg);
+    background-size: cover;
 }
 .default-footer a {
 /*    color: #3E7307; */
@@ -186,13 +188,21 @@ by .green- or whatever the name is.
 a#searchLink {
     color: #c0f0c0;
 }
+@media only screen and (min-width: 992px) {
+    #navbarSupportedContent li:not(:last-child):hover,
+    #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
+        background-color: #1777b5;
+    /*      border-left: 3px solid #F2AC10 !important; */
+    }
+}
 /************** blues2 ***************************/
 .blues2-body {
     background: #f8f9fa;
     color: #080808;
 }
 .blues2-menubar, .blues2-menubar .dropdown-menu {
-    background: #1b70a8;
+    /* background: #1b70a8; */
+    background: linear-gradient(to bottom, #3A84B4 0%, #1b70a8 100%);
 }
 .blues2-search {
     background: #1b70a8;
@@ -220,7 +230,11 @@ a#searchLink {
     background-size: cover;
 }
 .blues2-footer {
-    border-top: 4px solid #1b70a8;
+    /*    border-top: 4px solid #1b70a8; */
+    background: radial-gradient(ellipse at 50% 80%, rgba(151,190,215, 0.5) 50%, rgba(27,112,168, .5) 100%);
+}
+.blues2-footer a {
+    color: #102a83;
 }
 /************** swirl header on blues2 ***************************/
 .blues3-body {

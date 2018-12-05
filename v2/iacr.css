@@ -82,7 +82,7 @@ img.socialBtn {
 @media only screen and (min-width: 992px) {
  #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
       display: block;
-      border-left: 3px solid #F2AC10 !important;
+/*      border-left: 3px solid #F2AC10 !important; */
   }
 }
 
