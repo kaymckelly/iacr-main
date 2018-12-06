@@ -1,6 +1,3 @@
-#topbar h1 {
-    text-shadow: 0 0 20px white;
-}
 #footer-menu {
     position:absolute;
     height:0;
@@ -18,15 +15,16 @@
     border: 2px solid red;
 }
 
-.navbar-iacr-acronym {
-    color: #ffffff !important;
+.navbarIacrAcronym {
+    color: #f0f0f0 !important;
 }
 
 /* TODO: Build custom bootstrap for these. */
 a.nav-link, a.dropdown-item {
-  color: #EBF7EB !important;
+  color: #f0f0f0 !important;
 }
 
+/************* TODO(move this to themes) ****************/
 a.dropdown-item:hover {
   background-color: #3B5099;
   /* rgba(146, 158, 198, 0.4); */
@@ -45,8 +43,18 @@ by .green- or whatever the name is.
 **************************************************************/
 
 .logo-body {
-    background: #F3F4F8 !important;
+/*    background: #F3F4F8 !important;
+ */
+    /*    background-color: rgba(39, 135, 197, 0.8);*/
+/*    background-color: rgba(255,255,255,.2);*/
+/*    background-image: url(../banners/examples/waves.svg); */
+    /*    background-image: url(../kevin3/headers/tri.svg);*/
+    background-image: url(trilogo.svg);
+    background-size: cover;
     color: #080808 !important;
+}
+.logo-main {
+    background: #f0f0f0;
 }
 .logo-menubar, .logo-menubar .dropdown-menu {
     background: #102a83 !important;
@@ -68,18 +76,11 @@ by .green- or whatever the name is.
 .logo-nav-link {
     color: #ffffff !important;
 }
-.logo-topbar {
-    background: url(../img/triangles.svg);
-    background-size: cover;
-}
-.logo-topbar h1 {
-    color: 000000;
-}
 .logo-card-footer {
     background: #E9EBF3 !important;
 }
 .logo-footer {
-    background:  #F3F4F8 !important; /* D3D8E8; */
+    background:  #F3F4F8 !important;
 }
 
 .logo-footer a {
@@ -92,14 +93,6 @@ by .green- or whatever the name is.
 
 
 /********* Green theme **********************************/
-.green-topbar {
-    background-image: url(../img/green.svg);
-    background-size: cover;
-}
-
-.green-topbar h1 {
-    color:#202020;
-}
 
 .green-body {
     background: #f0f0ff;
@@ -131,6 +124,27 @@ by .green- or whatever the name is.
 
 /********* default theme **********************************/
 
+.default-body {
+/*    background-color: rgba(39, 135, 197, 0.5);*/
+    background-image: url(../img/footer2.svg);
+    background-size: cover;
+    color: #080808;
+}
+.default-main {
+    background: #fefefe;
+}
+
+.default-footer {
+/*    background-image: url('../img/footer2.svg');
+    background-size: cover;
+    border-top: 4px solid #2787c5;
+*/
+}
+.default-footer a {
+/*    color: #3E7307; */
+    /*  color: #046577; */
+    color: #102a83;
+}
 .default-menubar .navbar-toggler {
   color: rgba(255, 255, 128, 1.0);
   border-color: rgba(255, 255, 255, 1.0);
@@ -138,11 +152,6 @@ by .green- or whatever the name is.
 
 .default-menubar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.default-body {
-    background: #f8f9fa;
-    color: #080808;
 }
 
 .default-menubar, .default-menubar .dropdown-menu {
@@ -169,21 +178,7 @@ by .green- or whatever the name is.
 .default-nav-link:hover {
     color: #e0e0e0 !important;
 }
-.default-topbar {
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(39,135,197,0.6) 100%), url('../img/binary_swirl_trans.png');
-    /*    background-image: url(textures/diagmonds-light.png); */
-/*    background: #E9EBF3;
-    background-image: url('../img/binary_swirl_trans.png');*/
-}
-.default-footer {
-    border-top: 4px solid #2787c5;
-}
-.default-footer a {
-/*    color: #3E7307; */
-    /*  color: #046577; */
-    color: #102a83;
-}
-a#searchLink {
+a.localSearchLink {
     color: #c0f0c0;
 }
 /************** blues2 ***************************/
@@ -213,11 +208,6 @@ a#searchLink {
 }
 .blues2-nav-link:hover {
     color: #e0e0e0 !important;
-}
-.blues2-topbar {
-/*    background-image: url(../img/inverted_cubes.png); */
-    background-image: url(../img/flipped_gradient.png);
-    background-size: cover;
 }
 .blues2-footer {
     border-top: 4px solid #1b70a8;
@@ -250,16 +240,16 @@ a#searchLink {
 .blues3-nav-link:hover {
     color: #e0e0e0 !important;
 }
-.blues3-topbar {
-    background: linear-gradient(to right, rgba(255,255,255,.95) 0%, rgba(255,255,255,.7) 60%, rgba(255,255,255,0.4) 100%), url('../img/background-2462431_1920.jpg');
-}
 .blues3-footer {
     border-top: 4px solid #1b70a8;
 }
 /****************** cubed header ******************/
 .cube-body {
-    background: #f8f9fa;
+    background-image: url(binary.svg);
     color: #080808;
+}
+.cube-main {
+    background: #fefefe;
 }
 .cube-menubar, .cube-menubar .dropdown-menu {
     background: #2787c5;
@@ -284,10 +274,6 @@ a#searchLink {
 .cube-nav-link:hover {
     color: #e0e0e0 !important;
 }
-.cube-topbar {
-    background-image: url(../img/blue_cubed.png);
-    background-size: contain;
-}
 .cube-footer {
     border-top: 4px solid #2787c5;
     background-color: #FFFFFF;
@@ -301,9 +287,6 @@ a#searchLink {
   color: #080808;
 }
 
-.new-topbar {
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.0) 100%), url('../img/nums.jpg');
-}
 
 .new-menubar, .new-menubar .dropdown-menu {
     background: #054C56;
@@ -339,10 +322,6 @@ a#searchLink {
   /* background-color: rgba(255, 245, 230, 0.05); */
   /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
   color: #080808;
-}
-
-.nums-topbar {
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 100%), url('../img/binary_swirl_bw.jpg');
 }
 
 .nums-search {

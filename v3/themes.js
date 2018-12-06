@@ -12,8 +12,8 @@ function setTheme(new_theme) {
   body.classList.remove(current_theme + '-body');
   body.classList.add(new_theme + '-body');
 
-  document.getElementById('menubar').classList.remove(current_theme + '-menubar');
-  document.getElementById('menubar').classList.add(new_theme + '-menubar');
+  document.getElementsByTagName('nav')[0].classList.remove(current_theme + '-menubar');
+  document.getElementsByTagName('nav')[0].classList.add(new_theme + '-menubar');
 
   var headers = document.querySelectorAll('.' + current_theme + '-card-header');
   for (i = 0; i < headers.length; ++i) {
@@ -45,7 +45,9 @@ function setTheme(new_theme) {
 
   document.getElementById('searchDropdown').classList.remove(current_theme + '-search');
   document.getElementById('searchDropdown').classList.add(new_theme + '-search');
-
+  var e = document.getElementById('iacr_container');
+  e.classList.remove(current_theme + '-main');
+  e.classList.add(new_theme + '-main');
   current_theme = new_theme;
 }
 var footer = 'v1';
