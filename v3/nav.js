@@ -36,17 +36,11 @@ $('#searchbox2').blur(function() {
   $('#menuContainer').show();
   $('#searchboxContainer').removeClass('w-100').addClass('w-25');
 });
-                        
-  
-$('#searchbox').focus(function() {
-  if (isMobile()) {
-    $('#searchDropdown').scrollView();
-  }
-});
-
-$('#searchbox3').focus(function() {
-  $('#searchInstructions3').scrollView();
-});
 $('span.remover').click(function() {
   $(this).parent().parent().parent().parent().remove();
 });
+
+$(document).on('click', '.navbar-toggler', function () {
+  console.dir(this);
+  $(this.lastElementChild).toggleClass('active')
+})

@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top default-menubar py-0">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <!--    <span class="navbar-toggler-icon"></span>-->
+    <div class="cta">
+      <div class="toggle-btn type1"></div>
+    </div>
   </button>
 
   <!-- acronym on mobile -->
@@ -9,7 +12,7 @@
   </div>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul id="navLinks" class="navbar-nav justify-content-between flex-grow-1 pt-3 pb-2">
+    <ul id="navLinks" class="navbar-nav justify-content-between flex-grow-1 pb-2">
 
       <!-- logo (TODO: do not display once menu collapses to hamburger) -->
       <li id="logoNav" class="navbar-brand d-none d-lg-block pt-0">
@@ -18,6 +21,15 @@
         </a>
       </li>
 
+      <li class="nav-item d-block d-lg-none">
+        <p id="searchInstructions3" class="small text-white mt-2 mb-1">
+          Suggestions from <a class="localSearchLink" href="/csearch">local search</a>
+          as you type. Hit enter to search with Google.
+        </p>
+        <form action="/search" method="GET">
+          <input id="searchbox3" name="q" type="search" class="form-control border w-100 searchBoxes" placeholder="Search IACR">
+        </form>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link default-nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
         <div class="dropdown-menu border-0" aria-labelledby="eventsDropdownLink">
@@ -101,15 +113,6 @@
           <a class="dropdown-item" href="#">Privacy Policy</a>
         </div>
       </li>
-      <li class="nav-item d-block d-lg-none">
-        <p id="searchInstructions3" class="small text-white mt-2 mb-1">
-          Suggestions from <a class="localSearchLink" href="/csearch">local search</a>
-          as you type. Hit enter to search with Google.
-        </p>
-        <form action="/search" method="GET">
-          <input id="searchbox3" name="q" type="search" class="form-control border w-100 searchBoxes" placeholder="Another Search IACR">
-        </form>
-      </li>
       <li class="nav-item dropdown position-static d-none d-lg-inline pt-1">
         <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchLink" data-offset="10,20">
           <button class="btn btn-outline-secondary border" aria-haspopup="true" aria-expanded="false" type="button">
@@ -128,3 +131,4 @@
 </nav>
 <script src="../search/jquery.easy-autocomplete.js"></script>
 <script src="search.js"></script>
+<script src="nav.js"></script>

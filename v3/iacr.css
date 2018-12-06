@@ -99,6 +99,9 @@ img.socialBtn {
 }
 
 @media only screen and (min-width: 992px) {
+    ul#navLinks {
+        padding-top: 1rem !important;
+    }
     .navbar-nav li {
         padding-top: 8px;
         padding-bottom: 8px;
@@ -155,4 +158,67 @@ span.remover:hover {
 }
 #logoNav {
     min-width: 75px !important;
+}
+
+/* ****************************** toggler ********************/
+.nofocus:focus {
+    outline: none !important;
+}
+
+.cta {
+    height: 35px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.toggle-btn {
+    height: 2px;
+    width: 25px;
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+}
+.toggle-btn:before {
+    content: "";
+    height: 2px;
+    width: 25px;
+    box-shadow: 0 -10px 0 0 #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.toggle-btn:after {
+    content: "";
+    height: 2px;
+    width: 25px;
+    box-shadow: 0 10px 0 0 #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.active .toggle-btn {
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.active .toggle-btn:before {
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+.active .toggle-btn:after {
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+.active .type1:before {
+    left: 6px;
+    transform: translateY(6px) rotate(-45deg);
+}
+.active .type1:after {
+    top: 0;
+    left: 6px;
+    transform: translateY(-8px) rotate(45deg);
 }
