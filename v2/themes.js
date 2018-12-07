@@ -52,6 +52,9 @@ function setTheme(new_theme) {
     footerHeaders[i].classList.add(new_theme + '-footerLinkList');
   }
 
+  document.getElementById('bottomFooter').classList.remove(current_theme + '-bottomOfFooter');
+  document.getElementById('bottomFooter').classList.add(new_theme + '-bottomOfFooter');
+
   current_theme = new_theme;
 }
 var footer = 'v1';
