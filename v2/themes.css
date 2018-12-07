@@ -1,4 +1,4 @@
-/******* theme picker button only *******/
+/******* theme picker and general styling stuff *******/
 #topbar h1 {
     text-shadow: 0 0 20px white;
 }
@@ -20,7 +20,7 @@
 }
 
 
-/******* general page (not theme-dependent colors) *******/
+/******* more general styling (not theme-dependent colors) *******/
 .navbar-iacr-acronym {
     color: #ffffff !important;
 }
@@ -90,46 +90,59 @@ a.dropdown-item:hover {
 }
 
 
-/******* theme: greens *******/
-.green-topbar {
-    background-image: url(../img/green.svg);
-    background-size: cover;
+/******* theme: cobalt *******/
+.cobalt-topbar {
+  /* background-image: url(../img/green.svg);
+  background-size: cover; */
 }
 
-.green-topbar h1 {
-    color:#202020;
+.cobalt-topbar h1 {
+  color: #092D5E;
 }
 
-.green-body {
-    background: #f0f0ff;
-    color: #040404;
+.cobalt-body {
+  background: #FEFEFC;
+  color: #040404;
 }
-.green-menubar, .green-menubar .dropdown-menu {
-    background: #035024;
+
+.cobalt-menubar, .cobalt-menubar .dropdown-menu {
+  background: #102A83;
 }
-.green-search {
-    background: #035024;
-    color: #040404;
+
+.cobalt-search {
+  background: #102A83;
+  color: #040404;
 }
-.green-card-header {
-    /*    background: #27c587;*/
-    background: rgba(0, 128, 0, .5);
-    color: #202020;
+
+.cobalt-card-header {
+  background: #0047AB;
 }
-.green-card-header a,h2 {
-    color: #202020;
+
+.cobalt-card-header a,h2 {
+  color: #FEFEFC;
 }
-.green-nav-link {
-    color: #f0f0f0 !important;
-/*    color: #404040 !important; */
+
+.cobalt-nav-link {
+  color: #F0F0F0 !important;
 }
-.green-footer {
-    background: #E6F2EF;
-    border-top: 4px solid #035024;
+
+.cobalt-footer {
+  background: #F5F5F5;
+  border-top: 3px solid #102A83;
+  margin-top: 20px;
 }
+
+.cobalt-footerLinkList {
+  border-left: 1px solid #C4F70C;
+  padding-left: 15px;
+}
+
+.cobalt-footerLinkList a {
+  color: #0047AB;
+}
+
 
 /******* theme: default *******/
-
 .default-menubar .navbar-toggler {
   color: rgba(255, 255, 128, 1.0);
   border-color: rgba(255, 255, 255, 1.0);
