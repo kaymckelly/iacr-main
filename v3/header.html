@@ -1,34 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top default-menubar py-0">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <!--    <span class="navbar-toggler-icon"></span>-->
+<nav class="navbar navbar-expand-lg navbar-light default-menubar flex-grow-1">
+  <button class="navbar-toggler nofocus" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <div class="cta">
       <div class="toggle-btn type1"></div>
     </div>
   </button>
 
-  <!-- acronym on mobile -->
   <div class="navbarIacrAcronym navbar-text d-inline-block d-lg-none mx-auto">
     IACR
   </div>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul id="navLinks" class="navbar-nav justify-content-between flex-grow-1 pb-2">
-
-      <!-- logo (TODO: do not display once menu collapses to hamburger) -->
+    <ul id="navLinks" class="navbar-nav justify-content-around flex-grow-1">
+      
       <li id="logoNav" class="navbar-brand d-none d-lg-block pt-0">
         <a href="../">
-          <img id="logo" src="https://www.iacr.org/tools/logo/svg/iacrlogo_bg.svg" alt="IACR logo" title="International Association for Cryptologic Research"/>
+          <img id="logo" src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" alt="IACR logo" title="International Association for Cryptologic Research"/>
         </a>
-      </li>
-
-      <li class="nav-item d-block d-lg-none">
-        <p id="searchInstructions3" class="small text-white mt-2 mb-1">
-          Suggestions from <a class="localSearchLink" href="/csearch">local search</a>
-          as you type. Hit enter to search with Google.
-        </p>
-        <form action="/search" method="GET">
-          <input id="searchbox3" name="q" type="search" class="form-control border w-100 searchBoxes" placeholder="Search IACR">
-        </form>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link default-nav-link dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
@@ -113,22 +100,22 @@
           <a class="dropdown-item" href="#">Privacy Policy</a>
         </div>
       </li>
-      <li class="nav-item dropdown position-static d-none d-lg-inline pt-1">
-        <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchLink" data-offset="10,20">
-          <button class="btn btn-outline-secondary border" aria-haspopup="true" aria-expanded="false" type="button">
-            <img src="../img/search.svg" class="searchBtn">
-          </button>
-        </a>
-        <div id="searchDropdown" class="border-0 dropdown-menu dropdown-menu-right default-search px-2 w-75 mt-0" aria-labelledby="searchLink">
-          <p class="small text-white mb-1">Suggestions from <a class="localSearchLink" href="/csearch">local search</a> as you type. Hit enter to search with Google.</p>
-          <form action="/search" method="GET">
-            <input id="searchbox" name="q" type="search" class="form-control border searchBoxes" placeholder="Search IACR" width="100">
-          </form>
-        </div>
-      </li>
     </ul>
   </div>
 </nav>
+<!-- maybe put py-3 on the next element -->
+<div id="searchDropdownParent"
+     class="default-menubar dropdown position-static px-md-5 px-sm-2 px-2">
+  <a id="searchDropdownButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchLink" data-offset="10,20">
+      <img src="../img/search.svg" class="searchBtn">
+  </a>
+  <div id="searchDropdown" class="border-0 dropdown-menu dropdown-menu-right default-search px-2 w-75 mt-0" aria-labelledby="searchLink">
+    <p class="small text-white mb-1">Suggestions from <a class="localSearchLink" href="/csearch">local search</a> as you type. Hit enter to search with Google.</p>
+    <form action="/search" method="GET">
+      <input id="searchbox" name="q" type="search" class="form-control border searchBoxes" placeholder="Search IACR" width="100">
+    </form>
+  </div>
+</div>
 <script src="../search/jquery.easy-autocomplete.js"></script>
 <script src="search.js"></script>
 <script src="nav.js"></script>

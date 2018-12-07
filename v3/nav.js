@@ -40,7 +40,16 @@ $('span.remover').click(function() {
   $(this).parent().parent().parent().parent().remove();
 });
 
+/*
 $(document).on('click', '.navbar-toggler', function () {
   console.dir(this);
   $(this.lastElementChild).toggleClass('active')
 })
+*/
+/* This is to make sure that the menu collapses if you click on 
+   the search button. It already appears that the search dropdown
+   will collapse if you touch the menu toggler.
+*/
+$('#searchDropdownParent').on('show.bs.dropdown', function() {
+  $('#navbarSupportedContent').collapse('hide');
+});
