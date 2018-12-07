@@ -60,7 +60,7 @@ a.dropdown-item:hover {
     background: #04269E;
     color: #f0f0f0 !important;
 }
-.logo-card-header a,h2 {
+.logo-card-header a {
     color: #f0f0f0 !important;
 }
 
@@ -118,7 +118,7 @@ a.dropdown-item:hover {
   background: #102A83;
 }
 
-.cobalt-card-header a,h2 {
+.cobalt-card-header a {
   color: #FEFEFC;
 }
 
@@ -137,9 +137,10 @@ a.dropdown-item:hover {
   color: #0047AB;
 }
 
-.cobalt-footerLinkList {
+.cobalt-footerLinkList ul {
   border-left: 3px solid #95ba12;
   padding-left: 15px;
+  margin-top: 6px;
 }
 
 .cobalt-bottomOfFooter {
@@ -181,7 +182,7 @@ a.dropdown-item:hover {
     background: #2787c5;
     color: #f0f0f0;
 }
-.default-card-header a,h2 {
+.default-card-header a {
     color: #f0f0f0;
 }
 
@@ -241,7 +242,7 @@ a#searchLink {
     background: #1b70a8;
     color: #f0f0f0;
 }
-.blues2-card-header a,h2 {
+.blues2-card-header a {
     color: #f0f0f0;
 }
 
@@ -283,7 +284,7 @@ a#searchLink {
     background: #1b70a8;
     color: #f0f0f0;
 }
-.blues3-card-header a,h2 {
+.blues3-card-header a {
     color: #f0f0f0;
 }
 
@@ -320,7 +321,7 @@ a#searchLink {
     background: #2787c5;
     color: #f0f0f0;
 }
-.cube-card-header a,h2 {
+.cube-card-header a {
     color: #f0f0f0;
 }
 
