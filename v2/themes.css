@@ -39,11 +39,7 @@ a.dropdown-item:hover {
 }
 
 
-/*****************************************************************
-logo theme. Copy this to make a new one, replacing * .ugly-
-by .green- or whatever the name is.
-**************************************************************/
-
+/******* theme: logo *******/
 .logo-body {
     background: #F3F4F8 !important;
     color: #080808 !important;
@@ -91,7 +87,7 @@ by .green- or whatever the name is.
 }
 
 
-/********* Green theme **********************************/
+/******* theme: greens *******/
 .green-topbar {
     background-image: url(../img/green.svg);
     background-size: cover;
@@ -129,7 +125,7 @@ by .green- or whatever the name is.
     border-top: 4px solid #035024;
 }
 
-/********* default theme **********************************/
+/******* theme: default *******/
 
 .default-menubar .navbar-toggler {
   color: rgba(255, 255, 128, 1.0);
@@ -185,6 +181,9 @@ by .green- or whatever the name is.
     /*  color: #046577; */
     color: #102a83;
 }
+
+
+/******* rando stuff *******/
 a#searchLink {
     color: #c0f0c0;
 }
@@ -195,7 +194,9 @@ a#searchLink {
     /*      border-left: 3px solid #F2AC10 !important; */
     }
 }
-/************** blues2 ***************************/
+
+
+/******* theme: yet another blue *******/
 .blues2-body {
     background: #f8f9fa;
     color: #080808;
@@ -236,7 +237,9 @@ a#searchLink {
 .blues2-footer a {
     color: #102a83;
 }
-/************** swirl header on blues2 ***************************/
+
+
+/******* theme: yet another blue, different header *******/
 .blues3-body {
     background: #f8f9fa;
     color: #080808;
@@ -270,7 +273,10 @@ a#searchLink {
 .blues3-footer {
     border-top: 4px solid #1b70a8;
 }
-/****************** cubed header ******************/
+
+
+
+/******* theme: blue with cubed header *******/
 .cube-body {
     background: #f8f9fa;
     color: #080808;
@@ -308,7 +314,7 @@ a#searchLink {
 }
 
 
-/****** new theme ******/
+/******* theme: teal-ish *******/
 .new-body {
   /* background-color: rgba(255, 245, 230, 0.05); */
   /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
@@ -348,7 +354,8 @@ a#searchLink {
   background-color: purple !important;
 }
 
-/****** new theme ******/
+
+/******* theme: more numbers *******/
 .nums-body {
   /* background-color: rgba(255, 245, 230, 0.05); */
   /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
