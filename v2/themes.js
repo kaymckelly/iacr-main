@@ -46,10 +46,10 @@ function setTheme(new_theme) {
   document.getElementById('searchDropdown').classList.remove(current_theme + '-search');
   document.getElementById('searchDropdown').classList.add(new_theme + '-search');
 
-  var footerHeaders = document.querySelectorAll('.' + current_theme + '-footerHeader');
+  var footerHeaders = document.querySelectorAll('.' + current_theme + '-footerLinkList');
   for (i = 0; i < footerHeaders.length; ++i) {
-    footerHeaders[i].classList.remove(current_theme + '-footerHeader');
-    footerHeaders[i].classList.add(new_theme + '-footerHeader');
+    footerHeaders[i].classList.remove(current_theme + '-footerLinkList');
+    footerHeaders[i].classList.add(new_theme + '-footerLinkList');
   }
 
   current_theme = new_theme;
