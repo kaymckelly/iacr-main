@@ -5,7 +5,7 @@ var current_theme = 'default';
 // toprow-green. We know which one to remove because we
 // keep track of current_theme as the selected theme, and
 // update it at the end of the change.
-  
+
 function setTheme(new_theme) {
   console.dir('set theme from ' + current_theme + ' to ' + new_theme);
   var body = document.getElementsByTagName('body')[0];
@@ -45,6 +45,15 @@ function setTheme(new_theme) {
 
   document.getElementById('searchDropdown').classList.remove(current_theme + '-search');
   document.getElementById('searchDropdown').classList.add(new_theme + '-search');
+
+  var footerHeaders = document.querySelectorAll('.' + current_theme + '-footerLinkList');
+  for (i = 0; i < footerHeaders.length; ++i) {
+    footerHeaders[i].classList.remove(current_theme + '-footerLinkList');
+    footerHeaders[i].classList.add(new_theme + '-footerLinkList');
+  }
+
+  document.getElementById('bottomFooter').classList.remove(current_theme + '-bottomOfFooter');
+  document.getElementById('bottomFooter').classList.add(new_theme + '-bottomOfFooter');
 
   current_theme = new_theme;
 }
