@@ -1,3 +1,4 @@
+/******* theme picker and general styling stuff *******/
 #topbar h1 {
     text-shadow: 0 0 20px white;
 }
@@ -18,6 +19,8 @@
     border: 2px solid red;
 }
 
+
+/******* more general styling (not theme-dependent colors) *******/
 .navbar-iacr-acronym {
     color: #ffffff !important;
 }
@@ -39,11 +42,7 @@ a.dropdown-item:hover {
 }
 
 
-/*****************************************************************
-logo theme. Copy this to make a new one, replacing * .ugly-
-by .green- or whatever the name is.
-**************************************************************/
-
+/******* theme: logo *******/
 .logo-body {
     background: #F3F4F8 !important;
     color: #080808 !important;
@@ -61,7 +60,7 @@ by .green- or whatever the name is.
     background: #04269E;
     color: #f0f0f0 !important;
 }
-.logo-card-header a,h2 {
+.logo-card-header a {
     color: #f0f0f0 !important;
 }
 
@@ -91,46 +90,71 @@ by .green- or whatever the name is.
 }
 
 
-/********* Green theme **********************************/
-.green-topbar {
-    background-image: url(../img/green.svg);
-    background-size: cover;
+/******* theme: cobalt *******/
+.cobalt-topbar {
+  /* background-image: url(../img/green.svg);
+  background-size: cover; */
 }
 
-.green-topbar h1 {
-    color:#202020;
+.cobalt-topbar h1 {
+  color: #092D5E;
 }
 
-.green-body {
-    background: #f0f0ff;
-    color: #040404;
-}
-.green-menubar, .green-menubar .dropdown-menu {
-    background: #035024;
-}
-.green-search {
-    background: #035024;
-    color: #040404;
-}
-.green-card-header {
-    /*    background: #27c587;*/
-    background: rgba(0, 128, 0, .5);
-    color: #202020;
-}
-.green-card-header a,h2 {
-    color: #202020;
-}
-.green-nav-link {
-    color: #f0f0f0 !important;
-/*    color: #404040 !important; */
-}
-.green-footer {
-    background: #E6F2EF;
-    border-top: 4px solid #035024;
+.cobalt-body {
+  background: #FEFEFC;
+  color: #040404;
 }
 
-/********* default theme **********************************/
+.cobalt-menubar, .cobalt-menubar .dropdown-menu {
+  background: #0047AB;
+}
 
+.cobalt-search {
+  background: #102A83;
+  color: #040404;
+}
+
+.cobalt-card-header {
+  background: #102A83;
+}
+
+.cobalt-card-header a {
+  color: #FEFEFC;
+}
+
+.cobalt-nav-link {
+  color: #F0F0F0 !important;
+}
+
+.cobalt-footer {
+  background: rgba(230, 231, 230, 0.3);
+  margin-top: 50px !important;
+  padding-top: 20px;
+  padding-bottom: 0px !important;
+}
+
+.cobalt-footer a {
+  color: #0047AB;
+}
+
+.cobalt-footerLinkList ul {
+  border-left: 3px solid #95ba12;
+  padding-left: 15px;
+  margin-top: 6px;
+}
+
+.cobalt-bottomOfFooter {
+  background-color: #0047AB;
+  color: #FEFEFC;
+  padding: 10px;
+}
+
+.cobalt-bottomOfFooter a {
+  color: #FEFEFC;
+}
+
+
+/******* theme: default *******/
 .default-menubar .navbar-toggler {
   color: rgba(255, 255, 128, 1.0);
   border-color: rgba(255, 255, 255, 1.0);
@@ -158,7 +182,7 @@ by .green- or whatever the name is.
     background: #2787c5;
     color: #f0f0f0;
 }
-.default-card-header a,h2 {
+.default-card-header a {
     color: #f0f0f0;
 }
 
@@ -185,6 +209,9 @@ by .green- or whatever the name is.
     /*  color: #046577; */
     color: #102a83;
 }
+
+
+/******* rando stuff *******/
 a#searchLink {
     color: #c0f0c0;
 }
@@ -195,7 +222,9 @@ a#searchLink {
     /*      border-left: 3px solid #F2AC10 !important; */
     }
 }
-/************** blues2 ***************************/
+
+
+/******* theme: yet another blue *******/
 .blues2-body {
     background: #f8f9fa;
     color: #080808;
@@ -213,7 +242,7 @@ a#searchLink {
     background: #1b70a8;
     color: #f0f0f0;
 }
-.blues2-card-header a,h2 {
+.blues2-card-header a {
     color: #f0f0f0;
 }
 
@@ -236,7 +265,9 @@ a#searchLink {
 .blues2-footer a {
     color: #102a83;
 }
-/************** swirl header on blues2 ***************************/
+
+
+/******* theme: yet another blue, different header *******/
 .blues3-body {
     background: #f8f9fa;
     color: #080808;
@@ -253,7 +284,7 @@ a#searchLink {
     background: #1b70a8;
     color: #f0f0f0;
 }
-.blues3-card-header a,h2 {
+.blues3-card-header a {
     color: #f0f0f0;
 }
 
@@ -270,7 +301,10 @@ a#searchLink {
 .blues3-footer {
     border-top: 4px solid #1b70a8;
 }
-/****************** cubed header ******************/
+
+
+
+/******* theme: blue with cubed header *******/
 .cube-body {
     background: #f8f9fa;
     color: #080808;
@@ -287,7 +321,7 @@ a#searchLink {
     background: #2787c5;
     color: #f0f0f0;
 }
-.cube-card-header a,h2 {
+.cube-card-header a {
     color: #f0f0f0;
 }
 
@@ -308,7 +342,7 @@ a#searchLink {
 }
 
 
-/****** new theme ******/
+/******* theme: teal-ish *******/
 .new-body {
   /* background-color: rgba(255, 245, 230, 0.05); */
   /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
@@ -348,7 +382,8 @@ a#searchLink {
   background-color: purple !important;
 }
 
-/****** new theme ******/
+
+/******* theme: more numbers *******/
 .nums-body {
   /* background-color: rgba(255, 245, 230, 0.05); */
   /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
