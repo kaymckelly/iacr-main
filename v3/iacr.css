@@ -181,7 +181,9 @@ span.remover:hover {
     min-width: 75px !important;
 }
 
-/* ****************************** toggler ********************/
+/* ****************************** toggler animation from
+https://bootsnipp.com/snippets/featured/hamburger-icon-animations
+********************/
 .nofocus:focus {
     outline: none !important;
 }
@@ -248,4 +250,13 @@ We want the dropdown search menu to be 80% width of the parent.
 */
 .default-search {
     min-width: 80% !important;
+}
+/* top padding on search button varies with height of navbar. */
+div#searchDropdownParent {
+    padding-top: 1rem;
+}
+@media (max-width: 992px) {
+    div#searchDropdownParent {
+        padding-top: 1.4rem;
+    }
 }
