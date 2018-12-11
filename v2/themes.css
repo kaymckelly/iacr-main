@@ -90,10 +90,16 @@ a.dropdown-item:hover {
 }
 
 
-/******* theme: cobalt *******/
+/******* theme: cobalt (from https://coolors.co/fefefc-95ba12-102a83-0047ab-092d5e) *******/
 .cobalt-topbar {
   /* background-image: url(../img/green.svg);
   background-size: cover; */
+  background-color: #FEFEFC;
+  background-image: linear-gradient(30deg, #FEFEFC 9%, transparent 9.5%, transparent 87%, #FEFEFC 87.5%, #FEFEFC),
+  linear-gradient(70deg, #0047AB 25%, transparent 25.5%, transparent 80%, #0047AB 80%, #0047AB),
+  linear-gradient(70deg, #95BA12 25%, transparent 25.5%, transparent 80%, #95BA12 80%, #95BA12);
+  /* background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; */
 }
 
 .cobalt-topbar h1 {
@@ -115,7 +121,7 @@ a.dropdown-item:hover {
 }
 
 .cobalt-card-header {
-  background: #102A83;
+  background: #0047AB;
 }
 
 .cobalt-card-header a {
@@ -138,7 +144,7 @@ a.dropdown-item:hover {
 }
 
 .cobalt-footerLinkList ul {
-  border-left: 3px solid #95ba12;
+  border-left: 3px solid #95BA12;
   padding-left: 15px;
   margin-top: 6px;
 }
