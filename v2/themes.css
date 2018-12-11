@@ -149,6 +149,12 @@ a.dropdown-item:hover {
   margin-top: 6px;
 }
 
+/* only necessary for footer v3 */
+.cobalt-footerTitle {
+  border-left: 3px solid #95BA12;
+  padding-left: 10px;
+}
+
 .cobalt-bottomOfFooter {
   background-color: #0047AB;
   color: #FEFEFC;

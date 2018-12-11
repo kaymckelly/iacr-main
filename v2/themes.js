@@ -52,8 +52,21 @@ function setTheme(new_theme) {
     footerHeaders[i].classList.add(new_theme + '-footerLinkList');
   }
 
-  document.getElementById('bottomFooter').classList.remove(current_theme + '-bottomOfFooter');
-  document.getElementById('bottomFooter').classList.add(new_theme + '-bottomOfFooter');
+  // only needed for v3 footer
+  var footerTitles = document.querySelectorAll('.' + current_theme + '-footerTitle');
+  for (i = 0; i < footerTitles.length; ++i) {
+    footerTitles[i].classList.remove(current_theme + '-footerTitle');
+    footerTitles[i].classList.add(new_theme + '-footerTitle');
+  }
+
+  var bottomFooter = document.querySelectorAll('.' + current_theme + '-bottomOfFooter');
+  for (i = 0; i < bottomFooter.length; ++i) {
+    bottomFooter[i].classList.remove(current_theme + '-bottomOfFooter');
+    bottomFooter[i].classList.add(new_theme + '-bottomOfFooter');
+  }
+
+  // document.getElementById('bottomFooter').classList.remove(current_theme + '-bottomOfFooter');
+  // document.getElementById('bottomFooter').classList.add(new_theme + '-bottomOfFooter');
 
   current_theme = new_theme;
 }
