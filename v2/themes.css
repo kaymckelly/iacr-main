@@ -42,58 +42,60 @@ a.dropdown-item:hover {
 }
 
 
-/******* theme: logo *******/
-.logo-body {
+/******* theme: mono *******/
+.mono-body {
     background: #F3F4F8 !important;
     color: #080808 !important;
 }
-.logo-menubar, .logo-menubar .dropdown-menu {
+.mono-menubar, .mono-menubar .dropdown-menu {
     background: #102a83 !important;
 }
-.logo-search {
+.mono-search {
     background: #102a83;
     color: #f0f0f0;
 }
 
-.logo-card-header {
+.mono-card-header {
     /*    background: #5164A4; */
     background: #04269E;
     color: #f0f0f0 !important;
 }
-.logo-card-header a {
+.mono-card-header a {
     color: #f0f0f0 !important;
 }
 
-.logo-nav-link {
+.mono-nav-link {
     color: #ffffff !important;
 }
-.logo-topbar {
+.mono-topbar {
     background: url(../img/triangles.svg);
     background-size: cover;
 }
-.logo-topbar h1 {
-    color: 000000;
+.mono-topbar h1 {
+    color: #000000;
 }
-.logo-card-footer {
+.mono-card-footer {
     background: #E9EBF3 !important;
 }
-.logo-footer {
+.mono-footer {
     background:  #F3F4F8 !important; /* D3D8E8; */
 }
 
-.logo-footer a {
+.mono-footer a {
     /*    color: #0B1B54; */
     color: #0F2778;
 }
-.logo-footer {
+.mono-footer {
     border-top: 4px solid #102a83;
 }
 
 
-/******* theme: cobalt *******/
+/******* theme: cobalt (from https://coolors.co/fefefc-95ba12-102a83-0047ab-092d5e) *******/
 .cobalt-topbar {
-  /* background-image: url(../img/green.svg);
-  background-size: cover; */
+  background-color: #FEFEFC;
+  background-image: linear-gradient(30deg, #FEFEFC 9%, transparent 9.5%, transparent 87%, #FEFEFC 87.5%, #FEFEFC),
+  linear-gradient(70deg, #0047AB 25%, transparent 25.5%, transparent 80%, #0047AB 80%, #0047AB),
+  linear-gradient(70deg, #95BA12 25%, transparent 25.5%, transparent 80%, #95BA12 80%, #95BA12);
 }
 
 .cobalt-topbar h1 {
@@ -115,7 +117,7 @@ a.dropdown-item:hover {
 }
 
 .cobalt-card-header {
-  background: #102A83;
+  background: #0047AB;
 }
 
 .cobalt-card-header a {
@@ -138,9 +140,15 @@ a.dropdown-item:hover {
 }
 
 .cobalt-footerLinkList ul {
-  border-left: 3px solid #95ba12;
+  border-left: 3px solid #95BA12;
   padding-left: 15px;
   margin-top: 6px;
+}
+
+/* only necessary for footer v3 */
+.cobalt-footerTitle {
+  border-left: 3px solid #95BA12;
+  padding-left: 10px;
 }
 
 .cobalt-bottomOfFooter {
@@ -201,8 +209,10 @@ a.dropdown-item:hover {
 }
 .default-footer {
     /* border-top: 4px solid #2787c5; */
-    background-image: url(../img/footer.svg);
-    background-size: cover;
+    /* background-image: url(../img/footer.svg);
+    background-size: cover; */
+    /* background-color: rgba(39, 135, 197, 0.1); */
+    background: radial-gradient(ellipse at 50% 80%, rgba(151,190,215, 0.5) 50%, rgba(27,112,168, .5) 100%);
 }
 .default-footer a {
 /*    color: #3E7307; */
@@ -231,7 +241,12 @@ a#searchLink {
 }
 .blues2-menubar, .blues2-menubar .dropdown-menu {
     /* background: #1b70a8; */
-    background: linear-gradient(to bottom, #3A84B4 0%, #1b70a8 100%);
+    /* background: linear-gradient(to top, #FFEFBA 0%, #fff 100%); */
+    background: #2C3E50;  /* fallback for old browsers */
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .blues2-search {
     background: #1b70a8;
@@ -254,9 +269,8 @@ a#searchLink {
     color: #e0e0e0 !important;
 }
 .blues2-topbar {
-/*    background-image: url(../img/inverted_cubes.png); */
-    background-image: url(../img/flipped_gradient.png);
-    background-size: cover;
+    /* background-image: url(../img/flipped_gradient.png);
+    background-size: cover; */
 }
 .blues2-footer {
     /*    border-top: 4px solid #1b70a8; */
@@ -310,15 +324,15 @@ a#searchLink {
     color: #080808;
 }
 .cube-menubar, .cube-menubar .dropdown-menu {
-    background: #2787c5;
+    background: #4083CF;
 }
 .cube-search {
-    background: #2787c5;
+    background: #4083CF;
     color: #f0f0f0;
 }
 
 .cube-card-header {
-    background: #2787c5;
+    background: #4083CF;
     color: #f0f0f0;
 }
 .cube-card-header a {
@@ -337,7 +351,7 @@ a#searchLink {
     background-size: contain;
 }
 .cube-footer {
-    border-top: 4px solid #2787c5;
+    border-top: 4px solid #4083CF;
     background-color: #FFFFFF;
 }
 
@@ -391,7 +405,7 @@ a#searchLink {
 }
 
 .nums-topbar {
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 100%), url('../img/binary_swirl_bw.jpg');
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 100%), url('../img/binary_swirl_bw.jpg');
 }
 
 .nums-search {
@@ -403,22 +417,99 @@ a#searchLink {
 }
 
 .nums-card-header a {
-    color: #f0f0f0 !important;
+  color: #f0f0f0 !important;
 }
 
 .nums-nav-link, .nums-nav-link a {
-    color: #f0f0f0 !important;
-    font-size: 1.2em !important;
+  color: #f0f0f0 !important;
+  font-size: 1.2em !important;
 }
+
 .nums-footer {
   border-top: 4px solid #046577;
   background-color: #FFFFFF;
 }
 
 .nums-footer  a {
-    color: #102a83 !important;
+  color: #102a83 !important;
 }
 
 .nums-menubar, .nums-menubar .dropdown-menu {
-    background: #054C56 !important;
+  background: #054C56 !important;
+}
+
+
+/* Monochrome with accent II (theme from https://coolors.co/972045-e0e0ef-3b5099-102a83-0b1b54) */
+.seaweed-topbar {
+  /* background-image: url(../img/green.svg);
+  background-size: cover; */
+  background-color: #FFF;
+  background-image: linear-gradient(60deg, #FFF 4%, transparent 4.5%, transparent 92%, #FFF 92.5%, #FFF),
+  linear-gradient(70deg, #0A8299 30%, transparent 30.5%, transparent 80%),
+  linear-gradient(70deg, #FFF 25%, transparent 25.5%, transparent 80%);
+  /* background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; */
+}
+
+.seaweed-topbar h1 {
+  color: #040404;
+}
+
+.seaweed-body {
+  background: #FFF;
+  color: #040404;
+}
+
+.seaweed-menubar, .seaweed-menubar .dropdown-menu {
+  background: #0A8299;
+}
+
+.seaweed-search {
+  background: #102A83;
+  color: #040404;
+}
+
+.seaweed-card-header {
+  background: #1C4AE3;
+}
+
+.seaweed-card-header a {
+  color: #FEFEFC;
+}
+
+.seaweed-nav-link {
+  color: #FFF !important;
+}
+
+.seaweed-footer {
+  background: rgba(230, 231, 230, 0.3);
+  margin-top: 50px !important;
+  padding-top: 20px;
+  padding-bottom: 0px !important;
+}
+
+.seaweed-footer a {
+  color: #0047AB;
+}
+
+.seaweed-footerLinkList ul {
+  border-left: 3px solid #95BA12;
+  padding-left: 15px;
+  margin-top: 6px;
+}
+
+/* only necessary for footer v3 */
+.seaweed-footerTitle {
+  border-left: 3px solid #95BA12;
+  padding-left: 10px;
+}
+
+.seaweed-bottomOfFooter {
+  background-color: #0047AB;
+  color: #FEFEFC;
+  padding: 10px;
+}
+
+.seaweed-bottomOfFooter a {
+  color: #FEFEFC;
 }
