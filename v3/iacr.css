@@ -261,7 +261,10 @@ div#searchDropdownParent {
     }
 }
 /* Transactions on symmetric cryptology is too wide and
-causes overflow of menu on some mobile devices. */
-.dropdown-item {
-    padding: .25rem 0 .25rem 1rem !important;
+causes overflow of menu on some mobile devices. This fixes
+it for some devices (but not iPhone 4). */
+@media (max-width: 990px) {
+    .dropdown-item {
+        padding: .25rem 0 .25rem 1rem !important;
+    }
 }
