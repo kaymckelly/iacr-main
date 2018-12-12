@@ -75,6 +75,7 @@ by .green- or whatever the name is.
 
 .logo-nav-link {
     color: #ffffff !important;
+    font-size: 1.2em !important;
 }
 .logo-card-footer {
     background: #E9EBF3 !important;
@@ -115,6 +116,7 @@ by .green- or whatever the name is.
 }
 .green-nav-link {
     color: #f0f0f0 !important;
+    font-size: 1.2em !important;
 /*    color: #404040 !important; */
 }
 .green-footer {
@@ -126,7 +128,7 @@ by .green- or whatever the name is.
 
 .default-body {
 /*    background-color: rgba(39, 135, 197, 0.5);*/
-    background-image: url(../img/footer2.svg);
+    background-image: url(../img/default_background.svg);
     background-size: cover;
     color: #080808;
 }
@@ -134,11 +136,16 @@ by .green- or whatever the name is.
     background: #fefefe;
 }
 
-.default-footer {
-/*    background-image: url('../img/footer2.svg');
+.default-footer .footerBody {
+    background: #FFFFFF;
+/*    background-image: url('../img/footer2.svg');    
     background-size: cover;
     border-top: 4px solid #2787c5;
 */
+}
+.default-footer .footerBody:first-child {
+    border-top: #102a83 3px solid;
+    box-shadow: 0px -10px 20px 0px rgba(39, 135, 197, .2);
 }
 .default-footer a {
 /*    color: #3E7307; */
@@ -180,6 +187,9 @@ by .green- or whatever the name is.
 }
 a.localSearchLink {
     color: #c0f0c0;
+}
+.default-footer a {
+    color: #102a83 !important;
 }
 /************** blues2 ***************************/
 .blues2-body {
@@ -245,7 +255,8 @@ a.localSearchLink {
 }
 /****************** cubed header ******************/
 .cube-body {
-    background-image: url(binary.svg);
+    background-image: url('../img/trianglify2.svg');
+    background-size: cover;
     color: #080808;
 }
 .cube-main {
@@ -301,6 +312,7 @@ a.localSearchLink {
 }
 
 .new-nav-link, .new-nav-link a {
+    font-size: 1.2em !important;
     color: #f0f0f0 !important;
 }
 .new-footer {
@@ -314,7 +326,7 @@ a.localSearchLink {
 
 /* TODO: a not terrible color */
 .new-footer .footerBody div.row:last-child {
-  background-color: purple !important;
+    background-color: #BACED0 !important;
 }
 
 /****** new theme ******/

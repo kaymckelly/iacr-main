@@ -12,9 +12,12 @@ function setTheme(new_theme) {
   body.classList.remove(current_theme + '-body');
   body.classList.add(new_theme + '-body');
 
-  document.getElementsByTagName('nav')[0].classList.remove(current_theme + '-menubar');
-  document.getElementsByTagName('nav')[0].classList.add(new_theme + '-menubar');
-
+  var navbar = document.querySelectorAll('.' + current_theme + '-menubar');
+  for (i = 0; i < navbar.length; ++i) {
+    navbar[i].classList.remove(current_theme + '-menubar');
+    navbar[i].classList.add(new_theme + '-menubar');
+  }
+    
   var headers = document.querySelectorAll('.' + current_theme + '-card-header');
   for (i = 0; i < headers.length; ++i) {
     headers[i].classList.remove(current_theme + '-card-header');

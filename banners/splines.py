@@ -12,27 +12,24 @@ import sys
 
 assert sys.version_info >= (3, 0)
 
-height = 300
-width = 1920
-
-def print_header(blur):
+def print_header(args):
     mystr = """<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"{}\" height=\"{}\"
      xmlns:xlink="http://www.w3.org/1999/xlink\">
   <!-- created with "{}" -->
    """
-    print(mystr.format(width, height, ' '.join(sys.argv).replace("--", "-")))
+    print(mystr.format(args.width, args.height, ' '.join(sys.argv).replace("--", "-")))
 
 
-def print_defs(blur, ynum, xstep, ystep, colors):
+def print_defs(args, ynum, xstep, ystep, colors):
     print('<defs>')
-    if blur:
+    if args.blur:
         print(('<filter id=\"blur\" x=\"0\" y=\"0\">"'
                '"<feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"2\" />'
                '</filter>'))
     for i in range(ynum):
-        left_color = rgb(get_color(width, height, colors, (0, i * ystep)))
-        right_color = rgb(get_color(width, height, colors, (width, i * ystep)))
+        left_color = rgb(get_color(args.width, args.height, colors, (0, i * ystep)))
+        right_color = rgb(get_color(args.width, args.height, colors, (args.width, i * ystep)))
         print((' <linearGradient id="grad{}">'
                '<stop offset="0%" stop-color="{}"/>'
                '<stop offset="100%" stop-color="{}"/>'
@@ -54,7 +51,7 @@ arguments.add_argument('--colors',
 arguments.add_argument('--xnum',
                        type=int,
                        default=10)
-arguments.add_argument('-ynum',
+arguments.add_argument('--ynum',
                        type=int,
                        default=10)
 arguments.add_argument('--dy',
@@ -67,6 +64,13 @@ arguments.add_argument('--drift',
                        type=int,
                        default=0,
                        help='Amount to drift down on each wave.')
+arguments.add_argument('--width',
+                       type=int,
+                       default=1000)
+arguments.add_argument('--height',
+                       type=int,
+                       default=1000)
+                       
 
 args = arguments.parse_args()
 assert args.drift < args.dy
@@ -84,22 +88,22 @@ for i in range(len(colors)):
         print (colors[i], ' is not a color.')
         sys.exit(2)
 
-print_header(args.blur)
-xstep = width / args.xnum
-ystep = height / args.ynum
-print_defs(args.blur, args.ynum, xstep, ystep, colors)
+print_header(args)
+xstep = args.width / args.xnum
+ystep = args.height / args.ynum
+print_defs(args, args.ynum, xstep, ystep, colors)
 if args.blur:
     print('<g filter="url(#blur)">')
 else:
     print ('<g>')
     
-print('<rect x="0" y="0" width="{}" height="{}" fill="url(#grad0)"/>'.format(width, height))
+print('<rect x="0" y="0" width="{}" height="{}" fill="url(#grad0)"/>'.format(args.width, args.height))
 for i in range(args.ynum):
     y = i * ystep
     point = (0, y)
     points = []
-    color = get_color(width, height, colors, point)
-    path = '<path d="M 0 {} L 0 {} c {} {} {} {} {} {} '.format(height,
+    color = get_color(args.width, args.height, colors, point)
+    path = '<path d="M 0 {} L 0 {} c {} {} {} {} {} {} '.format(args.height,
                                                                 y,
                                                                 xstep/3,
                                                                 random.randint(-args.dy,args.dy),
@@ -114,8 +118,8 @@ for i in range(args.ynum):
                                         random.randint(-args.dy + args.drift/2, args.dy + args.drift/2),
                                         xstep,
                                         random.randint(-args.dy + args.drift, args.dy + args.drift))
-    path += ' L {} {} Z" fill="url(#grad{})" stroke="none"/>'.format(width,
-                                                                     height,
+    path += ' L {} {} Z" fill="url(#grad{})" stroke="none"/>'.format(args.width,
+                                                                     args.height,
                                                                      i)
     print(path)
 print_footer()

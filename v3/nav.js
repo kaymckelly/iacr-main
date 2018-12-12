@@ -41,7 +41,6 @@ $('span.remover').click(function() {
 });
 
 $(document).on('click', '.navbar-toggler', function () {
-  console.dir(this);
   $(this.lastElementChild).toggleClass('active')
 });
 /* This is to make sure that the menu collapses if you click on 
@@ -50,13 +49,15 @@ $(document).on('click', '.navbar-toggler', function () {
 */
 $('#searchDropdownParent').on('show.bs.dropdown', function() {
   $('#navbarSupportedContent').collapse('hide');
+  $('#hamburger').removeClass('active');
 });
 /* Animation for search dropdown menu. */
 $('.dropdown').on('show.bs.dropdown', function(e) {
-  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
+  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+  $('#searchbox').focus();
 });
 
 $('.dropdown').on('hide.bs.dropdown', function(e) {
-  $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
+  $(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
 });
 
