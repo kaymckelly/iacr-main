@@ -387,14 +387,18 @@ a#searchLink {
   background-color: #FFFFFF;
 }
 
-.new-footer  a {
+.new-bottomOfFooter {
+    background-color: #046577 !important;
+    color: #ffffff !important;
+}
+.new-bottomOfFooter a {
+    color: #ffffff !important;
+}
+
+.new-footerLinkList a, .new-footerLink {
     color: #102a83 !important;
 }
 
-/* TODO: a not terrible color */
-.new-footer .footerBody div.row:last-child {
-  background-color: purple !important;
-}
 
 
 /******* theme: more numbers *******/
