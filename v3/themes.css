@@ -146,7 +146,7 @@ by .green- or whatever the name is.
     background: #FFFFFF;
     border-top: #2161DC 3px solid;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-/*    background-image: url('../img/footer2.svg');    
+/*    background-image: url('../img/footer2.svg');
     background-size: cover;
     border-top: 4px solid #2787c5;
 */
@@ -339,40 +339,43 @@ a.localSearchLink {
     background-color: #BACED0 !important;
 }
 
-/****** new theme ******/
-.nums-body {
-  /* background-color: rgba(255, 245, 230, 0.05); */
-    /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
-    background-color: #EAF1F2;
+
+
+/****** underwater theme (based on https://coolors.co/470a17-022b3a-338696-e6e5e5-fdfbfb) ******/
+.underwater-body {
   color: #080808;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
-.nums-search {
-    background-color: #054c56;
+.underwater-menubar, .underwater-menubar .dropdown-menu {
+  background: #338696 !important;
 }
 
-.nums-card-header {
-    background-color: #046577 !important;
+.underwater-nav-link, .underwater-nav-link a {
+  color: #f0f0f0;
+  font-size: 1.2em;
 }
 
-.nums-card-header a {
-    color: #f0f0f0 !important;
+.underwater-search {
+  background-color: #338696;
 }
 
-.nums-nav-link, .nums-nav-link a {
-    color: #f0f0f0 !important;
-    font-size: 1.2em !important;
-}
-.nums-footer {
-    /*  border-top: 4px solid #046577;*/
-    padding-top: 10px;
-  background-color: #BAD5D9;
+.underwater-card-header {
+  background-color: #2F7A89;
 }
 
-.nums-footer  a {
-    color: #102a83 !important;
+.underwater-card-header a {
+  color: #f0f0f0;
 }
 
-.nums-menubar, .nums-menubar .dropdown-menu {
-    background: #054C56 !important;
+.underwater-footer {
+  background-image: linear-gradient(to bottom, #FDFBFB 0%, #E6E5E5 80%, #338696 92%, #022B3A 97%);
+}
+
+.underwater-footer a {
+  color: #102a83 !important;
+}
+
+.underwater-bottomOfFooter, .underwater-bottomOfFooter a {
+  color: #E6E5E5 !important;
 }
