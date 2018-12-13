@@ -139,7 +139,7 @@ a.dropdown-item:hover {
   color: #0047AB;
 }
 
-.cobalt-footerLinkList ul {
+.cobalt-footer ul {
   border-left: 3px solid #95BA12;
   padding-left: 15px;
   margin-top: 6px;
@@ -315,6 +315,9 @@ a#searchLink {
 .blues3-footer {
     border-top: 4px solid #1b70a8;
 }
+.blues3-footer a {
+    color: #102a83 !important;
+}
 
 
 
@@ -354,6 +357,9 @@ a#searchLink {
     border-top: 4px solid #4083CF;
     background-color: #FFFFFF;
 }
+.cube-footer a {
+    color: #102a83 !important;
+}
 
 
 /******* theme: teal-ish *******/
@@ -391,12 +397,12 @@ a#searchLink {
     background-color: #046577 !important;
     color: #ffffff !important;
 }
+
+.new-footer a {
+    color: #102a83 !important;
+}
 .new-bottomOfFooter a {
     color: #ffffff !important;
-}
-
-.new-footerLinkList a, .new-footerLink {
-    color: #102a83 !important;
 }
 
 
@@ -496,9 +502,9 @@ a#searchLink {
   color: #0047AB;
 }
 
-.seaweed-footerLinkList ul {
+.seaweed-footer h5 {
   border-left: 3px solid #95BA12;
-  padding-left: 15px;
+  padding-left: 10px;
   margin-top: 6px;
 }
 
@@ -510,7 +516,7 @@ a#searchLink {
 
 .seaweed-bottomOfFooter {
   background-color: #0047AB;
-  color: #FEFEFC;
+  color: #FEFEFC !important;
   padding: 10px;
 }
 
