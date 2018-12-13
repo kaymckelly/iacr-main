@@ -212,7 +212,8 @@ a.dropdown-item:hover {
     /* background-image: url(../img/footer.svg);
     background-size: cover; */
     /* background-color: rgba(39, 135, 197, 0.1); */
-    background: radial-gradient(ellipse at 50% 80%, rgba(151,190,215, 0.5) 50%, rgba(27,112,168, .5) 100%);
+/*    background: radial-gradient(ellipse at 50% 80%, rgba(151,190,215, 0.5) 50%, rgba(27,112,168, .5) 100%);*/
+    background: radial-gradient(ellipse at 25% 70%, rgba(39,135,197, 0.2) 50%, rgba(39,135,197, .5) 100%);
 }
 .default-footer a {
 /*    color: #3E7307; */
@@ -244,8 +245,8 @@ a#searchLink {
     /* background: linear-gradient(to top, #FFEFBA 0%, #fff 100%); */
     background: #2C3E50;  /* fallback for old browsers */
     background: #005C97;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .blues2-search {
