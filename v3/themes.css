@@ -59,6 +59,11 @@ by .green- or whatever the name is.
 .logo-menubar, .logo-menubar .dropdown-menu {
     background: #102a83 !important;
 }
+.logo-menubar #logo {
+    box-shadow: 0 0 20px 2px rgba(254, 254, 254, 1);
+    border-radius: 50%;
+}}
+
 .logo-search {
     background: #102a83;
     color: #f0f0f0;
@@ -80,16 +85,13 @@ by .green- or whatever the name is.
 .logo-card-footer {
     background: #E9EBF3 !important;
 }
-.logo-footer {
-    background:  #F3F4F8 !important;
-}
-
 .logo-footer a {
     /*    color: #0B1B54; */
     color: #0F2778;
 }
 .logo-footer {
     border-top: 4px solid #102a83;
+    background:  #F3F4F8 !important;
 }
 
 
@@ -123,6 +125,9 @@ by .green- or whatever the name is.
     background: #E6F2EF;
     border-top: 4px solid #035024;
 }
+.green-footer a {
+    color: #102a83 !important;
+}
 
 /********* default theme **********************************/
 
@@ -134,29 +139,35 @@ by .green- or whatever the name is.
 }
 .default-main {
     background: #fefefe;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.default-footer .footerBody {
+.default-footer {
     background: #FFFFFF;
+    border-top: #2161DC 3px solid;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 /*    background-image: url('../img/footer2.svg');    
     background-size: cover;
     border-top: 4px solid #2787c5;
 */
 }
-.default-footer .footerBody:first-child {
-    border-top: #102a83 3px solid;
-    box-shadow: 0px -10px 20px 0px rgba(39, 135, 197, .2);
-}
 .default-footer a {
 /*    color: #3E7307; */
     /*  color: #046577; */
-    color: #102a83;
+    color: #102a83 !important;
 }
 .default-menubar .navbar-toggler {
   color: rgba(255, 255, 128, 1.0);
   border-color: rgba(255, 255, 255, 1.0);
 }
-
+.default-footer ul {
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #2161DC;
+}
+#v3.default-footer ul {
+    padding-left: 10px !important;
+}
 .default-menubar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
@@ -187,9 +198,6 @@ by .green- or whatever the name is.
 }
 a.localSearchLink {
     color: #c0f0c0;
-}
-.default-footer a {
-    color: #102a83 !important;
 }
 /************** blues2 ***************************/
 .blues2-body {
@@ -289,7 +297,9 @@ a.localSearchLink {
     border-top: 4px solid #2787c5;
     background-color: #FFFFFF;
 }
-
+.cube-footer a {
+    color: #102a83 !important;
+}
 
 /****** new theme ******/
 .new-body {
@@ -325,14 +335,15 @@ a.localSearchLink {
 }
 
 /* TODO: a not terrible color */
-.new-footer .footerBody div.row:last-child {
+#v3.new-footer div.row:last-child {
     background-color: #BACED0 !important;
 }
 
 /****** new theme ******/
 .nums-body {
   /* background-color: rgba(255, 245, 230, 0.05); */
-  /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
+    /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
+    background-color: #EAF1F2;
   color: #080808;
 }
 
@@ -353,8 +364,9 @@ a.localSearchLink {
     font-size: 1.2em !important;
 }
 .nums-footer {
-  border-top: 4px solid #046577;
-  background-color: #FFFFFF;
+    /*  border-top: 4px solid #046577;*/
+    padding-top: 10px;
+  background-color: #BAD5D9;
 }
 
 .nums-footer  a {
