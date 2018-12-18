@@ -30,7 +30,7 @@ a.nav-link, a.dropdown-item {
   color: #EBF7EB !important;
 }
 
-a.dropdown-item:hover {
+.default-body a.dropdown-item:hover {
   background-color: #3B5099;
   /* rgba(146, 158, 198, 0.4); */
 }
@@ -50,6 +50,9 @@ a.dropdown-item:hover {
 .mono-menubar, .mono-menubar .dropdown-menu {
     background: #102a83 !important;
 }
+.mono-menubar .navbarIacrAcronym {
+    color: #f0f0f0 !important;
+}
 .mono-search {
     background: #102a83;
     color: #f0f0f0;
@@ -65,10 +68,11 @@ a.dropdown-item:hover {
 }
 
 .mono-nav-link {
+    font-size: 1.2em !important;
     color: #ffffff !important;
 }
 .mono-topbar {
-    background: url(../img/triangles.svg);
+    background: url(../img/triangles2.svg);
     background-size: cover;
 }
 .mono-topbar h1 {
@@ -88,14 +92,19 @@ a.dropdown-item:hover {
 .mono-footer {
     border-top: 4px solid #102a83;
 }
+.mono-footer ul {
+    margin-top: 6px;
+    padding-left: 15px;
+    border-left: 3px solid #f2AC10;
+}
 
 
 /******* theme: cobalt (from https://coolors.co/fefefc-95ba12-102a83-0047ab-092d5e) *******/
 .cobalt-topbar {
   background-color: #FEFEFC;
-  background-image: linear-gradient(30deg, #FEFEFC 9%, transparent 9.5%, transparent 87%, #FEFEFC 87.5%, #FEFEFC),
+/*  background-image: linear-gradient(30deg, #FEFEFC 9%, transparent 9.5%, transparent 87%, #FEFEFC 87.5%, #FEFEFC),
   linear-gradient(70deg, #0047AB 25%, transparent 25.5%, transparent 80%, #0047AB 80%, #0047AB),
-  linear-gradient(70deg, #95BA12 25%, transparent 25.5%, transparent 80%, #95BA12 80%, #95BA12);
+  linear-gradient(70deg, #95BA12 25%, transparent 25.5%, transparent 80%, #95BA12 80%, #95BA12); */
 }
 
 .cobalt-topbar h1 {
@@ -103,8 +112,13 @@ a.dropdown-item:hover {
 }
 
 .cobalt-body {
-  background: #FEFEFC;
+    background: url(../img/waves.svg);
+    background-size: 100% 100%;
+    /* background: #FEFEFC;*/
   color: #040404;
+}
+.cobalt-body main .row, .cobalt-body main .masonry {
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,.8) 10%, rgba(255,255,255,0.8) 90%, rgba(255,255,255,0) 100%);
 }
 
 .cobalt-menubar, .cobalt-menubar .dropdown-menu {
@@ -125,11 +139,12 @@ a.dropdown-item:hover {
 }
 
 .cobalt-nav-link {
-  color: #F0F0F0 !important;
+    font-size: 1.2em !important;
+    color: #F0F0F0 !important;
 }
 
 .cobalt-footer {
-  background: rgba(230, 231, 230, 0.3);
+  background: linear-gradient(rgba(230, 231, 230, 0.3), rgba(230,231,230,0.3)),linear-gradient(rgba(255,255,255,1),rgba(255,255,255,1))  !important;
   margin-top: 50px !important;
   padding-top: 20px;
   padding-bottom: 0px !important;
@@ -240,22 +255,23 @@ a#searchLink {
     background: #f8f9fa;
     color: #080808;
 }
-.blues2-menubar, .blues2-menubar .dropdown-menu {
-    /* background: #1b70a8; */
-    /* background: linear-gradient(to top, #FFEFBA 0%, #fff 100%); */
+.blues2-menubar{
     background: #2C3E50;  /* fallback for old browsers */
-    background: #005C97;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #0837a0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #363795, #0837a0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #363795, #0837a0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.blues2-menubar .dropdown-menu {
+    background: #0837a0;
 }
 .blues2-search {
-    background: #1b70a8;
+    background: #0837a0;
     color: #f0f0f0;
 }
 
 .blues2-card-header {
-    background: #1b70a8;
+    /*    background: #1b70a8;*/
+    background: linear-gradient(to top, #363795, #0837a0);
     color: #f0f0f0;
 }
 .blues2-card-header a {
@@ -275,7 +291,8 @@ a#searchLink {
 }
 .blues2-footer {
     /*    border-top: 4px solid #1b70a8; */
-    background: radial-gradient(ellipse at 50% 80%, rgba(151,190,215, 0.5) 50%, rgba(27,112,168, .5) 100%);
+/*    background: radial-gradient(ellipse at 50% 80%, rgba(151,190,215, 0.5) 50%, rgba(27,112,168, .5) 100%);*/
+    background-color: #E8ECF6;
 }
 .blues2-footer a {
     color: #102a83;
@@ -367,11 +384,19 @@ a#searchLink {
 .new-body {
   /* background-color: rgba(255, 245, 230, 0.05); */
   /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
-  color: #080808;
+    color: #080808;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.8)),url('../img/graph_background.png');
+    background-size:cover;
+}
+.new-body main {
+    background-color: #fefefe;
 }
 
+.new-body #pageFooter {
+    margin-bottom: 0px !important;
+}
 .new-topbar {
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.0) 100%), url('../img/nums.jpg');
+/*    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.0) 100%), url('../img/nums.jpg');*/
 }
 
 .new-menubar, .new-menubar .dropdown-menu {
@@ -387,10 +412,11 @@ a#searchLink {
 }
 
 .new-nav-link, .new-nav-link a {
+    font-size: 1.2em !important;
     color: #f0f0f0 !important;
 }
 .new-footer {
-  border-top: 4px solid #046577;
+/*  border-top: 4px solid #046577;*/
   background-color: #FFFFFF;
 }
 
