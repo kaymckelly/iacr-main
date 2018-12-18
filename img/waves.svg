@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- created with "artbg.py -bg ffffff -ynum 20 -yoffset 200 -colors f8f8f8,f0f0f0,eaeaea,f4f4f4" -->
+   
+<defs>
+ <linearGradient id="grad0"><stop offset="0%" stop-color="#f8f8f8"/><stop offset="100%" stop-color="#eaeaea"/></linearGradient>
+ <linearGradient id="grad1"><stop offset="0%" stop-color="#f7f7f7"/><stop offset="100%" stop-color="#eaeaea"/></linearGradient>
+ <linearGradient id="grad2"><stop offset="0%" stop-color="#f7f7f7"/><stop offset="100%" stop-color="#ebebeb"/></linearGradient>
+ <linearGradient id="grad3"><stop offset="0%" stop-color="#f6f6f6"/><stop offset="100%" stop-color="#ebebeb"/></linearGradient>
+ <linearGradient id="grad4"><stop offset="0%" stop-color="#f6f6f6"/><stop offset="100%" stop-color="#ececec"/></linearGradient>
+ <linearGradient id="grad5"><stop offset="0%" stop-color="#f6f6f6"/><stop offset="100%" stop-color="#ececec"/></linearGradient>
+ <linearGradient id="grad6"><stop offset="0%" stop-color="#f5f5f5"/><stop offset="100%" stop-color="#ededed"/></linearGradient>
+ <linearGradient id="grad7"><stop offset="0%" stop-color="#f5f5f5"/><stop offset="100%" stop-color="#ededed"/></linearGradient>
+ <linearGradient id="grad8"><stop offset="0%" stop-color="#f4f4f4"/><stop offset="100%" stop-color="#eeeeee"/></linearGradient>
+ <linearGradient id="grad9"><stop offset="0%" stop-color="#f4f4f4"/><stop offset="100%" stop-color="#eeeeee"/></linearGradient>
+ <linearGradient id="grad10"><stop offset="0%" stop-color="#f4f4f4"/><stop offset="100%" stop-color="#efefef"/></linearGradient>
+ <linearGradient id="grad11"><stop offset="0%" stop-color="#f3f3f3"/><stop offset="100%" stop-color="#efefef"/></linearGradient>
+ <linearGradient id="grad12"><stop offset="0%" stop-color="#f3f3f3"/><stop offset="100%" stop-color="#f0f0f0"/></linearGradient>
+ <linearGradient id="grad13"><stop offset="0%" stop-color="#f2f2f2"/><stop offset="100%" stop-color="#f0f0f0"/></linearGradient>
+ <linearGradient id="grad14"><stop offset="0%" stop-color="#f2f2f2"/><stop offset="100%" stop-color="#f1f1f1"/></linearGradient>
+ <linearGradient id="grad15"><stop offset="0%" stop-color="#f2f2f2"/><stop offset="100%" stop-color="#f1f1f1"/></linearGradient>
+ <linearGradient id="grad16"><stop offset="0%" stop-color="#f1f1f1"/><stop offset="100%" stop-color="#f2f2f2"/></linearGradient>
+ <linearGradient id="grad17"><stop offset="0%" stop-color="#f1f1f1"/><stop offset="100%" stop-color="#f2f2f2"/></linearGradient>
+ <linearGradient id="grad18"><stop offset="0%" stop-color="#f0f0f0"/><stop offset="100%" stop-color="#f3f3f3"/></linearGradient>
+ <linearGradient id="grad19"><stop offset="0%" stop-color="#f0f0f0"/><stop offset="100%" stop-color="#f3f3f3"/></linearGradient>
+</defs>
+<g>
+<rect x="0" y="0" width="1000" height="1000" fill="#ffffff"/>
+<path d="M 0 0.0 C 250.0,-21.0 750.0,132.0 1000,132.0 l 0,50.0 C 750.0,182.0 250.0,-160.0 0,50.0z" fill="url(#grad0" stroke="none"/>
+<path d="M 0 50.0 C 250.0,19.0 750.0,251.0 1000,251.0 l 0,50.0 C 750.0,301.0 250.0,-120.0 0,100.0z" fill="url(#grad1" stroke="none"/>
+<path d="M 0 100.0 C 250.0,44.0 750.0,217.0 1000,217.0 l 0,50.0 C 750.0,267.0 250.0,-81.0 0,150.0z" fill="url(#grad2" stroke="none"/>
+<path d="M 0 150.0 C 250.0,145.0 750.0,338.0 1000,338.0 l 0,50.0 C 750.0,388.0 250.0,-42.0 0,200.0z" fill="url(#grad3" stroke="none"/>
+<path d="M 0 200.0 C 250.0,161.0 750.0,355.0 1000,355.0 l 0,50.0 C 750.0,405.0 250.0,-4.0 0,250.0z" fill="url(#grad4" stroke="none"/>
+<path d="M 0 250.0 C 250.0,206.0 750.0,421.0 1000,421.0 l 0,50.0 C 750.0,471.0 250.0,34.0 0,300.0z" fill="url(#grad5" stroke="none"/>
+<path d="M 0 300.0 C 250.0,247.0 750.0,548.0 1000,548.0 l 0,50.0 C 750.0,598.0 250.0,71.0 0,350.0z" fill="url(#grad6" stroke="none"/>
+<path d="M 0 350.0 C 250.0,345.0 750.0,623.0 1000,623.0 l 0,50.0 C 750.0,673.0 250.0,108.0 0,400.0z" fill="url(#grad7" stroke="none"/>
+<path d="M 0 400.0 C 250.0,369.0 750.0,626.0 1000,626.0 l 0,50.0 C 750.0,676.0 250.0,144.0 0,450.0z" fill="url(#grad8" stroke="none"/>
+<path d="M 0 450.0 C 250.0,317.0 750.0,659.0 1000,659.0 l 0,50.0 C 750.0,709.0 250.0,179.0 0,500.0z" fill="url(#grad9" stroke="none"/>
+<path d="M 0 500.0 C 250.0,344.0 750.0,787.0 1000,787.0 l 0,50.0 C 750.0,837.0 250.0,213.0 0,550.0z" fill="url(#grad10" stroke="none"/>
+<path d="M 0 550.0 C 250.0,381.0 750.0,825.0 1000,825.0 l 0,50.0 C 750.0,875.0 250.0,247.0 0,600.0z" fill="url(#grad11" stroke="none"/>
+<path d="M 0 600.0 C 250.0,416.0 750.0,810.0 1000,810.0 l 0,50.0 C 750.0,860.0 250.0,280.0 0,650.0z" fill="url(#grad12" stroke="none"/>
+<path d="M 0 650.0 C 250.0,618.0 750.0,994.0 1000,994.0 l 0,50.0 C 750.0,1044.0 250.0,312.0 0,700.0z" fill="url(#grad13" stroke="none"/>
+<path d="M 0 700.0 C 250.0,565.0 750.0,1069.0 1000,1069.0 l 0,50.0 C 750.0,1119.0 250.0,343.0 0,750.0z" fill="url(#grad14" stroke="none"/>
+<path d="M 0 750.0 C 250.0,570.0 750.0,1116.0 1000,1116.0 l 0,50.0 C 750.0,1166.0 250.0,373.0 0,800.0z" fill="url(#grad15" stroke="none"/>
+<path d="M 0 800.0 C 250.0,638.0 750.0,1118.0 1000,1118.0 l 0,50.0 C 750.0,1168.0 250.0,402.0 0,850.0z" fill="url(#grad16" stroke="none"/>
+<path d="M 0 850.0 C 250.0,717.0 750.0,1258.0 1000,1258.0 l 0,50.0 C 750.0,1308.0 250.0,430.0 0,900.0z" fill="url(#grad17" stroke="none"/>
+<path d="M 0 900.0 C 250.0,686.0 750.0,1192.0 1000,1192.0 l 0,50.0 C 750.0,1242.0 250.0,457.0 0,950.0z" fill="url(#grad18" stroke="none"/>
+<path d="M 0 950.0 C 250.0,767.0 750.0,1378.0 1000,1378.0 l 0,50.0 C 750.0,1428.0 250.0,483.0 0,1000.0z" fill="url(#grad19" stroke="none"/>
+</g></svg>

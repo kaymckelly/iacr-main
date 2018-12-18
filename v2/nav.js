@@ -18,7 +18,7 @@ $.fn.scrollView = function () {
 // then scroll to the search instructions.
 // If the navbar is uncollapsed, hide the menu
 // and make the searchbox full width.
-$('#searchbox2').focus(function() {
+$('#searchbox3').focus(function() {
   $('#searchInstructions2').removeClass('d-none');
   $('#searchInstructions2').addClass('d-block');
   if (isMobile()) {
@@ -29,7 +29,7 @@ $('#searchbox2').focus(function() {
   $('#searchboxContainer').removeClass('w-25').addClass('w-100');
 });
 
-$('#searchbox2').blur(function() {
+$('#searchbox3').blur(function() {
   $('#searchInstructions2').removeClass('d-block');
   $('#searchInstructions2').addClass('d-none');
   if (isMobile()) return;
