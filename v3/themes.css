@@ -132,75 +132,85 @@ by .green- or whatever the name is.
 /********* default theme **********************************/
 
 .default-body {
-/*    background-color: rgba(39, 135, 197, 0.5);*/
-    /* background-image: url(../img/default_background.svg);
-    background-size: cover; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./textures/lake.jpg);
-    color: #080808;
-    background-attachment: fixed;
+  color: #080808;
+  background-color: #F9F9F9;
+  background: linear-gradient(155deg, rgba(205,238,254,0.7) 0%, rgba(2,103,152,0.8) 35%, rgba(16,42,131,0.9) 100%);
 }
+
 .default-main {
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .default-footer {
-    background: #FFFFFF;
-    border-top: #2161DC 3px solid;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  background: #FFFFFF;
+  border-top: #2161DC 3px solid;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 /*    background-image: url('../img/footer2.svg');
-    background-size: cover;
-    border-top: 4px solid #2787c5;
+  background-size: cover;
+  border-top: 4px solid #2787c5;
 */
 }
+
 .default-footer a {
 /*    color: #3E7307; */
-    /*  color: #046577; */
-    color: #102a83 !important;
+  /*  color: #046577; */
+  color: #BE741A !important;
 }
+
 .default-menubar .navbar-toggler {
   color: rgba(255, 255, 128, 1.0);
   border-color: rgba(255, 255, 255, 1.0);
 }
+
 .default-footer ul {
-    margin-top: 10px;
-    padding-left: 10px;
-    border-left: 3px solid #2161DC;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #2161DC;
 }
+
 #v3.default-footer ul {
-    padding-left: 10px !important;
+  padding-left: 10px !important;
 }
+
 .default-menubar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .default-menubar, .default-menubar .dropdown-menu {
-  background: #2787c5;
+  background: #CBE7F6;
 }
 
 .default-search {
-    background: #2787c5;
-    color: #f0f0f0;
+  background: #026798;
+  color: #f0f0f0;
 }
 
 .default-card-header {
-    background: #2787c5;
-    color: #f0f0f0;
+  background: #026798;
+  color: #f0f0f0;
 }
+
 .default-card-header a,h2 {
-    color: #f0f0f0;
+  color: #f0f0f0;
 }
 
 .default-nav-link {
-    color: #ffffff !important;
-    font-size: 1.2em !important;
+  /* BUG: this appears not to work. unclear as to how to change the color of the links on the navbar at present */
+  /* color: purple !important; */
+  font-size: 1.2em !important;
 }
+
 .default-nav-link:hover {
-    color: #e0e0e0 !important;
+  color: #e0e0e0 !important;
 }
+
 a.localSearchLink {
-    color: #c0f0c0;
+  color: #c0f0c0;
 }
+
+
+
 /************** blues2 ***************************/
 .blues2-body {
     background: #f8f9fa;
