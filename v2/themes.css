@@ -294,6 +294,11 @@ a#searchLink {
 /*    background: radial-gradient(ellipse at 50% 80%, rgba(151,190,215, 0.5) 50%, rgba(27,112,168, .5) 100%);*/
     background-color: #E8ECF6;
 }
+.blues2-footer ul {
+    border-left: 3px solid #95BA12;
+    padding-left: 10px;
+    margin-top: 6px;
+}
 .blues2-footer a {
     color: #102a83;
 }

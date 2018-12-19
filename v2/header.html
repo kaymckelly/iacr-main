@@ -248,7 +248,12 @@
             <div id="searchDropdown" class="border-0 dropdown-menu dropdown-menu-right default-search px-2 w-100 mt-0" aria-labelledby="searchLink">
               <p class="small text-white mb-1">Suggestions from <a id="searchLink" href="/csearch">local search</a> as you type. Hit enter to search with Google.</p>
               <form action="/search" method="GET">
-                <input id="searchbox" name="q" type="search" class="form-control border searchBoxes" placeholder="Search IACR" width="100">
+                <div class="input-group">
+                  <input id="searchbox" name="q" type="search" class="form-control border searchBoxes" placeholder="Search IACR" width="100">
+                  <button class="btn btn-outline-light input-group-append">
+                    Search
+                  </button>
+                </div>
               </form>
             </div>
           </li>
