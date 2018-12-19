@@ -186,4 +186,14 @@ span.remover:hover {
     top: 0;
     left: 6px;
     transform: translateY(-8px) rotate(45deg);
-}    
+}
+.searchButtons {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.searchButtons:hover {
+  color: #fff;
+  background-color: #102a83;
+  border-color: #102a83;
+}
