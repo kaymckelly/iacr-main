@@ -31,7 +31,7 @@ a.nav-link, a.dropdown-item {
 }
 
 .default-body a.dropdown-item:hover {
-  background-color: #3B5099;
+    background-color: #3B5099;
   /* rgba(146, 158, 198, 0.4); */
 }
 /* END todo */
@@ -242,8 +242,8 @@ a#searchLink {
     color: #c0f0c0;
 }
 @media only screen and (min-width: 992px) {
-    #navbarSupportedContent li:not(:last-child):hover,
-    #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
+    #navbarSupportedContent .navbar-nav > li:not(:last-child):hover,
+    #navbarSupportedContent .navbar-nav > li:not(:last-child):hover>.dropdown-menu {
         background-color: #1777b5;
     /*      border-left: 3px solid #F2AC10 !important; */
     }
