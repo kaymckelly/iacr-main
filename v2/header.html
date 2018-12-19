@@ -241,14 +241,19 @@
           <li class="nav-item dropdown position-static d-none d-sm-inline">
             <span class="remover">&times;</span>
             <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchLink" data-offset="10,20">
-              <button class="btn btn-outline-secondary border mt-1" aria-haspopup="true" aria-expanded="false" type="button">
+              <button class="btn searchButtons border mt-1" aria-haspopup="true" aria-expanded="false" type="button">
                 <img src="../img/search.svg" class="searchBtn">
               </button>
             </a>
             <div id="searchDropdown" class="border-0 dropdown-menu dropdown-menu-right default-search px-2 w-100 mt-0" aria-labelledby="searchLink">
               <p class="small text-white mb-1">Suggestions from <a id="searchLink" href="/csearch">local search</a> as you type. Hit enter to search with Google.</p>
               <form action="/search" method="GET">
-                <input id="searchbox" name="q" type="search" class="form-control border searchBoxes" placeholder="Search IACR" width="100">
+                <div class="input-group">
+                  <input id="searchbox" name="q" type="search" class="form-control border searchBoxes" placeholder="Search IACR" width="100">
+                  <button class="btn searchButtons border input-group-append ml-2">
+                    Search
+                  </button>
+                </div>
               </form>
             </div>
           </li>
