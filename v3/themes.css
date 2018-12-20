@@ -20,11 +20,10 @@
 }
 
 /* TODO: Build custom bootstrap for these. */
-a.nav-link, a.dropdown-item {
+/* a.nav-link, a.dropdown-item {
   color: #f0f0f0 !important;
-}
+} */
 
-/************* TODO(move this to themes) ****************/
 a.dropdown-item:hover {
   background-color: #3B5099;
   /* rgba(146, 158, 198, 0.4); */
@@ -36,12 +35,90 @@ a.dropdown-item:hover {
   color: black !important;
 }
 
+a.localSearchLink {
+  color: #c0f0c0;
+}
 
-/*****************************************************************
-logo theme. Copy this to make a new one, replacing * .ugly-
-by .green- or whatever the name is.
-**************************************************************/
 
+
+/***** default theme *****/
+.default-body {
+  background-image: url(../img/default_background.svg);
+  background-size: cover;
+  color: #080808;
+}
+
+.default-main {
+  background: #fefefe;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.default-footer {
+  background: #FFFFFF;
+  border-top: #2161DC 3px solid;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+/*    background-image: url('../img/footer2.svg');
+  background-size: cover;
+  border-top: 4px solid #2787c5;
+*/
+}
+
+.default-footer a {
+  /*    color: #3E7307; */
+  /*  color: #046577; */
+  color: #102a83 !important;
+}
+
+.default-menubar .navbar-toggler {
+  color: rgba(255, 255, 128, 1.0);
+  border-color: rgba(255, 255, 255, 1.0);
+}
+
+.default-footer ul {
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #2161DC;
+}
+
+#v3.default-footer ul {
+  padding-left: 10px !important;
+}
+
+.default-menubar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.default-menubar, .default-menubar .dropdown-menu {
+  background: #2787c5;
+}
+
+.default-search {
+  background: #2787c5;
+  color: #f0f0f0;
+}
+
+.default-card-header {
+  background: #2787c5;
+  color: #f0f0f0;
+}
+
+.default-card-header a,h2 {
+  color: #f0f0f0;
+}
+
+.default-nav-link {
+  /* BUG: this appears not to work. unclear as to how to change the color of the links on the navbar at present */
+  color: #FFF;
+  font-size: 1.2em !important;
+}
+
+.default-nav-link:hover {
+  color: #E0E0E0 !important;
+}
+
+
+
+/***** logo theme *****/
 .logo-body {
 /*    background: #F3F4F8 !important;
  */
@@ -127,86 +204,6 @@ by .green- or whatever the name is.
 }
 .green-footer a {
     color: #102a83 !important;
-}
-
-/********* default theme **********************************/
-
-.default-body {
-  color: #080808;
-  background-color: #F9F9F9;
-  background: linear-gradient(155deg, rgba(205,238,254,0.7) 0%, rgba(2,103,152,0.8) 35%, rgba(16,42,131,0.9) 100%);
-}
-
-.default-main {
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-.default-footer {
-  background: #FFFFFF;
-  border-top: #2161DC 3px solid;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-/*    background-image: url('../img/footer2.svg');
-  background-size: cover;
-  border-top: 4px solid #2787c5;
-*/
-}
-
-.default-footer a {
-/*    color: #3E7307; */
-  /*  color: #046577; */
-  color: #BE741A !important;
-}
-
-.default-menubar .navbar-toggler {
-  color: rgba(255, 255, 128, 1.0);
-  border-color: rgba(255, 255, 255, 1.0);
-}
-
-.default-footer ul {
-  margin-top: 10px;
-  padding-left: 10px;
-  border-left: 3px solid #2161DC;
-}
-
-#v3.default-footer ul {
-  padding-left: 10px !important;
-}
-
-.default-menubar .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.default-menubar, .default-menubar .dropdown-menu {
-  background: #CBE7F6;
-}
-
-.default-search {
-  background: #026798;
-  color: #f0f0f0;
-}
-
-.default-card-header {
-  background: #026798;
-  color: #f0f0f0;
-}
-
-.default-card-header a,h2 {
-  color: #f0f0f0;
-}
-
-.default-nav-link {
-  /* BUG: this appears not to work. unclear as to how to change the color of the links on the navbar at present */
-  /* color: purple !important; */
-  font-size: 1.2em !important;
-}
-
-.default-nav-link:hover {
-  color: #e0e0e0 !important;
-}
-
-a.localSearchLink {
-  color: #c0f0c0;
 }
 
 
@@ -381,7 +378,8 @@ a.localSearchLink {
 }
 
 .underwater-footer {
-  background-image: linear-gradient(to bottom, #FDFBFB 0%, #E6E5E5 80%, #338696 92%, #022B3A 97%);
+  background-color: #FDFBFB;
+  /* background-image: linear-gradient(to bottom, #FDFBFB 0%, #E6E5E5 82%, #338696 92%, #276572 97%); */
 }
 
 .underwater-footer a {
@@ -389,5 +387,83 @@ a.localSearchLink {
 }
 
 .underwater-bottomOfFooter, .underwater-bottomOfFooter a {
+  background-image: linear-gradient(to bottom, #338696 0%, #276572 70%);
   color: #E6E5E5 !important;
+}
+
+
+
+/***** blue gradients theme theme (based on https://coolors.co/98732b-a26316-026798-3d0298-05198b) *****/
+.blueGrad-body {
+  color: #080808;
+  background-color: #F9F9F9;
+  background: linear-gradient(155deg, rgba(205,238,254,0.7) 0%, rgba(2,103,152,0.8) 35%, rgba(16,42,131,0.9) 100%);
+}
+
+.blueGrad-main {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.blueGrad-footer {
+  background: #FFFFFF;
+  border-top: #2161DC 3px solid;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+/*    background-image: url('../img/footer2.svg');
+  background-size: cover;
+  border-top: 4px solid #2787c5;
+*/
+}
+
+.blueGrad-footer a {
+/*    color: #3E7307; */
+  /*  color: #046577; */
+  color: #BE741A !important;
+}
+
+.blueGrad-menubar .navbar-toggler {
+  color: rgba(255, 255, 128, 1.0);
+  border-color: rgba(255, 255, 255, 1.0);
+}
+
+.blueGrad-footer ul {
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #2161DC;
+}
+
+#v3.blueGrad-footer ul {
+  padding-left: 10px !important;
+}
+
+.blueGrad-menubar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.blueGrad-menubar, .blueGrad-menubar .dropdown-menu {
+  background: #CBE7F6;
+}
+
+.blueGrad-search {
+  background: #026798;
+  color: #f0f0f0;
+}
+
+.blueGrad-card-header {
+  background: #026798;
+  color: #f0f0f0;
+}
+
+.blueGrad-card-header a,h2 {
+  color: #f0f0f0;
+}
+
+.blueGrad-nav-link {
+  /* BUG: this appears not to work. unclear as to how to change the color of the links on the navbar at present */
+  color: #102A83;
+  font-size: 1.2em !important;
+}
+
+.blueGrad-nav-link:hover {
+  color: #0828dd !important;
 }
