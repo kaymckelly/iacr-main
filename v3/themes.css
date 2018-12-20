@@ -35,6 +35,7 @@ a.dropdown-item:hover {
   color: black !important;
 }
 
+/* TODO: make less terrible color (may need to adapt by theme) */
 a.localSearchLink {
   color: #c0f0c0;
 }
@@ -96,12 +97,11 @@ a.localSearchLink {
   color: #f0f0f0;
 }
 
-.default-card-header a,h2 {
+.default-card-header a, h2 {
   color: #f0f0f0;
 }
 
 .default-nav-link {
-  /* BUG: this appears not to work. unclear as to how to change the color of the links on the navbar at present */
   color: #FFF;
   font-size: 1.2em !important;
 }
@@ -124,16 +124,19 @@ a.localSearchLink {
     background-size: cover;
     color: #080808 !important;
 }
+
 .logo-main {
     background: #f0f0f0;
 }
+
 .logo-menubar, .logo-menubar .dropdown-menu {
     background: #102a83 !important;
 }
+
 .logo-menubar #logo {
     box-shadow: 0 0 20px 2px rgba(254, 254, 254, 1);
     border-radius: 50%;
-}}
+}
 
 .logo-search {
     background: #102a83;
@@ -145,6 +148,7 @@ a.localSearchLink {
     background: #04269E;
     color: #f0f0f0 !important;
 }
+
 .logo-card-header a,h2 {
     color: #f0f0f0 !important;
 }
@@ -153,94 +157,118 @@ a.localSearchLink {
     color: #ffffff !important;
     font-size: 1.2em !important;
 }
+
 .logo-card-footer {
     background: #E9EBF3 !important;
 }
+
 .logo-footer a {
     /*    color: #0B1B54; */
     color: #0F2778;
 }
+
 .logo-footer {
     border-top: 4px solid #102a83;
     background:  #F3F4F8 !important;
 }
 
 
-/********* Green theme **********************************/
 
+/***** Green theme *****/
 .green-body {
     background: #f0f0ff;
     color: #040404;
 }
+
 .green-menubar, .green-menubar .dropdown-menu {
     background: #035024;
 }
+
 .green-search {
     background: #035024;
     color: #040404;
 }
+
 .green-card-header {
     /*    background: #27c587;*/
     background: rgba(0, 128, 0, .5);
     color: #202020;
 }
+
 .green-card-header a,h2 {
     color: #202020;
 }
+
 .green-nav-link {
     color: #f0f0f0 !important;
     font-size: 1.2em !important;
 /*    color: #404040 !important; */
 }
+
 .green-footer {
     background: #E6F2EF;
     border-top: 4px solid #035024;
 }
+
 .green-footer a {
     color: #102a83 !important;
 }
 
 
 
-/************** blues2 ***************************/
+/***** yet another blue (based on https://coolors.co/fefefe-2292a4-102a83-180060-000060) *****/
 .blues2-body {
-    background: #f8f9fa;
-    color: #080808;
+  background: #FEFEFE;
+  color: #080808;
 }
+
 .blues2-menubar, .blues2-menubar .dropdown-menu {
-    background: #1b70a8;
+  background: #0000CC;
 }
+
 .blues2-search {
-    background: #1b70a8;
-    color: #f0f0f0;
+  background: #0000CC;
+  color: #f0f0f0;
 }
 
 .blues2-card-header {
-    background: #1b70a8;
-    color: #f0f0f0;
+  background: #000099;
+  color: #f0f0f0;
 }
+
 .blues2-card-header a,h2 {
-    color: #f0f0f0;
+  color: #f0f0f0;
 }
 
 .blues2-nav-link {
-    color: #ffffff !important;
-    font-size: 1.2em !important;
+  color: #FEFEFE;
+  font-size: 1.2em !important;
 }
-.blues2-nav-link:hover {
-    color: #e0e0e0 !important;
+
+/* .blues2-nav-link:hover {
+  color: #e0e0e0 !important;
+} */
+
+.blues2-nav-link div.dropdown-menu a:hover {
+  background-color: green !important;
 }
+
 .blues2-footer {
-    border-top: 4px solid #1b70a8;
+  border-top: 4px solid #1b70a8;
 }
-/************** swirl header on blues2 ***************************/
+
+
+
+/***** swirl header on blues2 *****/
 .blues3-body {
     background: #f8f9fa;
     color: #080808;
 }
+
 .blues3-menubar, .blues3-menubar .dropdown-menu {
     background: #1b70a8;
 }
+
 .blues3-search {
     background: #1b70a8;
     color: #f0f0f0;
@@ -250,6 +278,7 @@ a.localSearchLink {
     background: #1b70a8;
     color: #f0f0f0;
 }
+
 .blues3-card-header a,h2 {
     color: #f0f0f0;
 }
@@ -258,9 +287,11 @@ a.localSearchLink {
     color: #ffffff !important;
     font-size: 1.2em !important;
 }
+
 .blues3-nav-link:hover {
     color: #e0e0e0 !important;
 }
+
 .blues3-footer {
     border-top: 4px solid #1b70a8;
 }
@@ -327,7 +358,6 @@ a.localSearchLink {
   color: #080808;
 }
 
-
 .new-menubar, .new-menubar .dropdown-menu {
     background: #054C56;
 }
@@ -344,6 +374,7 @@ a.localSearchLink {
     font-size: 1.2em !important;
     color: #f0f0f0 !important;
 }
+
 .new-footer {
   border-top: 4px solid #046577;
   background-color: #FFFFFF;
