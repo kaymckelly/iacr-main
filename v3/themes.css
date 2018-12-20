@@ -55,18 +55,12 @@ a.localSearchLink {
 
 .default-footer {
   background: #FFFFFF;
-  border-top: #2161DC 3px solid;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-/*    background-image: url('../img/footer2.svg');
-  background-size: cover;
-  border-top: 4px solid #2787c5;
-*/
 }
 
 .default-footer a {
-  /*    color: #3E7307; */
-  /*  color: #046577; */
-  color: #102a83 !important;
+  /* NOTE: this color is a bit pale/hard to distinguish, but I'm not sure why nor what to replace it with */
+  color: #102A83;
 }
 
 .default-menubar .navbar-toggler {
@@ -77,7 +71,7 @@ a.localSearchLink {
 .default-footer ul {
   margin-top: 10px;
   padding-left: 10px;
-  border-left: 3px solid #2161DC;
+  border-left: 3px solid #CF8D17;
 }
 
 #v3.default-footer ul {
@@ -89,16 +83,16 @@ a.localSearchLink {
 }
 
 .default-menubar, .default-menubar .dropdown-menu {
-  background: #2787c5;
+  background-color: #176DCF;
 }
 
 .default-search {
-  background: #2787c5;
+  background: #176DCF;
   color: #f0f0f0;
 }
 
 .default-card-header {
-  background: #2787c5;
+  background: #176DCF;
   color: #f0f0f0;
 }
 
