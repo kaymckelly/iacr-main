@@ -225,7 +225,8 @@ a.localSearchLink {
 
 .blues2-menubar, .blues2-menubar .dropdown-menu {
   /* background: #1b70a8; */
-  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    background-image: linear-gradient(to bottom, #5990C1 0%, #23476C 100%);
+                                                          
 }
 
 .blues2-search {
@@ -314,6 +315,7 @@ a.localSearchLink {
 }
 
 .cube-main {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   background: #fefefe;
 }
 
@@ -345,6 +347,8 @@ a.localSearchLink {
 }
 
 .cube-footer {
+  margin-top: 50px !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   background-color: #FFFFFF;
 }
 
@@ -356,7 +360,9 @@ a.localSearchLink {
   border-left: 3px solid #3c98c3;
   padding-left: 10px;
 }
-
+.cube-footer ul {
+    margin-top: 5px;
+}
 
 
 /****** new theme ******/
@@ -406,7 +412,9 @@ a.localSearchLink {
 }
 
 .underwater-menubar, .underwater-menubar .dropdown-menu {
-  background: #338696 !important;
+    /* Switched to same gradient as copyright line.
+  background: #338696 !important; */
+  background-image: linear-gradient(to bottom, #338696 0%, #276572 70%);
 }
 
 .underwater-nav-link, .underwater-nav-link a {
