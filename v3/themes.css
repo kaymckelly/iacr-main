@@ -35,7 +35,7 @@ a.dropdown-item:hover {
   color: black !important;
 }
 
-/* TODO: make less terrible color (may need to adapt by theme) */
+/* TODO: make theme-dependent color */
 a.localSearchLink {
   color: #c0f0c0;
 }
@@ -97,7 +97,7 @@ a.localSearchLink {
   color: #f0f0f0;
 }
 
-.default-card-header a, h2 {
+.default-card-header a, .default-card-header h2 {
   color: #f0f0f0;
 }
 
@@ -238,7 +238,7 @@ a.localSearchLink {
   color: #f0f0f0;
 }
 
-.blues2-card-header a, h2 {
+.blues2-card-header a, .blues2-card-header h2 {
   color: #f0f0f0;
 }
 
@@ -331,7 +331,7 @@ a.localSearchLink {
   color: #f0f0f0;
 }
 
-.cube-card-header a, h2 {
+.cube-card-header a, .cube-card-header h2 {
   color: #f0f0f0;
 }
 
