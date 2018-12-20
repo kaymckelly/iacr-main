@@ -20,9 +20,9 @@
 }
 
 /* TODO: Build custom bootstrap for these. */
-/* a.nav-link, a.dropdown-item {
+a.nav-link, a.dropdown-item {
   color: #f0f0f0 !important;
-} */
+}
 
 a.dropdown-item:hover {
   background-color: #3B5099;
@@ -224,7 +224,7 @@ a.localSearchLink {
 }
 
 .blues2-menubar, .blues2-menubar .dropdown-menu {
-  /* background: #0000CC; */
+  /* background: #1b70a8; */
   background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 }
 
