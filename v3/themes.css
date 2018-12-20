@@ -393,7 +393,7 @@ a.localSearchLink {
 
 
 
-/***** blue gradients theme theme (based on https://coolors.co/98732b-a26316-026798-3d0298-05198b) *****/
+/***** blue gradient theme (based on https://coolors.co/98732b-a26316-026798-3d0298-05198b) *****/
 .blueGrad-body {
   color: #080808;
   background-color: #F9F9F9;
@@ -409,15 +409,9 @@ a.localSearchLink {
   background: #FFFFFF;
   border-top: #2161DC 3px solid;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-/*    background-image: url('../img/footer2.svg');
-  background-size: cover;
-  border-top: 4px solid #2787c5;
-*/
 }
 
 .blueGrad-footer a {
-/*    color: #3E7307; */
-  /*  color: #046577; */
   color: #BE741A !important;
 }
 
@@ -459,7 +453,6 @@ a.localSearchLink {
 }
 
 .blueGrad-nav-link {
-  /* BUG: this appears not to work. unclear as to how to change the color of the links on the navbar at present */
   color: #102A83;
   font-size: 1.2em !important;
 }
