@@ -41,7 +41,7 @@ a.localSearchLink {
 
 
 
-/***** default theme *****/
+/***** default theme (based on https://coolors.co/cf8d17-9c3b02-102a83-092a4f-176dcf) *****/
 .default-body {
   background-image: url(../img/default_background.svg);
   background-size: cover;
@@ -264,45 +264,61 @@ a.localSearchLink {
 .blues3-footer {
     border-top: 4px solid #1b70a8;
 }
-/****************** cubed header ******************/
+
+
+
+/***** blues with cubes (based on https://coolors.co/c3863c-f66533-102a83-0c1f60-3c98c3) *****/
 .cube-body {
-    background-image: url('../img/trianglify2.svg');
-    background-size: cover;
-    color: #080808;
+  background-image: url('./textures/cubes.png');
+  background-attachment: fixed;
+  color: #080808;
 }
+
 .cube-main {
-    background: #fefefe;
+  background: #fefefe;
 }
+
 .cube-menubar, .cube-menubar .dropdown-menu {
-    background: #2787c5;
+  background: #3c98c3;
 }
+
 .cube-search {
-    background: #2787c5;
-    color: #f0f0f0;
+  background: #3c98c3;
+  color: #f0f0f0;
 }
 
 .cube-card-header {
-    background: #2787c5;
-    color: #f0f0f0;
+  background: #3c98c3;
+  color: #f0f0f0;
 }
-.cube-card-header a,h2 {
-    color: #f0f0f0;
+
+.cube-card-header a, h2 {
+  color: #f0f0f0;
 }
 
 .cube-nav-link {
-    color: #ffffff !important;
-    font-size: 1.2em !important;
+  color: #ffffff !important;
+  font-size: 1.2em !important;
 }
+
 .cube-nav-link:hover {
-    color: #e0e0e0 !important;
+  color: #e0e0e0 !important;
 }
+
 .cube-footer {
-    border-top: 4px solid #2787c5;
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
+
 .cube-footer a {
-    color: #102a83 !important;
+  color: #0C1F60;
 }
+
+.cube-footer a.h6 {
+  border-left: 3px solid #3c98c3;
+  padding-left: 10px;
+}
+
+
 
 /****** new theme ******/
 .new-body {
