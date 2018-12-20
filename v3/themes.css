@@ -24,7 +24,6 @@ a.nav-link, a.dropdown-item {
   color: #f0f0f0 !important;
 }
 
-/************* TODO(move this to themes) ****************/
 a.dropdown-item:hover {
   background-color: #3B5099;
   /* rgba(146, 158, 198, 0.4); */
@@ -36,12 +35,84 @@ a.dropdown-item:hover {
   color: black !important;
 }
 
+/* TODO: make theme-dependent color */
+a.localSearchLink {
+  color: #c0f0c0;
+}
 
-/*****************************************************************
-logo theme. Copy this to make a new one, replacing * .ugly-
-by .green- or whatever the name is.
-**************************************************************/
 
+
+/***** default theme (based on https://coolors.co/cf8d17-9c3b02-102a83-092a4f-176dcf) *****/
+.default-body {
+  background-image: url(../img/default_background.svg);
+  background-size: cover;
+  color: #080808;
+}
+
+.default-main {
+  background: #fefefe;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.default-footer {
+  background: #FFFFFF;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.default-footer a {
+  /* NOTE: this color is a bit pale/hard to distinguish, but I'm not sure why nor what to replace it with */
+  color: #102A83;
+}
+
+.default-menubar .navbar-toggler {
+  color: rgba(255, 255, 128, 1.0);
+  border-color: rgba(255, 255, 255, 1.0);
+}
+
+.default-footer ul {
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #CF8D17;
+}
+
+#v3.default-footer ul {
+  padding-left: 10px !important;
+}
+
+.default-menubar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.default-menubar, .default-menubar .dropdown-menu {
+  background-color: #176DCF;
+}
+
+.default-search {
+  background: #176DCF;
+  color: #f0f0f0;
+}
+
+.default-card-header {
+  background: #176DCF;
+  color: #f0f0f0;
+}
+
+.default-card-header a, .default-card-header h2 {
+  color: #f0f0f0;
+}
+
+.default-nav-link {
+  color: #FFF;
+  font-size: 1.2em !important;
+}
+
+.default-nav-link:hover {
+  color: #E0E0E0 !important;
+}
+
+
+
+/***** logo theme *****/
 .logo-body {
 /*    background: #F3F4F8 !important;
  */
@@ -53,16 +124,19 @@ by .green- or whatever the name is.
     background-size: cover;
     color: #080808 !important;
 }
+
 .logo-main {
     background: #f0f0f0;
 }
+
 .logo-menubar, .logo-menubar .dropdown-menu {
     background: #102a83 !important;
 }
+
 .logo-menubar #logo {
     box-shadow: 0 0 20px 2px rgba(254, 254, 254, 1);
     border-radius: 50%;
-}}
+}
 
 .logo-search {
     background: #102a83;
@@ -74,6 +148,7 @@ by .green- or whatever the name is.
     background: #04269E;
     color: #f0f0f0 !important;
 }
+
 .logo-card-header a,h2 {
     color: #f0f0f0 !important;
 }
@@ -82,162 +157,126 @@ by .green- or whatever the name is.
     color: #ffffff !important;
     font-size: 1.2em !important;
 }
+
 .logo-card-footer {
     background: #E9EBF3 !important;
 }
+
 .logo-footer a {
     /*    color: #0B1B54; */
     color: #0F2778;
 }
+
 .logo-footer {
     border-top: 4px solid #102a83;
     background:  #F3F4F8 !important;
 }
 
 
-/********* Green theme **********************************/
 
+/***** Greens *****/
 .green-body {
     background: #f0f0ff;
     color: #040404;
 }
+
 .green-menubar, .green-menubar .dropdown-menu {
-    background: #035024;
+    /* background: #035024; */
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }
+
 .green-search {
-    background: #035024;
+    background: #0ba360;
     color: #040404;
 }
+
 .green-card-header {
     /*    background: #27c587;*/
-    background: rgba(0, 128, 0, .5);
+    background: #0ba360;
     color: #202020;
 }
+
 .green-card-header a,h2 {
     color: #202020;
 }
+
 .green-nav-link {
     color: #f0f0f0 !important;
     font-size: 1.2em !important;
 /*    color: #404040 !important; */
 }
+
 .green-footer {
     background: #E6F2EF;
     border-top: 4px solid #035024;
 }
+
 .green-footer a {
     color: #102a83 !important;
 }
 
-/********* default theme **********************************/
 
-.default-body {
-/*    background-color: rgba(39, 135, 197, 0.5);*/
-    background-image: url(../img/default_background.svg);
-    background-size: cover;
-    color: #080808;
-}
-.default-main {
-    background: #fefefe;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
 
-.default-footer {
-    background: #FFFFFF;
-    border-top: #2161DC 3px solid;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-/*    background-image: url('../img/footer2.svg');    
-    background-size: cover;
-    border-top: 4px solid #2787c5;
-*/
-}
-.default-footer a {
-/*    color: #3E7307; */
-    /*  color: #046577; */
-    color: #102a83 !important;
-}
-.default-menubar .navbar-toggler {
-  color: rgba(255, 255, 128, 1.0);
-  border-color: rgba(255, 255, 255, 1.0);
-}
-.default-footer ul {
-    margin-top: 10px;
-    padding-left: 10px;
-    border-left: 3px solid #2161DC;
-}
-#v3.default-footer ul {
-    padding-left: 10px !important;
-}
-.default-menubar .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.default-menubar, .default-menubar .dropdown-menu {
-  background: #2787c5;
-}
-
-.default-search {
-    background: #2787c5;
-    color: #f0f0f0;
-}
-
-.default-card-header {
-    background: #2787c5;
-    color: #f0f0f0;
-}
-.default-card-header a,h2 {
-    color: #f0f0f0;
-}
-
-.default-nav-link {
-    color: #ffffff !important;
-    font-size: 1.2em !important;
-}
-.default-nav-link:hover {
-    color: #e0e0e0 !important;
-}
-a.localSearchLink {
-    color: #c0f0c0;
-}
-/************** blues2 ***************************/
+/***** Gray-blue *****/
 .blues2-body {
-    background: #f8f9fa;
-    color: #080808;
+  background: #FEFEFE;
+  color: #080808;
 }
+
 .blues2-menubar, .blues2-menubar .dropdown-menu {
-    background: #1b70a8;
+  /* background: #1b70a8; */
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 }
+
 .blues2-search {
-    background: #1b70a8;
-    color: #f0f0f0;
+  background: #6a85b6;
+  color: #f0f0f0;
 }
 
 .blues2-card-header {
-    background: #1b70a8;
-    color: #f0f0f0;
+  background: #6a85b6;
+  color: #f0f0f0;
 }
-.blues2-card-header a,h2 {
-    color: #f0f0f0;
+
+.blues2-card-header a, .blues2-card-header h2 {
+  color: #f0f0f0;
 }
 
 .blues2-nav-link {
-    color: #ffffff !important;
-    font-size: 1.2em !important;
+  color: #FEFEFE;
+  font-size: 1.2em !important;
 }
-.blues2-nav-link:hover {
-    color: #e0e0e0 !important;
-}
+
+/* TODO: these don't do anything lulz */
+/* .blues2-nav-link:hover {
+  color: #e0e0e0 !important;
+} */
+
+/* .blues2-nav-link div.dropdown-menu a:hover {
+  background-color: green !important;
+} */
+
 .blues2-footer {
-    border-top: 4px solid #1b70a8;
+  border-top: 4px solid #BAC8E0;
 }
-/************** swirl header on blues2 ***************************/
-.blues3-body {
+
+.blues2-footer a {
+  color: #102A83;
+}
+
+
+
+/* NOTE: not currently in use, perhaps later? */
+/***** swirl header *****/
+/* .blues3-body {
     background: #f8f9fa;
     color: #080808;
 }
+
 .blues3-menubar, .blues3-menubar .dropdown-menu {
     background: #1b70a8;
 }
+
 .blues3-search {
     background: #1b70a8;
     color: #f0f0f0;
@@ -247,6 +286,7 @@ a.localSearchLink {
     background: #1b70a8;
     color: #f0f0f0;
 }
+
 .blues3-card-header a,h2 {
     color: #f0f0f0;
 }
@@ -255,51 +295,69 @@ a.localSearchLink {
     color: #ffffff !important;
     font-size: 1.2em !important;
 }
+
 .blues3-nav-link:hover {
     color: #e0e0e0 !important;
 }
+
 .blues3-footer {
     border-top: 4px solid #1b70a8;
-}
-/****************** cubed header ******************/
+} */
+
+
+
+/***** blues with cubes (based on https://coolors.co/c3863c-f66533-102a83-0c1f60-3c98c3) *****/
 .cube-body {
-    background-image: url('../img/trianglify2.svg');
-    background-size: cover;
-    color: #080808;
+  background-image: url('./textures/cubes.png');
+  background-attachment: fixed;
+  color: #080808;
 }
+
 .cube-main {
-    background: #fefefe;
+  background: #fefefe;
 }
+
 .cube-menubar, .cube-menubar .dropdown-menu {
-    background: #2787c5;
+  background: #3c98c3;
 }
+
 .cube-search {
-    background: #2787c5;
-    color: #f0f0f0;
+  background: #3c98c3;
+  color: #f0f0f0;
 }
 
 .cube-card-header {
-    background: #2787c5;
-    color: #f0f0f0;
+  background: #3c98c3;
+  color: #f0f0f0;
 }
-.cube-card-header a,h2 {
-    color: #f0f0f0;
+
+.cube-card-header a, .cube-card-header h2 {
+  color: #f0f0f0;
 }
 
 .cube-nav-link {
-    color: #ffffff !important;
-    font-size: 1.2em !important;
+  color: #ffffff !important;
+  font-size: 1.2em !important;
 }
+
 .cube-nav-link:hover {
-    color: #e0e0e0 !important;
+  color: #e0e0e0 !important;
 }
+
 .cube-footer {
-    border-top: 4px solid #2787c5;
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
+
 .cube-footer a {
-    color: #102a83 !important;
+  color: #0C1F60;
 }
+
+.cube-footer a.h6 {
+  border-left: 3px solid #3c98c3;
+  padding-left: 10px;
+}
+
+
 
 /****** new theme ******/
 .new-body {
@@ -307,7 +365,6 @@ a.localSearchLink {
   /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
   color: #080808;
 }
-
 
 .new-menubar, .new-menubar .dropdown-menu {
     background: #054C56;
@@ -325,6 +382,7 @@ a.localSearchLink {
     font-size: 1.2em !important;
     color: #f0f0f0 !important;
 }
+
 .new-footer {
   border-top: 4px solid #046577;
   background-color: #FFFFFF;
@@ -339,40 +397,115 @@ a.localSearchLink {
     background-color: #BACED0 !important;
 }
 
-/****** new theme ******/
-.nums-body {
-  /* background-color: rgba(255, 245, 230, 0.05); */
-    /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
-    background-color: #EAF1F2;
+
+
+/****** underwater theme (based on https://coolors.co/470a17-022b3a-338696-e6e5e5-fdfbfb) ******/
+.underwater-body {
   color: #080808;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
-.nums-search {
-    background-color: #054c56;
+.underwater-menubar, .underwater-menubar .dropdown-menu {
+  background: #338696 !important;
 }
 
-.nums-card-header {
-    background-color: #046577 !important;
+.underwater-nav-link, .underwater-nav-link a {
+  color: #f0f0f0;
+  font-size: 1.2em;
 }
 
-.nums-card-header a {
-    color: #f0f0f0 !important;
+.underwater-search {
+  background-color: #338696;
 }
 
-.nums-nav-link, .nums-nav-link a {
-    color: #f0f0f0 !important;
-    font-size: 1.2em !important;
-}
-.nums-footer {
-    /*  border-top: 4px solid #046577;*/
-    padding-top: 10px;
-  background-color: #BAD5D9;
+.underwater-card-header {
+  background-color: #2F7A89;
 }
 
-.nums-footer  a {
-    color: #102a83 !important;
+.underwater-card-header a {
+  color: #f0f0f0;
 }
 
-.nums-menubar, .nums-menubar .dropdown-menu {
-    background: #054C56 !important;
+.underwater-footer {
+  background-color: #FDFBFB;
+  /* background-image: linear-gradient(to bottom, #FDFBFB 0%, #E6E5E5 82%, #338696 92%, #276572 97%); */
+}
+
+.underwater-footer a {
+  color: #102a83 !important;
+}
+
+.underwater-bottomOfFooter, .underwater-bottomOfFooter a {
+  background-image: linear-gradient(to bottom, #338696 0%, #276572 70%);
+  color: #E6E5E5 !important;
+}
+
+
+
+/***** blue gradient theme (based on https://coolors.co/98732b-a26316-026798-3d0298-05198b) *****/
+.blueGrad-body {
+  color: #080808;
+  background-color: #F9F9F9;
+  background: linear-gradient(155deg, rgba(205,238,254,0.7) 0%, rgba(2,103,152,0.8) 35%, rgba(16,42,131,0.9) 100%);
+}
+
+.blueGrad-main {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.blueGrad-footer {
+  background: #FFFFFF;
+  border-top: #2161DC 3px solid;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.blueGrad-footer a {
+  color: #BE741A !important;
+}
+
+.blueGrad-menubar .navbar-toggler {
+  color: rgba(255, 255, 128, 1.0);
+  border-color: rgba(255, 255, 255, 1.0);
+}
+
+.blueGrad-footer ul {
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #2161DC;
+}
+
+#v3.blueGrad-footer ul {
+  padding-left: 10px !important;
+}
+
+.blueGrad-menubar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.blueGrad-menubar, .blueGrad-menubar .dropdown-menu {
+  background: #CBE7F6;
+}
+
+.blueGrad-search {
+  background: #026798;
+  color: #f0f0f0;
+}
+
+.blueGrad-card-header {
+  background: #026798;
+  color: #f0f0f0;
+}
+
+.blueGrad-card-header a,h2 {
+  color: #f0f0f0;
+}
+
+.blueGrad-nav-link {
+  color: #102A83;
+  font-size: 1.2em !important;
+}
+
+.blueGrad-nav-link:hover {
+  color: #0828dd !important;
 }

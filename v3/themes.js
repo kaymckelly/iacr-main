@@ -17,7 +17,7 @@ function setTheme(new_theme) {
     navbar[i].classList.remove(current_theme + '-menubar');
     navbar[i].classList.add(new_theme + '-menubar');
   }
-    
+
   var headers = document.querySelectorAll('.' + current_theme + '-card-header');
   for (i = 0; i < headers.length; ++i) {
     headers[i].classList.remove(current_theme + '-card-header');
@@ -35,6 +35,13 @@ function setTheme(new_theme) {
     pageFooters[i].classList.remove(current_theme + '-footer');
     pageFooters[i].classList.add(new_theme + '-footer');
   }
+
+  var bottomOfFeets = document.querySelectorAll('.' + current_theme + '-bottomOfFooter');
+  for (i = 0; i < bottomOfFeets.length; i++) {
+    bottomOfFeets[i].classList.remove(current_theme + '-bottomOfFooter');
+    bottomOfFeets[i].classList.add(new_theme + '-bottomOfFooter');
+  }
+
   var navLinks = document.querySelectorAll('.nav-link');
   for (i = 0; i < navLinks.length; i++) {
     navLinks[i].classList.remove(current_theme + '-nav-link');
