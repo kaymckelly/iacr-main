@@ -200,3 +200,10 @@ span.remover:hover {
   background-color: #102a83;
   border-color: #102a83;
 }
+/* Smaller lighter font in desktop footer. */
+@media only screen and (min-width: 767px) {
+    footer#v1, footer#v2 {
+        font-size: 80%;
+        font-weight: 400;
+    }
+}
