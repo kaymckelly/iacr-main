@@ -226,7 +226,7 @@ a.localSearchLink {
 .blues2-menubar, .blues2-menubar .dropdown-menu {
   /* background: #1b70a8; */
     background-image: linear-gradient(to bottom, #5990C1 0%, #23476C 100%);
-                                                          
+
 }
 
 .blues2-search {
@@ -454,22 +454,20 @@ a.localSearchLink {
 .blueGrad-body {
   color: #080808;
   background-color: #F9F9F9;
-  background: linear-gradient(155deg, rgba(205,238,254,0.7) 0%, rgba(2,103,152,0.8) 35%, rgba(16,42,131,0.9) 100%);
 }
 
 .blueGrad-main {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .blueGrad-footer {
-  background: #FFFFFF;
-  border-top: #2161DC 3px solid;
+  background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .blueGrad-footer a {
-  color: #BE741A !important;
+  color: #473B7B !important;
 }
 
 .blueGrad-menubar .navbar-toggler {
@@ -480,7 +478,7 @@ a.localSearchLink {
 .blueGrad-footer ul {
   margin-top: 10px;
   padding-left: 10px;
-  border-left: 3px solid #2161DC;
+  border-left: 3px solid #3584A7;
 }
 
 #v3.blueGrad-footer ul {
@@ -491,17 +489,21 @@ a.localSearchLink {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.blueGrad-menubar, .blueGrad-menubar .dropdown-menu {
-  background: #CBE7F6;
+.blueGrad-menubar {
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #102A83 100%);
+}
+
+.blueGrad-menubar .dropdown-menu {
+  background-color: #102A83;
 }
 
 .blueGrad-search {
-  background: #026798;
+  background: #102A83;
   color: #f0f0f0;
 }
 
 .blueGrad-card-header {
-  background: #026798;
+  background: #3584A7;
   color: #f0f0f0;
 }
 
