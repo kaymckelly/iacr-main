@@ -30,8 +30,13 @@ a.nav-link, a.dropdown-item {
   color: #EBF7EB !important;
 }
 
-.default-body a.dropdown-item:hover {
+/* A default for dropdown item hover. This should be part of each theme. */
+body a.dropdown-item:hover {
     background-color: #3B5099;
+  /* rgba(146, 158, 198, 0.4); */
+}
+.dflt-body a.dropdown-item:hover {
+    background-color: #3B5099 !important;
   /* rgba(146, 158, 198, 0.4); */
 }
 /* END todo */
@@ -70,6 +75,10 @@ a.nav-link, a.dropdown-item {
 .mono-nav-link {
     font-size: 1.2em !important;
     color: #ffffff !important;
+}
+.mono-body a.dropdown-item:hover {
+    background-color: #3B5099 !important;
+  /* rgba(146, 158, 198, 0.4); */
 }
 .mono-topbar {
     background: url(../img/triangles2.svg);
@@ -178,51 +187,51 @@ a.nav-link, a.dropdown-item {
 
 
 /******* theme: default *******/
-.default-menubar .navbar-toggler {
+.dflt-menubar .navbar-toggler {
   color: rgba(255, 255, 128, 1.0);
   border-color: rgba(255, 255, 255, 1.0);
 }
 
-.default-menubar .navbar-toggler-icon {
+.dflt-menubar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.default-body {
+.dflt-body {
     background: #f8f9fa;
     color: #080808;
 }
 
-.default-menubar, .default-menubar .dropdown-menu {
+.dflt-menubar, .dflt-menubar .dropdown-menu {
   background: #2787c5;
 }
 
-.default-search {
+.dflt-search {
     background: #2787c5;
     color: #f0f0f0;
 }
 
-.default-card-header {
+.dflt-card-header {
     background: #2787c5;
     color: #f0f0f0;
 }
-.default-card-header a {
+.dflt-card-header a {
     color: #f0f0f0;
 }
 
-.default-nav-link {
+.dflt-nav-link {
     color: #ffffff !important;
     font-size: 1.2em !important;
 }
-.default-nav-link:hover {
+.dflt-nav-link:hover {
     color: #e0e0e0 !important;
 }
-.default-topbar {
+.dflt-topbar {
     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(39,135,197,0.6) 100%), url('../img/binary_swirl_trans.png');
     /*    background-image: url(textures/diagmonds-light.png); */
 /*    background: #E9EBF3;
     background-image: url('../img/binary_swirl_trans.png');*/
 }
-.default-footer {
+.dflt-footer {
     /* border-top: 4px solid #2787c5; */
     /* background-image: url(../img/footer.svg);
     background-size: cover; */
@@ -230,7 +239,7 @@ a.nav-link, a.dropdown-item {
 /*    background: radial-gradient(ellipse at 50% 80%, rgba(151,190,215, 0.5) 50%, rgba(27,112,168, .5) 100%);*/
     background: radial-gradient(ellipse at 25% 70%, rgba(39,135,197, 0.2) 50%, rgba(39,135,197, .5) 100%);
 }
-.default-footer a {
+.dflt-footer a {
 /*    color: #3E7307; */
     /*  color: #046577; */
     color: #102a83;
@@ -240,13 +249,6 @@ a.nav-link, a.dropdown-item {
 /******* rando stuff *******/
 a#searchLink {
     color: #c0f0c0;
-}
-@media only screen and (min-width: 992px) {
-    #navbarSupportedContent .navbar-nav > li:not(:last-child):hover,
-    #navbarSupportedContent .navbar-nav > li:not(:last-child):hover>.dropdown-menu {
-        background-color: #1777b5;
-    /*      border-left: 3px solid #F2AC10 !important; */
-    }
 }
 
 
@@ -310,7 +312,8 @@ a#searchLink {
     color: #080808;
 }
 .blues3-menubar, .blues3-menubar .dropdown-menu {
-    background: #1b70a8;
+/*    background: #1b70a8;*/
+    background: #054C56;
 }
 .blues3-search {
     background: #1b70a8;
@@ -318,7 +321,7 @@ a#searchLink {
 }
 
 .blues3-card-header {
-    background: #1b70a8;
+    background: #054c56;
     color: #f0f0f0;
 }
 .blues3-card-header a {
@@ -440,44 +443,53 @@ a#searchLink {
 
 
 /******* theme: more numbers *******/
-.nums-body {
+.default-body {
   /* background-color: rgba(255, 245, 230, 0.05); */
   /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
   color: #080808;
 }
 
-.nums-topbar {
+.default-topbar {
   background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 100%), url('../img/binary_swirl_bw.jpg');
 }
 
-.nums-search {
+.default-search {
     background-color: #054c56;
 }
 
-.nums-card-header {
+.default-card-header {
     background-color: #046577 !important;
 }
 
-.nums-card-header a {
+.default-card-header a {
   color: #f0f0f0 !important;
 }
 
-.nums-nav-link, .nums-nav-link a {
+.default-nav-link, .default-nav-link a {
   color: #f0f0f0 !important;
   font-size: 1.2em !important;
 }
 
-.nums-footer {
+.default-footer {
   border-top: 4px solid #046577;
   background-color: #FFFFFF;
 }
 
-.nums-footer  a {
+.default-footer  a {
   color: #102a83 !important;
 }
 
-.nums-menubar, .nums-menubar .dropdown-menu {
+.default-menubar, .default-menubar .dropdown-menu {
   background: #054C56 !important;
+}
+@media only screen and (min-width: 992px) {
+    .default-menubar .nav-item:not(:last-child):hover,
+    .default-menubar .nav-item:not(:last-child):hover .dropdown-menu {
+        background-color: #046577 !important;
+    }
+    .default-menubar .dropdown-item:hover {
+        background-color: #01436D !important;
+    }
 }
 
 
