@@ -1,3 +1,4 @@
+
 /******* theme picker and general styling stuff *******/
 #topbar h1 {
     text-shadow: 0 0 20px white;
@@ -8,7 +9,7 @@
 }
 #theme-menu {
     position: fixed;
-    top: 0%;
+    top: 7%;
     right: 0%;
     z-index: 1000;
 /*    width: 0;*/
@@ -120,14 +121,22 @@ body a.dropdown-item:hover {
   color: #092D5E;
 }
 
+
 .cobalt-body {
-    background: url(../img/waves.svg);
+    background: url(../img/cobalt_background.svg);
     background-size: 100% 100%;
     /* background: #FEFEFC;*/
+    /*  background: linear-gradient(rgba(230, 231, 230, 0.3), rgba(230,231,230,0.3)),linear-gradient(rgba(255,255,255,1),rgba(255,255,255,1))  !important;*/
   color: #040404;
 }
+/*
 .cobalt-body main .row, .cobalt-body main .masonry {
     background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,.8) 10%, rgba(255,255,255,0.8) 90%, rgba(255,255,255,0) 100%);
+}
+*/
+.cobalt-body main {
+  background-color: #fcfcfc;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .cobalt-menubar, .cobalt-menubar .dropdown-menu {
@@ -153,12 +162,12 @@ body a.dropdown-item:hover {
 }
 
 .cobalt-footer {
-  background: linear-gradient(rgba(230, 231, 230, 0.3), rgba(230,231,230,0.3)),linear-gradient(rgba(255,255,255,1),rgba(255,255,255,1))  !important;
-  margin-top: 50px !important;
-  padding-top: 20px;
+    /*  background: linear-gradient(rgba(230, 231, 230, 0.3), rgba(230,231,230,0.3)),linear-gradient(rgba(255,255,255,1),rgba(255,255,255,1))  !important;*/
+    background: #fcfcfc;
+    border-top: 4px solid #0047AB;
+  padding-top: 40px !important;
   padding-bottom: 0px !important;
 }
-
 .cobalt-footer a {
   color: #0047AB;
 }
@@ -566,4 +575,8 @@ a#searchLink {
 
 .seaweed-bottomOfFooter a {
   color: #FEFEFC;
+}
+/* catch-all for navbar acronym in mobile. */
+.navbarIacrAcronym {
+    color: #f0f0f0 !important;
 }
