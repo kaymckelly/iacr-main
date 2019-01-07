@@ -467,7 +467,7 @@ a.localSearchLink {
 }
 
 .blueGrad-footer a {
-  color: #473B7B !important;
+  color: #105083 !important;
 }
 
 .blueGrad-menubar .navbar-toggler {
@@ -478,7 +478,7 @@ a.localSearchLink {
 .blueGrad-footer ul {
   margin-top: 10px;
   padding-left: 10px;
-  border-left: 3px solid #3584A7;
+  border-left: 3px solid #1B47DE;
 }
 
 #v3.blueGrad-footer ul {
@@ -490,7 +490,7 @@ a.localSearchLink {
 }
 
 .blueGrad-menubar {
-  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #102A83 100%);
+  background-image: linear-gradient(-195deg, #1B47DE 0%, #105083 30%, #1c1083 60%, #102A83 100%);
 }
 
 .blueGrad-menubar .dropdown-menu {
@@ -503,7 +503,7 @@ a.localSearchLink {
 }
 
 .blueGrad-card-header {
-  background: #3584A7;
+  background: #0B499F;
   color: #f0f0f0;
 }
 
