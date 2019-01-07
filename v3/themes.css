@@ -496,7 +496,9 @@ a.localSearchLink {
 .blueGrad-menubar .dropdown-menu {
   background-color: #102A83;
 }
-
+.blueGrad-body .searchDropdownParent {
+    background: #102a83 !important;
+}
 .blueGrad-search {
   background: #102A83;
   color: #f0f0f0;
