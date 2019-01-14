@@ -364,6 +364,11 @@ a.localSearchLink {
     margin-top: 5px;
 }
 
+.cube-bottomOfFooter, .cube-bottomOfFooter a {
+  background-color: #317DA0;
+  color: #fff;
+}
+
 
 /****** new theme ******/
 .new-body {
