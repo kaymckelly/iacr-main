@@ -320,16 +320,16 @@ a.localSearchLink {
 }
 
 .cube-menubar, .cube-menubar .dropdown-menu {
-  background: #3c98c3;
+  background: #317DA0;
 }
 
 .cube-search {
-  background: #3c98c3;
+  background: #317DA0;
   color: #f0f0f0;
 }
 
 .cube-card-header {
-  background: #3c98c3;
+  background: #317DA0;
   color: #f0f0f0;
 }
 
@@ -357,11 +357,16 @@ a.localSearchLink {
 }
 
 .cube-footer a.h6 {
-  border-left: 3px solid #3c98c3;
+  border-left: 3px solid #317DA0;
   padding-left: 10px;
 }
 .cube-footer ul {
     margin-top: 5px;
+}
+
+.cube-bottomOfFooter, .cube-bottomOfFooter a {
+  background-color: #317DA0;
+  color: #fff;
 }
 
 
