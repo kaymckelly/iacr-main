@@ -111,7 +111,7 @@ body a.dropdown-item:hover {
 
 /******* theme: cobalt (from https://coolors.co/fefefc-95ba12-102a83-0047ab-092d5e) *******/
 .cobalt-topbar {
-  background-color: #FEFEFC;
+/*  background-color: #FEFEFC;*/
 /*  background-image: linear-gradient(30deg, #FEFEFC 9%, transparent 9.5%, transparent 87%, #FEFEFC 87.5%, #FEFEFC),
   linear-gradient(70deg, #0047AB 25%, transparent 25.5%, transparent 80%, #0047AB 80%, #0047AB),
   linear-gradient(70deg, #95BA12 25%, transparent 25.5%, transparent 80%, #95BA12 80%, #95BA12); */
@@ -163,8 +163,8 @@ body a.dropdown-item:hover {
 
 .cobalt-footer {
     /*  background: linear-gradient(rgba(230, 231, 230, 0.3), rgba(230,231,230,0.3)),linear-gradient(rgba(255,255,255,1),rgba(255,255,255,1))  !important;*/
-    background: #fcfcfc;
-    border-top: 4px solid #0047AB;
+/*    background: rgba(255,255,255,.3);
+    border-top: 4px solid #0047AB;*/
   padding-top: 40px !important;
   padding-bottom: 0px !important;
 }
@@ -402,7 +402,7 @@ a#searchLink {
   /* background-color: rgba(255, 245, 230, 0.05); */
   /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
     color: #080808;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.8)),url('../img/graph_background.png');
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.6),rgba(255,255,255,.6)),url('../img/teal_bg.svg');
     background-size:cover;
 }
 .new-body main {
