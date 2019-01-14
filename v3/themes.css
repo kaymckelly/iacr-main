@@ -112,64 +112,74 @@ a.localSearchLink {
 
 
 
-/***** logo theme *****/
+/***** monochrome theme *****/
 .logo-body {
 /*    background: #F3F4F8 !important;
- */
-    /*    background-color: rgba(39, 135, 197, 0.8);*/
+*/
+  /*    background-color: rgba(39, 135, 197, 0.8);*/
 /*    background-color: rgba(255,255,255,.2);*/
 /*    background-image: url(../banners/examples/waves.svg); */
-    /*    background-image: url(../kevin3/headers/tri.svg);*/
-    background-image: url(trilogo.svg);
-    background-size: cover;
-    color: #080808 !important;
+  /*    background-image: url(../kevin3/headers/tri.svg);*/
+  background-image: url(trilogo.svg);
+  background-size: cover;
+  color: #080808 !important;
 }
 
 .logo-main {
-    background: #f0f0f0;
+  background: #f0f0f0;
 }
 
 .logo-menubar, .logo-menubar .dropdown-menu {
-    background: #102a83 !important;
+  background: #102a83 !important;
 }
 
 .logo-menubar #logo {
-    box-shadow: 0 0 20px 2px rgba(254, 254, 254, 1);
-    border-radius: 50%;
+  box-shadow: 0 0 20px 2px rgba(254, 254, 254, 1);
+  border-radius: 50%;
 }
 
 .logo-search {
-    background: #102a83;
-    color: #f0f0f0;
+  background: #102a83;
+  color: #f0f0f0;
 }
 
 .logo-card-header {
-    /*    background: #5164A4; */
-    background: #04269E;
-    color: #f0f0f0 !important;
+  /*    background: #5164A4; */
+  background: #04269E;
+  color: #f0f0f0 !important;
 }
 
 .logo-card-header a,h2 {
-    color: #f0f0f0 !important;
+  color: #f0f0f0 !important;
 }
 
 .logo-nav-link {
-    color: #ffffff !important;
-    font-size: 1.2em !important;
+  color: #ffffff !important;
+  font-size: 1.2em !important;
 }
 
 .logo-card-footer {
-    background: #E9EBF3 !important;
+  background: #E9EBF3 !important;
 }
 
 .logo-footer a {
-    /*    color: #0B1B54; */
-    color: #0F2778;
+  /*    color: #0B1B54; */
+  color: #0F2778;
 }
 
 .logo-footer {
-    border-top: 4px solid #102a83;
-    background:  #F3F4F8 !important;
+  background:  #F3F4F8 !important;
+}
+
+.logo-footer ul {
+  margin-top: 6px;
+  padding-left: 15px;
+  border-left: 3px solid #f2AC10;
+}
+
+.logo-bottomOfFooter, .logo-bottomOfFooter a {
+  background-color: #102A83;
+  color: #fff;
 }
 
 
