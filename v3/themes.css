@@ -171,6 +171,12 @@ a.localSearchLink {
   background:  #F3F4F8 !important;
 }
 
+.logo-footer ul {
+  margin-top: 6px;
+  padding-left: 15px;
+  border-left: 3px solid #f2AC10;
+}
+
 
 
 /***** Greens *****/
