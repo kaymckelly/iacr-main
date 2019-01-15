@@ -186,43 +186,44 @@ a.localSearchLink {
 
 /***** Greens *****/
 .green-body {
-    background: #f0f0ff;
-    color: #040404;
+  background-color: rgba(238, 252, 233, 0.1);
+  color: #040404;
 }
 
-.green-menubar, .green-menubar .dropdown-menu {
-    /* background: #035024; */
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+.green-menubar {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.green-menubar .dropdown-menu {
+  background-color: #102806;
 }
 
 .green-search {
-    background: #0ba360;
-    color: #040404;
+  background: #234B0A;
+  color: #040404;
 }
 
 .green-card-header {
-    /*    background: #27c587;*/
-    background: #0ba360;
-    color: #202020;
+  background: #234B0A;
 }
 
 .green-card-header a,h2 {
-    color: #202020;
+  color: #f0f0f0;
 }
 
 .green-nav-link {
-    color: #f0f0f0 !important;
-    font-size: 1.2em !important;
-/*    color: #404040 !important; */
+  color: #f0f0f0 !important;
+  font-size: 1.2em !important;
 }
 
 .green-footer {
-    background: #E6F2EF;
-    border-top: 4px solid #035024;
+  background: rgba(242, 242, 242, 0.6);
 }
 
 .green-footer a {
-    color: #102a83 !important;
+  color: #102a83 !important;
 }
 
 
