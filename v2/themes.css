@@ -402,7 +402,10 @@ a#searchLink {
   /* background-color: rgba(255, 245, 230, 0.05); */
   /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
     color: #080808;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.6),rgba(255,255,255,.6)),url('../img/teal_bg.svg');
+    /*    background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.6),rgba(255,255,255,.6)),url('../img/teal_bg.svg');*/
+    background-image: linear-gradient(to right, rgba(255,255,255,.4),rgba(255,255,255,.2) 20%,rgba(255,255,255,.2)),url('../img/waves4.svg');
+/*    background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.3) 10%,rgba(255,255,255,.3)),url('../img/tris.svg');*/
+    
     background-size:cover;
 }
 .new-body main {
@@ -448,7 +451,53 @@ a#searchLink {
 .new-bottomOfFooter a {
     color: #ffffff !important;
 }
+/* *************************** teal with no background ************************** */
+.plainteal-body {
+    background-color: rgba(255, 245, 230, 0.05);
+}
+.plainteal-body main {
+    background-color: #fefefe;
+}
 
+.plainteal-body #pageFooter {
+    margin-bottom: 0px !important;
+}
+.plainteal-topbar {
+/*    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.0) 100%), url('../img/nums.jpg');*/
+}
+
+.plainteal-menubar, .plainteal-menubar .dropdown-menu {
+    background: #054C56;
+}
+
+.plainteal-card-header {
+    background-color: #046577 !important;
+}
+
+.plainteal-card-header a {
+    color: #f0f0f0 !important;
+}
+
+.plainteal-nav-link, .plainteal-nav-link a {
+    font-size: 1.2em !important;
+    color: #f0f0f0 !important;
+}
+.plainteal-footer {
+/*  border-top: 4px solid #046577;*/
+  background-color: #FFFFFF;
+}
+
+.plainteal-bottomOfFooter {
+    background-color: #046577 !important;
+    color: #ffffff !important;
+}
+
+.plainteal-footer a {
+    color: #102a83 !important;
+}
+.plainteal-bottomOfFooter a {
+    color: #ffffff !important;
+}
 
 
 /******* theme: more numbers *******/

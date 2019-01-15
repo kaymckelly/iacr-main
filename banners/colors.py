@@ -70,6 +70,7 @@ def mix_color(point, rgb_points, p, opacity=False):
     for i in range(len(rgb_points)):
         d.append(distance(point, rgb_points[i].x, rgb_points[i].y, p))
         if d[i] < _THRESHOLD:
+            print('below thresh')
             return rgb_points[i].rgb
 
     rgb = []

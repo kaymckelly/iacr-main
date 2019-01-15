@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="bluegradient" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#0E38FF" offset="0%"/>
+      <stop stop-color="#729BFF" offset="10%"/>
+      <stop stop-color="#f0f0ff" offset="100%"/>
+    </linearGradient>
+    <radialGradient id="circuitcolor">
+      <stop stop-color="#80d0ff" offset="20%"/>
+      <stop stop-color="#40a0ff" offset="100%"/>
+    </radialGradient>
+    <radialGradient id="wires" cx="25%" cy="50%" r="100%" fx="100%" fy="100%">
+      <stop stop-color="#404080" offset="0%"/>
+      <stop stop-color="#6080a0" offset="40%"/>
+      <stop stop-color="#80a0c0" offset="100%"/>
+    </radialGradient>
+    <radialGradient id="blues">
+       <stop offset="0%" stop-color="rgba(128,192,192,0.8)"/>
+       <stop offset="30%" stop-color="rgba(65,192,225,0.5)"/>
+       <stop offset="100%" stop-color="rgba(192,192,225,0.8)"/>
+    </radialGradient>
+    <radialGradient id="blues2">
+       <stop offset="0%" stop-color="rgba(64,64,225,0.5)"/>
+       <stop offset="50%" stop-color="rgba(92,92,225,0.8)"/>
+       <stop offset="100%" stop-color="rgba(128,128,225,0.8)"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .sans {font-family: Arial, Helvetica, sans-serif;}
+  </style>
+  <!-- created with "logos.py -min=100 -colors=gradient -num=2 -conf PKC" -->
+   
+<path d="M 0 150 L 89 127 L 150 150 z" fill="rgb(130.27, 143.77, 190.04)" opacity="1.000" stroke="rgb(130.27, 143.77, 190.04)"/>
+<path d="M 89 127 L 0 150 L 0 0 z" fill="rgb(180.94, 189.10, 216.38)" opacity="1.000" stroke="rgb(180.94, 189.10, 216.38)"/>
+<path d="M 130 103 L 150 0 L 150 150 z" fill="rgb(65.76, 86.04, 156.51)" opacity="1.000" stroke="rgb(65.76, 86.04, 156.51)"/>
+<path d="M 89 127 L 130 103 L 150 150 z" fill="rgb(86.36, 104.48, 167.22)" opacity="1.000" stroke="rgb(86.36, 104.48, 167.22)"/>
+<path d="M 150 0 L 130 103 L 0 0 z" fill="rgb(116.42, 131.38, 182.84)" opacity="1.000" stroke="rgb(116.42, 131.38, 182.84)"/>
+<path d="M 130 103 L 89 127 L 0 0 z" fill="rgb(137.03, 149.81, 193.55)" opacity="1.000" stroke="rgb(137.03, 149.81, 193.55)"/>
+<text text-anchor="middle" font-size="45.0" class="sans" x="75.0" y="97.5" fill="black">PKC</text>
+</svg>

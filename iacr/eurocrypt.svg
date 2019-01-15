@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="bluegradient" x1="0" x2="0" y1="0" y2="1">
+      <stop stop-color="#0E38FF" offset="0%"/>
+      <stop stop-color="#729BFF" offset="10%"/>
+      <stop stop-color="#f0f0ff" offset="100%"/>
+    </linearGradient>
+    <radialGradient id="circuitcolor">
+      <stop stop-color="#80d0ff" offset="20%"/>
+      <stop stop-color="#40a0ff" offset="100%"/>
+    </radialGradient>
+    <radialGradient id="wires" cx="25%" cy="50%" r="100%" fx="100%" fy="100%">
+      <stop stop-color="#404080" offset="0%"/>
+      <stop stop-color="#6080a0" offset="40%"/>
+      <stop stop-color="#80a0c0" offset="100%"/>
+    </radialGradient>
+    <radialGradient id="blues">
+       <stop offset="0%" stop-color="rgba(128,192,192,0.8)"/>
+       <stop offset="30%" stop-color="rgba(65,192,225,0.5)"/>
+       <stop offset="100%" stop-color="rgba(192,192,225,0.8)"/>
+    </radialGradient>
+    <radialGradient id="blues2">
+       <stop offset="0%" stop-color="rgba(64,64,225,0.5)"/>
+       <stop offset="50%" stop-color="rgba(92,92,225,0.8)"/>
+       <stop offset="100%" stop-color="rgba(128,128,225,0.8)"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .sans {font-family: Arial, Helvetica, sans-serif;}
+  </style>
+  <!-- created with "logos.py -min=100 -colors=gradient -num=2 -conf EUROCRYPT" -->
+   
+<path d="M 150 0 L 92 49 L 0 0 z" fill="rgb(129.26, 142.86, 189.52)" opacity="1.000" stroke="rgb(129.26, 142.86, 189.52)"/>
+<path d="M 92 49 L 150 0 L 150 150 z" fill="rgb(78.59, 97.53, 163.18)" opacity="1.000" stroke="rgb(78.59, 97.53, 163.18)"/>
+<path d="M 0 150 L 51 130 L 150 150 z" fill="rgb(143.11, 155.25, 196.71)" opacity="1.000" stroke="rgb(143.11, 155.25, 196.71)"/>
+<path d="M 51 130 L 92 49 L 150 150 z" fill="rgb(112.03, 127.45, 180.56)" opacity="1.000" stroke="rgb(112.03, 127.45, 180.56)"/>
+<path d="M 51 130 L 0 150 L 0 0 z" fill="rgb(193.77, 200.59, 223.05)" opacity="1.000" stroke="rgb(193.77, 200.59, 223.05)"/>
+<path d="M 92 49 L 51 130 L 0 0 z" fill="rgb(162.70, 172.78, 206.90)" opacity="1.000" stroke="rgb(162.70, 172.78, 206.90)"/>
+<text text-anchor="middle" font-size="20.0" class="sans" x="75.0" y="85.0" fill="black">EUROCRYPT</text>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- created with "artbg2.py -bg ffffff -ynum 10 -yoffset 10 -colors f8f8f8,f0f0f0,e2e2ff,ffffc0" -->
+   
+<g>
+<rect x="0" y="0" width="1000" height="1000" fill="#ffffff"/>
+<path d="M 0 0.0 C 250.0,10.0 750.0,10.0 1000,10.0 l 0,20.0 l -1000,0z" fill="#e0e0f0" stroke="#f0f0f0"/>
+<path d="M 0 100.0 C 250.0,110.0 750.0,110.0 1000,110.0 l 0,120.0 l -1000,0z" fill="#e0e0f0" stroke="#f0f0f0"/>
+<path d="M 0 200.0 C 250.0,210.0 750.0,210.0 1000,210.0 l 0,220.0 l -1000,0z" fill="#e0e0f0" stroke="#f0f0f0"/>
+<path d="M 0 300.0 C 250.0,310.0 750.0,310.0 1000,310.0 l 0,320.0 l -1000,0z" fill="#e0e0f0" stroke="#f0f0f0"/>
+<path d="M 0 400.0 C 250.0,410.0 750.0,410.0 1000,410.0 l 0,420.0 l -1000,0z" fill="#e0e0f0" stroke="#f0f0f0"/>
+<path d="M 0 500.0 C 250.0,510.0 750.0,510.0 1000,510.0 l 0,520.0 l -1000,0z" fill="#e0e0f0" stroke="#f0f0f0"/>
+<path d="M 0 600.0 C 250.0,610.0 750.0,610.0 1000,610.0 l 0,620.0 l -1000,0z" fill="#e0e0f0" stroke="#f0f0f0"/>
+<path d="M 0 700.0 C 250.0,710.0 750.0,710.0 1000,710.0 l 0,720.0 l -1000,0z" fill="#e0e0f0" stroke="#f0f0f0"/>
+<path d="M 0 800.0 C 250.0,810.0 750.0,810.0 1000,810.0 l 0,820.0 l -1000,0z" fill="#e0e0f0" stroke="#f0f0f0"/>
+<path d="M 0 900.0 C 250.0,910.0 750.0,910.0 1000,910.0 l 0,920.0 l -1000,0z" fill="#e0e0f0" stroke="#f0f0f0"/>
+</g></svg>

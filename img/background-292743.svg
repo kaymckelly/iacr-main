@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86.699mm" height="42.333mm" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" preserveAspectRatio="none" text-rendering="geometricPrecision" version="1.0" viewBox="0 0 8670 4233" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">.fil9 {fill:none} .fil1 {fill:url(#a)} .fil0 {fill:url(#i)} .fil2 {fill:url(#h)} .fil8 {fill:url(#g)} .fil3 {fill:url(#f)} .fil7 {fill:url(#e)} .fil4 {fill:url(#d)} .fil6 {fill:url(#c)} .fil5 {fill:url(#b)}</style>
+  <clipPath id="j">
+   <path d="m2806-670h2705v3151h-2705v-3151z"/>
+  </clipPath>
+  <linearGradient id="a" x1="2200.2" x2="6054.2" y1="2714.8" y2="-1384" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#4D4D4D" offset="0"/>
+   <stop stop-color="#fff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="i" x1="2579.4" x2="6356.2" y1="2127.1" y2="-1889.6" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient>
+  <linearGradient id="h" x1="1895" x2="5878.1" y1="3381" y2="-855.08" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient>
+  <linearGradient id="g" x1="2701.1" x2="6743.5" y1="7012.3" y2="2713.1" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient>
+  <linearGradient id="f" x1="1629.8" x2="5877" y1="4151.7" y2="-365.28" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient>
+  <linearGradient id="e" x1="2203.2" x2="6447" y1="6612.2" y2="2098.9" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient>
+  <linearGradient id="d" x1="1507.4" x2="5956.1" y1="4902.7" y2="171.37" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient>
+  <linearGradient id="c" x1="1798" x2="6246" y1="6152.4" y2="1422" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient>
+  <linearGradient id="b" x1="1563.7" x2="6080.7" y1="5576.8" y2="772.88" gradientUnits="userSpaceOnUse" xlink:href="#a"></linearGradient>
+ </defs>
+ <g clip-path="url(#j)">
+  <path class="fil0" d="m7855 846c5 544-154 1055-433 1493-313-1315-1591-2294-3112-2282-1154 9-2160 587-2705 1442-46-194-71-396-73-603-13-1608 1392-2922 3139-2936 1746-14 3172 1278 3184 2886z"/>
+  <path class="fil1" d="m7589 793c99 536 32 1066-167 1546-536-1241-1965-1983-3461-1707-1135 210-2025 953-2413 1890-80-183-140-378-177-582-292-1580 864-3119 2581-3435 1717-317 3346 707 3637 2288z"/>
+  <path class="fil2" d="m7318 788c191 510 216 1044 104 1551-744-1129-2279-1612-3705-1080-1081 403-1829 1290-2048 2280-110-167-203-348-275-542-562-1506 309-3221 1945-3832 1636-610 3418 116 3979 1623z"/>
+  <path class="fil3" d="m7051 829c276 469 394 991 371 1510-928-983-2524-1191-3836-420-995 585-1577 1588-1622 2601-137-145-260-307-365-486-814-1386-255-3226 1251-4111 1505-885 3386-480 4201 906z"/>
+  <path class="fil4" d="m6794 916c353 415 560 908 628 1423-1085-806-2693-735-3851 252-878 749-1277 1838-1145 2844-160-120-309-258-444-416-1043-1223-811-3133 518-4266 1328-1133 3251-1060 4294 163z"/>
+  <path class="fil5" d="m6557 1047c419 347 709 797 865 1292-1208-606-2780-256-3748 917-735 890-939 2032-634 2999-179-89-350-200-510-332-1239-1023-1343-2944-231-4291 1112-1346 3018-1608 4258-585z"/>
+  <path class="fil6" d="m6345 1217c474 269 837 661 1077 1122-1295-387-2782 230-3532 1554-570 1004-572 2164-104 3064-191-58-379-137-559-239-1398-792-1834-2667-973-4186s2693-2108 4091-1315z"/>
+  <path class="fil7" d="m6167 1421c513 182 939 506 1255 918-1343-156-2700 710-3209 2144-386 1088-187 2230 430 3035-198-23-397-69-592-138-1515-538-2269-2308-1685-3953 584-1646 2286-2544 3801-2006z"/>
+  <path class="fil8" d="m6027 1653c537 90 1012 335 1395 686-1350 79-2535 1168-2788 2668-191 1139 203 2229 951 2915-200 11-403 1-607-33-1585-267-2636-1879-2346-3601s1809-2902 3395-2635z"/>
+ </g>
+ <path class="fil9" d="m2806-670h2705v3151h-2705v-3151z"/>
+</svg>

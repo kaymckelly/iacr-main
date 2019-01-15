@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="2000"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- created with "shuffle.py -margin 25 -num 64 -color #c0c0c0 -node_color #c0c0c0" -->
+   
+<defs><linearGradient id="col"><stop offset="0" stop-color="#c0c0c0"/></linearGradient><linearGradient id="node"><stop offset="0" stop-color="#c0c0c0"/></linearGradient>
+</defs><g>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="-83.3333333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="2083.33333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,-83.3333333333 Q 225,-83.3333333333 960,1000.0 T 1895,2083.33333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="-50.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1183.33333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,-50.0 Q 225,-50.0 960,566.666666667 T 1895,1183.33333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="-16.6666666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="783.333333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,-16.6666666667 Q 225,-16.6666666667 960,383.333333333 T 1895,783.333333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="16.6666666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="250.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,16.6666666667 Q 225,16.6666666667 960,133.333333333 T 1895,250.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="50.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="316.666666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,50.0 Q 225,50.0 960,183.333333333 T 1895,316.666666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="83.3333333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1350.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,83.3333333333 Q 225,83.3333333333 960,716.666666667 T 1895,1350.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="116.666666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1450.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,116.666666667 Q 225,116.666666667 960,783.333333333 T 1895,1450.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="150.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1083.33333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,150.0 Q 225,150.0 960,616.666666667 T 1895,1083.33333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="183.333333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1716.66666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,183.333333333 Q 225,183.333333333 960,950.0 T 1895,1716.66666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="216.666666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1583.33333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,216.666666667 Q 225,216.666666667 960,900.0 T 1895,1583.33333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="250.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="583.333333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,250.0 Q 225,250.0 960,416.666666667 T 1895,583.333333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="283.333333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1216.66666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,283.333333333 Q 225,283.333333333 960,750.0 T 1895,1216.66666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="316.666666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="16.6666666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,316.666666667 Q 225,316.666666667 960,166.666666667 T 1895,16.6666666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="350.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="750.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,350.0 Q 225,350.0 960,550.0 T 1895,750.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="383.333333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="683.333333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,383.333333333 Q 225,383.333333333 960,533.333333333 T 1895,683.333333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="416.666666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="2050.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,416.666666667 Q 225,416.666666667 960,1233.33333333 T 1895,2050.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="450.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="883.333333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,450.0 Q 225,450.0 960,666.666666667 T 1895,883.333333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="483.333333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="816.666666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,483.333333333 Q 225,483.333333333 960,650.0 T 1895,816.666666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="516.666666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="183.333333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,516.666666667 Q 225,516.666666667 960,350.0 T 1895,183.333333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="550.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1750.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,550.0 Q 225,550.0 960,1150.0 T 1895,1750.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="583.333333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1650.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,583.333333333 Q 225,583.333333333 960,1116.66666667 T 1895,1650.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="616.666666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1516.66666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,616.666666667 Q 225,616.666666667 960,1066.66666667 T 1895,1516.66666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="650.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="416.666666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,650.0 Q 225,650.0 960,533.333333333 T 1895,416.666666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="683.333333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1050.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,683.333333333 Q 225,683.333333333 960,866.666666667 T 1895,1050.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="716.666666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1416.66666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,716.666666667 Q 225,716.666666667 960,1066.66666667 T 1895,1416.66666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="750.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="916.666666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,750.0 Q 225,750.0 960,833.333333333 T 1895,916.666666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="783.333333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1783.33333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,783.333333333 Q 225,783.333333333 960,1283.33333333 T 1895,1783.33333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="816.666666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="516.666666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,816.666666667 Q 225,816.666666667 960,666.666666667 T 1895,516.666666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="850.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1283.33333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,850.0 Q 225,850.0 960,1066.66666667 T 1895,1283.33333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="883.333333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="616.666666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,883.333333333 Q 225,883.333333333 960,750.0 T 1895,616.666666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="916.666666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1850.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,916.666666667 Q 225,916.666666667 960,1383.33333333 T 1895,1850.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="950.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="450.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,950.0 Q 225,950.0 960,700.0 T 1895,450.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="983.333333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="150.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,983.333333333 Q 225,983.333333333 960,566.666666667 T 1895,150.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1016.66666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="83.3333333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1016.66666667 Q 225,1016.66666667 960,550.0 T 1895,83.3333333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1050.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1983.33333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1050.0 Q 225,1050.0 960,1516.66666667 T 1895,1983.33333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1083.33333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="716.666666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1083.33333333 Q 225,1083.33333333 960,900.0 T 1895,716.666666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1116.66666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1116.66666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1116.66666667 Q 225,1116.66666667 960,1116.66666667 T 1895,1116.66666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1150.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="950.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1150.0 Q 225,1150.0 960,1050.0 T 1895,950.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1183.33333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1816.66666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1183.33333333 Q 225,1183.33333333 960,1500.0 T 1895,1816.66666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1216.66666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="216.666666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1216.66666667 Q 225,1216.66666667 960,716.666666667 T 1895,216.666666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1250.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="350.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1250.0 Q 225,1250.0 960,800.0 T 1895,350.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1283.33333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="550.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1283.33333333 Q 225,1283.33333333 960,916.666666667 T 1895,550.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1316.66666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1550.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1316.66666667 Q 225,1316.66666667 960,1433.33333333 T 1895,1550.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1350.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1883.33333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1350.0 Q 225,1350.0 960,1616.66666667 T 1895,1883.33333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1383.33333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="2016.66666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1383.33333333 Q 225,1383.33333333 960,1700.0 T 1895,2016.66666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1416.66666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="-16.6666666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1416.66666667 Q 225,1416.66666667 960,700.0 T 1895,-16.6666666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1450.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1483.33333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1450.0 Q 225,1450.0 960,1466.66666667 T 1895,1483.33333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1483.33333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1250.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1483.33333333 Q 225,1483.33333333 960,1366.66666667 T 1895,1250.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1516.66666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="850.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1516.66666667 Q 225,1516.66666667 960,1183.33333333 T 1895,850.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1550.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1150.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1550.0 Q 225,1550.0 960,1350.0 T 1895,1150.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1583.33333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="116.666666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1583.33333333 Q 225,1583.33333333 960,850.0 T 1895,116.666666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1616.66666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="50.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1616.66666667 Q 225,1616.66666667 960,833.333333333 T 1895,50.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1650.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="650.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1650.0 Q 225,1650.0 960,1150.0 T 1895,650.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1683.33333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1616.66666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1683.33333333 Q 225,1683.33333333 960,1650.0 T 1895,1616.66666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1716.66666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="483.333333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1716.66666667 Q 225,1716.66666667 960,1100.0 T 1895,483.333333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1750.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1016.66666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1750.0 Q 225,1750.0 960,1383.33333333 T 1895,1016.66666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1783.33333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1950.0" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1783.33333333 Q 225,1783.33333333 960,1866.66666667 T 1895,1950.0"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1816.66666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1383.33333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1816.66666667 Q 225,1816.66666667 960,1600.0 T 1895,1383.33333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1850.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="283.333333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1850.0 Q 225,1850.0 960,1066.66666667 T 1895,283.333333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1883.33333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="983.333333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1883.33333333 Q 225,1883.33333333 960,1433.33333333 T 1895,983.333333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1916.66666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1916.66666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1916.66666667 Q 225,1916.66666667 960,1916.66666667 T 1895,1916.66666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1950.0" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="383.333333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1950.0 Q 225,1950.0 960,1166.66666667 T 1895,383.333333333"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="1983.33333333" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1316.66666667" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,1983.33333333 Q 225,1983.33333333 960,1650.0 T 1895,1316.66666667"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="15" cy="2016.66666667" r="10"/>
+<circle stroke="url(#node)" stroke-width="1" fill="none" cx="1905" cy="1683.33333333" r="10"/>
+<path fill="none" stroke="#c0c0c0" stroke-width="1" d="M 25,2016.66666667 Q 225,2016.66666667 960,1850.0 T 1895,1683.33333333"/>
+</g></svg>
