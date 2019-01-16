@@ -246,12 +246,17 @@ body a.dropdown-item:hover {
     background-size: cover; */
     /* background-color: rgba(39, 135, 197, 0.1); */
 /*    background: radial-gradient(ellipse at 50% 80%, rgba(151,190,215, 0.5) 50%, rgba(27,112,168, .5) 100%);*/
-    background: radial-gradient(ellipse at 25% 70%, rgba(39,135,197, 0.2) 50%, rgba(39,135,197, .5) 100%);
+    background: radial-gradient(ellipse at 25% 70%, rgba(39,135,197, 0.1) 50%, rgba(39,135,197, .3) 100%);
 }
 .dflt-footer a {
 /*    color: #3E7307; */
     /*  color: #046577; */
     color: #102a83;
+}
+.dflt-footer ul {
+    border-left: 3px solid #C58427;
+    padding-left: 10px;
+    margin-top: 6px;
 }
 
 
@@ -347,12 +352,18 @@ a#searchLink {
 .blues3-topbar {
     background: linear-gradient(to right, rgba(255,255,255,.95) 0%, rgba(255,255,255,.7) 60%, rgba(255,255,255,0.4) 100%), url('../img/background-2462431_1920.jpg');
 }
-.blues3-footer {
-    border-top: 4px solid #1b70a8;
-}
+/*.blues3-footer {
+    border-top: 4px solid #01436D;
+}*/
 .blues3-footer a {
     color: #102a83 !important;
 }
+.blues3-footer ul {
+  margin-top: 10px;
+  padding-left: 10px !important;
+  border-left: 3px solid #A29001; /*#A24700; */
+}
+
 
 
 
@@ -448,6 +459,11 @@ a#searchLink {
 .new-footer a {
     color: #102a83 !important;
 }
+.new-footer ul {
+  margin-top: 10px;
+  padding-left: 10px !important;
+  border-left: 3px solid #1A92A2;
+}
 .new-bottomOfFooter a {
     color: #ffffff !important;
 }
@@ -495,6 +511,11 @@ a#searchLink {
 .plainteal-footer a {
     color: #102a83 !important;
 }
+.plainteal-footer ul {
+  margin-top: 10px;
+  padding-left: 10px !important;
+  border-left: 3px solid #CF8D17;
+}
 .plainteal-bottomOfFooter a {
     color: #ffffff !important;
 }
@@ -529,12 +550,18 @@ a#searchLink {
 }
 
 .default-footer {
-  border-top: 4px solid #046577;
-  background-color: #FFFFFF;
+/*  border-top: 4px solid #046577;*/
+  background-color: #F0F0F0;
 }
 
 .default-footer  a {
   color: #102a83 !important;
+}
+
+.default-footer ul {
+  margin-top: 10px;
+  padding-left: 10px !important;
+  border-left: 3px solid #CF8D17;
 }
 
 .default-menubar, .default-menubar .dropdown-menu {
