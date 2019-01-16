@@ -191,18 +191,27 @@ a.localSearchLink {
 }
 
 .green-menubar {
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #142F07;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f9b0f, #142F07);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f9b0f, #142F07); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .green-menubar .dropdown-menu {
   background-color: #102806;
 }
 
-.green-search {
-  background: #234B0A;
+.green-menubar #logo {
+  box-shadow: 0 0 20px 2px rgba(254, 254, 254, 1);
+  border-radius: 60%;
+}
+
+/* .green-search {
+  background-color: #234B0A;
   color: #040404;
+} */
+
+.green-body .searchDropdownParent {
+  background: #142F07 !important;
 }
 
 .green-card-header {
@@ -222,6 +231,12 @@ a.localSearchLink {
   background: rgba(242, 242, 242, 0.6);
 }
 
+.green-footer ul {
+  margin-top: 6px;
+  padding-left: 15px;
+  border-left: 3px solid #0f9b0f;
+}
+
 .green-footer a {
   color: #102a83 !important;
 }
@@ -237,7 +252,6 @@ a.localSearchLink {
 .blues2-menubar, .blues2-menubar .dropdown-menu {
   /* background: #1b70a8; */
     background-image: linear-gradient(to bottom, #5990C1 0%, #23476C 100%);
-
 }
 
 .blues2-search {
@@ -258,15 +272,6 @@ a.localSearchLink {
   color: #FEFEFE;
   font-size: 1.2em !important;
 }
-
-/* TODO: these don't do anything lulz */
-/* .blues2-nav-link:hover {
-  color: #e0e0e0 !important;
-} */
-
-/* .blues2-nav-link div.dropdown-menu a:hover {
-  background-color: green !important;
-} */
 
 .blues2-footer {
   border-top: 4px solid #BAC8E0;
