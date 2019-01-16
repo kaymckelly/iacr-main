@@ -186,43 +186,59 @@ a.localSearchLink {
 
 /***** Greens *****/
 .green-body {
-    background: #f0f0ff;
-    color: #040404;
+  background-color: rgba(238, 252, 233, 0.1);
+  color: #040404;
 }
 
-.green-menubar, .green-menubar .dropdown-menu {
-    /* background: #035024; */
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+.green-menubar {
+  background: #142F07;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f9b0f, #142F07);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f9b0f, #142F07); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.green-search {
-    background: #0ba360;
-    color: #040404;
+.green-menubar .dropdown-menu {
+  background-color: #102806;
+}
+
+.green-menubar #logo {
+  box-shadow: 0 0 20px 2px rgba(254, 254, 254, 1);
+  border-radius: 60%;
+}
+
+/* .green-search {
+  background-color: #234B0A;
+  color: #040404;
+} */
+
+.green-body .searchDropdownParent {
+  background: #142F07 !important;
 }
 
 .green-card-header {
-    /*    background: #27c587;*/
-    background: #0ba360;
-    color: #202020;
+  background: #234B0A;
 }
 
 .green-card-header a,h2 {
-    color: #202020;
+  color: #f0f0f0;
 }
 
 .green-nav-link {
-    color: #f0f0f0 !important;
-    font-size: 1.2em !important;
-/*    color: #404040 !important; */
+  color: #f0f0f0 !important;
+  font-size: 1.2em !important;
 }
 
 .green-footer {
-    background: #E6F2EF;
-    border-top: 4px solid #035024;
+  background: rgba(242, 242, 242, 0.6);
+}
+
+.green-footer ul {
+  margin-top: 6px;
+  padding-left: 15px;
+  border-left: 3px solid #0f9b0f;
 }
 
 .green-footer a {
-    color: #102a83 !important;
+  color: #102a83 !important;
 }
 
 
@@ -236,7 +252,6 @@ a.localSearchLink {
 .blues2-menubar, .blues2-menubar .dropdown-menu {
   /* background: #1b70a8; */
     background-image: linear-gradient(to bottom, #5990C1 0%, #23476C 100%);
-
 }
 
 .blues2-search {
@@ -257,15 +272,6 @@ a.localSearchLink {
   color: #FEFEFE;
   font-size: 1.2em !important;
 }
-
-/* TODO: these don't do anything lulz */
-/* .blues2-nav-link:hover {
-  color: #e0e0e0 !important;
-} */
-
-/* .blues2-nav-link div.dropdown-menu a:hover {
-  background-color: green !important;
-} */
 
 .blues2-footer {
   border-top: 4px solid #BAC8E0;
