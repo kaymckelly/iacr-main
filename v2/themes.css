@@ -352,16 +352,16 @@ a#searchLink {
 .blues3-topbar {
     background: linear-gradient(to right, rgba(255,255,255,.95) 0%, rgba(255,255,255,.7) 60%, rgba(255,255,255,0.4) 100%), url('../img/background-2462431_1920.jpg');
 }
-.blues3-footer {
+/*.blues3-footer {
     border-top: 4px solid #01436D;
-}
+}*/
 .blues3-footer a {
     color: #102a83 !important;
 }
 .blues3-footer ul {
   margin-top: 10px;
   padding-left: 10px !important;
-  border-left: 3px solid #01436D;
+  border-left: 3px solid #A29001; /*#A24700; */
 }
 
 
@@ -550,8 +550,8 @@ a#searchLink {
 }
 
 .default-footer {
-  border-top: 4px solid #046577;
-  background-color: #FFFFFF;
+/*  border-top: 4px solid #046577;*/
+  background-color: #F0F0F0;
 }
 
 .default-footer  a {
