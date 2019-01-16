@@ -549,7 +549,17 @@ a#searchLink {
         background-color: #01436D !important;
     }
 }
+.default-bottomOfFooter {
+    background-color: #046577 !important;
+    color: #ffffff !important;
+}
 
+.default-footer a {
+    color: #102a83 !important;
+}
+.default-bottomOfFooter a {
+    color: #ffffff !important;
+}
 
 /* Monochrome with accent II (theme from https://coolors.co/972045-e0e0ef-3b5099-102a83-0b1b54) */
 .seaweed-topbar {
