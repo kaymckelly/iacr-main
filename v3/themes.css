@@ -258,25 +258,27 @@ a.localSearchLink {
 }
 
 .blues2-search {
-  background-color: #6b8dc7;
+  background-color: #9AACB8;
   color: #f0f0f0;
 }
 
 .blues2-card-header {
-  background-color: #5E7AAA;
+  background-color: #56B1BF;
 }
 
 .blues2-card-header a, .blues2-card-header h2 {
   color: #f0f0f0;
 }
 
-.blues2-nav-link {
+a.blues2-nav-link {
   color: #20282d !important;
   font-size: 1.2em !important;
 }
 
-.blues2-footer {
-  border-top: 4px solid #BAC8E0;
+.blues2-footer ul {
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #9AACB8;
 }
 
 .blues2-footer a {
