@@ -249,19 +249,21 @@ a.localSearchLink {
   color: #080808;
 }
 
-.blues2-menubar, .blues2-menubar .dropdown-menu {
-  /* background: #1b70a8; */
-    background-image: linear-gradient(to bottom, #5990C1 0%, #23476C 100%);
+.blues2-menubar {
+  background-image: linear-gradient(to bottom, #DDE2E3 0%, #9AACB8 100%);
+}
+
+.blues2-menubar .dropdown-menu {
+  background-color: #9AACB8;
 }
 
 .blues2-search {
-  background: #6a85b6;
+  background-color: #6b8dc7;
   color: #f0f0f0;
 }
 
 .blues2-card-header {
-  background: #6a85b6;
-  color: #f0f0f0;
+  background-color: #5E7AAA;
 }
 
 .blues2-card-header a, .blues2-card-header h2 {
@@ -269,7 +271,7 @@ a.localSearchLink {
 }
 
 .blues2-nav-link {
-  color: #FEFEFE;
+  color: #20282d !important;
   font-size: 1.2em !important;
 }
 
