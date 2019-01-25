@@ -382,12 +382,12 @@ a.blues2-nav-link {
   color: #0C1F60;
 }
 
-.cube-footer a.h6 {
+/* .cube-footer a.h6 {
+} */
+.cube-footer ul {
+  margin-top: 5px;
   border-left: 3px solid #317DA0;
   padding-left: 10px;
-}
-.cube-footer ul {
-    margin-top: 5px;
 }
 
 .cube-bottomOfFooter, .cube-bottomOfFooter a {
