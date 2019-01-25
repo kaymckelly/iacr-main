@@ -241,6 +241,11 @@ a.localSearchLink {
   color: #102a83 !important;
 }
 
+.green-bottomOfFooter, .green-bottomOfFooter a {
+  background-color: #234B0A;
+  color: #fff !important;
+}
+
 
 
 /* NOTE: not currently in use */
