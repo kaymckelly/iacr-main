@@ -460,6 +460,12 @@ a.localSearchLink {
   /* background-image: linear-gradient(to bottom, #FDFBFB 0%, #E6E5E5 82%, #338696 92%, #276572 97%); */
 }
 
+.underwater-footer ul {
+  margin-top: 6px;
+  padding-left: 10px;
+  border-left: 3px solid #338696;
+}
+
 .underwater-footer a {
   color: #102a83 !important;
 }
