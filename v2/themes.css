@@ -50,7 +50,7 @@ body a.dropdown-item:hover {
 
 /******* theme: mono *******/
 .mono-body {
-    background: #F3F4F8 !important;
+    background: #F8F8F8 !important;
     color: #080808 !important;
 }
 .mono-menubar, .mono-menubar .dropdown-menu {
@@ -92,15 +92,19 @@ body a.dropdown-item:hover {
     background: #E9EBF3 !important;
 }
 .mono-footer {
-    background:  #F3F4F8 !important; /* D3D8E8; */
+    /*    background:  #F3F4F8 !important;*/
+    /*    background-image: linear-gradient(to bottom, rgba(255,255,255,.85) 0%, rgba(255,255,255,.6) 60%, rgba(255,255,255,0.4) 100%), url('../img/triangles2.svg'); */
+    background-image:  linear-gradient(
+                               rgba(255, 255, 255, 0.6),
+                               rgba(255, 255, 255, 0.6)
+                                       ), url('../img/triangles2.svg');
+    background-size: cover;
+/*    box-shadow: inset 0 0 0 1000px rgba(255,255,255,.6); */
 }
 
 .mono-footer a {
     /*    color: #0B1B54; */
     color: #0F2778;
-}
-.mono-footer {
-    border-top: 4px solid #102a83;
 }
 .mono-footer ul {
     margin-top: 6px;
@@ -278,7 +282,7 @@ a#searchLink {
 }
 
 
-/******* theme: yet another blue *******/
+/******* theme: blue gradient menubar *******/
 .blues2-body {
     background: #f8f9fa;
     color: #080808;
@@ -314,13 +318,14 @@ a#searchLink {
     color: #e0e0e0 !important;
 }
 .blues2-topbar {
-    /* background-image: url(../img/flipped_gradient.png);
-    background-size: cover; */
+    background-image: url(../img/footies.svg);
+    background-size: cover;
+    
 }
 .blues2-footer {
     /*    border-top: 4px solid #1b70a8; */
 /*    background: radial-gradient(ellipse at 50% 80%, rgba(151,190,215, 0.5) 50%, rgba(27,112,168, .5) 100%);*/
-    background-color: #E8ECF6;
+    background-color: #F2F5FA;
 }
 .blues2-footer ul {
     border-left: 3px solid #95BA12;
@@ -329,6 +334,13 @@ a#searchLink {
 }
 .blues2-footer a {
     color: #102a83;
+}
+.blues2-bottomOfFooter {
+    background-color: #0837a0 !important;
+    color: #ffffff !important;
+}
+.blues2-bottomOfFooter a {
+    color: #ffffff !important;
 }
 
 
@@ -373,7 +385,7 @@ a#searchLink {
 .blues3-footer ul {
   margin-top: 10px;
   padding-left: 10px !important;
-  border-left: 3px solid #A29001; /*#A24700; */
+  border-left: 3px solid #E4CA01; /*#A24700; */
 }
 
 
