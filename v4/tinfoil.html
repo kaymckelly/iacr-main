@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <title>For our non-javascript users</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://iacr.org/libs/css/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <script>
+      window.load('https://iacr.org/');
+    </script>
+    <div class="container">
+      <h1>For our non-javascript users</h1>
+      <p>
+        If you are seeing this, it's probably because you tried to
+        visit <a href="https://iacr.org/">iacr.org</a> with a browser
+        that does not run javascript. I'm not going to try and convince
+        you to turn on javascript, but I'm going to explain why I think
+        this risk is overstated. A little knowledge goes a long ways
+        on the subject.
+      </p>
+      <p>
+        The web has a 25-year-old history of security problems, and
+        there is good reason to be skeptical about security when
+        browsing the web. On the other hand, most of the modern web is
+        now built with javascript, and a large amount of effort has
+        gone into making it <em>possible</em> to use javascript
+        safely. Unfortunately much of the use of javascript on the web
+        is designed to facilite advertising and data collection for
+        the <a href="https://en.wikipedia.org/wiki/Surveillance_capitalism">surveillance
+        economy</a>. The result is that this de facto use of javascript
+        has led to a loss of trust in the technology itself.
+      </p>
+      <H3>Same origin policy</h3>
+      <p>
+        Most of the security and privacy problems of javascript are
+        addressed by
+        the <a href="https://en.wikipedia.org/wiki/Same-origin_policy">same-origin
+          policy</a> implemented by browsers.  This policy was formed
+        back in the late 90s, and was the cornerstone of the first web
+        security models.
+      </p>
+      <p>
+        IACR has recently adopted the policy that all new javascript,
+        css, and images will be hosted directly from iacr.org (with a few
+        exceptions below). We will
+        no longer use content distribution networks, and we will no
+        longer use software from third-party sources if it must be
+        hosted from their site.  This policy change is to address two
+        issues:
+        <ol>
+          <li>When a page embeds third-party content that is hosted from another
+            server, the result is that the third party site gets notified
+            about every visitor to the host site because the browser must request
+            the embedded content. This is a privacy leak that
+            some businesses have exploited to boost their business, but provides
+            no direct value to the user.
+          </li>
+          <li>Third-party javascript that is loaded from a third-party site
+            has the ability to communicate back to that server. By contrast, the
+            same-origin policy implemented by web browsers restricts the access of
+            javascript that is hosted from iacr.org so that it cannot communicate
+            with other sites.</li>
+        </ol>
+      </p>
+      <h3>Exceptions to the policy</h3>
+      <p>
+        There are a few exceptions to the policy mentioned
+        above. First, for users who choose to make use of Google
+        Search, the searchbar at the top will by default take you to a
+        page on iacr.org that embeds javascript from Google to fetch
+        search results for iacr.org. There is
+        an <a href="/lse">alternative search stack</a> that resides on
+        iacr.org and does not require third-party content.
+      </p>
+      <p>
+        Second, there are a few pages on the site that use javascript
+        to display map information from third parties. These will
+        continue to load javascript and tiles from open maps.
+      </p>
+      <p>
+        Finally, it will take us a while to completely remove
+        third-party content, but we will start with the most
+        commonly visited pages.
+      </p>
+      <p>
+        Cryptographers are professionally paranoid. That a good thing - it teaches us
+        to think adversarially about risks, and to be conservative in the adoption
+        of technology. At the same time, life is about balancing risk vs reward, not
+        about avoiding all risk at all costs.
+        <div class="row">
+          <div class="col-4"></div>
+          <blockquote class="blockquote col-4">
+            <p>
+              In the end, we're all dead.
+            </p>
+            <p class="text-right">
+              - John Maynard Keynes
+            </p>
+          </blockquote>
+          <div class="col-4"></div>
+        </div>
+      </p>
+      <h3>How to use this site</h3>
+      <p>
+        One way to use this site is to create an exception in your browser
+        to allow javascript to run on iacr.org. The method for doing this
+        depends on your browser, and hopefully the discussion above will
+        give you enough confidence to do this.
+      </p>
+      <p>
+        Much of the content on this site can be browsed without
+        javascript. Due to maintainability issues, the
+        navigation <a href="header.html">header</a>
+        and <a href="footer.html">footer</a> are fetched via
+        javascript ajax requests and inserted into pages on
+        iacr.org. These pages are simple html files themselves, and
+        will allow you to navigate to most pages on iacr.org.  You can
+        bookmark them in your browser for a viable home page on
+        iacr.org.
+        </p>
+    </div>
+    </div>
+  </body>
+</html>
+

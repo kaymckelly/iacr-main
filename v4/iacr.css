@@ -1,0 +1,209 @@
+.masonry .card {
+  margin-bottom: 0.5rem;
+}
+
+.masonry .card .card-body {
+  padding:  0.5rem 0.5rem 0rem 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .masonry {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+  .masonry > .card {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* TODO: Build custom bootstrap. */
+.masonry .card-header {
+  font-size: 2em !important;
+}
+
+.navbarIacrAcronym {
+  font-size: 2em !important;
+}
+
+#iacrLogo {
+  max-height: 120px !important;
+  max-width: 120px !important;
+}
+
+#searchBtn2 {
+  height: 20px;
+}
+img.searchBtn {
+  height: 20px;
+}
+img#searchBtnOfRecord {
+  position: absolute;
+  width: auto;
+  bottom: 10px;
+  right: 10px;
+  margin-top: 0;
+}
+
+#searchBtn {
+  height: 20px;
+}
+@media (min-width: 992px) {
+  #searchBox:focus {
+    min-width: 350px !important;
+  }
+  #searchInput {
+      min-width: 900px !important;
+  }
+}
+
+img.socialBtn {
+    height: 2.5em;
+}
+
+/* border-bottom doesn't work on this element because it conflicts with
+   dropdown-menu */
+#searchDropdown {
+    .border-top 0px !important;
+    border-radius: 0 0 5px 5px !important;
+}
+#iacrDescription {
+    font-size: 1.25rem;
+}
+
+/* NOTE: hover effect for navbar only on larger screens. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
+@media only screen and (min-width: 992px) {
+ #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
+      display: block;
+/*      border-left: 3px solid #F2AC10 !important; */
+  }
+}
+
+.navbar-nav li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.navbar-nav .dropdown-menu {
+  margin-top: 0px;
+  border-radius: 0 0 .25rem .25rem;
+}
+
+/*** Footer 3 only ***/
+#pageFooterAbout {
+  hyphens: auto;
+}
+
+footer#v3 ul.nav {
+  padding-left: 5px;
+}
+
+img.socialBtn {
+  height: 2.5em;
+}
+
+/* **************** this should be removed ********************/
+span.remover {
+    opacity: 0;
+    font-size: 1em;
+    cursor:cell;
+}
+span.remover:hover {
+    opacity: 1;
+    color: red;
+}
+#searchDropdown {
+    z-index: 800 !important;
+}
+#pageHeader {
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+}
+#searchDropdown {
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.4);
+}
+/* ****************************** toggler ********************/
+.nofocus:focus {
+    outline: none !important;
+}
+
+.cta {
+    height: 35px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.toggle-btn {
+    height: 2px;
+    width: 25px;
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+}
+.toggle-btn:before {
+    content: "";
+    height: 2px;
+    width: 25px;
+    box-shadow: 0 -10px 0 0 #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.toggle-btn:after {
+    content: "";
+    height: 2px;
+    width: 25px;
+    box-shadow: 0 10px 0 0 #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.active .toggle-btn {
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.active .toggle-btn:before {
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+.active .toggle-btn:after {
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+.active .type1:before {
+    left: 6px;
+    transform: translateY(6px) rotate(-45deg);
+}
+.active .type1:after {
+    top: 0;
+    left: 6px;
+    transform: translateY(-8px) rotate(45deg);
+}
+.searchButtons {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.searchButtons:hover {
+  color: #fff;
+  background-color: #102a83;
+  border-color: #102a83;
+}
+/* Smaller lighter font in desktop footer. */
+@media only screen and (min-width: 767px) {
+    footer#v1, footer#v2 {
+        font-size: 80%;
+        font-weight: 400;
+    }
+}
