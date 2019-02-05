@@ -18,8 +18,15 @@ colors = ['#' + c for c in args.colors.split(',')]
 
 doc = minidom.parse(args.file)
 
+for group in doc.getElementsByTagName('g'):
+    group.setAttribute('stroke', '#' + args.stroke)
 for path in doc.getElementsByTagName('path'):
     path.setAttribute('fill', random.choice(colors))
-    path.setAttribute('stroke', '#' + args.stroke)
+    if path.hasAttribute('opacity'):
+        path.removeAttribute('opacity')
+    if path.hasAttribute('stroke-width'):
+        path.removeAttribute('stroke-width')
+    if path.hasAttribute('stroke'):
+        path.removeAttribute('stroke')
 
 print(doc.toxml())
