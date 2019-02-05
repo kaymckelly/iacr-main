@@ -207,3 +207,11 @@ span.remover:hover {
         font-weight: 400;
     }
 }
+.searchDropdownParent {
+    position:absolute !important;
+    right: 0%;
+    top: 20px;
+}
+#searchDropdown2 {
+  width:90vw !important;
+}
