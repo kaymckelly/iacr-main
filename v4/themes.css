@@ -92,6 +92,15 @@ body a.dropdown-item:hover {
     border-left: 3px solid #f2AC10;
 }
 
+.default-bottomOfFooter {
+  color: #F0F0F0;
+  background-color: #102A83;
+}
+
+.default-bottomOfFooter a {
+  color: #F0F0F0;
+}
+
 
 /******* rando stuff *******/
 a#searchLink {
