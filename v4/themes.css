@@ -88,8 +88,17 @@ body a.dropdown-item:hover {
 }
 .default-footer ul {
     margin-top: 6px;
-    padding-left: 15px;
+    padding-left: 10px;
     border-left: 3px solid #f2AC10;
+}
+
+.default-bottomOfFooter {
+  color: #FFF;
+  background-color: #102A83;
+}
+
+.default-bottomOfFooter a {
+  color: #FFF;
 }
 
 
