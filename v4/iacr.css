@@ -132,64 +132,45 @@ span.remover:hover {
 .nofocus:focus {
     outline: none !important;
 }
+.icon-bar {
+    width: 29px;
+    height: 2px;
+    background-color: #F0F0F0;
+    display: block;
+    transition: all 0.3s;
+    margin-bottom: 6px
+}
 
-.cta {
-    height: 35px;
-    width: 25px;
-    cursor: pointer;
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
 }
 
-.toggle-btn {
-    height: 2px;
-    width: 25px;
-    background-color: #fff;
-    position: relative;
-    top: 50%;
-    left: 0;
-    margin: auto;
-    transition: all 0.3s ease-in-out;
+.navbar-toggler .middle-bar {
+    opacity: 0;
 }
-.toggle-btn:before {
-    content: "";
-    height: 2px;
-    width: 25px;
-    box-shadow: 0 -10px 0 0 #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.3s ease-in-out;
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
 }
-.toggle-btn:after {
-    content: "";
-    height: 2px;
-    width: 25px;
-    box-shadow: 0 10px 0 0 #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.3s ease-in-out;
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
 }
-.active .toggle-btn {
-    background-color: transparent;
-    transition: all 0.2s ease-in-out;
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
 }
-.active .toggle-btn:before {
-    top: 0;
-    transition: all 0.3s ease-in-out;
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
 }
-.active .toggle-btn:after {
-    top: 0;
-    transition: all 0.3s ease-in-out;
-}
-.active .type1:before {
-    left: 6px;
-    transform: translateY(6px) rotate(-45deg);
-}
-.active .type1:after {
-    top: 0;
-    left: 6px;
-    transform: translateY(-8px) rotate(45deg);
-}
+/* **************************** Search buttons */
 .searchButtons {
     background-color: transparent;
     border-color: #ffffff;
