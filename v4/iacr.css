@@ -109,16 +109,6 @@ img.socialBtn {
   height: 2.5em;
 }
 
-/* **************** this should be removed ********************/
-span.remover {
-    opacity: 0;
-    font-size: 1em;
-    cursor:cell;
-}
-span.remover:hover {
-    opacity: 1;
-    color: red;
-}
 #searchDropdown {
     z-index: 800 !important;
 }
@@ -178,8 +168,8 @@ span.remover:hover {
 }
 .searchButtons:hover {
   color: #fff;
-  background-color: #102a83;
-  border-color: #102a83;
+  background-color: #0A6F90;
+  border-color: #0A6F90;
 }
 /* Smaller lighter font in desktop footer. */
 @media only screen and (min-width: 767px) {
