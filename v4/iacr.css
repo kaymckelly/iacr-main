@@ -184,5 +184,50 @@ img.socialBtn {
     top: 20px;
 }
 #searchDropdown2 {
-  width:90vw !important;
+  width: 95vw;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
+/* These are mostly copied from .container in bootstrap so that the
+searchDropdown2 is sized correctly at different widths.  */
+@media (min-width: 300px) {
+  #searchDropdown2 {
+    max-width: 280px;
+  }
+}
+@media (min-width: 350px) {
+  #searchDropdown2 {
+    max-width: 320px;
+  }
+}
+@media (min-width: 420px) {
+  #searchDropdown2 {
+    max-width: 400px;
+  }
+}
+@media (min-width: 576px) {
+  #searchDropdown2 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  #searchDropdown2 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  #searchDropdown2 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #searchDropdown2 {
+    max-width: 1140px;
+  }
+}
+
