@@ -68,6 +68,10 @@ img.socialBtn {
     height: 2.5em;
 }
 
+a.social:hover {
+  text-decoration: none;
+}
+
 /* border-bottom doesn't work on this element because it conflicts with
    dropdown-menu */
 #searchDropdown {
@@ -230,4 +234,3 @@ searchDropdown2 is sized correctly at different widths.  */
     max-width: 1140px;
   }
 }
-
