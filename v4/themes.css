@@ -72,13 +72,9 @@ body a.dropdown-item:hover {
     background: #E9EBF3 !important;
 }
 .default-footer {
-    /*    background:  #F3F4F8 !important;*/
-    /*    background-image: linear-gradient(to bottom, rgba(255,255,255,.85) 0%, rgba(255,255,255,.6) 60%, rgba(255,255,255,0.4) 100%), url('../img/triangles2.svg'); */
-    background-image:  linear-gradient(
-                               rgba(255, 255, 255, 0.6),
-                               rgba(255, 255, 255, 0.6)
-                                       ), url('../img/triangles2.svg');
-    background-size: cover;
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../img/triangles2.svg');
+  background-size: cover; */
+  background-color: rgba(255, 255, 255, 0.8);
 /*    box-shadow: inset 0 0 0 1000px rgba(255,255,255,.6); */
 }
 
