@@ -1,3 +1,24 @@
+/*** Navbar (general) ***/
+.navbar-nav li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* NOTE: hover effect for navbar only on larger screens. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
+@media only screen and (min-width: 992px) {
+ #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
+      display: block;
+/*      border-left: 3px solid #F2AC10 !important; */
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  margin-top: 0px;
+  border-radius: 0 0 .25rem .25rem;
+}
+
+
+
 /*** Navbar (expanded) ***/
 #iacrLogo {
   max-height: 120px;
@@ -76,23 +97,6 @@ a.social:hover {
 
 
 /************* editing below this line ******************************/
-/* NOTE: hover effect for navbar only on larger screens. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
-@media only screen and (min-width: 992px) {
- #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
-      display: block;
-/*      border-left: 3px solid #F2AC10 !important; */
-  }
-}
-
-.navbar-nav li {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.navbar-nav .dropdown-menu {
-  margin-top: 0px;
-  border-radius: 0 0 .25rem .25rem;
-}
 
 /*** Footer 3 only ***/
 #pageFooterAbout {
