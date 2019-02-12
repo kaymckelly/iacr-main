@@ -98,19 +98,6 @@ a.social:hover {
 
 /************* editing below this line ******************************/
 
-/*** Footer 3 only ***/
-#pageFooterAbout {
-  hyphens: auto;
-}
-
-footer#v3 ul.nav {
-  padding-left: 5px;
-}
-
-img.socialBtn {
-  height: 2.5em;
-}
-
 #searchDropdown {
     z-index: 800 !important;
 }
