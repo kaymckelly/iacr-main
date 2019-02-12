@@ -7,7 +7,7 @@
 
 /*** Navbar (mobile) ***/
 .navbarIacrAcronym {
-  font-size: 2em !important;
+  font-size: 2em;
 }
 
 
@@ -49,29 +49,13 @@
 
 
 
-#searchBtn2 {
-  height: 20px;
-}
 img.searchBtn {
   height: 20px;
 }
-img#searchBtnOfRecord {
-  position: absolute;
-  width: auto;
-  bottom: 10px;
-  right: 10px;
-  margin-top: 0;
-}
 
-#searchBtn {
-  height: 20px;
-}
 @media (min-width: 992px) {
   #searchBox:focus {
     min-width: 350px !important;
-  }
-  #searchInput {
-      min-width: 900px !important;
   }
 }
 
