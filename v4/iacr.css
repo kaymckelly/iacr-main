@@ -75,6 +75,7 @@ a.social:hover {
 
 
 
+/************* editing below this line ******************************/
 /* NOTE: hover effect for navbar only on larger screens. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
 @media only screen and (min-width: 992px) {
  #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
