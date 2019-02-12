@@ -5,13 +5,35 @@
 }
 
 
+
 /*** Navbar (mobile) ***/
 .navbarIacrAcronym {
   font-size: 2em;
 }
 
 
+
 /*** Search ***/
+img.searchBtn {
+  height: 20px;
+}
+
+@media (min-width: 992px) {
+  #searchBox:focus {
+    min-width: 350px !important;
+  }
+}
+
+
+
+/*** Footer ***/
+img.socialBtn {
+    height: 2.5em;
+}
+
+a.social:hover {
+  text-decoration: none;
+}
 
 
 
@@ -48,24 +70,6 @@
 }
 
 
-
-img.searchBtn {
-  height: 20px;
-}
-
-@media (min-width: 992px) {
-  #searchBox:focus {
-    min-width: 350px !important;
-  }
-}
-
-img.socialBtn {
-    height: 2.5em;
-}
-
-a.social:hover {
-  text-decoration: none;
-}
 
 /* border-bottom doesn't work on this element because it conflicts with
    dropdown-menu */
