@@ -1,3 +1,24 @@
+/*** Navbar (general) ***/
+.navbar-nav li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* NOTE: hover effect for navbar only on larger screens. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
+@media only screen and (min-width: 992px) {
+ #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
+      display: block;
+/*      border-left: 3px solid #F2AC10 !important; */
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  margin-top: 0px;
+  border-radius: 0 0 .25rem .25rem;
+}
+
+
+
 /*** Navbar (expanded) ***/
 #iacrLogo {
   max-height: 120px;
@@ -16,6 +37,12 @@
 /*** Search ***/
 img.searchBtn {
   height: 20px;
+}
+
+#searchDropdown {
+  border-radius: 0 0 5px 5px !important;
+  z-index: 800 !important;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 992px) {
@@ -71,56 +98,12 @@ a.social:hover {
 
 
 
-/* border-bottom doesn't work on this element because it conflicts with
-   dropdown-menu */
-#searchDropdown {
-    .border-top 0px !important;
-    border-radius: 0 0 5px 5px !important;
-}
-#iacrDescription {
-    font-size: 1.25rem;
-}
+/************* editing below this line ******************************/
 
-/* NOTE: hover effect for navbar only on larger screens. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
-@media only screen and (min-width: 992px) {
- #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
-      display: block;
-/*      border-left: 3px solid #F2AC10 !important; */
-  }
-}
-
-.navbar-nav li {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.navbar-nav .dropdown-menu {
-  margin-top: 0px;
-  border-radius: 0 0 .25rem .25rem;
-}
-
-/*** Footer 3 only ***/
-#pageFooterAbout {
-  hyphens: auto;
-}
-
-footer#v3 ul.nav {
-  padding-left: 5px;
-}
-
-img.socialBtn {
-  height: 2.5em;
-}
-
-#searchDropdown {
-    z-index: 800 !important;
-}
 #pageHeader {
     box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
 }
-#searchDropdown {
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.4);
-}
+
 /* ****************************** toggler ********************/
 .nofocus:focus {
     outline: none !important;
