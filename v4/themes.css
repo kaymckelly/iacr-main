@@ -1,23 +1,47 @@
-
-/******* theme picker and general styling stuff *******/
+/*** General ***/
 #topbar h1 {
     text-shadow: 0 0 20px white;
 }
-/******* more general styling (not theme-dependent colors) *******/
+
+
+/*** Navbar ***/
 .navbar-iacr-acronym {
     color: #ffffff !important;
 }
 
-/* TODO: Build custom bootstrap for these. */
+/* TODO: build custom bootstrap for these */
 a.nav-link, a.dropdown-item {
   color: #EBF7EB !important;
 }
 
-/* A default for dropdown item hover. This should be part of each theme. */
 body a.dropdown-item:hover {
     background-color: #3B5099;
   /* rgba(146, 158, 198, 0.4); */
 }
+/* END todo */
+
+
+
+/*** Search ***/
+
+
+
+/*** Footer ***/
+
+
+
+/*** Home-specific (i.e. not used across pages) ***/
+
+
+
+
+/****************** editing below this line ******************/
+/******* theme picker and general styling stuff *******/
+/******* more general styling (not theme-dependent colors) *******/
+
+
+/* TODO: Build custom bootstrap for these. */
+/* A default for dropdown item hover. This should be part of each theme. */
 /* END todo */
 
 /******* theme: default *******/
