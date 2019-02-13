@@ -1,26 +1,8 @@
-
-/******* theme picker and general styling stuff *******/
+/*** General ***/
 #topbar h1 {
     text-shadow: 0 0 20px white;
 }
-/******* more general styling (not theme-dependent colors) *******/
-.navbar-iacr-acronym {
-    color: #ffffff !important;
-}
 
-/* TODO: Build custom bootstrap for these. */
-a.nav-link, a.dropdown-item {
-  color: #EBF7EB !important;
-}
-
-/* A default for dropdown item hover. This should be part of each theme. */
-body a.dropdown-item:hover {
-    background-color: #3B5099;
-  /* rgba(146, 158, 198, 0.4); */
-}
-/* END todo */
-
-/******* theme: default *******/
 .default-body {
     background: #F8F8F8;
     color: #080808 !important;
@@ -31,17 +13,43 @@ body a.dropdown-item:hover {
     background: #FCFCFC;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
+
+
+
+/*** Navbar ***/
+.navbar-iacr-acronym {
+    color: #ffffff !important;
+}
+
+/* TODO: build custom bootstrap for these */
+a.nav-link, a.dropdown-item {
+  color: #EBF7EB !important;
+}
+
+body a.dropdown-item:hover {
+    background-color: #3B5099;
+  /* rgba(146, 158, 198, 0.4); */
+}
+/* END todo */
+
 .default-menubar, .default-menubar .dropdown-menu {
     background: #102a83 !important;
 }
 .default-menubar .navbarIacrAcronym {
     color: #f0f0f0 !important;
 }
+
+
+
+/*** Search ***/
 .default-search {
     background: #102a83;
     color: #f0f0f0;
 }
 
+
+
+/*** Home-specific (i.e. not used across pages) ***/
 .default-card-header {
     /*    background: #5164A4; */
     background: #04269E;
@@ -51,6 +59,16 @@ body a.dropdown-item:hover {
     color: #f0f0f0 !important;
 }
 
+
+
+
+/****************** editing below this line ******************/
+/******* theme picker and general styling stuff *******/
+/******* more general styling (not theme-dependent colors) *******/
+/* TODO: Build custom bootstrap for these. */
+/* A default for dropdown item hover. This should be part of each theme. */
+/* END todo */
+/******* theme: default *******/
 .default-nav-link {
     font-size: 1.2em !important;
     color: #ffffff !important;
