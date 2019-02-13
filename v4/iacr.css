@@ -1,6 +1,6 @@
 /*** Navbar (all sizes) ***/
 #pageHeader {
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
 }
 
 .navbar-nav li {
@@ -11,8 +11,7 @@
 /* NOTE: hover effect for navbar only on larger screens. massive thanks to https://stackoverflow.com/questions/51413782/dropdown-on-hover-in-bootstrap-4-1 */
 @media only screen and (min-width: 992px) {
  #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
-      display: block;
-/*      border-left: 3px solid #F2AC10 !important; */
+    display: block;
   }
 }
 
@@ -38,45 +37,47 @@
 
 /* Hamburger transform to x */
 .nofocus:focus {
-    outline: none !important;
+  outline: none !important;
 }
+
 .icon-bar {
-    width: 29px;
-    height: 2px;
-    background-color: #F0F0F0;
-    display: block;
-    transition: all 0.3s;
-    margin-bottom: 6px
+  width: 29px;
+  height: 2px;
+  background-color: #F0F0F0;
+  display: block;
+  transition: all 0.3s;
+  margin-bottom: 6px
 }
 
 .navbar-toggler {
-    border: none;
-    background: transparent !important;
+  border: none;
+  background: transparent !important;
 }
+
 .navbar-toggler .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
 }
 
 .navbar-toggler .middle-bar {
-    opacity: 0;
+  opacity: 0;
 }
 
 .navbar-toggler .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
 }
 
 .navbar-toggler.collapsed .top-bar {
-    transform: rotate(0);
+  transform: rotate(0);
 }
 
 .navbar-toggler.collapsed .middle-bar {
-    opacity: 1;
+  opacity: 1;
 }
 
 .navbar-toggler.collapsed .bottom-bar {
-    transform: rotate(0);
+  transform: rotate(0);
 }
 /* END hamburger transform to x */
 
@@ -88,9 +89,9 @@ img.searchBtn {
 }
 
 .searchButtons {
-    background-color: transparent;
-    border-color: #ffffff;
-    color: #ffffff;
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .searchButtons:hover {
@@ -100,9 +101,9 @@ img.searchBtn {
 }
 
 .searchDropdownParent {
-    position:absolute !important;
-    right: 0%;
-    top: 20px;
+  position:absolute !important;
+  right: 0%;
+  top: 20px;
 }
 
 #searchDropdown {
@@ -131,16 +132,19 @@ searchDropdown2 is sized correctly at different widths.  */
     max-width: 280px;
   }
 }
+
 @media (min-width: 350px) {
   #searchDropdown2 {
     max-width: 320px;
   }
 }
+
 @media (min-width: 420px) {
   #searchDropdown2 {
     max-width: 400px;
   }
 }
+
 @media (min-width: 576px) {
   #searchDropdown2 {
     max-width: 540px;
@@ -169,14 +173,14 @@ searchDropdown2 is sized correctly at different widths.  */
 
 /*** Footer ***/
 @media only screen and (min-width: 767px) {
-    footer#v1 {
-        font-size: 80%;
-        font-weight: 400;
-    }
+  footer#v1 {
+    font-size: 80%;
+    font-weight: 400;
+  }
 }
 
 img.socialBtn {
-    height: 2.5em;
+  height: 2.5em;
 }
 
 a.social:hover {
