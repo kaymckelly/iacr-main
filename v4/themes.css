@@ -1,28 +1,29 @@
 /*** General ***/
 #topbar h1 {
-    text-shadow: 0 0 20px white;
+  text-shadow: 0 0 20px white;
 }
 
 .default-topbar h1 {
-    color: #000000;
+  color: #000000;
 }
 
 .default-body {
-    background: #F8F8F8;
-    color: #080808 !important;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.5) 10%,rgba(255,255,255,.5)),url('tris.svg');
-    background-size:cover;
+  background: #F8F8F8;
+  color: #080808 !important;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.5) 10%,rgba(255,255,255,.5)),url('tris.svg');
+  background-size:cover;
 }
+
 .default-main {
-    background: #FCFCFC;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  background: #FCFCFC;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 
 
 /*** Navbar ***/
 .navbar-iacr-acronym {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 /* TODO: build custom bootstrap for these */
@@ -31,57 +32,56 @@ a.nav-link, a.dropdown-item {
 }
 
 body a.dropdown-item:hover {
-    background-color: #3B5099;
-  /* rgba(146, 158, 198, 0.4); */
+  background-color: #3B5099;
 }
 /* END todo */
 
 .default-menubar, .default-menubar .dropdown-menu {
-    background: #102a83 !important;
+  background: #102a83 !important;
 }
+
 .default-menubar .navbarIacrAcronym {
-    color: #f0f0f0 !important;
+  color: #f0f0f0 !important;
 }
 
 .default-nav-link {
-    font-size: 1.2em !important;
-    color: #ffffff !important;
+  font-size: 1.2em !important;
+  color: #ffffff !important;
 }
+
 .default-body a.dropdown-item:hover {
-    background-color: #3B5099 !important;
-  /* rgba(146, 158, 198, 0.4); */
+  background-color: #3B5099 !important;
 }
 
 .navbarIacrAcronym {
-    color: #f0f0f0 !important;
+  color: #f0f0f0 !important;
 }
 
 
 
 /*** Search ***/
 .default-search {
-    background: #102a83;
-    color: #f0f0f0;
+  background: #102a83;
+  color: #f0f0f0;
 }
 
 a#searchLink {
-    color: #c0f0c0;
+  color: #c0f0c0;
 }
 
 
 
 /*** Home-specific (i.e. not used across pages) ***/
 .default-card-header {
-    /*    background: #5164A4; */
-    background: #04269E;
-    color: #f0f0f0 !important;
+  background: #04269E;
+  color: #f0f0f0 !important;
 }
 .default-card-header a {
-    color: #f0f0f0 !important;
+  color: #f0f0f0 !important;
 }
 
 .default-card-footer {
-    background: #E9EBF3 !important;
+  background: #E9EBF3 !important;
 }
 
 
@@ -92,13 +92,13 @@ a#searchLink {
 }
 
 .default-footer a {
-    /*    color: #0B1B54; */
-    color: #0F2778;
+  color: #0F2778;
 }
+
 .default-footer ul {
-    margin-top: 6px;
-    padding-left: 10px;
-    border-left: 3px solid #f2AC10;
+  margin-top: 6px;
+  padding-left: 10px;
+  border-left: 3px solid #f2AC10;
 }
 
 .default-bottomOfFooter {
@@ -113,21 +113,7 @@ a#searchLink {
 
 
 
-/****************** editing below this line ******************/
-/******* theme picker and general styling stuff *******/
-/******* more general styling (not theme-dependent colors) *******/
-/* TODO: Build custom bootstrap for these. */
-/* A default for dropdown item hover. This should be part of each theme. */
-/* END todo */
-/******* theme: default *******/
-/*
-.default-topbar {
-    background: url(../img/triangles2.svg);
-    background-size: cover;
-}
-*/
-/******* rando stuff *******/
-/******* theme: more numbers *******/
+/* TODO: is obsolete; remove? */
 .olddefault-body {
   /* background-color: rgba(255, 245, 230, 0.05); */
   /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
@@ -193,4 +179,3 @@ a#searchLink {
 .olddefault-bottomOfFooter a {
     color: #ffffff !important;
 }
-/* catch-all for navbar acronym in mobile. */
