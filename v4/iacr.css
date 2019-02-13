@@ -87,6 +87,24 @@ img.searchBtn {
   height: 20px;
 }
 
+.searchButtons {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.searchButtons:hover {
+  color: #fff;
+  background-color: #0A6F90;
+  border-color: #0A6F90;
+}
+
+.searchDropdownParent {
+    position:absolute !important;
+    right: 0%;
+    top: 20px;
+}
+
 #searchDropdown {
   border-radius: 0 0 5px 5px !important;
   z-index: 800 !important;
@@ -99,78 +117,6 @@ img.searchBtn {
   }
 }
 
-
-
-/*** Footer ***/
-img.socialBtn {
-    height: 2.5em;
-}
-
-a.social:hover {
-  text-decoration: none;
-}
-
-
-
-/*** Home-specific (i.e. not used across pages) ***/
-.masonry .card {
-  margin-bottom: 0.5rem;
-}
-
-.masonry .card .card-body {
-  padding:  0.5rem 0.5rem 0rem 0.5rem;
-}
-
-@media (min-width: 992px) {
-  .masonry {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 1.25rem;
-    -moz-column-gap: 1.25rem;
-    column-gap: 1.25rem;
-    orphans: 1;
-    widows: 1;
-  }
-  .masonry > .card {
-    display: inline-block;
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-
-/* TODO: Build custom bootstrap. */
-.masonry .card-header {
-  font-size: 2em !important;
-}
-
-
-
-/************* editing below this line ******************************/
-
-/* **************************** Search buttons */
-.searchButtons {
-    background-color: transparent;
-    border-color: #ffffff;
-    color: #ffffff;
-}
-.searchButtons:hover {
-  color: #fff;
-  background-color: #0A6F90;
-  border-color: #0A6F90;
-}
-/* Smaller lighter font in desktop footer. */
-@media only screen and (min-width: 767px) {
-    footer#v1, footer#v2 {
-        font-size: 80%;
-        font-weight: 400;
-    }
-}
-.searchDropdownParent {
-    position:absolute !important;
-    right: 0%;
-    top: 20px;
-}
 #searchDropdown2 {
   width: 95vw;
   padding-right: 15px;
@@ -217,4 +163,56 @@ searchDropdown2 is sized correctly at different widths.  */
   #searchDropdown2 {
     max-width: 1140px;
   }
+}
+
+
+
+/*** Footer ***/
+@media only screen and (min-width: 767px) {
+    footer#v1 {
+        font-size: 80%;
+        font-weight: 400;
+    }
+}
+
+img.socialBtn {
+    height: 2.5em;
+}
+
+a.social:hover {
+  text-decoration: none;
+}
+
+
+
+/*** Home-specific (i.e. not used across pages) ***/
+.masonry .card {
+  margin-bottom: 0.5rem;
+}
+
+.masonry .card .card-body {
+  padding:  0.5rem 0.5rem 0rem 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .masonry {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+  .masonry > .card {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* TODO: Build custom bootstrap. */
+.masonry .card-header {
+  font-size: 2em !important;
 }
