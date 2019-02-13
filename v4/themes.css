@@ -3,6 +3,18 @@
     text-shadow: 0 0 20px white;
 }
 
+.default-body {
+    background: #F8F8F8;
+    color: #080808 !important;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.5) 10%,rgba(255,255,255,.5)),url('tris.svg');
+    background-size:cover;
+}
+.default-main {
+    background: #FCFCFC;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
 
 /*** Navbar ***/
 .navbar-iacr-acronym {
@@ -20,9 +32,20 @@ body a.dropdown-item:hover {
 }
 /* END todo */
 
+.default-menubar, .default-menubar .dropdown-menu {
+    background: #102a83 !important;
+}
+.default-menubar .navbarIacrAcronym {
+    color: #f0f0f0 !important;
+}
+
 
 
 /*** Search ***/
+.default-search {
+    background: #102a83;
+    color: #f0f0f0;
+}
 
 
 
@@ -31,41 +54,6 @@ body a.dropdown-item:hover {
 
 
 /*** Home-specific (i.e. not used across pages) ***/
-
-
-
-
-/****************** editing below this line ******************/
-/******* theme picker and general styling stuff *******/
-/******* more general styling (not theme-dependent colors) *******/
-
-
-/* TODO: Build custom bootstrap for these. */
-/* A default for dropdown item hover. This should be part of each theme. */
-/* END todo */
-
-/******* theme: default *******/
-.default-body {
-    background: #F8F8F8;
-    color: #080808 !important;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.5) 10%,rgba(255,255,255,.5)),url('tris.svg');
-    background-size:cover;
-}
-.default-main {
-    background: #FCFCFC;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-.default-menubar, .default-menubar .dropdown-menu {
-    background: #102a83 !important;
-}
-.default-menubar .navbarIacrAcronym {
-    color: #f0f0f0 !important;
-}
-.default-search {
-    background: #102a83;
-    color: #f0f0f0;
-}
-
 .default-card-header {
     /*    background: #5164A4; */
     background: #04269E;
@@ -75,6 +63,16 @@ body a.dropdown-item:hover {
     color: #f0f0f0 !important;
 }
 
+
+
+
+/****************** editing below this line ******************/
+/******* theme picker and general styling stuff *******/
+/******* more general styling (not theme-dependent colors) *******/
+/* TODO: Build custom bootstrap for these. */
+/* A default for dropdown item hover. This should be part of each theme. */
+/* END todo */
+/******* theme: default *******/
 .default-nav-link {
     font-size: 1.2em !important;
     color: #ffffff !important;
