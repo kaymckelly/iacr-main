@@ -29,11 +29,11 @@ body a.dropdown-item:hover {
 }
 /* END todo */
 
-.default-menubar, .default-menubar .dropdown-menu {
+#navbar, #navbar .dropdown-menu {
   background: #102a83 !important;
 }
 
-.default-menubar .navbarIacrAcronym {
+#navbar .navbarIacrAcronym {
   color: #f0f0f0 !important;
 }
 
