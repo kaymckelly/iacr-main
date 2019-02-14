@@ -1,20 +1,17 @@
 /*** General ***/
-#topbar h1 {
+#iacrMain-header h1 {
+  color: #080808;
   text-shadow: 0 0 20px white;
 }
 
-.default-topbar h1 {
-  color: #000000;
-}
-
-.default-body {
+body {
   background: #F8F8F8;
   color: #080808 !important;
   background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.5) 10%,rgba(255,255,255,.5)),url('tris.svg');
   background-size:cover;
 }
 
-.default-main {
+.iacrMain-contentBox {
   background: #FCFCFC;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
@@ -22,13 +19,9 @@
 
 
 /*** Navbar ***/
-.navbar-iacr-acronym {
-  color: #ffffff !important;
-}
-
 /* TODO: build custom bootstrap for these */
 a.nav-link, a.dropdown-item {
-  color: #EBF7EB !important;
+  color: #F0F0F0 !important;
 }
 
 body a.dropdown-item:hover {
@@ -36,11 +29,11 @@ body a.dropdown-item:hover {
 }
 /* END todo */
 
-.default-menubar, .default-menubar .dropdown-menu {
+#iacrMain-navbar, #iacrMain-navbar .dropdown-menu {
   background: #102a83 !important;
 }
 
-.default-menubar .navbarIacrAcronym {
+#iacrMain-navbar .navbarIacrAcronym {
   color: #f0f0f0 !important;
 }
 
@@ -49,7 +42,7 @@ body a.dropdown-item:hover {
   color: #ffffff !important;
 }
 
-.default-body a.dropdown-item:hover {
+a.dropdown-item:hover {
   background-color: #3B5099 !important;
 }
 

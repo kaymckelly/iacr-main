@@ -1,4 +1,4 @@
-<div class="container-fluid default-topbar d-none d-lg-block" id="topbar">
+<div id="iacrMain-header" class="container-fluid d-none d-lg-block">
   <div class="container">
     <div class="row align-items-center pt-2 d-none d-md-flex justify-content-between">
       <div class="col-sm-2 pb-2">
@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<div id="menubar" class="container-fluid default-menubar">
+<div id="iacrMain-navbar" class="container-fluid">
 
   <script>$.getScript('nav.js');</script>
   <nav class="container navbar navbar-expand-lg navbar-light bg-transparent px-0 py-0">
@@ -115,7 +115,7 @@
           <li class="nav-item dropdown position-static d-none d-lg-inline">
             <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchLink" data-offset="10,20">
               <button class="btn searchButtons border mt-1" aria-haspopup="true" aria-expanded="false" type="button">
-                <img src="../img/search.svg" class="searchBtn">
+                <img src="../img/search.svg" class="searchIcon" />
               </button>
             </a>
             <div id="searchDropdown" class="border-0 dropdown-menu dropdown-menu-right default-search px-2 w-100 mt-0" aria-labelledby="searchLink">
@@ -132,10 +132,9 @@
           </li>
       </ul>
     </div>
-    <div id="searchDropdownParent"
-         class="default-menubar searchDropdownParent dropdown pb-3 d-lg-none">
+    <div id="searchDropdownParent" class="searchDropdownParent dropdown pb-3 d-lg-none">
       <a id="searchDropdownButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchLink" data-offset="0,20">
-        <img src="../img/search.svg" class="searchBtn">
+        <img src="../img/search.svg" class="searchIcon">
       </a>
       <div id="searchDropdown2" class="border-0 dropdown-menu dropdown-menu-right default-search px-2 mt-0" aria-labelledby="searchLink">
         <p class="small text-white mb-1">Suggestions from <a class="localSearchLink" href="/asearch">local search</a> as you type. Hit enter to search with Google.</p>

@@ -3,7 +3,7 @@ $.ajax({
   dataType: 'html',
   cache: false,
   success: function(data) {
-    $('#pageHeader').html(data);
+    $('#pageHeaderAndNav').html(data);
   },
   error: function(jqXHR, textStatus, errorThrow) {
     console.log(textStatus);
