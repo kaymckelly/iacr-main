@@ -11,7 +11,7 @@ body {
   background-size:cover;
 }
 
-.default-main {
+.iacrMain-contentBox {
   background: #FCFCFC;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
@@ -19,13 +19,9 @@ body {
 
 
 /*** Navbar ***/
-.navbar-iacr-acronym {
-  color: #ffffff !important;
-}
-
 /* TODO: build custom bootstrap for these */
 a.nav-link, a.dropdown-item {
-  color: #EBF7EB !important;
+  color: #F0F0F0 !important;
 }
 
 body a.dropdown-item:hover {
