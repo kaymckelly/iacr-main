@@ -99,6 +99,8 @@ img.searchBtn {
   border-color: #F2AC10 !important;
 }
 
+/* TODO: would like to add highlight color around clicked button to be an orange or similar (rather than default bootstrap blue) */
+
 .searchDropdownParent {
   position:absolute !important;
   right: 0%;
@@ -124,8 +126,8 @@ img.searchBtn {
   margin-right: auto;
   margin-left: auto;
 }
-/* These are mostly copied from .container in bootstrap so that the
-searchDropdown2 is sized correctly at different widths.  */
+
+/* NOTE: These are mostly copied from bootstrap's .container so that the searchDropdown2 is sized correctly at different widths.  */
 @media (min-width: 300px) {
   #searchDropdown2 {
     max-width: 280px;
@@ -167,13 +169,14 @@ searchDropdown2 is sized correctly at different widths.  */
     max-width: 1140px;
   }
 }
+/* END searchDropdown2 sizing specs */
 
 
 
 /*** Footer ***/
 @media only screen and (min-width: 767px) {
   footer#v1 {
-    font-size: 80%;
+    font-size: 90%;
     font-weight: 400;
   }
 }
