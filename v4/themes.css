@@ -77,31 +77,26 @@ a#searchLink {
 
 
 /*** Footer ***/
-/* .default-footer { */
-.default-footer {
+.iacrMain-footer {
   background: linear-gradient(rgba(233, 235, 243, 0) 0%, rgba(252, 252, 252, 0.5) 30%, rgba(252, 252, 252, 0.7) 100%);
 }
 
-/* .default-footer a { */
-.default-footer a {
+.iacrMain-footer a {
   color: #0F2778;
 }
 
-/* .default-footer ul { */
-.default-footer ul {
+.iacrMain-footer ul {
   margin-top: 6px;
   padding-left: 10px;
   border-left: 3px solid #f2AC10;
 }
 
-/* .default-bottomOfFooter { */
-.default-bottomOfFooter {
+.iacrMain-bottomOfFooter {
   color: #FFF;
   background-color: #102A83;
 }
 
-/* .default-bottomOfFooter a { */
-.default-bottomOfFooter a {
+.iacrMain-bottomOfFooter a {
   color: #FFF;
 }
 
