@@ -65,40 +65,42 @@ a#searchLink {
 
 
 /*** Home-specific (i.e. not used across pages) ***/
-.default-card-header {
+.iacrMain-cardHeader {
   background: #04269E;
   color: #f0f0f0 !important;
 }
-.default-card-header a {
-  color: #f0f0f0 !important;
-}
 
-.default-card-footer {
-  background: #E9EBF3 !important;
+.iacrMain-cardHeader a {
+  color: #f0f0f0 !important;
 }
 
 
 
 /*** Footer ***/
+/* .default-footer { */
 .default-footer {
   background: linear-gradient(rgba(233, 235, 243, 0) 0%, rgba(252, 252, 252, 0.5) 30%, rgba(252, 252, 252, 0.7) 100%);
 }
 
+/* .default-footer a { */
 .default-footer a {
   color: #0F2778;
 }
 
+/* .default-footer ul { */
 .default-footer ul {
   margin-top: 6px;
   padding-left: 10px;
   border-left: 3px solid #f2AC10;
 }
 
+/* .default-bottomOfFooter { */
 .default-bottomOfFooter {
   color: #FFF;
   background-color: #102A83;
 }
 
+/* .default-bottomOfFooter a { */
 .default-bottomOfFooter a {
   color: #FFF;
 }
