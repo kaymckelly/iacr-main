@@ -34,12 +34,12 @@ body a.dropdown-item:hover {
 }
 
 #iacrMain-navbar .navbarIacrAcronym {
-  color: #f0f0f0 !important;
+  color: #F0F0F0 !important;
 }
 
-.default-nav-link {
+.iacrMain-navLink {
   font-size: 1.2em !important;
-  color: #ffffff !important;
+  color: #F0F0F0 !important;
 }
 
 a.dropdown-item:hover {
@@ -53,7 +53,7 @@ a.dropdown-item:hover {
 
 
 /*** Search ***/
-.default-search {
+.iacrMain-search {
   background: #102a83;
   color: #f0f0f0;
 }
@@ -65,110 +65,37 @@ a#searchLink {
 
 
 /*** Home-specific (i.e. not used across pages) ***/
-.default-card-header {
+.iacrMain-cardHeader {
   background: #04269E;
   color: #f0f0f0 !important;
 }
-.default-card-header a {
-  color: #f0f0f0 !important;
-}
 
-.default-card-footer {
-  background: #E9EBF3 !important;
+.iacrMain-cardHeader a {
+  color: #f0f0f0 !important;
 }
 
 
 
 /*** Footer ***/
-.default-footer {
+.iacrMain-footer {
   background: linear-gradient(rgba(233, 235, 243, 0) 0%, rgba(252, 252, 252, 0.5) 30%, rgba(252, 252, 252, 0.7) 100%);
 }
 
-.default-footer a {
+.iacrMain-footer a {
   color: #0F2778;
 }
 
-.default-footer ul {
+.iacrMain-footer ul {
   margin-top: 6px;
   padding-left: 10px;
   border-left: 3px solid #f2AC10;
 }
 
-.default-bottomOfFooter {
+.iacrMain-bottomOfFooter {
   color: #FFF;
   background-color: #102A83;
 }
 
-.default-bottomOfFooter a {
+.iacrMain-bottomOfFooter a {
   color: #FFF;
-}
-
-
-
-
-/* TODO: is obsolete; remove? */
-.olddefault-body {
-  /* background-color: rgba(255, 245, 230, 0.05); */
-  /* background-image: url('https://www.aaas.org/themes/custom/aaas_v2/assets/images/common/pattern-circles-full.svg'); */
-  color: #080808;
-}
-
-.olddefault-topbar {
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 100%), url('../img/binary_swirl_bw.jpg');
-}
-
-.olddefault-search {
-    background-color: #054c56;
-}
-
-.olddefault-card-header {
-    background-color: #046577 !important;
-}
-
-.olddefault-card-header a {
-  color: #f0f0f0 !important;
-}
-
-.olddefault-nav-link, .olddefault-nav-link a {
-  color: #f0f0f0 !important;
-  font-size: 1.2em !important;
-}
-
-.olddefault-footer {
-/*  border-top: 4px solid #046577;*/
-  background-color: #F0F0F0;
-}
-
-.olddefault-footer  a {
-  color: #102a83 !important;
-}
-
-.olddefault-footer ul {
-  margin-top: 10px;
-  padding-left: 10px !important;
-  border-left: 3px solid #CF8D17;
-}
-
-.olddefault-menubar, .olddefault-menubar .dropdown-menu {
-  background: #054C56 !important;
-}
-@media only screen and (min-width: 992px) {
-    .olddefault-menubar .nav-item:not(:last-child):hover,
-    .olddefault-menubar .nav-item:not(:last-child):hover .dropdown-menu {
-        background-color: #046577 !important;
-    }
-    .olddefault-menubar .dropdown-item:hover {
-        background-color: #01436D !important;
-    }
-}
-.olddefault-bottomOfFooter {
-    background-color: #046577 !important;
-    color: #ffffff !important;
-}
-
-.olddefault-footer a {
-    color: #102a83 !important;
-}
-.olddefault-bottomOfFooter a {
-    color: #ffffff !important;
 }
