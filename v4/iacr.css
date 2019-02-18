@@ -150,6 +150,16 @@ img.searchIcon {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
+.iacrMain-search {
+  background: #102A83;
+  color: #F0F0F0;
+}
+
+/* TODO: this id is used in 3 places in header.html. make that not be a thing */
+a#searchLink {
+  color: #F2AC10;
+}
+
 @media (min-width: 992px) {
   #searchBox:focus {
     min-width: 350px !important;
@@ -258,4 +268,13 @@ a.social:hover {
 /* TODO: Build custom bootstrap. */
 .masonry .card-header {
   font-size: 2em !important;
+}
+
+.iacrMain-cardHeader {
+  background: #04269E;
+  color: #F0F0F0 !important;
+}
+
+.iacrMain-cardHeader a {
+  color: #F0F0F0 !important;
 }

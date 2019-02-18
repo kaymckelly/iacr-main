@@ -1,27 +1,3 @@
-/*** Search ***/
-.iacrMain-search {
-  background: #102a83;
-  color: #f0f0f0;
-}
-
-a#searchLink {
-  color: #c0f0c0;
-}
-
-
-
-/*** Home-specific (i.e. not used across pages) ***/
-.iacrMain-cardHeader {
-  background: #04269E;
-  color: #f0f0f0 !important;
-}
-
-.iacrMain-cardHeader a {
-  color: #f0f0f0 !important;
-}
-
-
-
 /*** Footer ***/
 .iacrMain-footer {
   background: linear-gradient(rgba(233, 235, 243, 0) 0%, rgba(252, 252, 252, 0.5) 30%, rgba(252, 252, 252, 0.7) 100%);
