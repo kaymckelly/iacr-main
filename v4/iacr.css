@@ -1,6 +1,43 @@
+/*** General ***/
+#iacrMain-header h1 {
+  color: #080808;
+  text-shadow: 0 0 20px white;
+}
+
+body {
+  background: #F8F8F8;
+  color: #080808 !important;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.8),rgba(255,255,255,.5) 10%,rgba(255,255,255,.5)),url('tris.svg');
+  background-size:cover;
+}
+
+.iacrMain-contentBox {
+  background: #FCFCFC;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
+
 /*** Navbar/Header (all sizes) ***/
 #pageHeaderAndNav {
   box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+}
+
+#iacrMain-navbar, #iacrMain-navbar .dropdown-menu {
+  background: #102a83 !important;
+}
+
+a.iacrMain-navLink {
+  font-size: 1.2em !important;
+  color: #F0F0F0 !important;
+}
+
+div.dropdown-menu a {
+  color: #F0F0F0 !important;
+}
+
+div.dropdown-menu a:hover {
+  background-color: #3B5099;
 }
 
 .navbar-nav li {
@@ -31,8 +68,9 @@
 
 
 /*** Navbar (mobile) ***/
-.navbarIacrAcronym {
+#iacrMain-navbar .navbarIacrAcronym {
   font-size: 2em;
+  color: #F0F0F0 !important;
 }
 
 /* Hamburger transform to x */
