@@ -292,7 +292,9 @@ a.social:hover {
 .masonry .card-header {
   font-size: 2em !important;
 }
+/* END todo */
 
+/* NOTE: cards may be site-wide rather than home specific. check back in future */
 .iacrMain-cardHeader {
   background: #04269E;
   color: #F0F0F0 !important;
