@@ -221,6 +221,20 @@ a#searchLink {
 
 
 /*** Footer ***/
+.iacrMain-footer {
+  background: linear-gradient(rgba(233, 235, 243, 0) 0%, rgba(252, 252, 252, 0.5) 30%, rgba(252, 252, 252, 0.7) 100%);
+}
+
+.iacrMain-footer a {
+  color: #0F2778;
+}
+
+.iacrMain-footer ul {
+  margin-top: 6px;
+  padding-left: 10px;
+  border-left: 3px solid #f2AC10;
+}
+
 @media only screen and (min-width: 767px) {
   footer#v1 {
     font-size: 90%;
@@ -234,6 +248,15 @@ img.socialBtn {
 
 a.social:hover {
   text-decoration: none;
+}
+
+.iacrMain-bottomOfFooter {
+  color: #FFF;
+  background-color: #102A83;
+}
+
+.iacrMain-bottomOfFooter a {
+  color: #FFF;
 }
 
 
