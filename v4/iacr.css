@@ -11,7 +11,7 @@ body {
   background-size:cover;
 }
 
-.iacrMain-contentBox {
+#iacrMain-contentBox {
   background: #FCFCFC;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
@@ -33,11 +33,12 @@ a.iacrMain-navLink {
 }
 
 div.dropdown-menu a {
-  color: #F0F0F0 !important;
+   color: #F0F0F0;
 }
 
 div.dropdown-menu a:hover {
-  background-color: #3B5099;
+  background-color: #3050C0;
+  color: #F0F0F0 !important;
 }
 
 .navbar-nav li {
@@ -61,16 +62,18 @@ div.dropdown-menu a:hover {
 
 /*** Navbar (expanded) ***/
 #iacrLogo {
-  max-height: 120px;
-  max-width: 120px;
+    height: 120px;
+    width: 120px;
 }
 
 
 
 /*** Navbar (mobile) ***/
-#iacrMain-navbar .navbarIacrAcronym {
+#navbarIacrAcronym {
   font-size: 2em;
   color: #F0F0F0 !important;
+  /* compensate for search button to center it. */
+  padding-right: 20px !important;
 }
 
 /* Hamburger transform to x */
@@ -126,19 +129,25 @@ img.searchIcon {
   height: 20px;
 }
 
+@media (max-width: 992px) {
+  img.searchIcon {
+      height: 30px;
+  }
+}
+
 .searchButtons {
   background-color: transparent;
   color: #F0F0F0;
 }
 
 .searchButtons:hover {
-  background-color: #3B5099;
+  background-color: #3050c0;
   border-color: #F2AC10 !important;
 }
 
 /* TODO: would like to add highlight color around clicked button to be an orange or similar (rather than default bootstrap blue) */
 
-.searchDropdownParent {
+#searchDropdownParent {
   position:absolute !important;
   right: 0%;
   top: 20px;
@@ -156,8 +165,14 @@ img.searchIcon {
 }
 
 /* TODO: this id is used in 3 places in header.html. make that not be a thing */
+/*
 a#searchLink {
   color: #F2AC10;
+}
+*/
+
+a.localSearchLink {
+    color: #F2AC10 !important;
 }
 
 @media (min-width: 992px) {
@@ -166,57 +181,58 @@ a#searchLink {
   }
 }
 
-#searchDropdown2 {
+#searchDropdownMobile {
   width: 95vw;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: -5px !important;
 }
 
 /* NOTE: These are mostly copied from bootstrap's .container so that the searchDropdown2 is sized correctly at different widths.  */
 @media (min-width: 300px) {
-  #searchDropdown2 {
+  #searchDropdownMobile {
     max-width: 280px;
   }
 }
 
 @media (min-width: 350px) {
-  #searchDropdown2 {
+  #searchDropdownMobile {
     max-width: 320px;
   }
 }
 
 @media (min-width: 420px) {
-  #searchDropdown2 {
+  #searchDropdownMobile {
     max-width: 400px;
   }
 }
 
 @media (min-width: 576px) {
-  #searchDropdown2 {
+  #searchDropdownMobile {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  #searchDropdown2 {
+  #searchDropdownMobile {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  #searchDropdown2 {
+  #searchDropdownMobile {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  #searchDropdown2 {
+  #searchDropdownMobile {
     max-width: 1140px;
   }
 }
-/* END searchDropdown2 sizing specs */
+/* END searchDropdownMobile sizing specs */
 
 
 
@@ -236,7 +252,7 @@ a#searchLink {
 }
 
 @media only screen and (min-width: 767px) {
-  footer#v1 {
+  footer.iacrMain-footer {
     font-size: 90%;
     font-weight: 400;
   }
