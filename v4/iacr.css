@@ -36,7 +36,7 @@ div.dropdown-menu a {
    color: #F0F0F0;
 }
 
-div.dropdown-menu a:hover {
+ul#iacrMainMenu li:not(:last-child) div.dropdown-menu a:hover {
   background-color: #3050C0;
   color: #F0F0F0 !important;
 }
