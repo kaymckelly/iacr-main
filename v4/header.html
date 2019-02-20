@@ -1,16 +1,13 @@
-<div id="iacrMain-header" class="container-fluid d-none d-lg-block">
-  <div class="container">
-    <div class="row align-items-center pt-2 d-none d-md-flex justify-content-between">
-      <div class="col-sm-2 pb-2">
-        <a href="../">
-            <img id="iacrLogo" src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid" alt="IACR logo" />
-          </a>
-      </div>
-      <div class="col-sm-auto mx-auto">
-        <h1 id="iacrNameOneline" class="d-none d-xl-block">International Association for Cryptologic Research</h1>
-        <h1 class="d-none d-xl-none d-md-block">International Association<br>for Cryptologic Research</h1>
-        <h1 class="d-md-none">IACR</h1>
-      </div>
+<div id="iacrMain-header" class="container d-none d-lg-block">
+  <div class="row align-items-center pt-2 d-none d-md-flex justify-content-between">
+    <div class="col-2 pb-2">
+      <a href="../">
+        <img id="iacrLogo" src="https://www.iacr.org/tools/logo/svg/iacrlogo_small.svg" class="img-fluid" alt="IACR logo" />
+      </a>
+    </div>
+    <div class="col-auto mx-auto">
+      <h1 class="d-none d-xl-block">International Association for Cryptologic Research</h1>
+      <h1 class="d-none d-xl-none d-md-block">International Association<br>for Cryptologic Research</h1>
     </div>
   </div>
 </div>
@@ -18,17 +15,17 @@
 <div id="iacrMain-navbar" class="container-fluid">
 
   <script>$.getScript('nav.js');</script>
-  <nav class="container navbar navbar-expand-lg navbar-light bg-transparent px-0 py-0">
+  <nav class="container navbar navbar-expand-lg px-0 py-0">
     <button class="navbar-toggler mt-1 collapsed nofocus" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="icon-bar top-bar"></span>
       <span class="icon-bar middle-bar"></span>
       <span class="icon-bar bottom-bar"></span>
     </button>
-    <div class="navbarIacrAcronym navbar-text d-inline-block d-lg-none mx-auto">
+    <div id="navbarIacrAcronym" class="navbar-text d-inline-block d-lg-none mx-auto">
       IACR
     </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav justify-content-between flex-grow-1">
+      <ul id="iacrMainMenu" class="navbar-nav justify-content-between flex-grow-1">
         <li class="nav-item dropdown">
             <a class="nav-link iacrMain-navLink dropdown-toggle" href="/events" id="eventsDropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
             <div class="dropdown-menu border-0" aria-labelledby="eventsDropdownLink">
@@ -115,11 +112,11 @@
           <li class="nav-item dropdown position-static d-none d-lg-inline">
             <a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchLink" data-offset="10,20">
               <button class="btn searchButtons border mt-1" aria-haspopup="true" aria-expanded="false" type="button">
-                <img src="../img/search.svg" class="searchIcon" />
+                <img src="img/search.svg" class="searchIcon" alt="Search Button"/>
               </button>
             </a>
             <div id="searchDropdown" class="border-0 dropdown-menu dropdown-menu-right iacrMain-search px-2 w-100 mt-0" aria-labelledby="searchLink">
-              <p class="small text-white mb-1">Suggestions from <a id="searchLink" href="/asearch">local search</a> as you type. Hit enter to search with Google.</p>
+              <p class="small text-white mb-1">Suggestions from <a class="localSearchLink" href="/asearch">local search</a> as you type. Hit enter to search with Google.</p>
               <form action="/search" method="GET">
                 <div class="input-group">
                   <input id="searchbox" name="q" type="search" class="form-control border searchBoxes" placeholder="Search IACR" width="100">
@@ -132,14 +129,14 @@
           </li>
       </ul>
     </div>
-    <div id="searchDropdownParent" class="searchDropdownParent dropdown pb-3 d-lg-none">
-      <a id="searchDropdownButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="searchLink" data-offset="0,20">
-        <img src="../img/search.svg" class="searchIcon">
+    <div id="searchDropdownParent" class="dropdown pb-3 d-lg-none">
+      <a id="mobileSearchLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,20">
+        <img src="img/search.svg" class="searchIcon" alt="Search Button">
       </a>
-      <div id="searchDropdown2" class="border-0 dropdown-menu dropdown-menu-right iacrMain-search px-2 mt-0" aria-labelledby="searchLink">
+      <div id="searchDropdownMobile" class="border-0 dropdown-menu dropdown-menu-right iacrMain-search px-2 mt-0" aria-labelledby="mobileSearchLink">
         <p class="small text-white mb-1">Suggestions from <a class="localSearchLink" href="/asearch">local search</a> as you type. Hit enter to search with Google.</p>
         <form action="/search" method="GET">
-          <input id="searchbox" name="q" type="text" class="form-control border searchBoxes" placeholder="Search IACR"/>
+          <input id="searchboxMobile" name="q" type="search" class="form-control border searchBoxes" placeholder="Search IACR"/>
         </form>
       </div>
     </div>
