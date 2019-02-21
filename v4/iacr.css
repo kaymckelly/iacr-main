@@ -51,6 +51,10 @@ ul#iacrMainMenu li:not(:last-child) div.dropdown-menu a:hover {
  #navbarSupportedContent li:not(:last-child):hover>.dropdown-menu {
     display: block;
   }
+ #navbarSupportedContent .dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+ }
 }
 
 .navbar-nav .dropdown-menu {
