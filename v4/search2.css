@@ -1,43 +1,30 @@
 .suggestion-title {
-    font-weight: 700;
-    color: #202020;
+  font-weight: 700;
+  color: #202020;
 }
-.subtitle {
-    margin-left: 1em;
-    color: #338033;
+
+.suggestion-subtitle {
+  margin-left: 1em;
+  color: #005521;
 }
+
 .easy-autocomplete-container {
-    -webkit-box-shadow: 1px 8px 20px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 8px 20px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 8px 20px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 8px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 8px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 8px 20px 0px rgba(0,0,0,0.75);
 }
+
 .easy-autocomplete-container ul li {
-    border-top: 1px solid lightgray !important;
+  border-top: 1px solid lightgray !important;
 }
+
 .eac-item {
-    margin: 0px !important;
+  margin: 0px !important;
 }
+
 .easy-autocomplete-container {
-    /* If the dropdown is too far left, use this
-   left: 1em; */
-    /* width: 500px !important; */
-    width: 100% !important;
-    /* These are for vertical scrolling. */
-    max-height: 500px;
-    overflow-y: auto;
-}
-/* This makes sure that autocompletions fit on mobile. */
-@media (max-width: 500px) {
-    .easy-autocomplete-container {
-        max-width: 325px !important;
-    }
-}
-/* added for dropdown addition. */
-#searchChoice {
-    background: #f0f0f0;
-    padding: 5px;
-    text-align: center;
-}
-#searchChoice a {
-    display: inline;
+  width: 100% !important;
+  /* These are for vertical scrolling. */
+  max-height: 500px;
+  overflow-y: auto;
 }

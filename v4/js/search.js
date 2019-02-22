@@ -1,5 +1,5 @@
 var TITLE_TEMPLATE = '<span class="suggestion-title">_TITLE_</span>';
-var SUBTITLE_TEMPLATE = '<br><span class="subtitle">_SUBTITLE_</span>';
+var SUBTITLE_TEMPLATE = '<br><span class="suggestion-subtitle">_SUBTITLE_</span>';
 
 function getSnippet(value, item) {
   var authors = null;
@@ -95,4 +95,3 @@ $(document).ready(function() {
     });
   })
 });
-
