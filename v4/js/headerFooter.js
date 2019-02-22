@@ -25,7 +25,7 @@ $.ajax({
   success: function(data) {
     $('#pageHeaderAndNav').html(data);
     addNavAnimations();
-    $.getScript('search.js');
+    $.getScript('js/search.js');
   },
   error: function(jqXHR, textStatus, errorThrow) {
     console.log(textStatus);
